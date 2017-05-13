@@ -1,6 +1,6 @@
 # Plastic - _A simple theme_
 
-<div style="text-align:center">
+<div align="center">
 
 <img src="images/logo.png" style="width: 50px; height: 50px;" alt="Logo">
 
