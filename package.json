@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
   },
-  "icon": "icon.svg",
+  "icon": "images/logo.svg",
   "repository": {
     "type": "git",
     "url": "https://github.com/will-stone/plastic"
