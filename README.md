@@ -2,11 +2,7 @@
 
 <div style="text-align:center">
 
-<div style="width: 50px; height: 50px; margin: 0 auto;">
-
-![Plastic Logo](https://cdn.rawgit.com/will-stone/plastic/5f656af6/images/logo.svg)
-
-</div>
+<img src="images/logo.png" style="width: 50px; height: 50px;" alt="Logo" />
 
 A syntax and UI theme for Visual Studio Code.
 
