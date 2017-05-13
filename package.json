@@ -27,5 +27,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/will-stone/plastic"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
   }
 }
