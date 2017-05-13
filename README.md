@@ -2,9 +2,9 @@
 
 <img src="images/logo.png" width="50" height="50" alt="Logo">
 
-<h1>Plastic</h1>
+<h2>Plastic</h2>
 
-<h2>A simple syntax and UI theme for Visual Studio Code.</h2>
+<h3>A simple syntax and UI theme for Visual Studio Code.</h3>
 
 </div>
 
