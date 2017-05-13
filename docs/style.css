@@ -1,0 +1,29 @@
+body {
+  background-color: #21252b;
+  font-family: 'Nunito', cursive;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #e06c75;
+  font-size: 100px;
+}
+
+.tagline {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #abb2bf;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto 40px;
+}
+
+.screenshot {
+  display: block;
+  width: 100%;
+  margin: 0 auto 40px;
+}

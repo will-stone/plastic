@@ -23,12 +23,15 @@
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
   },
-  "icon": "images/logo.svg",
+  "icon": "images/icon.svg",
   "repository": {
     "type": "git",
     "url": "https://github.com/will-stone/plastic"
   },
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "scripts": {
+    "docs": "lite-server"
   }
 }
