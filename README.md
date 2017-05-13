@@ -11,3 +11,7 @@ _A simple syntax and UI theme for Visual Studio Code._
 * Dark UI elements for all-day coding.
 * Small colour palette; avoid visual overload.
 * Deprioritised punctuation; concentrate on the content.
+
+## Colours
+
+* Cadet Blue **#abb2bf** - _text_
