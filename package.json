@@ -2,7 +2,7 @@
   "name": "plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.12.0"

@@ -3,12 +3,11 @@
   "colors": {
     "activityBar.background": "#21252b",
     "activityBar.dropBackground": "#21252b",
-    "activityBar.foreground": "#fff",
+    "activityBar.foreground": "#ffffff",
     "activityBarBadge.foreground": "#ffffff",
     "activityBarBadge.background": "#e06c75",
-    "button.background": "#404754",
+    "button.background": "#e06c75",
     "dropdown.background": "#1d1f23",
-    "diffEditor.insertedTextBackground": "#00809B33",
     "dropdown.border": "#181A1F",
     "editor.background": "#21252b",
     "editor.foreground": "#abb2bf",
@@ -82,7 +81,8 @@
     {
       "name": "Fountain Blue",
       "scope": [
-        "constant"
+        "constant",
+        "keyword.other.unit"
       ],
       "settings": {
         "foreground": "#56b6c2"
@@ -123,11 +123,12 @@
       "name": "Whiskey",
       "scope": [
         "entity.name.class",
-        "entity.name.type",
-        "entity.other.inherited-class",
         "entity.name.function",
+        "entity.name.type",
         "entity.other.attribute-name",
-        "markup.heading.setext"
+        "entity.other.inherited-class",
+        "markup.heading.setext",
+        "punctuation.definition.entity.css"
       ],
       "settings": {
         "foreground": "#d19a66"
@@ -147,7 +148,8 @@
     {
       "name": "Sunglo",
       "scope": [
-        "keyword"
+        "keyword",
+        "punctuation.definition.keyword"
       ],
       "settings": {
         "foreground": "#e06c75"
