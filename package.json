@@ -1,0 +1,31 @@
+{
+  "name": "plastic",
+  "displayName": "Plastic",
+  "description": "A simple theme.",
+  "version": "1.0.0",
+  "publisher": "will-stone",
+  "engines": {
+    "vscode": "^1.12.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Plastic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/plastic-theme.json"
+      }
+    ]
+  },
+  "homepage": "https://github.com/will-stone/plastic",
+  "bugs": {
+    "url": "https://github.com/will-stone/plastic/issues"
+  },
+  "icon": "icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/will-stone/plastic"
+  }
+}
