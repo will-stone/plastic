@@ -1,9 +1,15 @@
 # Plastic - _A simple theme_
 
 <div style="text-align:center">
-<img src="/icon.svg?raw=true" style="width:50px; height:50px;" alt="Plastic Logo" />
+
+<div style="width: 50px; margin: 0 auto;">
+
+![Plastic Logo](icon.svg)
+
+</div>
 
 A syntax and UI theme for Visual Studio Code.
+
 </div>
 
 ---
