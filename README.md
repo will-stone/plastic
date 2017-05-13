@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="images/logo.png" style="width: 50px; height: 50px;" alt="Logo">
+<img src="images/logo.png" width="50" height="50" alt="Logo">
 
 A syntax and UI theme for Visual Studio Code.
 
