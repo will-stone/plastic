@@ -1,10 +1,10 @@
-# Plastic - _A simple theme_
-
 <div align="center">
 
 <img src="images/logo.png" width="50" height="50" alt="Logo">
 
-A syntax and UI theme for Visual Studio Code.
+<h1>Plastic</h1>
+
+<h2>A simple syntax and UI theme for Visual Studio Code.</h2>
 
 </div>
 
