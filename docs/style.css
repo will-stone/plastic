@@ -5,6 +5,11 @@ body {
   font-family: 'Nunito', cursive;
 }
 
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .logo {
   display: block;
   width: 200px;
