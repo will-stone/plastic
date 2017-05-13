@@ -4,7 +4,7 @@
 
 <div style="width: 50px; margin: 0 auto;">
 
-![Plastic Logo](icon.svg?raw=true)
+![Plastic Logo](images/icon.svg?raw=true)
 
 </div>
 
