@@ -4,7 +4,7 @@
 
 <div style="width: 50px; margin: 0 auto;">
 
-![Plastic Logo](images/icon.svg?raw=true)
+![Plastic Logo](https://cdn.rawgit.com/will-stone/plastic/5f656af6/images/logo.svg)
 
 </div>
 
