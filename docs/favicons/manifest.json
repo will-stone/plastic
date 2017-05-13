@@ -1,0 +1,13 @@
+{
+    "name": "Plastic",
+    "icons": [
+        {
+            "src": "favicons/android-chrome-96x96.png?v=xQoyKm6lrN",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
