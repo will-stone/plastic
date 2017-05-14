@@ -29,7 +29,8 @@
     "url": "https://github.com/will-stone/plastic"
   },
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "prettier": "^1.3.1"
   },
   "scripts": {
     "docs": "lite-server"
