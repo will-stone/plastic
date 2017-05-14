@@ -24,6 +24,12 @@ let obj = {
 
 let templateLiteral = `this is a var ${variable}`
 
+if (localVar) {
+  console.log('log')
+} else {
+  console.log('log')
+}
+
 function name(param) {
   let output = param + 'string'
   return output

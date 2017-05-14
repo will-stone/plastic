@@ -2,12 +2,17 @@
     "name": "Plastic",
     "icons": [
         {
-            "src": "favicons/android-chrome-96x96.png?v=xQoyKm6lrN",
-            "sizes": "96x96",
+            "src": "favicons/android-chrome-192x192.png?v=dLBWM2zNAG",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "favicons/android-chrome-256x256.png?v=dLBWM2zNAG",
+            "sizes": "256x256",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#21252b",
+    "background_color": "#21252b",
     "display": "standalone"
 }
