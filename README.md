@@ -9,7 +9,7 @@ _A simple syntax and UI theme for Visual Studio Code._
 ## Notable features
 
 * Dark UI elements for all-day coding.
-* Small colour palette; avoid visual overload.
+* Small colour palette to avoid visual overload.
 * Deprioritised punctuation; concentrate on the content.
 
 <img src="docs/screenshot-min.png" width="500" alt="Screenshot">
