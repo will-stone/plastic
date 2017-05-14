@@ -1,6 +1,7 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
+  color: #abb2bf;
   background-color: #21252b;
   font-family: 'Nunito', cursive;
 }
@@ -27,7 +28,6 @@ h1 {
 .tagline {
   margin-bottom: 20px;
   text-align: center;
-  color: #abb2bf;
 }
 
 .screenshot {
