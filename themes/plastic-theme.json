@@ -101,7 +101,16 @@
       "name": "Raven",
       "scope": [
         "meta.brace",
-        "punctuation"
+        "punctuation.definition.array",
+        "punctuation.definition.binding-pattern",
+        "punctuation.definition.block",
+        "punctuation.definition.dictionary",
+        "punctuation.definition.string",
+        "punctuation.definition.tag",
+        "punctuation.section",
+        "punctuation.separator",
+        "punctuation.support",
+        "punctuation.terminator"
       ],
       "settings": {
         "foreground": "#737c8c"
@@ -127,8 +136,7 @@
         "entity.name.type",
         "entity.other.attribute-name",
         "entity.other.inherited-class",
-        "markup.heading.setext",
-        "punctuation.definition.entity.css"
+        "markup.heading.setext"
       ],
       "settings": {
         "foreground": "#d19a66"
