@@ -1,5 +1,7 @@
 # Plastic
 
+[wstone.io/plastic](http://wstone.io/plastic/)
+
 <img src="https://raw.githubusercontent.com/will-stone/plastic/master/images/icon.png" width="100" height="100" alt="Logo">
 
 _A simple syntax and UI theme for Visual Studio Code._
