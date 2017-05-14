@@ -3,6 +3,9 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.7] - 2017-05-14
+- Add homepage link to readme
+
 ## [1.0.6] - 2017-05-14
 - fix: readme image links
 
