@@ -12,7 +12,11 @@ _A simple syntax and UI theme for Visual Studio Code._
 * Small colour palette; avoid visual overload.
 * Deprioritised punctuation; concentrate on the content.
 
+<img src="docs/screenshot-min.png" width="500" alt="Screenshot">
+
 ## Syntax Colours
+
+Inspired by Atom's One Dark theme, yet simpler and darker.
 
 * Cadet Blue **#abb2bf** - _text_
 * Iron **#D2D6db** - _variables_
