@@ -19,3 +19,5 @@ _A simple syntax and UI theme for Visual Studio Code._
 ## Contribute
 
 Clone the repository, run `yarn` to install dependencies, and `yarn docs` to serve the documentation page.
+
+Use Microsoft's [theme color reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference) for UI theming.
