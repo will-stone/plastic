@@ -136,7 +136,8 @@
         "entity.name.type",
         "entity.other.attribute-name",
         "entity.other.inherited-class",
-        "markup.heading.setext"
+        "markup.heading.setext",
+        "support.function"
       ],
       "settings": {
         "foreground": "#d19a66"
