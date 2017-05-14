@@ -2,7 +2,7 @@
   "name": "plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.12.0"
@@ -34,5 +34,10 @@
   },
   "scripts": {
     "docs": "lite-server"
+  },
+  "__metadata": {
+    "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
+    "publisherId": "744e71fe-bf60-4aba-94b1-d6e77d16fa27",
+    "publisherDisplayName": "Will Stone"
   }
 }

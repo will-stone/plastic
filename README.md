@@ -1,6 +1,6 @@
 # Plastic
 
-<img src="images/icon.png" width="100" height="100" alt="Logo">
+<img src="https://raw.githubusercontent.com/will-stone/plastic/master/images/icon.png" width="100" height="100" alt="Logo">
 
 _A simple syntax and UI theme for Visual Studio Code._
 
@@ -12,7 +12,7 @@ _A simple syntax and UI theme for Visual Studio Code._
 * Small colour palette to avoid visual overload.
 * Deprioritised punctuation; concentrate on the content.
 
-<img src="docs/screenshot-min.png" width="500" alt="Screenshot">
+<img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot-min.png" width="500" alt="Screenshot">
 
 ## Syntax Colours
 
