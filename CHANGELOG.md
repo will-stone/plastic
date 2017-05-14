@@ -3,6 +3,9 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.5] - 2017-05-14
+- remove duplicate function scope
+
 ## [1.0.4] - 2017-05-14
 - standardise input and dropdown
 

@@ -69,7 +69,6 @@
       "scope": [
         "markup.inline.raw",
         "storage.type",
-        "support.function",
         "support.constant",
         "support.type",
         "support.class"
