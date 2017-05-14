@@ -3,7 +3,12 @@ body {
   padding-bottom: 40px;
   color: #abb2bf;
   background-color: #21252b;
-  font-family: 'Nunito', cursive;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #61afef;
 }
 
 .wrapper {
@@ -34,4 +39,8 @@ h1 {
   display: block;
   max-width: 100%;
   margin: 0 auto 20px;
+}
+
+.fileIcons {
+  text-align: center;
 }
