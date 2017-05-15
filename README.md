@@ -33,6 +33,8 @@ Inspired by Atom's One Dark theme, yet simpler and darker.
 
 ## Contribute
 
+Themes can always be improved and tweaked so please feel free to log issues and send pull requests. However, please keep in mind that this theme strives to remain simple and language agnostic; for example, please do not ask for `blah.blah.php` or `blah.blah.c` scopes to be added. Also, and this is purely personal, I'm a JavaScript developer and therefore anything that alters the colours for the JavaScript language will receive much more scrutiny before being merged in.
+
 Clone the repository, run `yarn` to install dependencies, and `yarn docs` to serve the documentation page.
 
 Use Microsoft's [theme color reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference) for UI theming.
