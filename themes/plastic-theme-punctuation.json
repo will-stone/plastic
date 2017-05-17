@@ -1,0 +1,25 @@
+{
+  "name": "Plastic de-prioritised punctuation",
+  "include": "./plastic-theme.json",
+  "tokenColors": [
+    {
+      "name": "Raven",
+      "scope": [
+        "meta.brace",
+        "punctuation.definition.array",
+        "punctuation.definition.binding-pattern",
+        "punctuation.definition.block",
+        "punctuation.definition.dictionary",
+        "punctuation.definition.string",
+        "punctuation.definition.tag",
+        "punctuation.section",
+        "punctuation.separator",
+        "punctuation.support",
+        "punctuation.terminator"
+      ],
+      "settings": {
+        "foreground": "#737c8c"
+      }
+    }
+  ]
+}

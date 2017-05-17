@@ -12,7 +12,7 @@ _A simple syntax and UI theme for Visual Studio Code._
 
 * Dark UI elements for all-day coding.
 * Small colour palette to avoid visual overload.
-* Deprioritised punctuation; concentrate on the content.
+* Additional deprioritised-punctuation theme; concentrate on the content.
 
 <img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot-min.png" width="500" alt="Screenshot">
 
