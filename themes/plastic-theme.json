@@ -157,7 +157,9 @@
     {
       "name": "Sunglo",
       "scope": [
+        "entity.name.section",
         "keyword",
+        "punctuation.definition.heading",
         "punctuation.definition.keyword"
       ],
       "settings": {

@@ -3,6 +3,9 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.1] - 2017-05-18
+- punctuation header (for markdown files) changed from default colour to Sunglo
+
 ## [1.1.0] - 2017-05-17
 - Punctuation returned to normal colour (Cadet Blue) and additional deprioritised-punctuation theme added
 
