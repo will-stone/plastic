@@ -38,3 +38,7 @@ Themes can always be improved and tweaked so please feel free to log issues and 
 Clone the repository, run `yarn` to install dependencies, and `yarn docs` to serve the documentation page.
 
 Use Microsoft's [theme color reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference) for UI theming.
+
+# License
+
+MIT
