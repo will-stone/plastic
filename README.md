@@ -27,7 +27,7 @@ Inspired by Atom's One Dark theme, yet simpler and darker.
 * ![#e5c07b](https://placehold.it/15/e5c07b/000000?text=+) Harvest Gold **#e5c07b** - _tags_
 * ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** - _keywords_
 
-<small>Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name That Colour](http://chir.ag/projects/name-that-color/) website.</small>
+Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name That Colour](http://chir.ag/projects/name-that-color/) website.
 
 ## Contribute
 
