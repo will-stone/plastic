@@ -38,7 +38,8 @@
     "prettier": "^1.3.1"
   },
   "scripts": {
-    "docs": "lite-server"
+    "docs": "lite-server",
+    "vspublish": "vsce publish"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
