@@ -27,6 +27,8 @@ Inspired by Atom's One Dark theme, yet simpler and darker.
 * ![#e5c07b](https://placehold.it/15/e5c07b/000000?text=+) Harvest Gold **#e5c07b** - _tags_
 * ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** - _keywords_
 
+<small>Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name That Colour](http://chir.ag/projects/name-that-color/) website.</small>
+
 ## Contribute
 
 Themes can always be improved and tweaked so please feel free to log issues and send pull requests. However, please keep in mind that this theme strives to remain simple and language agnostic; for example, please do not ask for `blah.blah.php` or `blah.blah.c` scopes to be added. Also, and this is purely personal, I'm a JavaScript developer and therefore anything that alters the colours for the JavaScript language will receive much more scrutiny before being merged in.
