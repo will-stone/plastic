@@ -3,6 +3,9 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.2] - 2017-05-19
+- docs updated with colours and more contribution details. screenshot updated to match 1.1.x
+
 ## [1.1.1] - 2017-05-18
 - punctuation header (for markdown files) changed from default colour to Sunglo
 
