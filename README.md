@@ -12,9 +12,15 @@ _[A simple syntax and UI theme for Visual Studio Code.](http://wstone.io/plastic
 
 <img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot-min.png" width="500" alt="Screenshot">
 
-## Syntax Colours
+
+## Colours
 
 Inspired by Atom's One Dark theme, yet simpler and darker.
+
+Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name That Colour](http://chir.ag/projects/name-that-color/) website.
+
+
+### Syntax
 
 * ![#abb2bf](https://placehold.it/15/abb2bf/000000?text=+) Cadet Blue **#abb2bf** - _text_
 * ![#D2D6db](https://placehold.it/15/D2D6db/000000?text=+) Iron **#D2D6db** - _variables_
@@ -27,7 +33,11 @@ Inspired by Atom's One Dark theme, yet simpler and darker.
 * ![#e5c07b](https://placehold.it/15/e5c07b/000000?text=+) Harvest Gold **#e5c07b** - _tags_
 * ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** - _keywords_
 
-Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name That Colour](http://chir.ag/projects/name-that-color/) website.
+### UI
+
+* ![#21252b](https://placehold.it/15/21252b/000000?text=+) Shark **#21252b** - _Fore-background (activity bar, status bar, editor)_
+* ![#181A1F](https://placehold.it/15/181A1F/000000?text=+) Woodsmoke **#181A1F** - _Back-background (side bar, input background)_
+
 
 ## Contribute
 
