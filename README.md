@@ -35,6 +35,7 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name 
 
 ### UI
 
+* ![#3E4451](https://placehold.it/15/3E4451/000000?text=+) Bright Gray **#3E4451** - _Line numbers, invisibles, ruler_
 * ![#21252b](https://placehold.it/15/21252b/000000?text=+) Shark **#21252b** - _Fore-background (activity bar, status bar, editor)_
 * ![#181A1F](https://placehold.it/15/181A1F/000000?text=+) Woodsmoke **#181A1F** - _Back-background (side bar, input background)_
 

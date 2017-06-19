@@ -3,6 +3,9 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.4] - 2017-06-19
+- Slightly darkened line numbers, ruler, and whitespace characters. Previous color (same as comments) was too bright and over powering when many indents/white-space characters were present.
+
 ## [1.1.3] - 2017-06-19
 - Line numbers, ruler, and whitespace characters are now the same colour as comments.
 
