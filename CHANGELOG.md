@@ -3,6 +3,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.0] - 2017-07-15
+- Suggestion and hover widgets now stand out more with a blue border and darker background.
+- Various other minor tweaks to improve contrast.
+- Fixed: SVG icon no longer allowed; changed to PNG.
+
 ## [1.1.4] - 2017-06-19
 - Slightly darkened line numbers, ruler, and whitespace characters. Previous color (same as comments) was too bright and over powering when many indents/white-space characters were present.
 
