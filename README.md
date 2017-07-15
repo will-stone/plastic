@@ -35,9 +35,13 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic [Name 
 
 ### UI
 
+* ![#1B659D](https://placehold.it/15/1B659D/000000?text=+) Matisse **#1B659D** - _Info_
+* ![#A86515](https://placehold.it/15/A86515/000000?text=+) Reno Sand **#A86515** - _Warnings_
+* ![#C62D42](https://placehold.it/15/C62D42/000000?text=+) Brick Red **#C62D42** - _Errors_
 * ![#3E4451](https://placehold.it/15/3E4451/000000?text=+) Bright Gray **#3E4451** - _Line numbers, invisibles, ruler_
 * ![#21252b](https://placehold.it/15/21252b/000000?text=+) Shark **#21252b** - _Fore-background (activity bar, status bar, editor)_
-* ![#181A1F](https://placehold.it/15/181A1F/000000?text=+) Woodsmoke **#181A1F** - _Back-background (side bar, input background)_
+* ![#181A1F](https://placehold.it/15/181A1F/000000?text=+) Woodsmoke **#181A1F** - _Back-background (side bar)_
+* ![#080A0F](https://placehold.it/15/080A0F/000000?text=+) Bunker **#080A0F** - _Back-back-background (input background, contrast borders)_
 
 
 ## Contribute

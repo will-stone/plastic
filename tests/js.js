@@ -58,11 +58,7 @@ class ComponentName extends Component {
 }
 
 const ComponentName2 = () => {
-  return (
-    <ComponentName>
-      text text text
-    </ComponentName>
-  )
+  return <ComponentName>text text text</ComponentName>
 }
 
 export default ComponentName2

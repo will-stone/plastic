@@ -9,34 +9,49 @@
     "button.background": "#e06c75",
     "contrastBorder": "#080A0F",
     "dropdown.background": "#181A1F",
-    "dropdown.border": "#181A1F",
+    "dropdown.border": "#080A0F",
     "editor.background": "#21252b",
     "editor.foreground": "#abb2bf",
     "editor.lineHighlightBackground": "#2c313a",
     "editor.selectionBackground": "#3E4451",
     "editor.findMatchBackground": "#42557B",
     "editor.findMatchHighlightBackground": "#314365",
-    "editorCursor.foreground": "#61afef",
+    "editorBracketMatch.border": "#61afef",
+    "editorCursor.foreground": "#abb2bf",
+    "editorError.foreground": "#C62D42",
+    "editorWarning.foreground": "#98c379",
     "editorGroup.background": "#181A1F",
-    "editorGroup.border": "#181A1F",
+    "editorGroup.border": "#080A0F",
     "editorGroupHeader.tabsBackground": "#181A1F",
-    "editorHoverWidget.background": "#282C34",
-    "editorHoverWidget.border": "#181A1F",
+    "editorHoverWidget.background": "#181A1F",
+    "editorHoverWidget.border": "#61afef",
     "editorIndentGuide.background": "#3E4451",
     "editorLineNumber.foreground": "#3E4451",
     "editorRuler.foreground": "#3E4451",
-    "editorSuggestWidget.background": "#21252B",
-    "editorSuggestWidget.border": "#181A1F",
+    "editorSuggestWidget.background": "#181A1F",
+    "editorSuggestWidget.border": "#61afef",
     "editorSuggestWidget.selectedBackground": "#2c313a",
     "editorWhitespace.foreground": "#3E4451",
     "editorWidget.background": "#21252B",
-    "input.background": "#181A1F",
+    "focusBorder": "#61afef",
+    "input.background": "#080A0F",
+    "inputOption.activeBorder": "#61afef",
+    "inputValidation.errorBackground": "#C62D42",
+    "inputValidation.errorBorder": "#C62D42",
+    "inputValidation.infoBackground": "#1B659D",
+    "inputValidation.infoBorder": "#1B659D",
+    "inputValidation.warningBackground": "#A86515",
+    "inputValidation.warningBorder": "#A86515",
     "list.activeSelectionBackground": "#21252b",
     "list.activeSelectionForeground": "#d7dae0",
     "list.inactiveSelectionBackground": "#21252b",
     "list.hoverBackground": "#292d35",
     "list.focusBackground": "#2c313a",
     "notification.background": "#21252b",
+    "notification.infoBackground": "#1B659D",
+    "notification.warningBackground": "#A86515",
+    "notification.errorBackground": "#C62D42",
+    "panel.border": "#080A0F",
     "sideBar.background": "#181A1F",
     "sideBarSectionHeader.background": "#21252b",
     "statusBar.background": "#21252B",
@@ -46,13 +61,14 @@
     "statusBar.debuggingBackground": "#21252B",
     "tab.activeBackground": "#21252b",
     "tab.activeForeground": "#9da5b4",
-    "tab.border": "#181A1F",
+    "tab.border": "#080A0F",
     "tab.inactiveBackground": "#181A1F",
     "tab.inactiveForeground": "#737c8c",
     "titleBar.activeBackground": "#21252b",
     "titleBar.activeForeground": "#9da5b4",
     "titleBar.inactiveBackground": "#21252b",
-    "titleBar.inactiveForeground": "#6B717D"
+    "titleBar.inactiveForeground": "#6B717D",
+    "widget.shadow": "#080A0F"
   },
   "tokenColors": [
     {
@@ -76,11 +92,7 @@
     },
     {
       "name": "Iron",
-      "scope": [
-        "support.type.property-name",
-        "support.variable",
-        "variable"
-      ],
+      "scope": ["support.type.property-name", "support.variable", "variable"],
       "settings": {
         "foreground": "#D2D6db"
       }
@@ -100,31 +112,21 @@
     },
     {
       "name": "Fountain Blue",
-      "scope": [
-        "constant",
-        "keyword.other.unit"
-      ],
+      "scope": ["constant", "keyword.other.unit"],
       "settings": {
         "foreground": "#56b6c2"
       }
     },
     {
       "name": "Shuttle Gray",
-      "scope": [
-        "comment"
-      ],
+      "scope": ["comment"],
       "settings": {
         "foreground": "#5c6370"
       }
     },
     {
       "name": "Olivine",
-      "scope": [
-        "string",
-        "markup.quote",
-        "markup.bold",
-        "markup.italic"
-      ],
+      "scope": ["string", "markup.quote", "markup.bold", "markup.italic"],
       "settings": {
         "foreground": "#98c379"
       }
@@ -146,11 +148,7 @@
     },
     {
       "name": "Harvest Gold",
-      "scope": [
-        "entity.name.tag",
-        "storage",
-        "variable.language"
-      ],
+      "scope": ["entity.name.tag", "storage", "variable.language"],
       "settings": {
         "foreground": "#e5c07b"
       }
@@ -169,10 +167,7 @@
     },
     {
       "name": "Bold",
-      "scope": [
-        "markup.bold.markdown",
-        "punctuation.definition.bold.markdown"
-      ],
+      "scope": ["markup.bold.markdown", "punctuation.definition.bold.markdown"],
       "settings": {
         "fontStyle": "bold"
       }
