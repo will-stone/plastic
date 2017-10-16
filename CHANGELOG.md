@@ -3,6 +3,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 2017-10-16
+- Yellow warning squiggles.
+- Darker terminal background, to match sidebar.
+- Themed scrollbar.
+
 ## [1.2.0] - 2017-07-15
 - Suggestion and hover widgets now stand out more with a blue border and darker background.
 - Various other minor tweaks to improve contrast.
