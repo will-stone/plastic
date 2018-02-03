@@ -117,6 +117,12 @@
     {
       "name": "Cornflower Blue",
       "scope": [
+        "keyword.var",
+        "keyword.const",
+        "keyword.type",
+        "keyword.struct",
+        "keyword.interface",
+        "keyword.function",
         "markup.inline.raw",
         "storage.type",
         "support.constant",
