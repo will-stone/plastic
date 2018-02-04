@@ -1,0 +1,80 @@
+#!/usr/bin/python
+
+# Copyright (c) 2001-present, Pete Kazmier
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+
+# Quick script to benchmark the speed of various versions of the same regular
+# expression to identify poorly written expressions.
+
+import re
+import sys
+import time
+
+class RegExpResult(object):
+    """RegExpResult holds the results for a regular expression."""
+    def __init__(self):
+        self.cumulative_time = 0
+        self.successful_matches = {}
+
+if len(sys.argv) < 2:
+    print 'Usage:', sys.argv[0], 'regexp1 [regexp2 regexp3 ...]'
+    sys.exit(1)
+
+# Compile all the regular expressions
+patterns = [re.compile(x) for x in sys.argv[1:]]
+
+# Create the result map for each pattern
+results = {}
+for pattern in patterns:
+    results[pattern] = RegExpResult()
+
+# Test each regular expression against every line of input
+line_count = 0
+for line in sys.stdin:
+    line_count += 1
+
+    for pattern in patterns:
+        before = time.time()
+        match = pattern.search(line)
+        after = time.time()
+
+        result = results[pattern]
+        result.cumulative_time += after - before
+        if match:
+            result.successful_matches[line_count] = match.groups()
+
+print 'Pattern   calls   cumulative   avgpercall  matches [line numbers]'  
+pattern_count = 0
+for pattern in patterns:
+    pattern_count += 1
+    result = results[pattern]
+
+    print '%7d %7d   %10.6f   %10.6f  %7d' % ( \
+        pattern_count,
+        line_count,
+        result.cumulative_time,
+        result.cumulative_time / line_count,
+        len(result.successful_matches)
+        ),
+        
+    line_number_keys = result.successful_matches.keys()
+    line_number_keys.sort()
+    print line_number_keys
