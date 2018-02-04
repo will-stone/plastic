@@ -117,6 +117,12 @@
     {
       "name": "Cornflower Blue",
       "scope": [
+        "keyword.var",
+        "keyword.const",
+        "keyword.type",
+        "keyword.struct",
+        "keyword.interface",
+        "keyword.function",
         "markup.inline.raw",
         "storage.type",
         "support.constant",
@@ -157,6 +163,7 @@
         "entity.other.attribute-name",
         "entity.other.inherited-class",
         "markup.heading.setext",
+        "meta.function-call.generic",
         "support.function"
       ],
       "settings": {
@@ -165,7 +172,12 @@
     },
     {
       "name": "Harvest Gold",
-      "scope": ["entity.name.tag", "storage", "variable.language"],
+      "scope": [
+        "entity.name.tag",
+        "storage",
+        "support.function.builtin",
+        "variable.language"
+      ],
       "settings": {
         "foreground": "#e5c07b"
       }
