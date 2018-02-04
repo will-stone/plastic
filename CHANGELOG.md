@@ -3,9 +3,12 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.5.0] - 2018-02-04
+- Enhanced Go and Python support (thanks to @pkazmier).
+
 ## [1.4.0] - 2018-01-27
-- Themed peek view.
-- More punctuation themed in the deprioritised theme.
+- Themed peek view (thanks to @pkazmier).
+- More punctuation themed in the deprioritised theme (thanks to @pkazmier).
 
 ## [1.3.0] - 2017-10-16
 - Yellow warning squiggles.
