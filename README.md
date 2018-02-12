@@ -10,7 +10,7 @@ _[A simple syntax and UI theme for Visual Studio Code.](http://wstone.io/plastic
 * Small colour palette to avoid visual overload.
 * Additional deprioritised-punctuation theme; concentrate on the content.
 
-<img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot-min.png" width="500" alt="Screenshot">
+<a href="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot-min.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot-min.png" width="500" alt="Screenshot"></a>
 
 
 ## Colours
