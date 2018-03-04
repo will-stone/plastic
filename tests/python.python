@@ -28,6 +28,19 @@ import re
 import sys
 import time
 
+# The following regex is here to test syntax highlighting
+unused = re.compile(            # type: ignore
+    r"""\A
+        word
+        (?:                     # a comment
+           (?P<fill>.)?
+           (?P<align>[<>=^])    (?# another comment)
+        )?
+        another word\.\.\.
+        (?:\.(?P<precision>0|(?!0)\d+))?
+    \Z""",
+    re.VERBOSE | re.DOTALL)
+
 class RegExpResult(object):
     """RegExpResult holds the results for a regular expression."""
     def __init__(self):
