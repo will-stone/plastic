@@ -124,6 +124,10 @@
         "keyword.interface",
         "keyword.function",
         "markup.inline.raw",
+        "punctuation.parenthesis.named.begin.regexp",
+        "punctuation.parenthesis.named.end.regexp",
+        "punctuation.parenthesis.non-capturing.begin.regexp",
+        "punctuation.parenthesis.non-capturing.end.regexp",
         "storage.type",
         "support.constant",
         "support.type",
@@ -155,6 +159,15 @@
       }
     },
     {
+      "name": "Raven",
+      "scope": [
+        "string.quoted.docstring"
+      ],
+      "settings": {
+        "foreground": "#737c8c"
+      }
+    },
+    {
       "name": "Whiskey",
       "scope": [
         "entity.name.class",
@@ -164,7 +177,8 @@
         "entity.other.inherited-class",
         "markup.heading.setext",
         "meta.function-call.generic",
-        "support.function"
+        "support.function",
+        "support.other.escape.special.regexp"
       ],
       "settings": {
         "foreground": "#d19a66"
