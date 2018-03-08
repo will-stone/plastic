@@ -8,6 +8,7 @@
     "activityBarBadge.background": "#e06c75",
     "button.background": "#e06c75",
     "contrastBorder": "#080A0F",
+    "debugToolBar.background": "#181A1F",
     "dropdown.background": "#181A1F",
     "dropdown.border": "#080A0F",
     "editor.background": "#21252b",
