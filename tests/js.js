@@ -49,6 +49,7 @@ class ComponentName extends Component {
     }
   }
   render() {
+    const { one } = this.state
     return (
       <div>
         {this.props.children}
