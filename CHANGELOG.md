@@ -3,6 +3,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.8.0] - 2018-03-09
+- Styled word highlight background
+- Styled word highlight strong background
+- Styled word highlight strong border
+
 ## [1.7.0] - 2018-03-08
 - Styled debug toolbar background.
 - Styled Notification Centre and notifications background.
