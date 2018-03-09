@@ -2063,9 +2063,9 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
-vsce@^1.36.1:
-  version "1.36.1"
-  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.36.1.tgz#f74a0db46abc4fb17cd9940457211d8f09ee58ed"
+vsce@^1.37.5:
+  version "1.37.5"
+  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.37.5.tgz#0b153bc8aede2cbf35971f10f795e2f88ca1f8fe"
   dependencies:
     cheerio "^1.0.0-rc.1"
     commander "^2.8.1"
@@ -2081,11 +2081,11 @@ vsce@^1.36.1:
     semver "^5.1.0"
     tmp "0.0.29"
     url-join "^1.1.0"
-    vso-node-api "^6.1.2-preview"
+    vso-node-api "6.1.2-preview"
     yauzl "^2.3.1"
     yazl "^2.2.2"
 
-vso-node-api@^6.1.2-preview:
+vso-node-api@6.1.2-preview:
   version "6.1.2-preview"
   resolved "https://registry.yarnpkg.com/vso-node-api/-/vso-node-api-6.1.2-preview.tgz#aab3546df2451ecd894e071bb99b5df19c5fa78f"
   dependencies:
