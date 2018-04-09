@@ -1,0 +1,47 @@
+{
+  "name": "Plastic Italic",
+  "include": "./plastic-theme-punctuation.json",
+  "tokenColors": [
+    {
+      "name": "italicsify for operator mono",
+      "scope": [
+        "meta.structure.dictionary",
+        "support.type.primitive",
+        "entity.other.attribute-name",
+        "entity.name.tag.doctype",
+        "meta.tag.sgml.doctype",
+        "entity.name.tag.custom",
+        "support.function.basic_functions",
+        "support.function.basic_functions",
+        "keyword.operator.expression.typeof",
+        "keyword.operator.type.annotation",
+        "support.constant.math",
+        "meta.object-literal.key",
+        "storage.type",
+        "parameter",
+        "string",
+        "italic",
+        "quote",
+        "keyword",
+        "storage",
+        "language",
+        "constant.language",
+        "variable.language",
+        "type .function",
+        "type.function",
+        "storage.type.class",
+        "type.var",
+        "meta.parameter",
+        "variable.parameter",
+        "meta.parameters",
+        "keyword.control",
+        "modifier",
+        "this",
+        "comment"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}
