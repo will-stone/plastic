@@ -144,6 +144,7 @@
         "keyword.struct",
         "keyword.interface",
         "keyword.function",
+        "keyword.other.definition",
         "markup.inline.raw",
         "punctuation.parenthesis.named.begin.regexp",
         "punctuation.parenthesis.named.end.regexp",
