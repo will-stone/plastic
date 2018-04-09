@@ -3,19 +3,22 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.10.0] - 2018-04-09
+- Improve INI (properties) syntax highlighting (thanks to @pkazmier).
+
 ## [1.9.2] - 2018-03-10
-- Brighter terminal bright-colours
+- Brighter terminal bright-colours.
 
 ## [1.9.1] - 2018-03-10
-- Style default terminal foreground text
+- Style default terminal foreground text.
 
 ## [1.9.0] - 2018-03-09
 - Styled terminal
 
 ## [1.8.0] - 2018-03-09
-- Styled word highlight background
-- Styled word highlight strong background
-- Styled word highlight strong border
+- Styled word highlight background.
+- Styled word highlight strong background.
+- Styled word highlight strong border.
 
 ## [1.7.0] - 2018-03-08
 - Styled debug toolbar background.
@@ -53,41 +56,41 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - docs updated with colours and more contribution details. screenshot updated to match 1.1.x
 
 ## [1.1.1] - 2017-05-18
-- punctuation header (for markdown files) changed from default colour to Sunglo
+- punctuation header (for markdown files) changed from default colour to Sunglo.
 
 ## [1.1.0] - 2017-05-17
-- Punctuation returned to normal colour (Cadet Blue) and additional deprioritised-punctuation theme added
+- Punctuation returned to normal colour (Cadet Blue) and additional deprioritised-punctuation theme added.
 
 ## [1.0.9] - 2017-05-16
-- darker contrast border
+- darker contrast border.
 
 ## [1.0.8] - 2017-05-16
-- added contrast border
+- added contrast border.
 
 ## [1.0.7] - 2017-05-14
-- Add homepage link to readme
+- Add homepage link to readme.
 
 ## [1.0.6] - 2017-05-14
-- fix: readme image links
+- fix: readme image links.
 
 ## [1.0.5] - 2017-05-14
-- remove duplicate function scope
+- remove duplicate function scope.
 
 ## [1.0.4] - 2017-05-14
-- standardise input and dropdown
+- standardise input and dropdown.
 
 ## [1.0.3] - 2017-05-14
-- fix for dom functions (blue to orange)
+- fix for dom functions (blue to orange).
 
 ## [1.0.2] - 2017-05-14
-- Remove need for CSS specific scope
+- Remove need for CSS specific scope.
 
 ## [1.0.1] - 2017-05-13
-- keyword.other.unit = Fountain Blue
-- button.background = Sunglo
-- punctuation.definition.keyword = Sunglo
-- punctuation.definition.entity.css = Whiskey
-- Remove diff editor custom highlight colour
+- keyword.other.unit = Fountain Blue.
+- button.background = Sunglo.
+- punctuation.definition.keyword = Sunglo.
+- punctuation.definition.entity.css = Whiskey.
+- Remove diff editor custom highlight colour.
 
 ## [1.0.0] - 2017-05-13
-- Initial release
+- Initial release.
