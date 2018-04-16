@@ -48,11 +48,22 @@ class ComponentName extends Component {
       one: two
     }
   }
+
+  classProperty = () => {
+    const test = 'test'
+    return test
+  }
+
+  method() {
+    return false
+  }
+
   render() {
     const { one } = this.state
     return (
       <div>
         {this.props.children}
+        <SomeComponent prop={this.method} />
       </div>
     )
   }
