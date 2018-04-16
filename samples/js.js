@@ -8,12 +8,13 @@
 
 var variable = 'string'
 var variable2 = variable
+var myRe = /d(b+)d/g
 
 let localVar = 'string'
 
 const constant = 'CONSTANT'
 
-let numOperator = 3 + 4
+let numOperator = (3 + 4) / 2
 
 let arr = ['one', 'two', numOperator]
 

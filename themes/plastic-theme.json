@@ -113,19 +113,12 @@
       "name": "Punctuation",
       "scope": [
         "meta.brace",
-        "punctuation.definition.array",
-        "punctuation.definition.binding-pattern",
-        "punctuation.definition.block",
-        "punctuation.definition.dictionary",
-        "punctuation.definition.string",
-        "punctuation.definition.tag",
-        "punctuation.section",
-        "punctuation.separator",
-        "punctuation.support",
-        "punctuation.terminator",
+        "punctuation",
         "string.quoted.docstring"
       ],
-      "settings": {}
+      "settings": {
+        "foreground": "#aaaeb4"
+      }
     },
     {
       "name": "Variable",
@@ -141,22 +134,7 @@
     {
       "name": "Blue",
       "scope": [
-        "keyword.var",
-        "keyword.const",
-        "keyword.type",
-        "keyword.struct",
-        "keyword.interface",
-        "keyword.function",
-        "keyword.other.definition",
-        "markup.inline.raw",
-        "punctuation.parenthesis.named.begin.regexp",
-        "punctuation.parenthesis.named.end.regexp",
-        "punctuation.parenthesis.non-capturing.begin.regexp",
-        "punctuation.parenthesis.non-capturing.end.regexp",
-        "storage.type",
-        "support.constant",
-        "support.type",
-        "support.class"
+        "storage"
       ],
       "settings": {
         "foreground": "#61afef"
@@ -175,7 +153,8 @@
     {
       "name": "Comment",
       "scope": [
-        "comment"
+        "comment",
+        "punctuation.definition.comment"
       ],
       "settings": {
         "foreground": "#5b5f65"
@@ -185,9 +164,7 @@
       "name": "Green",
       "scope": [
         "string",
-        "markup.quote",
-        "markup.bold",
-        "markup.italic"
+        "markup.inline.raw"
       ],
       "settings": {
         "foreground": "#98c379"
@@ -196,15 +173,9 @@
     {
       "name": "Orange",
       "scope": [
-        "entity.name.class",
-        "entity.name.function",
-        "entity.name.type",
-        "entity.other.attribute-name",
-        "entity.other.inherited-class",
-        "markup.heading.setext",
-        "meta.function-call.generic",
+        "entity",
         "support.function",
-        "support.other.escape.special.regexp"
+        "punctuation.definition.entity"
       ],
       "settings": {
         "foreground": "#d19a66"
@@ -213,9 +184,7 @@
     {
       "name": "Yellow",
       "scope": [
-        "entity.name.tag",
-        "storage",
-        "support.function.builtin"
+        "entity.name.tag"
       ],
       "settings": {
         "foreground": "#e5c07b"
@@ -246,7 +215,8 @@
       "name": "Bold",
       "scope": [
         "markup.bold",
-        "punctuation.definition.bold"
+        "punctuation.definition.bold",
+        "entity.other.attribute-name.id"
       ],
       "settings": {
         "fontStyle": "bold"

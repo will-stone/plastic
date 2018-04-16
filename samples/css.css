@@ -1,0 +1,14 @@
+.class {
+  padding: 20px;
+  background-color: blue;
+}
+
+#id {
+  display: flex;
+}
+
+@media (max-width: 200px) {
+  .class {
+    text-align: left;
+  }
+}

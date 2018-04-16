@@ -163,22 +163,9 @@ const template = {
   tokenColors: [
     {
       name: 'Punctuation',
-      scope: [
-        'meta.brace',
-        'punctuation.definition.array',
-        'punctuation.definition.binding-pattern',
-        'punctuation.definition.block',
-        'punctuation.definition.dictionary',
-        'punctuation.definition.string',
-        'punctuation.definition.tag',
-        'punctuation.section',
-        'punctuation.separator',
-        'punctuation.support',
-        'punctuation.terminator',
-        'string.quoted.docstring'
-      ],
+      scope: ['meta.brace', 'punctuation', 'string.quoted.docstring'],
       settings: {
-        foreground: uiScopes.blue
+        foreground: uiScopes.text
       }
     },
     {
@@ -190,24 +177,7 @@ const template = {
     },
     {
       name: 'Blue',
-      scope: [
-        'keyword.var',
-        'keyword.const',
-        'keyword.type',
-        'keyword.struct',
-        'keyword.interface',
-        'keyword.function',
-        'keyword.other.definition',
-        'markup.inline.raw',
-        'punctuation.parenthesis.named.begin.regexp',
-        'punctuation.parenthesis.named.end.regexp',
-        'punctuation.parenthesis.non-capturing.begin.regexp',
-        'punctuation.parenthesis.non-capturing.end.regexp',
-        'storage.type',
-        'support.constant',
-        'support.type',
-        'support.class'
-      ],
+      scope: ['storage'],
       settings: {
         foreground: colours.blue
       }
@@ -221,38 +191,28 @@ const template = {
     },
     {
       name: 'Comment',
-      scope: ['comment'],
+      scope: ['comment', 'punctuation.definition.comment'],
       settings: {
         foreground: uiScopes.comment
       }
     },
     {
       name: 'Green',
-      scope: ['string', 'markup.quote', 'markup.bold', 'markup.italic'],
+      scope: ['string', 'markup.inline.raw'],
       settings: {
         foreground: colours.green
       }
     },
     {
       name: 'Orange',
-      scope: [
-        'entity.name.class',
-        'entity.name.function',
-        'entity.name.type',
-        'entity.other.attribute-name',
-        'entity.other.inherited-class',
-        'markup.heading.setext',
-        'meta.function-call.generic',
-        'support.function',
-        'support.other.escape.special.regexp'
-      ],
+      scope: ['entity', 'support.function', 'punctuation.definition.entity'],
       settings: {
         foreground: colours.orange
       }
     },
     {
       name: 'Yellow',
-      scope: ['entity.name.tag', 'storage', 'support.function.builtin'],
+      scope: ['entity.name.tag'],
       settings: {
         foreground: colours.yellow
       }
@@ -278,7 +238,11 @@ const template = {
     },
     {
       name: 'Bold',
-      scope: ['markup.bold', 'punctuation.definition.bold'],
+      scope: [
+        'markup.bold',
+        'punctuation.definition.bold',
+        'entity.other.attribute-name.id'
+      ],
       settings: {
         fontStyle: 'bold'
       }
