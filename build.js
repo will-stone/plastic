@@ -170,7 +170,7 @@ const template = {
     },
     {
       name: 'Variable',
-      scope: ['support.type.property-name', 'support.variable', 'variable'],
+      scope: ['support.type', 'support.variable', 'variable'],
       settings: {
         foreground: uiScopes.variable
       }
@@ -184,28 +184,35 @@ const template = {
     },
     {
       name: 'Primitive',
-      scope: ['constant', 'keyword.other.unit'],
+      scope: ['constant', 'keyword.other'],
       settings: {
         foreground: colours.cyan
       }
     },
     {
       name: 'Comment',
-      scope: ['comment', 'punctuation.definition.comment'],
+      scope: [
+        'comment',
+        'punctuation.definition.comment' // start and end of comment blocks
+      ],
       settings: {
         foreground: uiScopes.comment
       }
     },
     {
       name: 'Green',
-      scope: ['string', 'markup.inline.raw'],
+      scope: ['string', 'markup.inline'],
       settings: {
         foreground: colours.green
       }
     },
     {
       name: 'Orange',
-      scope: ['entity', 'support.function', 'punctuation.definition.entity'],
+      scope: [
+        'entity',
+        'support.function',
+        'punctuation.definition.entity' // css . and # for classes and IDs
+      ],
       settings: {
         foreground: colours.orange
       }
@@ -220,10 +227,10 @@ const template = {
     {
       name: 'Red',
       scope: [
-        'entity.name.section',
+        'entity.name.section', // markdown headings' text
         'keyword',
-        'punctuation.definition.heading',
-        'punctuation.definition.keyword'
+        'punctuation.definition.heading', // markdown headings' hashes
+        'punctuation.definition.keyword' // css @ in @media queries
       ],
       settings: {
         foreground: colours.red
@@ -241,7 +248,7 @@ const template = {
       scope: [
         'markup.bold',
         'punctuation.definition.bold',
-        'entity.other.attribute-name.id'
+        'entity.other.attribute-name.id' // css ID
       ],
       settings: {
         fontStyle: 'bold'

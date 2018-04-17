@@ -15,6 +15,7 @@ let localVar = 'string'
 const constant = 'CONSTANT'
 
 let numOperator = (3 + 4) / 2
+const numPlus = numOperator++
 
 let arr = ['one', 'two', numOperator]
 
@@ -29,6 +30,7 @@ if (localVar) {
   console.log('log')
 } else {
   console.log('log')
+  console.log(window.location.hash)
 }
 
 function name(param) {
@@ -61,6 +63,11 @@ class ComponentName extends Component {
 
   render() {
     const { one } = this.state
+
+    const two = name(param, param, { key: value })
+
+    console.log(one.three)
+
     return (
       <div>
         {this.props.children}
