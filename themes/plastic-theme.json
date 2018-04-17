@@ -163,8 +163,7 @@
       "name": "Green",
       "scope": [
         "string",
-        "markup.inline.raw",
-        "string.quoted.docstring"
+        "markup.inline.raw"
       ],
       "settings": {
         "foreground": "#98c379"

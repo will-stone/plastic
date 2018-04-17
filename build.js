@@ -198,7 +198,7 @@ const template = {
     },
     {
       name: 'Green',
-      scope: ['string', 'markup.inline.raw', 'string.quoted.docstring'],
+      scope: ['string', 'markup.inline.raw'],
       settings: {
         foreground: colours.green
       }
