@@ -21,6 +21,11 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/plastic-theme-punctuation.json"
+      },
+      {
+        "label": "Plastic - A legacy edition (V1)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/plastic-theme-v1.json"
       }
     ]
   },

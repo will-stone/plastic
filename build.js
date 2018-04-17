@@ -1,7 +1,7 @@
 const fs = require('fs')
 var tinycolor = require('tinycolor2')
 
-const baseColour = '#070b11'
+const baseColour = '#21252b'
 
 const colours = {
   blue: '#61afef', // Cornflower Blue
@@ -26,29 +26,32 @@ const isDark = tinycolor(baseColour).isDark()
 
 const uiScopes = {
   variable: isDark
-    ? tinycolor(baseColour).brighten(80).toString()
-    : tinycolor(baseColour).brighten(-80).toString(),
+    ? tinycolor(baseColour).brighten(70).toString()
+    : tinycolor(baseColour).brighten(-70).toString(),
   text: isDark
-    ? tinycolor(baseColour).brighten(64).toString()
-    : tinycolor(baseColour).brighten(-64).toString(),
+    ? tinycolor(baseColour).brighten(55).toString()
+    : tinycolor(baseColour).brighten(-55).toString(),
   comment: isDark
-    ? tinycolor(baseColour).brighten(33).toString()
-    : tinycolor(baseColour).brighten(-33).toString(),
+    ? tinycolor(baseColour).brighten(24).toString()
+    : tinycolor(baseColour).brighten(-24).toString(),
   uiForeground: isDark ? '#ffffff' : '#000000',
   ui4: isDark
-    ? tinycolor(baseColour).brighten(20).toString()
-    : tinycolor(baseColour).brighten(-20).toString(),
-  ui3: isDark
-    ? tinycolor(baseColour).brighten(10).toString()
-    : tinycolor(baseColour).brighten(-10).toString(),
+    ? tinycolor(baseColour).brighten(12).toString()
+    : tinycolor(baseColour).brighten(-12).toString(),
+  ui3: baseColour,
   ui2: isDark
-    ? tinycolor(baseColour).brighten(6).toString()
-    : tinycolor(baseColour).brighten(-6).toString(),
-  ui1: baseColour,
+    ? tinycolor(baseColour).brighten(-5).toString()
+    : tinycolor(baseColour).brighten(5).toString(),
+  ui1: isDark
+    ? tinycolor(baseColour).brighten(-11).toString()
+    : tinycolor(baseColour).brighten(11).toString(),
   error: tinycolor(colours.red).brighten(-10).toString(),
   warning: tinycolor(colours.yellow).brighten(-6).toString(),
   info: tinycolor(colours.blue).brighten(-27).toString()
 }
+
+console.log(tinycolor(baseColour).brighten(25).toString())
+// #5c6370
 
 const template = {
   name: 'Plastic',
@@ -67,7 +70,7 @@ const template = {
     'editor.findMatchBackground': '#42557B',
     'editor.findMatchHighlightBackground': '#314365',
     'editor.foreground': uiScopes.text,
-    'editor.lineHighlightBackground': uiScopes.ui3,
+    'editor.lineHighlightBackground': uiScopes.ui4 + '77',
     'editor.selectionBackground': uiScopes.ui4,
     'editor.wordHighlightBackground': '#00000000',
     'editor.wordHighlightBorder': scopes.storage,
@@ -177,7 +180,7 @@ const template = {
     },
     {
       name: 'Blue',
-      scope: ['storage'],
+      scope: ['storage', 'support.class'],
       settings: {
         foreground: colours.blue
       }
@@ -219,7 +222,10 @@ const template = {
     },
     {
       name: 'Yellow',
-      scope: ['entity.name.tag'],
+      scope: [
+        'entity.name.tag',
+        'variable.language' // this
+      ],
       settings: {
         foreground: colours.yellow
       }
@@ -234,13 +240,6 @@ const template = {
       ],
       settings: {
         foreground: colours.red
-      }
-    },
-    {
-      name: 'Magenta',
-      scope: ['variable.language'],
-      settings: {
-        foreground: colours.magenta
       }
     },
     {
