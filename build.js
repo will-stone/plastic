@@ -163,7 +163,7 @@ const template = {
   tokenColors: [
     {
       name: 'Punctuation',
-      scope: ['meta.brace', 'punctuation', 'string.quoted.docstring'],
+      scope: ['meta.brace', 'punctuation'],
       settings: {
         foreground: uiScopes.text
       }
@@ -198,7 +198,7 @@ const template = {
     },
     {
       name: 'Green',
-      scope: ['string', 'markup.inline.raw'],
+      scope: ['string', 'markup.inline.raw', 'string.quoted.docstring'],
       settings: {
         foreground: colours.green
       }

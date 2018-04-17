@@ -113,8 +113,7 @@
       "name": "Punctuation",
       "scope": [
         "meta.brace",
-        "punctuation",
-        "string.quoted.docstring"
+        "punctuation"
       ],
       "settings": {
         "foreground": "#aaaeb4"
@@ -164,7 +163,8 @@
       "name": "Green",
       "scope": [
         "string",
-        "markup.inline.raw"
+        "markup.inline.raw",
+        "string.quoted.docstring"
       ],
       "settings": {
         "foreground": "#98c379"
