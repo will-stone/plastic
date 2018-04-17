@@ -50,8 +50,8 @@ const uiScopes = {
   info: tinycolor(colours.blue).brighten(-27).toString()
 }
 
-console.log(tinycolor(baseColour).brighten(25).toString())
-// #5c6370
+console.log(tinycolor(baseColour).brighten(12).toString())
+// #40444a77
 
 const template = {
   name: 'Plastic',
@@ -70,7 +70,7 @@ const template = {
     'editor.findMatchBackground': '#42557B',
     'editor.findMatchHighlightBackground': '#314365',
     'editor.foreground': uiScopes.text,
-    'editor.lineHighlightBackground': uiScopes.ui4 + '77',
+    'editor.lineHighlightBackground': uiScopes.ui4 + '55',
     'editor.selectionBackground': uiScopes.ui4,
     'editor.wordHighlightBackground': '#00000000',
     'editor.wordHighlightBorder': scopes.storage,
