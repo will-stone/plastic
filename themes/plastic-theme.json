@@ -3,7 +3,7 @@
   "colors": {
     "activityBar.background": "#21252b",
     "activityBar.dropBackground": "#181a1f",
-    "activityBar.foreground": "#ffffff",
+    "activityBar.foreground": "#abb2bf",
     "activityBarBadge.background": "#e06c75",
     "activityBarBadge.foreground": "#ffffff",
     "button.background": "#e06c75",
@@ -80,7 +80,7 @@
     "statusBar.foreground": "#9da5b4",
     "statusBar.noFolderBackground": "#181a1f",
     "statusBarItem.hoverBackground": "#181a1f",
-    "tab.activeBackground": "#181a1f",
+    "tab.activeBackground": "#21252b",
     "tab.activeForeground": "#abb2bf",
     "tab.border": "#080a0f",
     "tab.inactiveBackground": "#181a1f",
