@@ -6,79 +6,79 @@
 
 // Comment
 
-var variable = 'string'
-var variable2 = variable
-var myRe = /d(b+)d/g
+var variable = 'string';
+var variable2 = variable;
+var myRe = /d(b+)d/g;
 
-let localVar = 'string'
+let localVar = 'string';
 
-const constant = 'CONSTANT'
+const constant = 'CONSTANT';
 
-let numOperator = (3 + 4) / 2
-const numPlus = numOperator++
+let numOperator = (3 + 4) / 2;
+const numPlus = numOperator++;
 
-let arr = ['one', 'two', numOperator]
+let arr = ['one', 'two', numOperator];
 
 let obj = {
   first: 'string',
-  second: ['one', 'two', numOperator]
-}
+  second: ['one', 'two', numOperator],
+};
 
-let templateLiteral = `this is a var ${variable}`
+let templateLiteral = `this is a var ${variable}`;
 
 if (localVar) {
-  console.log('log')
+  console.log('log');
 } else {
-  console.log('log')
-  console.log(window.location.hash)
+  console.log('log');
+  console.log(window.location.hash);
 }
 
 function name(param) {
-  let output = param + 'string'
-  return output
+  let output = param + 'string';
+  return output;
 }
 
 const funcName = param => {
-  return false
-}
+  return false;
+};
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class ComponentName extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      one: two
-    }
+      one: two,
+    };
   }
 
   classProperty = () => {
-    const test = 'test'
-    return test
-  }
+    const test = 'test';
+    return test;
+  };
 
   method() {
-    return false
+    return false;
   }
 
   render() {
-    const { one } = this.state
+    const { one } = this.state;
 
-    const two = name(param, param, { key: value })
+    const two = name(param, param, { key: value });
 
-    console.log(one.three)
+    console.log(one.three);
 
     return (
       <div>
         {this.props.children}
         <SomeComponent prop={this.method} />
       </div>
-    )
+    );
   }
 }
 
 const ComponentName2 = () => {
-  return <ComponentName>text text text</ComponentName>
-}
+  return <ComponentName>text text text</ComponentName>;
+};
 
-export default ComponentName2
+export default ComponentName2;

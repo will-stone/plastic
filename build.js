@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 // var tinycolor = require('tinycolor2')
 
 const normal = {
@@ -9,85 +9,84 @@ const normal = {
   magenta: '#c678dd', // Lavender
   red: '#e06c75', // Sunglo
   white: '#abb2bf', // Cadet Blue
-  yellow: '#e5c07b', // Harvest Gold
-}
+  yellow: '#d19a66', // Whiskey
+};
 
 const bright = {
-  black: '#3e4451', // Bright Gray
+  black: '#5c6370', // Shuttle Gray
   blue: '#008cff', // Azure Radiance
   cyan: '#00e1ff', // Cyan / Aqua
   green: '#6aff00', // Bright Green
   magenta: '#c300ff', // Electric Violet
   red: '#ff0015', // Red
   white: '#d2d6db', // Iron
-  yellow: '#ffa600', // Web Orange
-}
+  yellow: '#e5c07b', // Harvest Gold
+};
 
 const other = {
-  whiskey: '#d19a66',
-  shuttleGray: '#5c6370',
+  brightGray: '#3e4451',
   woodsmoke: '#181a1f',
   bunker: '#080a0f',
-}
+};
 
 const scopes = {
   storage: normal.blue,
   primitive: normal.cyan,
   string: normal.green,
-  function: other.whiskey,
-  tag: normal.yellow,
+  function: normal.yellow,
+  tag: bright.yellow,
   keyword: normal.red,
   variable: bright.white,
   text: normal.white,
-  comment: other.shuttleGray,
-  punctuation: normal.white,
-}
+  comment: bright.black,
+  punctuation: bright.black,
+};
 
 const ui = {
-  activeFront: '#ffffff', // text / numbers on badges etc.
+  activeFront: bright.white, // text / numbers on badges etc.
   activeTrim: normal.blue, //
   front: normal.white,
-  muted: bright.black,
+  muted: other.brightGray,
   main: normal.black,
   panel: other.woodsmoke,
   trim: other.bunker,
   error: bright.red,
   warning: bright.yellow,
   info: bright.blue,
-}
+};
 
 const template = {
   name: 'Plastic',
   colors: {
     'activityBar.background': ui.main,
     'activityBar.dropBackground': ui.panel,
-    'activityBar.foreground': ui.activeFront,
+    'activityBar.foreground': '#ffffff',
     'activityBarBadge.background': ui.activeTrim,
-    'activityBarBadge.foreground': ui.activeFront,
+    'activityBarBadge.foreground': '#ffffff',
     'button.background': ui.activeTrim,
     contrastBorder: ui.trim,
     'debugToolBar.background': ui.panel,
     'dropdown.background': ui.panel,
     'dropdown.border': ui.trim,
     'editor.background': ui.main,
-    'editor.findMatchBackground': '#42557B',
-    'editor.findMatchHighlightBackground': '#314365',
+    'editor.findMatchBackground': ui.front + 'aa',
+    'editor.findMatchHighlightBackground': ui.front + '77',
     'editor.foreground': ui.front,
-    'editor.lineHighlightBackground': ui.muted + '55',
-    'editor.selectionBackground': ui.muted,
+    'editor.lineHighlightBackground': ui.muted + '77',
+    'editor.selectionBackground': ui.front + 'aa',
     'editor.wordHighlightBackground': '#00000000',
     'editor.wordHighlightBorder': ui.activeTrim,
     'editor.wordHighlightStrongBackground': '#00000000',
     'editor.wordHighlightStrongBorder': ui.activeFront,
     'editorActiveLineNumber.foreground': ui.front,
-    'editorBracketMatch.border': scopes.storage,
+    'editorBracketMatch.border': ui.activeTrim,
     'editorCursor.foreground': ui.front,
     'editorError.foreground': ui.error,
     'editorGroup.background': ui.panel,
     'editorGroup.border': ui.trim,
     'editorGroupHeader.tabsBackground': ui.panel,
     'editorHoverWidget.background': ui.panel,
-    'editorHoverWidget.border': scopes.storage,
+    'editorHoverWidget.border': ui.activeTrim,
     'editorIndentGuide.background': ui.muted,
     'editorInfo.foreground': ui.info,
     'editorLineNumber.foreground': ui.muted,
@@ -97,14 +96,14 @@ const template = {
     'editorOverviewRuler.warningForeground': ui.warning,
     'editorRuler.foreground': ui.muted,
     'editorSuggestWidget.background': ui.panel,
-    'editorSuggestWidget.border': scopes.storage,
+    'editorSuggestWidget.border': ui.activeTrim,
     'editorSuggestWidget.selectedBackground': ui.muted,
     'editorWarning.foreground': ui.warning,
     'editorWhitespace.foreground': ui.muted,
     'editorWidget.background': ui.panel,
-    focusBorder: scopes.storage,
+    focusBorder: ui.activeTrim,
     'input.background': ui.trim,
-    'inputOption.activeBorder': scopes.storage,
+    'inputOption.activeBorder': ui.activeTrim,
     'inputValidation.errorBackground': ui.error,
     'inputValidation.errorBorder': ui.error,
     'inputValidation.infoBackground': ui.info,
@@ -120,7 +119,7 @@ const template = {
     'notifications.background': ui.panel,
     'panel.background': ui.panel,
     'panel.border': ui.trim,
-    'peekView.border': scopes.storage,
+    'peekView.border': ui.activeTrim,
     'peekViewEditor.background': ui.panel,
     'peekViewEditor.matchHighlightBackground': ui.muted,
     'peekViewResult.background': ui.panel,
@@ -139,10 +138,11 @@ const template = {
     'statusBar.noFolderBackground': ui.panel,
     'statusBarItem.hoverBackground': ui.panel,
     'tab.activeBackground': ui.main,
-    'tab.activeForeground': ui.front,
+    'tab.activeForeground': ui.activeFront,
     'tab.border': ui.trim,
     'tab.inactiveBackground': ui.panel,
-    'tab.inactiveForeground': ui.muted,
+    'tab.inactiveForeground': ui.front,
+    'tab.hoverBackground': ui.muted,
     'terminal.ansiBlack': normal.black,
     'terminal.ansiBlue': normal.blue,
     'terminal.ansiBrightBlack': bright.black,
@@ -264,10 +264,8 @@ const template = {
       },
     },
   ],
-}
+};
 
-const json = JSON.stringify(template, null, 2)
+const json = JSON.stringify(template, null, 2);
 
-fs.writeFile('themes/plastic-theme.json', json, 'utf8', () =>
-  console.log('done')
-)
+fs.writeFile('themes/plastic-theme.json', json, 'utf8', () => console.log('done'));
