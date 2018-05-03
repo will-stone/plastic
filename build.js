@@ -18,13 +18,12 @@ const bright = {
   cyan: '#00e1ff', // Cyan / Aqua
   green: '#6aff00', // Bright Green
   magenta: '#c300ff', // Electric Violet
-  red: '#ff0015', // Red
+  red: '#c62d42', // Red
   white: '#d2d6db', // Iron
   yellow: '#e5c07b', // Harvest Gold
 };
 
 const other = {
-  brightGray: '#3e4451',
   woodsmoke: '#181a1f',
   bunker: '#080a0f',
 };
@@ -39,14 +38,15 @@ const scopes = {
   variable: bright.white,
   text: normal.white,
   comment: bright.black,
-  punctuation: bright.black,
+  punctuation: normal.white + 'aa',
+  terminator: bright.black
 };
 
 const ui = {
-  activeFront: bright.white, // text / numbers on badges etc.
+  activeText: bright.white, // text / numbers on badges etc.
   activeTrim: normal.blue, //
-  front: normal.white,
-  muted: other.brightGray,
+  text: normal.white,
+  muted: bright.black,
   main: normal.black,
   panel: other.woodsmoke,
   trim: other.bunker,
@@ -69,18 +69,18 @@ const template = {
     'dropdown.background': ui.panel,
     'dropdown.border': ui.trim,
     'editor.background': ui.main,
-    'editor.findMatchBackground': ui.front + 'aa',
-    'editor.findMatchHighlightBackground': ui.front + '77',
-    'editor.foreground': ui.front,
+    'editor.findMatchBackground': ui.text + 'aa',
+    'editor.findMatchHighlightBackground': ui.text + '77',
+    'editor.foreground': ui.text,
     'editor.lineHighlightBackground': ui.muted + '77',
-    'editor.selectionBackground': ui.front + 'aa',
+    'editor.selectionBackground': ui.text + 'aa',
     'editor.wordHighlightBackground': '#00000000',
     'editor.wordHighlightBorder': ui.activeTrim,
     'editor.wordHighlightStrongBackground': '#00000000',
-    'editor.wordHighlightStrongBorder': ui.activeFront,
-    'editorActiveLineNumber.foreground': ui.front,
+    'editor.wordHighlightStrongBorder': ui.activeText,
+    'editorActiveLineNumber.foreground': ui.text,
     'editorBracketMatch.border': ui.activeTrim,
-    'editorCursor.foreground': ui.front,
+    'editorCursor.foreground': ui.text,
     'editorError.foreground': ui.error,
     'editorGroup.background': ui.panel,
     'editorGroup.border': ui.trim,
@@ -111,9 +111,9 @@ const template = {
     'inputValidation.warningBackground': ui.warning,
     'inputValidation.warningBorder': ui.warning,
     'list.activeSelectionBackground': ui.main,
-    'list.activeSelectionForeground': ui.activeFront,
-    'list.focusBackground': '#2c313a',
-    'list.hoverBackground': '#292d35',
+    'list.activeSelectionForeground': ui.activeText,
+    'list.focusBackground': ui.main,
+    'list.hoverBackground': ui.main,
     'list.inactiveSelectionBackground': ui.main,
     'notificationCenterHeader.background': ui.panel,
     'notifications.background': ui.panel,
@@ -125,9 +125,9 @@ const template = {
     'peekViewResult.background': ui.panel,
     'peekViewResult.matchHighlightBackground': ui.muted,
     'peekViewResult.selectionBackground': ui.muted,
-    'peekViewResult.selectionForeground': ui.front,
+    'peekViewResult.selectionForeground': ui.text,
     'peekViewTitle.background': ui.panel,
-    'scrollbarSlider.activeBackground': ui.activeFront + '77',
+    'scrollbarSlider.activeBackground': ui.activeText + '77',
     'scrollbarSlider.background': ui.muted + '99',
     'scrollbarSlider.hoverBackground': ui.muted + 'aa',
     'sideBar.background': ui.panel,
@@ -138,10 +138,10 @@ const template = {
     'statusBar.noFolderBackground': ui.panel,
     'statusBarItem.hoverBackground': ui.panel,
     'tab.activeBackground': ui.main,
-    'tab.activeForeground': ui.activeFront,
+    'tab.activeForeground': ui.activeText,
     'tab.border': ui.trim,
     'tab.inactiveBackground': ui.panel,
-    'tab.inactiveForeground': ui.front,
+    'tab.inactiveForeground': ui.text,
     'tab.hoverBackground': ui.muted,
     'terminal.ansiBlack': normal.black,
     'terminal.ansiBlue': normal.blue,
@@ -159,11 +159,11 @@ const template = {
     'terminal.ansiRed': normal.red,
     'terminal.ansiWhite': normal.white,
     'terminal.ansiYellow': normal.yellow,
-    'terminal.foreground': ui.front,
+    'terminal.foreground': ui.text,
     'titleBar.activeBackground': ui.main,
-    'titleBar.activeForeground': ui.activeFront,
+    'titleBar.activeForeground': ui.activeText,
     'titleBar.inactiveBackground': ui.main,
-    'titleBar.inactiveForeground': ui.front,
+    'titleBar.inactiveForeground': ui.text,
     'widget.shadow': ui.trim,
   },
   tokenColors: [
@@ -172,6 +172,13 @@ const template = {
       scope: ['meta.brace', 'punctuation'],
       settings: {
         foreground: scopes.punctuation,
+      },
+    },
+    {
+      name: 'Punctuation',
+      scope: ['punctuation.terminator'],
+      settings: {
+        foreground: scopes.terminator,
       },
     },
     {
