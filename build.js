@@ -48,7 +48,7 @@ const ui = {
   text: normal.white,
   muted: bright.black,
   activeHighlight: normal.white + 'aa',
-  highlight: bright.black + '77',
+  highlight: bright.black + '55',
   main: normal.black,
   panel: other.woodsmoke,
   trim: other.bunker,
