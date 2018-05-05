@@ -24,7 +24,7 @@ let arr = ['one', 'two', numOperator];
 
 let obj = {
   first: 'string',
-  second: ['one', 'two', numOperator]
+  second: ['one', 'two', numOperator],
 };
 
 let templateLiteral = `this is a var ${variable}`;
@@ -48,13 +48,13 @@ const funcName = param => {
 class ComponentName extends Component {
   static propTypes = {
     param: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   constructor() {
     super();
     this.state = {
-      one: 'two'
+      one: 'two',
     };
   }
 
