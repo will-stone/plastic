@@ -1,5 +1,4 @@
 const fs = require('fs');
-// var tinycolor = require('tinycolor2')
 
 const normal = {
   black: '#21252b', // Shark
@@ -186,9 +185,25 @@ const uiScopes = {
   ],
 };
 
-const uiToColor = uiItem => {
-  uiItem.map();
-  return colors;
+const uiToColour = (uiItem, uiColour) => {
+  const colours = uiItem.reduce((acc, scopeName) => {
+    return {
+      ...acc,
+      [scopeName]: uiColour,
+    };
+  }, {});
+  return colours;
+};
+
+const uiScopesToColour = scopes => {
+  const colours = Object.keys(scopes).reduce((acc, uiColour) => {
+    const uiItem = scopes[uiColour];
+    return {
+      ...acc,
+      ...uiToColour(uiItem, ui[uiColour]),
+    };
+  }, {});
+  return colours;
 };
 
 const terminal = {
@@ -217,19 +232,7 @@ const terminal = {
 const template = {
   name: 'Plastic',
   colors: {
-    ...templatePartials.WHITE,
-    ...templatePartials.TRANSPARENT,
-    ...templatePartials.text,
-    ...templatePartials.activeText,
-    ...templatePartials.highlight,
-    ...templatePartials.activeHighlight,
-    ...templatePartials.trim,
-    ...templatePartials.activeTrim,
-    ...templatePartials.main,
-    ...templatePartials.panel,
-    ...templatePartials.error,
-    ...templatePartials.warning,
-    ...templatePartials.info,
+    ...uiScopesToColour(uiScopes),
     ...terminal.normal,
     ...terminal.bright,
   },
