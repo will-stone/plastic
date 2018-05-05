@@ -6,6 +6,9 @@
 
 // Comment
 
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 var variable = 'string';
 var variable2 = variable;
 var myRe = /d(b+)d/g;
@@ -21,7 +24,7 @@ let arr = ['one', 'two', numOperator];
 
 let obj = {
   first: 'string',
-  second: ['one', 'two', numOperator],
+  second: ['one', 'two', numOperator]
 };
 
 let templateLiteral = `this is a var ${variable}`;
@@ -42,13 +45,16 @@ const funcName = param => {
   return false;
 };
 
-import React, { Component } from 'react';
-
 class ComponentName extends Component {
+  static propTypes = {
+    param: PropTypes.string,
+    children: PropTypes.node
+  };
+
   constructor() {
     super();
     this.state = {
-      one: two,
+      one: 'two'
     };
   }
 
@@ -57,21 +63,22 @@ class ComponentName extends Component {
     return test;
   };
 
-  method() {
+  handleClick() {
     return false;
   }
 
   render() {
-    const { one } = this.state;
+    const { one: value } = this.state;
+    const { param } = this.props;
 
     const two = name(param, param, { key: value });
 
-    console.log(one.three);
+    console.log(two);
 
     return (
       <div>
         {this.props.children}
-        <SomeComponent prop={this.method} />
+        <button onClick={this.handleClick}>Click Me</button>
       </div>
     );
   }
