@@ -1,4 +1,10 @@
-// used by terminal and certain parts of UI, change the hexes but do not rename them
+/**
+ * Colours
+ *
+ * Set the hex values to the colours here, then apply these colours in config/scopes.js.
+ */
+
+// used by terminal and certain parts of UI, change the hexes but do not rename or delete them.
 export const BLACK = '#21252b'; // Shark
 export const BLUE = '#61afef'; // Cornflower Blue
 export const CYAN = '#56b6c2'; // Fountain Blue
