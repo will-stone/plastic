@@ -8,7 +8,6 @@
     "editor.lineHighlightBorder": "#00000000",
     "editor.wordHighlightBackground": "#00000000",
     "editor.wordHighlightStrongBackground": "#00000000",
-    "editor.findMatchHighlightBorder": "#abb2bf",
     "editor.foreground": "#abb2bf",
     "editorCursor.foreground": "#abb2bf",
     "peekViewResult.selectionForeground": "#abb2bf",
@@ -17,6 +16,7 @@
     "terminal.foreground": "#abb2bf",
     "titleBar.inactiveForeground": "#abb2bf",
     "editorActiveLineNumber.foreground": "#d2d6db",
+    "editor.findMatchHighlightBorder": "#d2d6db",
     "list.activeSelectionForeground": "#d2d6db",
     "tab.activeForeground": "#d2d6db",
     "titleBar.activeForeground": "#d2d6db",
@@ -171,7 +171,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#5c6370"
+        "foreground": "#abb2bfaa"
       }
     },
     {

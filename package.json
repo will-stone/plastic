@@ -7,9 +7,7 @@
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": [
-    "Themes"
-  ],
+  "categories": ["Themes"],
   "contributes": {
     "themes": [
       {
@@ -57,7 +55,8 @@
   },
   "scripts": {
     "docs": "lite-server",
-    "vspublish": "vsce publish"
+    "vspublish": "vsce publish",
+    "build": "node --experimental-modules scripts/build.mjs"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",

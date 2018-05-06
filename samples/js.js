@@ -71,6 +71,7 @@ class ComponentName extends Component {
     const { one: value } = this.state;
     const { param } = this.props;
 
+    // some comments
     const two = name(param, param, { key: value });
 
     console.log(two);
