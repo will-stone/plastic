@@ -31,9 +31,9 @@
     "peekViewResult.selectionBackground": "#5c637077",
     "scrollbarSlider.background": "#5c637077",
     "tab.hoverBackground": "#5c637077",
-    "editor.selectionBackground": "#abb2bf99",
-    "scrollbarSlider.activeBackground": "#abb2bf99",
-    "scrollbarSlider.hoverBackground": "#abb2bf99",
+    "editor.selectionBackground": "#abb2bf77",
+    "scrollbarSlider.activeBackground": "#abb2bf77",
+    "scrollbarSlider.hoverBackground": "#abb2bf77",
     "contrastBorder": "#080a0f",
     "dropdown.border": "#080a0f",
     "editorGroup.border": "#080a0f",
@@ -115,7 +115,7 @@
   },
   "tokenColors": [
     {
-      "name": "Punctuation",
+      "name": "punctuation",
       "scope": [
         "meta.brace",
         "punctuation"
@@ -125,7 +125,7 @@
       }
     },
     {
-      "name": "Punctuation",
+      "name": "terminator",
       "scope": [
         "punctuation.terminator"
       ],
@@ -134,7 +134,7 @@
       }
     },
     {
-      "name": "Variable",
+      "name": "variable",
       "scope": [
         "support.type",
         "support.variable",
@@ -145,7 +145,7 @@
       }
     },
     {
-      "name": "Storage",
+      "name": "storage",
       "scope": [
         "storage",
         "support.class"
@@ -155,7 +155,7 @@
       }
     },
     {
-      "name": "Primitive",
+      "name": "primitive",
       "scope": [
         "constant",
         "keyword.other"
@@ -165,17 +165,17 @@
       }
     },
     {
-      "name": "Comment",
+      "name": "comment",
       "scope": [
         "comment",
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#abb2bfaa"
+        "foreground": "#5c6370"
       }
     },
     {
-      "name": "String",
+      "name": "string",
       "scope": [
         "string",
         "markup.inline"
@@ -185,7 +185,7 @@
       }
     },
     {
-      "name": "Function",
+      "name": "function",
       "scope": [
         "entity",
         "support.function",
@@ -196,7 +196,7 @@
       }
     },
     {
-      "name": "Tag",
+      "name": "tag",
       "scope": [
         "entity.name.tag",
         "variable.language"
@@ -206,7 +206,7 @@
       }
     },
     {
-      "name": "Keyword",
+      "name": "keyword",
       "scope": [
         "entity.name.section",
         "keyword",
@@ -218,7 +218,7 @@
       }
     },
     {
-      "name": "Bold",
+      "name": "bold",
       "scope": [
         "markup.bold",
         "punctuation.definition.bold",
@@ -229,7 +229,7 @@
       }
     },
     {
-      "name": "Italic",
+      "name": "italic",
       "scope": [
         "comment",
         "markup.italic",

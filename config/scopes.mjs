@@ -26,7 +26,7 @@ export const syntax = {
   keyword: RED,
   variable: BRIGHT_WHITE,
   text: WHITE,
-  comment: WHITE + 'aa',
+  comment: BRIGHT_BLACK,
   punctuation: WHITE + 'aa',
   terminator: BRIGHT_BLACK,
 };
@@ -34,10 +34,10 @@ export const syntax = {
 export const workbench = {
   WHITE: TRUE_WHITE,
   TRANSPARENT: TRANSPARENT,
-  text: WHITE,
-  activeText: BRIGHT_WHITE,
+  foreground: WHITE,
+  activeForeground: BRIGHT_WHITE,
   highlight: BRIGHT_BLACK + '77',
-  activeHighlight: WHITE + '99',
+  activeHighlight: WHITE + '77',
   trim: BUNKER, // contrast / borders
   activeTrim: BLUE,
   main: BLACK,

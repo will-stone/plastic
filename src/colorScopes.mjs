@@ -7,7 +7,7 @@ export default {
     'editor.wordHighlightBackground',
     'editor.wordHighlightStrongBackground',
   ],
-  text: [
+  foreground: [
     'editor.foreground',
     'editorCursor.foreground',
     'peekViewResult.selectionForeground',
@@ -16,7 +16,7 @@ export default {
     'terminal.foreground',
     'titleBar.inactiveForeground',
   ],
-  activeText: [
+  activeForeground: [
     'editorActiveLineNumber.foreground',
     'editor.findMatchHighlightBorder',
     'list.activeSelectionForeground',
