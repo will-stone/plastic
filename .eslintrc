@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": ["standard", "standard-react", "prettier"],
+  "extends": ["eslint:recommended", "prettier"],
   "rules": {
     "no-console": "warn"
   }

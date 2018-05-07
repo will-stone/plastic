@@ -1,7 +1,8 @@
+arrowParens: avoid
+bracketSpacing: true
+printWidth: 80
+proseWrap: always
 semi: true
 singleQuote: true
 trailingComma: es5
-printWidth: 80
-arrowParens: avoid
-bracketSpacing: true
 useTabs: false

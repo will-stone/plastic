@@ -8,7 +8,7 @@ import {
 import terminalColours from '../src/terminalColours';
 
 const template = {
-  name: 'Plastic',
+  name: 'Plastic v2 Beta',
   colors: {
     // Workbench colours
     ...Object.keys(colorScopes).reduce((acc, uiColour) => {
@@ -54,6 +54,6 @@ const template = {
 
 const json = JSON.stringify(template, null, 2);
 
-fs.writeFile('themes/plastic-theme.json', json, 'utf8', () =>
+fs.writeFile('themes/plastic-theme-v2-beta.json', json, 'utf8', () =>
   console.log('done')
 );
