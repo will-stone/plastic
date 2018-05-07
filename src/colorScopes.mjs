@@ -26,7 +26,6 @@ export default {
   highlight: [
     'editor.lineHighlightBackground',
     'editorIndentGuide.activeBackground',
-    'editorLineNumber.foreground',
     'editorRuler.foreground',
     'editorSuggestWidget.selectedBackground',
     'editorWhitespace.foreground',
@@ -38,6 +37,7 @@ export default {
   ],
   activeHighlight: [
     'editor.selectionBackground',
+    'editorLineNumber.foreground',
     'scrollbarSlider.activeBackground',
     'scrollbarSlider.hoverBackground',
   ],

@@ -36,8 +36,8 @@ export const workbench = {
   TRANSPARENT: TRANSPARENT,
   foreground: WHITE,
   activeForeground: BRIGHT_WHITE,
-  highlight: BRIGHT_BLACK + '77',
-  activeHighlight: WHITE + '77',
+  highlight: WHITE + '22',
+  activeHighlight: WHITE + '33',
   trim: BUNKER, // contrast / borders
   activeTrim: BLUE,
   main: BLACK,
