@@ -10,6 +10,7 @@ import terminalColours from '../src/terminalColours';
 const template = {
   name: 'Plastic',
   colors: {
+    // Workbench colours
     ...Object.keys(colorScopes).reduce((acc, uiColour) => {
       const uiItem = colorScopes[uiColour];
       return {
@@ -22,11 +23,11 @@ const template = {
         }, {}),
       };
     }, {}),
-    // Terminal Colours
+    // Terminal colours
     ...terminalColours,
   },
   tokenColors: [
-    // Colours
+    // Syntax colours
     ...Object.keys(tokenScopesForeground).map(scopeName => {
       const scopes = tokenScopesForeground[scopeName];
       return {
@@ -37,7 +38,7 @@ const template = {
         },
       };
     }, {}),
-    // Styles
+    // Syntax styles
     ...Object.keys(tokenScopesStyles).map(scopeName => {
       const scopes = tokenScopesStyles[scopeName];
       return {
