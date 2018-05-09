@@ -188,6 +188,8 @@
       "name": "function",
       "scope": [
         "entity",
+        "entity.name.type.class",
+        "entity.name.type.module",
         "support.function",
         "punctuation.definition.entity"
       ],
@@ -215,6 +217,16 @@
       ],
       "settings": {
         "foreground": "#e06c75"
+      }
+    },
+    {
+      "name": "type",
+      "scope": [
+        "entity.name.type",
+        "support.type"
+      ],
+      "settings": {
+        "foreground": "#c678dd"
       }
     },
     {

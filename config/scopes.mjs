@@ -9,6 +9,7 @@ import {
   BUNKER,
   CYAN,
   GREEN,
+  MAGENTA,
   RED,
   TRANSPARENT,
   TRUE_WHITE,
@@ -29,6 +30,7 @@ export const syntax = {
   comment: BRIGHT_BLACK,
   punctuation: WHITE + 'aa',
   terminator: BRIGHT_BLACK,
+  type: MAGENTA,
 };
 
 export const workbench = {
