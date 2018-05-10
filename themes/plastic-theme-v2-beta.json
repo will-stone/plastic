@@ -188,8 +188,7 @@
       "name": "function",
       "scope": [
         "entity",
-        "entity.name.type.class",
-        "entity.name.type.module",
+        "entity.name.function",
         "support.function",
         "punctuation.definition.entity"
       ],
@@ -222,7 +221,7 @@
     {
       "name": "type",
       "scope": [
-        "entity.name.type",
+        "entity.name",
         "support.type"
       ],
       "settings": {

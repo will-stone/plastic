@@ -11,8 +11,7 @@ export const foreground = {
   string: ['string', 'markup.inline'],
   function: [
     'entity',
-    'entity.name.type.class',
-    'entity.name.type.module',
+    'entity.name.function',
     'support.function',
     'punctuation.definition.entity', // css . and # for classes and IDs
   ],
@@ -26,7 +25,7 @@ export const foreground = {
     'punctuation.definition.heading', // markdown headings' hashes
     'punctuation.definition.keyword', // css @ in @media queries
   ],
-  type: ['entity.name.type', 'support.type'],
+  type: ['entity.name', 'support.type'],
 };
 
 export const fontStyle = {
