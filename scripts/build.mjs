@@ -1,24 +1,57 @@
 import fs from 'fs';
-import { syntax, workbench } from '../config/scopes';
-import colorScopes from '../src/colorScopes';
+import tokenColours from '../config/tokenColours';
+import tokenStyles from '../config/tokenStyles';
+import workbenchColours from '../config/workbenchColours';
 import {
-  fontStyle as tokenScopesStyles,
-  foreground as tokenScopesForeground,
-} from '../src/tokenScopes';
-import terminalColours from '../src/terminalColours';
+  BLACK,
+  BLUE,
+  BRIGHT_BLACK,
+  BRIGHT_BLUE,
+  BRIGHT_CYAN,
+  BRIGHT_GREEN,
+  BRIGHT_MAGENTA,
+  BRIGHT_RED,
+  BRIGHT_WHITE,
+  BRIGHT_YELLOW,
+  CYAN,
+  GREEN,
+  MAGENTA,
+  RED,
+  WHITE,
+  YELLOW,
+} from '../config/colours';
+
+const terminalColours = {
+  'terminal.ansiBlack': BLACK,
+  'terminal.ansiBlue': BLUE,
+  'terminal.ansiCyan': CYAN,
+  'terminal.ansiGreen': GREEN,
+  'terminal.ansiMagenta': MAGENTA,
+  'terminal.ansiRed': RED,
+  'terminal.ansiWhite': WHITE,
+  'terminal.ansiYellow': YELLOW,
+  'terminal.ansiBrightBlack': BRIGHT_BLACK,
+  'terminal.ansiBrightBlue': BRIGHT_BLUE,
+  'terminal.ansiBrightCyan': BRIGHT_CYAN,
+  'terminal.ansiBrightGreen': BRIGHT_GREEN,
+  'terminal.ansiBrightMagenta': BRIGHT_MAGENTA,
+  'terminal.ansiBrightRed': BRIGHT_RED,
+  'terminal.ansiBrightWhite': BRIGHT_WHITE,
+  'terminal.ansiBrightYellow': BRIGHT_YELLOW,
+};
 
 const template = {
   name: 'Plastic v2 Beta',
   colors: {
     // Workbench colours
-    ...Object.keys(colorScopes).reduce((acc, uiColour) => {
-      const uiItem = colorScopes[uiColour];
+    ...Object.keys(workbenchColours).reduce((acc, workbenchColour) => {
+      const scopes = workbenchColours[workbenchColour];
       return {
         ...acc,
-        ...uiItem.reduce((acc, scopeName) => {
+        ...scopes.reduce((acc, scope) => {
           return {
             ...acc,
-            [scopeName]: workbench[uiColour],
+            [scope]: workbenchColour,
           };
         }, {}),
       };
@@ -28,24 +61,24 @@ const template = {
   },
   tokenColors: [
     // Syntax colours
-    ...Object.keys(tokenScopesForeground).map(scopeName => {
-      const scopes = tokenScopesForeground[scopeName];
+    ...Object.keys(tokenColours).map(tokenColour => {
+      const scopes = tokenColours[tokenColour];
       return {
-        name: scopeName,
+        name: tokenColour,
         scope: scopes,
         settings: {
-          foreground: syntax[scopeName],
+          foreground: tokenColour,
         },
       };
     }, {}),
     // Syntax styles
-    ...Object.keys(tokenScopesStyles).map(scopeName => {
-      const scopes = tokenScopesStyles[scopeName];
+    ...Object.keys(tokenStyles).map(tokenStyle => {
+      const scopes = tokenStyles[tokenStyle];
       return {
-        name: scopeName,
+        name: tokenStyle,
         scope: scopes,
         settings: {
-          fontStyle: scopeName,
+          fontStyle: tokenStyle,
         },
       };
     }, {}),

@@ -1,13 +1,27 @@
+import {
+  BLACK,
+  BLUE,
+  BRIGHT_BLUE,
+  BRIGHT_RED,
+  BRIGHT_WHITE,
+  BRIGHT_YELLOW,
+  BUNKER,
+  TRANSPARENT,
+  TRUE_WHITE,
+  WHITE,
+  WOODSMOKE,
+} from './colours';
+
 export default {
-  WHITE: ['activityBar.foreground', 'activityBarBadge.foreground'],
-  TRANSPARENT: [
+  [TRUE_WHITE]: ['activityBar.foreground', 'activityBarBadge.foreground'],
+  [TRANSPARENT]: [
     'editor.findMatchBackground',
     'editor.findMatchHighlightBackground',
     'editor.lineHighlightBorder',
     'editor.wordHighlightBackground',
     'editor.wordHighlightStrongBackground',
   ],
-  foreground: [
+  [WHITE]: [
     'editor.foreground',
     'editorCursor.foreground',
     'peekViewResult.selectionForeground',
@@ -16,14 +30,14 @@ export default {
     'terminal.foreground',
     'titleBar.inactiveForeground',
   ],
-  activeForeground: [
+  [BRIGHT_WHITE]: [
     'editorActiveLineNumber.foreground',
     'editor.findMatchHighlightBorder',
     'list.activeSelectionForeground',
     'tab.activeForeground',
     'titleBar.activeForeground',
   ],
-  highlight: [
+  [WHITE + '22']: [
     'editor.lineHighlightBackground',
     'editorIndentGuide.activeBackground',
     'editorRuler.foreground',
@@ -35,13 +49,13 @@ export default {
     'scrollbarSlider.background',
     'tab.hoverBackground',
   ],
-  activeHighlight: [
+  [WHITE + '33']: [
     'editor.selectionBackground',
     'editorLineNumber.foreground',
     'scrollbarSlider.activeBackground',
     'scrollbarSlider.hoverBackground',
   ],
-  trim: [
+  [BUNKER]: [
     'contrastBorder',
     'dropdown.border',
     'editorGroup.border',
@@ -52,7 +66,7 @@ export default {
     'tab.border',
     'widget.shadow',
   ],
-  activeTrim: [
+  [BLUE]: [
     'activityBarBadge.background',
     'button.background',
     'editor.findMatchBorder',
@@ -65,7 +79,7 @@ export default {
     'inputOption.activeBorder',
     'peekView.border',
   ],
-  main: [
+  [BLACK]: [
     'activityBar.background',
     'editor.background',
     'list.activeSelectionBackground',
@@ -78,7 +92,7 @@ export default {
     'titleBar.activeBackground',
     'titleBar.inactiveBackground',
   ],
-  panel: [
+  [WOODSMOKE]: [
     'activityBar.dropBackground',
     'debugToolBar.background',
     'dropdown.background',
@@ -99,19 +113,19 @@ export default {
     'statusBarItem.hoverBackground',
     'tab.inactiveBackground',
   ],
-  info: [
+  [BRIGHT_BLUE]: [
     'editorInfo.foreground',
     'editorOverviewRuler.infoForeground',
     'inputValidation.infoBackground',
     'inputValidation.infoBorder',
   ],
-  warning: [
+  [BRIGHT_YELLOW]: [
     'editorOverviewRuler.warningForeground',
     'editorWarning.foreground',
     'inputValidation.warningBackground',
     'inputValidation.warningBorder',
   ],
-  error: [
+  [BRIGHT_RED]: [
     'editorError.foreground',
     'editorOverviewRuler.errorForeground',
     'inputValidation.errorBackground',

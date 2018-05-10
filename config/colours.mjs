@@ -27,5 +27,6 @@ export const TRANSPARENT = '#00000000';
 export const TRUE_WHITE = '#ffffffff';
 
 // Custom colours
+export const BRIGHT_GRAY = '#3E4451';
 export const WOODSMOKE = '#181a1f';
 export const BUNKER = '#080a0f';
