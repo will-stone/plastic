@@ -21,7 +21,30 @@ import {
   YELLOW,
 } from '../config/colours';
 
+import oldTheme from '../themes/plastic-theme.json';
+
+const splitByColour = Object.keys(oldTheme.colors).reduce((acc, scope) => {
+  const colour = oldTheme.colors[scope].toLowerCase();
+  const registeredColours = Object.keys(acc);
+
+  const isColourRegistered = registeredColours.indexOf(colour) > -1;
+  const isTerminal = scope.startsWith('terminal');
+
+  if (!isTerminal) {
+    if (isColourRegistered) {
+      acc[colour].push(scope);
+    } else {
+      acc[colour] = [scope];
+    }
+  }
+
+  return acc;
+}, {});
+
+console.log(splitByColour);
+
 const terminalColours = {
+  // TODO: add terminal foreground here
   'terminal.ansiBlack': BLACK,
   'terminal.ansiBlue': BLUE,
   'terminal.ansiCyan': CYAN,
