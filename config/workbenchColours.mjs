@@ -1,6 +1,7 @@
 import {
   AZURE_RADIANCE,
   BRICK_RED,
+  BRIGHT_GRAY,
   BRIGHT_GREEN,
   BUNKER,
   CADET_BLUE,
@@ -36,6 +37,11 @@ export default {
     'inputValidation.errorBorder',
     'terminal.ansiBrightRed',
   ],
+  [BRIGHT_GRAY]: [
+    'editorLineNumber.foreground',
+    'list.focusBackground',
+    'list.hoverBackground',
+  ],
   [BRIGHT_GREEN]: ['terminal.ansiBrightGreen'],
   [BUNKER]: [
     'contrastBorder',
@@ -60,6 +66,7 @@ export default {
   ],
   [CADET_BLUE + '22']: [
     'editor.lineHighlightBackground',
+    'editor.selectionHighlightBackground',
     'editorIndentGuide.activeBackground',
     'editorRuler.foreground',
     'editorSuggestWidget.selectedBackground',
@@ -71,14 +78,11 @@ export default {
     'tab.hoverBackground',
   ],
   [CADET_BLUE + '33']: [
-    'editor.selectionBackground',
-    'editorLineNumber.foreground',
     'scrollbarSlider.activeBackground',
     'scrollbarSlider.hoverBackground',
+    'editor.selectionBackground',
   ],
   [CORNFLOWER_BLUE]: [
-    'activityBarBadge.background',
-    'button.background',
     'editor.findMatchBorder',
     'editor.wordHighlightBorder',
     'editor.wordHighlightStrongBorder',
@@ -114,8 +118,6 @@ export default {
     'activityBar.background',
     'editor.background',
     'list.activeSelectionBackground',
-    'list.focusBackground',
-    'list.hoverBackground',
     'list.inactiveSelectionBackground',
     'sideBarSectionHeader.background',
     'statusBar.background',
@@ -125,7 +127,11 @@ export default {
     'titleBar.inactiveBackground',
   ],
   [SHUTTLE_GRAY]: ['terminal.ansiBrightBlack'],
-  [SUNGLO]: ['terminal.ansiRed'],
+  [SUNGLO]: [
+    'activityBarBadge.background',
+    'button.background',
+    'terminal.ansiRed',
+  ],
   [TRUE_WHITE]: ['activityBar.foreground', 'activityBarBadge.foreground'],
   [TRANSPARENT]: [
     'editor.findMatchBackground',
@@ -137,13 +143,13 @@ export default {
   [WHISKEY]: ['terminal.ansiYellow'],
   [WOODSMOKE]: [
     'activityBar.dropBackground',
+    'editorWidget.background',
     'debugToolBar.background',
     'dropdown.background',
     'editorGroup.background',
     'editorGroupHeader.tabsBackground',
     'editorHoverWidget.background',
     'editorSuggestWidget.background',
-    'editorWidget.background',
     'notificationCenterHeader.background',
     'notifications.background',
     'panel.background',
