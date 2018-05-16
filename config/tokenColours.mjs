@@ -12,15 +12,15 @@ import {
 } from './colours';
 
 export default {
-  [CADET_BLUE + 'aa']: ['meta.brace', 'punctuation'],
-  [CORNFLOWER_BLUE]: ['storage', 'support.class'],
+  [CADET_BLUE]: ['meta.brace', 'punctuation'],
+  [CORNFLOWER_BLUE]: ['storage'],
   [FOUNTAIN_BLUE]: ['constant', 'keyword.other'],
   [HARVEST_GOLD]: [
     'entity.name.tag',
     'variable.language', // this
   ],
-  [IRON]: ['support.type', 'support.variable', 'variable'],
-  [LAVENDER]: ['entity.name', 'support.type'],
+  [IRON]: ['support.variable', 'variable'],
+  [LAVENDER]: ['entity.name', 'support.type', 'support.class'],
   [OLIVINE]: ['string', 'markup.inline'],
   [SHUTTLE_GRAY]: [
     'punctuation.terminator',

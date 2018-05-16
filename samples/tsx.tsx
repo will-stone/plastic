@@ -19,7 +19,11 @@ type Props = {
 type State = {};
 
 class Main extends React.Component<Props, State> {
-  state = {};
+  constructor(props: Props) {
+    super(props);
+
+    this.test = props.test;
+  }
 
   classProperty = ({ hello }, bye) => {
     return hello;
@@ -34,5 +38,17 @@ class Main extends React.Component<Props, State> {
     </div>;
   }
 }
+
+interface WelcomeProps {
+  name?: string, // Change the required prop to an optional prop.
+ }
+
+ const Welcome: React.SFC<WelcomeProps> = (props) => {
+  return <h1>Hello, {props.name}</h1>;
+ }
+
+ Welcome.defaultProps = {
+  name: “Guest User”, // This value is adopted when name prop is omitted.
+ }
 
 DOM.render(<Main />, root);

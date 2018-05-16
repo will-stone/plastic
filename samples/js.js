@@ -81,6 +81,7 @@ class ComponentName extends Component {
       <div>
         {this.props.children}
         <button onClick={this.handleClick}>Click Me</button>
+        <ComponentName2 />
       </div>
     );
   }
@@ -89,5 +90,7 @@ class ComponentName extends Component {
 const ComponentName2 = () => {
   return <ComponentName>text text text</ComponentName>;
 };
+
+const arr = new Array();
 
 export default ComponentName2;

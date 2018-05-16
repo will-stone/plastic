@@ -116,20 +116,19 @@
   },
   "tokenColors": [
     {
-      "name": "#abb2bfaa",
+      "name": "#abb2bf",
       "scope": [
         "meta.brace",
         "punctuation"
       ],
       "settings": {
-        "foreground": "#abb2bfaa"
+        "foreground": "#abb2bf"
       }
     },
     {
       "name": "#61afef",
       "scope": [
-        "storage",
-        "support.class"
+        "storage"
       ],
       "settings": {
         "foreground": "#61afef"
@@ -158,7 +157,6 @@
     {
       "name": "#d2d6db",
       "scope": [
-        "support.type",
         "support.variable",
         "variable"
       ],
@@ -170,7 +168,8 @@
       "name": "#c678dd",
       "scope": [
         "entity.name",
-        "support.type"
+        "support.type",
+        "support.class"
       ],
       "settings": {
         "foreground": "#c678dd"
