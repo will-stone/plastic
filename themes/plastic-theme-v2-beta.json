@@ -128,7 +128,8 @@
     {
       "name": "#61afef",
       "scope": [
-        "storage"
+        "storage",
+        "support.class"
       ],
       "settings": {
         "foreground": "#61afef"
@@ -145,16 +146,6 @@
       }
     },
     {
-      "name": "#e5c07b",
-      "scope": [
-        "entity.name.tag",
-        "variable.language"
-      ],
-      "settings": {
-        "foreground": "#e5c07b"
-      }
-    },
-    {
       "name": "#d2d6db",
       "scope": [
         "support.variable",
@@ -165,14 +156,14 @@
       }
     },
     {
-      "name": "#c678dd",
+      "name": "#e5c07b",
       "scope": [
         "entity.name",
         "support.type",
-        "support.class"
+        "variable.language"
       ],
       "settings": {
-        "foreground": "#c678dd"
+        "foreground": "#e5c07b"
       }
     },
     {
@@ -199,9 +190,7 @@
     {
       "name": "#e06c75",
       "scope": [
-        "entity.name.section",
         "keyword",
-        "punctuation.definition.heading",
         "punctuation.definition.keyword"
       ],
       "settings": {

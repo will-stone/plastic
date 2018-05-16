@@ -4,7 +4,6 @@ import {
   FOUNTAIN_BLUE,
   HARVEST_GOLD,
   IRON,
-  LAVENDER,
   OLIVINE,
   SHUTTLE_GRAY,
   SUNGLO,
@@ -13,24 +12,22 @@ import {
 
 export default {
   [CADET_BLUE]: ['meta.brace', 'punctuation'],
-  [CORNFLOWER_BLUE]: ['storage'],
+  [CORNFLOWER_BLUE]: ['storage', 'support.class'],
   [FOUNTAIN_BLUE]: ['constant', 'keyword.other'],
+  [IRON]: ['support.variable', 'variable'],
   [HARVEST_GOLD]: [
-    'entity.name.tag',
+    'entity.name',
+    'support.type',
     'variable.language', // this
   ],
-  [IRON]: ['support.variable', 'variable'],
-  [LAVENDER]: ['entity.name', 'support.type', 'support.class'],
   [OLIVINE]: ['string', 'markup.inline'],
   [SHUTTLE_GRAY]: [
-    'punctuation.terminator',
+    'punctuation.terminator', // semicolons - bleugh
     'comment',
     'punctuation.definition.comment', // start and end of comment blocks
   ],
   [SUNGLO]: [
-    'entity.name.section', // markdown headings' text
     'keyword',
-    'punctuation.definition.heading', // markdown headings' hashes
     'punctuation.definition.keyword', // css @ in @media queries
   ],
   [WHISKEY]: [

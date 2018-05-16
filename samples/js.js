@@ -81,7 +81,7 @@ class ComponentName extends Component {
       <div>
         {this.props.children}
         <button onClick={this.handleClick}>Click Me</button>
-        <ComponentName2 />
+        <ComponentName2 prop1={null} />
       </div>
     );
   }
@@ -89,6 +89,10 @@ class ComponentName extends Component {
 
 const ComponentName2 = () => {
   return <ComponentName>text text text</ComponentName>;
+};
+
+ComponentName2.propTypes = {
+  prop1: PropTypes.string,
 };
 
 const arr = new Array();
