@@ -8,6 +8,7 @@ import {
   SHUTTLE_GRAY,
   SUNGLO,
   WHISKEY,
+  // LAVENDER,
 } from './colours';
 
 export default {

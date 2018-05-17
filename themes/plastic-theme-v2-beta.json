@@ -181,9 +181,9 @@
     {
       "name": "#5c6370",
       "scope": [
-        "punctuation.terminator.statement",
         "comment",
-        "punctuation.definition.comment"
+        "punctuation.definition.comment",
+        "punctuation.terminator.statement"
       ],
       "settings": {
         "foreground": "#5c6370"
@@ -204,8 +204,8 @@
       "scope": [
         "entity",
         "entity.name.function",
-        "support.function",
-        "punctuation.definition.entity"
+        "punctuation.definition.entity",
+        "support.function"
       ],
       "settings": {
         "foreground": "#d19a66"

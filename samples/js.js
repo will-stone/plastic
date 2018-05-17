@@ -83,7 +83,7 @@ class ComponentName extends Component {
       <div>
         {this.props.children}
         <button onClick={this.handleClick}>Click Me</button>
-        <ComponentName2 prop1={null} />
+        <ComponentName2 prop1={funcName('thing')} />
       </div>
     );
   }

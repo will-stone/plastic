@@ -20,8 +20,8 @@ type State = {};
 
 class Main extends React.Component<Props, State> {
   static propTypes = {
-    prop1: PropTypes.number
-  }
+    prop1: PropTypes.number,
+  };
 
   constructor(props: Props) {
     super(props);
@@ -44,15 +44,15 @@ class Main extends React.Component<Props, State> {
 }
 
 interface WelcomeProps {
-  name?: string, // Change the required prop to an optional prop.
+  name?: string; // Change the required prop to an optional prop.
 }
 
-const Welcome: React.SFC<WelcomeProps> = (props) => {
+const Welcome: React.SFC<WelcomeProps> = props => {
   return <h1>Hello, {props.name}</h1>;
-}
+};
 
 Welcome.defaultProps = {
-  name: “Guest User”, // This value is adopted when name prop is omitted.
-}
+  name: 'Guest User', // This value is adopted when name prop is omitted.
+};
 
 DOM.render(<Main />, root);
