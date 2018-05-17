@@ -26,9 +26,9 @@ export default {
   ],
   [OLIVINE]: ['string', 'markup.inline'],
   [SHUTTLE_GRAY]: [
-    'punctuation.terminator.statement', // semicolons - bleugh
     'comment',
     'punctuation.definition.comment', // start and end of comment blocks
+    'punctuation.terminator.statement', // semicolons - bleugh
   ],
   [SUNGLO]: [
     'keyword',
@@ -37,7 +37,7 @@ export default {
   [WHISKEY]: [
     'entity',
     'entity.name.function',
-    'support.function',
     'punctuation.definition.entity', // css . and # for classes and IDs
+    'support.function',
   ],
 };
