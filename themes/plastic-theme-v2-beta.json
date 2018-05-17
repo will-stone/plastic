@@ -181,7 +181,7 @@
     {
       "name": "#5c6370",
       "scope": [
-        "punctuation.terminator",
+        "punctuation.terminator.statement",
         "comment",
         "punctuation.definition.comment"
       ],

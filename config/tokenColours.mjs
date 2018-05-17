@@ -26,7 +26,7 @@ export default {
   ],
   [OLIVINE]: ['string', 'markup.inline'],
   [SHUTTLE_GRAY]: [
-    'punctuation.terminator', // semicolons - bleugh
+    'punctuation.terminator.statement', // semicolons - bleugh
     'comment',
     'punctuation.definition.comment', // start and end of comment blocks
   ],
