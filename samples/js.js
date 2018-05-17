@@ -14,6 +14,8 @@ var variable = 'string';
 var variable2 = variable;
 var myRe = /d(b+)d/g;
 
+const json = JSON.stringify(variable, null, 2);
+
 let localVar = 'string';
 
 const constant = 'CONSTANT';

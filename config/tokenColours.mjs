@@ -11,13 +11,22 @@ import {
 } from './colours';
 
 export default {
+  // punctuation
   [CADET_BLUE]: ['meta.brace', 'punctuation'],
-  [CORNFLOWER_BLUE]: ['storage', 'support.class'],
+  // storage words (const, var, class etc.)
+  [CORNFLOWER_BLUE]: [
+    'storage',
+    'support.class',
+    'support.constant',
+    'support.type',
+  ],
+  // numbers
   [FOUNTAIN_BLUE]: ['constant', 'keyword.other'],
+  // variables
   [IRON]: ['support.variable', 'variable'],
+  // tags and
   [HARVEST_GOLD]: [
     'entity.name',
-    'support.type',
     'variable.language', // this
   ],
   [OLIVINE]: ['string', 'markup.inline'],

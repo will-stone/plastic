@@ -129,7 +129,9 @@
       "name": "#61afef",
       "scope": [
         "storage",
-        "support.class"
+        "support.class",
+        "support.constant",
+        "support.type"
       ],
       "settings": {
         "foreground": "#61afef"
@@ -159,7 +161,6 @@
       "name": "#e5c07b",
       "scope": [
         "entity.name",
-        "support.type",
         "variable.language"
       ],
       "settings": {
