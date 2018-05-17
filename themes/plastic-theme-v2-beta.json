@@ -130,8 +130,7 @@
       "scope": [
         "storage",
         "support.class",
-        "support.constant",
-        "support.type"
+        "support.constant"
       ],
       "settings": {
         "foreground": "#61afef"
@@ -141,7 +140,8 @@
       "name": "#56b6c2",
       "scope": [
         "constant",
-        "keyword.other"
+        "keyword.other",
+        "support.type"
       ],
       "settings": {
         "foreground": "#56b6c2"
@@ -150,6 +150,7 @@
     {
       "name": "#d2d6db",
       "scope": [
+        "support.type.property-name",
         "support.variable",
         "variable"
       ],

@@ -14,16 +14,11 @@ export default {
   // punctuation
   [CADET_BLUE]: ['meta.brace', 'punctuation'],
   // storage words (const, var, class etc.)
-  [CORNFLOWER_BLUE]: [
-    'storage',
-    'support.class',
-    'support.constant',
-    'support.type',
-  ],
+  [CORNFLOWER_BLUE]: ['storage', 'support.class', 'support.constant'],
   // numbers
-  [FOUNTAIN_BLUE]: ['constant', 'keyword.other'],
+  [FOUNTAIN_BLUE]: ['constant', 'keyword.other', 'support.type'],
   // variables
-  [IRON]: ['support.variable', 'variable'],
+  [IRON]: ['support.type.property-name', 'support.variable', 'variable'],
   // tags and
   [HARVEST_GOLD]: [
     'entity.name',
