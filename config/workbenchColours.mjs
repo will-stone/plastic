@@ -107,7 +107,6 @@ export default {
   [IRON]: [
     'editorActiveLineNumber.foreground',
     'editor.findMatchHighlightBorder',
-    'list.activeSelectionForeground',
     'tab.activeForeground',
     'terminal.ansiBrightWhite',
     'titleBar.activeForeground',

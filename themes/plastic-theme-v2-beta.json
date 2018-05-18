@@ -66,7 +66,6 @@
     "terminal.ansiBrightYellow": "#e5c07b",
     "editorActiveLineNumber.foreground": "#d2d6db",
     "editor.findMatchHighlightBorder": "#d2d6db",
-    "list.activeSelectionForeground": "#d2d6db",
     "tab.activeForeground": "#d2d6db",
     "terminal.ansiBrightWhite": "#d2d6db",
     "titleBar.activeForeground": "#d2d6db",
