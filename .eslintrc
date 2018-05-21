@@ -1,0 +1,7 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "prettier"],
+  "rules": {
+    "no-console": "warn"
+  }
+}
