@@ -1,41 +1,30 @@
-import {
-  CADET_BLUE,
-  CORNFLOWER_BLUE,
-  FOUNTAIN_BLUE,
-  HARVEST_GOLD,
-  IRON,
-  OLIVINE,
-  SHUTTLE_GRAY,
-  SUNGLO,
-  WHISKEY,
-  // LAVENDER,
-} from './colours';
+import c from './colours';
 
 export default {
   // punctuation
-  [CADET_BLUE]: ['meta.brace', 'punctuation'],
+  [c.CADET_BLUE]: ['meta.brace', 'punctuation'],
   // storage words (const, var, class etc.)
-  [CORNFLOWER_BLUE]: ['storage', 'support.class', 'support.constant'],
+  [c.CORNFLOWER_BLUE]: ['storage', 'support.class', 'support.constant'],
   // numbers
-  [FOUNTAIN_BLUE]: ['constant', 'keyword.other', 'support.type'],
+  [c.FOUNTAIN_BLUE]: ['constant', 'keyword.other', 'support.type'],
   // variables
-  [IRON]: ['support.type.property-name', 'support.variable', 'variable'],
+  [c.IRON]: ['support.type.property-name', 'support.variable', 'variable'],
   // tags and
-  [HARVEST_GOLD]: [
+  [c.HARVEST_GOLD]: [
     'entity.name',
     'variable.language', // this
   ],
-  [OLIVINE]: ['string', 'markup.inline'],
-  [SHUTTLE_GRAY]: [
+  [c.OLIVINE]: ['string', 'markup.inline'],
+  [c.SHUTTLE_GRAY]: [
     'comment',
     'punctuation.definition.comment', // start and end of comment blocks
     'punctuation.terminator.statement', // semicolons - bleugh
   ],
-  [SUNGLO]: [
+  [c.SUNGLO]: [
     'keyword',
     'punctuation.definition.keyword', // css @ in @media queries
   ],
-  [WHISKEY]: [
+  [c.WHISKEY]: [
     'entity',
     'entity.name.function',
     'punctuation.definition.entity', // css . and # for classes and IDs

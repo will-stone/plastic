@@ -1,49 +1,16 @@
-import {
-  AZURE_RADIANCE,
-  BRICK_RED,
-  BRIGHT_GRAY,
-  BRIGHT_GREEN,
-  BUNKER,
-  CADET_BLUE,
-  CORNFLOWER_BLUE,
-  CYAN_AQUA,
-  ELECTRIC_VIOLET,
-  FOUNTAIN_BLUE,
-  HARVEST_GOLD,
-  IRON,
-  LAVENDER,
-  OLIVINE,
-  SHARK,
-  SHUTTLE_GRAY,
-  SUNGLO,
-  TRANSPARENT,
-  TRUE_WHITE,
-  WHISKEY,
-  WOODSMOKE,
-} from './colours';
+import c from './colours';
 
 export default {
-  [AZURE_RADIANCE]: [
+  [c.AZURE_RADIANCE]: [
     'editorInfo.foreground',
     'editorOverviewRuler.infoForeground',
     'inputValidation.infoBackground',
     'inputValidation.infoBorder',
     'terminal.ansiBrightBlue',
   ],
-  [BRICK_RED]: [
-    'editorError.foreground',
-    'editorOverviewRuler.errorForeground',
-    'inputValidation.errorBackground',
-    'inputValidation.errorBorder',
-    'terminal.ansiBrightRed',
-  ],
-  [BRIGHT_GRAY]: [
-    'editorLineNumber.foreground',
-    'list.focusBackground',
-    'list.hoverBackground',
-  ],
-  [BRIGHT_GREEN]: ['terminal.ansiBrightGreen'],
-  [BUNKER]: [
+  [c.BRIGHT_GRAY]: ['editorLineNumber.foreground'],
+  [c.BRIGHT_GREEN]: ['terminal.ansiBrightGreen'],
+  [c.BUNKER]: [
     'contrastBorder',
     'dropdown.border',
     'editorGroup.border',
@@ -54,7 +21,7 @@ export default {
     'tab.border',
     'widget.shadow',
   ],
-  [CADET_BLUE]: [
+  [c.CADET_BLUE]: [
     'editor.foreground',
     'editorCursor.foreground',
     'peekViewResult.selectionForeground',
@@ -64,25 +31,37 @@ export default {
     'terminal.foreground',
     'titleBar.inactiveForeground',
   ],
-  [CADET_BLUE + '22']: [
+  [c.CADET_BLUE + '22']: [
     'editor.lineHighlightBackground',
     'editor.selectionHighlightBackground',
     'editorIndentGuide.activeBackground',
     'editorRuler.foreground',
     'editorSuggestWidget.selectedBackground',
     'editorWhitespace.foreground',
+    'list.activeSelectionBackground',
+    'list.focusBackground',
+    'list.hoverBackground',
+    'list.inactiveSelectionBackground',
     'peekViewEditor.matchHighlightBackground',
     'peekViewResult.matchHighlightBackground',
     'peekViewResult.selectionBackground',
     'scrollbarSlider.background',
     'tab.hoverBackground',
   ],
-  [CADET_BLUE + '33']: [
+  [c.CADET_BLUE + '33']: [
     'scrollbarSlider.activeBackground',
     'scrollbarSlider.hoverBackground',
     'editor.selectionBackground',
   ],
-  [CORNFLOWER_BLUE]: [
+  [c.CINNABAR]: [
+    'editorError.foreground',
+    'editorOverviewRuler.errorForeground',
+    'errorForeground',
+    'inputValidation.errorBackground',
+    'inputValidation.errorBorder',
+    'terminal.ansiBrightRed',
+  ],
+  [c.CORNFLOWER_BLUE]: [
     'editor.findMatchBorder',
     'editor.wordHighlightBorder',
     'editor.wordHighlightStrongBorder',
@@ -94,30 +73,28 @@ export default {
     'peekView.border',
     'terminal.ansiBlue',
   ],
-  [CYAN_AQUA]: ['terminal.ansiBrightCyan'],
-  [ELECTRIC_VIOLET]: ['terminal.ansiBrightMagenta'],
-  [FOUNTAIN_BLUE]: ['terminal.ansiCyan'],
-  [HARVEST_GOLD]: [
+  [c.CYAN_AQUA]: ['terminal.ansiBrightCyan'],
+  [c.ELECTRIC_VIOLET]: ['terminal.ansiBrightMagenta'],
+  [c.FOUNTAIN_BLUE]: ['terminal.ansiCyan'],
+  [c.HARVEST_GOLD]: [
     'editorOverviewRuler.warningForeground',
     'editorWarning.foreground',
     'inputValidation.warningBackground',
     'inputValidation.warningBorder',
     'terminal.ansiBrightYellow',
   ],
-  [IRON]: [
+  [c.IRON]: [
     'editorActiveLineNumber.foreground',
     'editor.findMatchHighlightBorder',
     'tab.activeForeground',
     'terminal.ansiBrightWhite',
     'titleBar.activeForeground',
   ],
-  [LAVENDER]: ['terminal.ansiMagenta'],
-  [OLIVINE]: ['terminal.ansiGreen'],
-  [SHARK]: [
+  [c.LAVENDER]: ['terminal.ansiMagenta'],
+  [c.OLIVINE]: ['terminal.ansiGreen'],
+  [c.SHARK]: [
     'activityBar.background',
     'editor.background',
-    'list.activeSelectionBackground',
-    'list.inactiveSelectionBackground',
     'sideBarSectionHeader.background',
     'statusBar.background',
     'tab.activeBackground',
@@ -125,22 +102,26 @@ export default {
     'titleBar.activeBackground',
     'titleBar.inactiveBackground',
   ],
-  [SHUTTLE_GRAY]: ['terminal.ansiBrightBlack'],
-  [SUNGLO]: [
+  [c.SHUTTLE_GRAY]: ['terminal.ansiBrightBlack'],
+  [c.SUNGLO]: [
     'activityBarBadge.background',
     'button.background',
     'terminal.ansiRed',
   ],
-  [TRUE_WHITE]: ['activityBar.foreground', 'activityBarBadge.foreground'],
-  [TRANSPARENT]: [
+  [c.TRUE_WHITE]: [
+    'activityBar.foreground',
+    'activityBarBadge.foreground',
+    'list.inactiveSelectionForeground',
+  ],
+  [c.TRANSPARENT]: [
     'editor.findMatchBackground',
     'editor.findMatchHighlightBackground',
     'editor.lineHighlightBorder',
     'editor.wordHighlightBackground',
     'editor.wordHighlightStrongBackground',
   ],
-  [WHISKEY]: ['terminal.ansiYellow'],
-  [WOODSMOKE]: [
+  [c.WHISKEY]: ['terminal.ansiYellow'],
+  [c.WOODSMOKE]: [
     'activityBar.dropBackground',
     'editorWidget.background',
     'debugToolBar.background',
