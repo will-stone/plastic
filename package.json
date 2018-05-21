@@ -2,12 +2,14 @@
   "name": "plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": ["Themes"],
+  "categories": [
+    "Themes"
+  ],
   "contributes": {
     "themes": [
       {
@@ -38,13 +40,12 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
-    "color": "^3.0.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "lite-server": "^2.3.0",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
-    "vsce": "^1.39.0"
+    "vsce": "^1.40.0"
   },
   "scripts": {
     "docs": "lite-server",
