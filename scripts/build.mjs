@@ -1,29 +1,9 @@
 import fs from 'fs';
-import tokenColours from '../config/tokenColours';
-import tokenStyles from '../config/tokenStyles';
-import workbenchColours from '../config/workbenchColours';
-
-// import oldTheme from '../themes/plastic-theme.json';
-
-// const splitByColour = Object.keys(oldTheme.colors).reduce((acc, scope) => {
-//   const colour = oldTheme.colors[scope].toLowerCase();
-//   const registeredColours = Object.keys(acc);
-
-//   const isColourRegistered = registeredColours.indexOf(colour) > -1;
-//   const isTerminal = scope.startsWith('terminal');
-
-//   if (!isTerminal) {
-//     if (isColourRegistered) {
-//       acc[colour].push(scope);
-//     } else {
-//       acc[colour] = [scope];
-//     }
-//   }
-
-//   return acc;
-// }, {});
-
-// console.log(splitByColour);
+import {
+  colours as tokenColours,
+  styles as tokenStyles,
+} from '../config/syntax';
+import workbenchColours from '../config/workbench';
 
 const template = {
   name: 'Plastic v2 Beta',

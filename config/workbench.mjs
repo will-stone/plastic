@@ -72,14 +72,7 @@ export default {
     'inputValidation.warningBorder',
     'terminal.ansiBrightYellow',
   ],
-  [c.IRON]: [
-    'editor.findMatchHighlightBorder',
-    'editorActiveLineNumber.foreground',
-    'tab.activeForeground',
-    'terminal.ansiBrightWhite',
-    'titleBar.activeForeground',
-  ],
-  [c.JORDY_BLUE]: [
+  [c.HAVELOCK_BLUE]: [
     'editor.findMatchBorder',
     'editor.wordHighlightBorder',
     'editor.wordHighlightStrongBorder',
@@ -90,6 +83,13 @@ export default {
     'inputOption.activeBorder',
     'peekView.border',
     'terminal.ansiBlue',
+  ],
+  [c.IRON]: [
+    'editor.findMatchHighlightBorder',
+    'editorActiveLineNumber.foreground',
+    'tab.activeForeground',
+    'terminal.ansiBrightWhite',
+    'titleBar.activeForeground',
   ],
   [c.LAVENDER]: ['terminal.ansiMagenta'],
   [c.OLIVINE]: ['terminal.ansiGreen'],
