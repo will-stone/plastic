@@ -2,12 +2,14 @@
   "name": "plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": ["Themes"],
+  "categories": [
+    "Themes"
+  ],
   "contributes": {
     "themes": [
       {
@@ -19,6 +21,11 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/plastic-theme-punctuation.json"
+      },
+      {
+        "label": "Plastic v2 Beta",
+        "uiTheme": "vs-dark",
+        "path": "./themes/plastic-theme-v2-beta.json"
       }
     ]
   },
@@ -32,13 +39,18 @@
     "url": "https://github.com/will-stone/plastic"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
     "lite-server": "^2.3.0",
-    "prettier": "^1.5.3",
-    "vsce": "^1.39.0"
+    "prettier": "^1.12.1",
+    "react": "^16.3.2",
+    "vsce": "^1.40.0"
   },
   "scripts": {
     "docs": "lite-server",
-    "vspublish": "vsce publish"
+    "vspublish": "vsce publish",
+    "build": "node --experimental-modules scripts/build.mjs"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
