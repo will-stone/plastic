@@ -14,6 +14,7 @@ export default {
     'editorWhitespace.foreground',
   ],
   [c.BRIGHT_GREEN]: ['terminal.ansiBrightGreen'],
+  [c.BRIGHT_TURQUOISE]: ['terminal.ansiBrightCyan'],
   [c.BUNKER]: [
     'contrastBorder',
     'dropdown.border',
@@ -62,17 +63,7 @@ export default {
     'inputValidation.errorBorder',
     'terminal.ansiBrightRed',
   ],
-  [c.CYAN_AQUA]: ['terminal.ansiBrightCyan'],
-  [c.ELECTRIC_VIOLET]: ['terminal.ansiBrightMagenta'],
-  [c.FOUNTAIN_BLUE]: ['terminal.ansiCyan'],
-  [c.HARVEST_GOLD]: [
-    'editorOverviewRuler.warningForeground',
-    'editorWarning.foreground',
-    'inputValidation.warningBackground',
-    'inputValidation.warningBorder',
-    'terminal.ansiBrightYellow',
-  ],
-  [c.HAVELOCK_BLUE]: [
+  [c.CORNFLOWER_BLUE]: [
     'editor.findMatchBorder',
     'editor.wordHighlightBorder',
     'editor.wordHighlightStrongBorder',
@@ -83,6 +74,15 @@ export default {
     'inputOption.activeBorder',
     'peekView.border',
     'terminal.ansiBlue',
+  ],
+  [c.ELECTRIC_VIOLET]: ['terminal.ansiBrightMagenta'],
+  [c.FOUNTAIN_BLUE]: ['terminal.ansiCyan'],
+  [c.HARVEST_GOLD]: [
+    'editorOverviewRuler.warningForeground',
+    'editorWarning.foreground',
+    'inputValidation.warningBackground',
+    'inputValidation.warningBorder',
+    'terminal.ansiBrightYellow',
   ],
   [c.IRON]: [
     'editor.findMatchHighlightBorder',
