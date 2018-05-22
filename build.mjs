@@ -2,8 +2,8 @@ import fs from 'fs';
 import {
   colours as tokenColours,
   styles as tokenStyles,
-} from '../config/syntax';
-import workbenchColours from '../config/workbench';
+} from './config/syntax';
+import workbenchColours from './config/workbench';
 import yaml from 'js-yaml';
 
 class build {
