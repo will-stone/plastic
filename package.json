@@ -7,9 +7,7 @@
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": [
-    "Themes"
-  ],
+  "categories": ["Themes"],
   "contributes": {
     "themes": [
       {
@@ -29,11 +27,11 @@
       }
     ]
   },
-  "homepage": "http://wstone.io/plastic/",
+  "homepage": "https://will-stone.github.io/plastic/",
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
   },
-  "icon": "images/icon.png",
+  "icon": "docs/images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/will-stone/plastic"
@@ -48,13 +46,44 @@
     "vsce": "^1.40.0"
   },
   "scripts": {
-    "docs": "lite-server",
+    "docs": "lite-server --baseDir='./docs'",
     "vspublish": "vsce publish",
-    "build": "node --experimental-modules scripts/build.mjs"
+    "build": "node --experimental-modules src/build.mjs"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
     "publisherId": "744e71fe-bf60-4aba-94b1-d6e77d16fa27",
     "publisherDisplayName": "Will Stone"
+  },
+  "dependencies": {
+    "js-yaml": "^3.11.0"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "proseWrap": "always",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "rules": {
+      "no-console": 0
+    }
   }
 }

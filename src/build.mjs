@@ -4,6 +4,25 @@ import {
   styles as tokenStyles,
 } from '../config/syntax';
 import workbenchColours from '../config/workbench';
+import yaml from 'js-yaml';
+
+class build {
+  constructor() {
+    const theme = this.readUserTheme();
+    console.log(theme);
+  }
+
+  readUserTheme() {
+    try {
+      return yaml.safeLoad(fs.readFileSync('config/public.yaml', 'utf8'));
+    } catch (e) {
+      console.log(e);
+      process.exit();
+    }
+  }
+}
+
+new build();
 
 const template = {
   name: 'Plastic v2 Beta',
