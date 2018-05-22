@@ -13,17 +13,17 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./themes/plastic-theme.json"
+        "path": "./legacy/plastic-theme.json"
       },
       {
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
-        "path": "./themes/plastic-theme-punctuation.json"
+        "path": "./legacy/plastic-theme-punctuation.json"
       },
       {
         "label": "Plastic v2 Beta",
         "uiTheme": "vs-dark",
-        "path": "./themes/plastic-theme-v2-beta.json"
+        "path": "./out/plastic-theme-v2-beta.json"
       }
     ]
   },
@@ -48,7 +48,7 @@
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
     "vspublish": "vsce publish",
-    "build": "node --experimental-modules src/build.mjs"
+    "build": "node --experimental-modules build.mjs"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
