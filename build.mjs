@@ -6,23 +6,39 @@ import {
 import workbenchColours from './config/workbench';
 import yaml from 'js-yaml';
 
-class build {
-  constructor() {
-    const theme = this.readUserTheme();
-    console.log(theme);
+class Build {
+  readUserTheme(themeFile) {
+    try {
+      return yaml.safeLoad(fs.readFileSync(themeFile, 'utf8'));
+    } catch (e) {
+      this.errorAndExit(`Could not read theme.yaml file: ${e}`);
+    }
   }
 
-  readUserTheme() {
-    try {
-      return yaml.safeLoad(fs.readFileSync('theme.yaml', 'utf8'));
-    } catch (e) {
-      console.log(e);
-      process.exit();
+  themeName(name) {
+    if (!name) {
+      this.errorAndExit('Theme name missing');
     }
+    if (typeof name !== 'string') {
+      this.errorAndExit('Theme name must be a string');
+    }
+    // const nameBeginsWithPlastic =
+  }
+
+  errorAndExit(msg) {
+    console.log(msg);
+    process.exit();
+  }
+
+  init(themeFile) {
+    const theme = this.readUserTheme(themeFile);
+    console.log(theme);
   }
 }
 
-new build();
+const themeFile = 'theme.yaml';
+const build = new Build();
+build.init(themeFile);
 
 const template = {
   name: 'Plastic v2 Beta',
