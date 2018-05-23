@@ -14,7 +14,7 @@ class build {
 
   readUserTheme() {
     try {
-      return yaml.safeLoad(fs.readFileSync('config/public.yaml', 'utf8'));
+      return yaml.safeLoad(fs.readFileSync('theme.yaml', 'utf8'));
     } catch (e) {
       console.log(e);
       process.exit();
