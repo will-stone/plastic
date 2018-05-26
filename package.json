@@ -7,7 +7,9 @@
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": ["Themes"],
+  "categories": [
+    "Themes"
+  ],
   "contributes": {
     "themes": [
       {
@@ -37,9 +39,11 @@
     "url": "https://github.com/will-stone/plastic"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
+    "esm": "^3.0.38",
     "lite-server": "^2.3.0",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
@@ -48,15 +52,12 @@
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
     "vspublish": "vsce publish",
-    "build": "node --experimental-modules build.mjs"
+    "build": "node -r esm src/build.js"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
     "publisherId": "744e71fe-bf60-4aba-94b1-d6e77d16fa27",
     "publisherDisplayName": "Will Stone"
-  },
-  "dependencies": {
-    "js-yaml": "^3.11.0"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -81,7 +82,10 @@
       "browser": true,
       "node": true
     },
-    "extends": ["eslint:recommended", "prettier"],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "rules": {
       "no-console": 0
     }

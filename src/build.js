@@ -2,43 +2,31 @@ import fs from 'fs';
 import {
   colours as tokenColours,
   styles as tokenStyles,
-} from './config/syntax';
-import workbenchColours from './config/workbench';
-import yaml from 'js-yaml';
-
-class Build {
-  readUserTheme(themeFile) {
-    try {
-      return yaml.safeLoad(fs.readFileSync(themeFile, 'utf8'));
-    } catch (e) {
-      this.errorAndExit(`Could not read theme.yaml file: ${e}`);
-    }
-  }
-
-  themeName(name) {
-    if (!name) {
-      this.errorAndExit('Theme name missing');
-    }
-    if (typeof name !== 'string') {
-      this.errorAndExit('Theme name must be a string');
-    }
-    // const nameBeginsWithPlastic =
-  }
-
-  errorAndExit(msg) {
-    console.log(msg);
-    process.exit();
-  }
-
-  init(themeFile) {
-    const theme = this.readUserTheme(themeFile);
-    console.log(theme);
-  }
-}
+} from '../config/syntax';
+import workbenchColours from '../config/workbench';
+import readThemeYaml from './readThemeYaml';
+import test from './test';
 
 const themeFile = 'theme.yaml';
-const build = new Build();
-build.init(themeFile);
+const theme = readThemeYaml(themeFile);
+
+test(theme)
+  .pass('File loads.')
+  .fail('Could not read theme.yaml file.');
+
+const { name } = theme;
+
+test(name)
+  .pass('Name present.')
+  .fail('Name missing.');
+
+test(typeof name === 'string')
+  .pass('Name is a string.')
+  .fail('Theme name must be a string.');
+
+test(name.startsWith('Plastic'))
+  .pass('Name begins with "Plastic".')
+  .fail('Theme name must begin with "Plastic"');
 
 const template = {
   name: 'Plastic v2 Beta',
@@ -85,7 +73,7 @@ const template = {
 
 const json = JSON.stringify(template, null, 2);
 
-fs.writeFile('themes/plastic-theme-v2-beta.json', json, 'utf8', () =>
+fs.writeFile('out/plastic-theme-v2-beta.json', json, 'utf8', () =>
   /* eslint-disable no-console, no-undef */
   console.log('done')
 );
