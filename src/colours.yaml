@@ -1,0 +1,11 @@
+darkest: '#0D1117' # Bunker
+dark: '#181A1F' # Woodsmoke
+grey: '#3C4151' # Bright Gray
+black: '#21252B' # Shark
+bright_black: '#5F6672' # Shuttle Gray
+white: '#A9B2C3' # Cadet Blue
+bright_white: '#D4D7D9' # Iron
+true_white: '#ffffff'
+transparent: '#00000000'
+highlight: '#A9B2C322'
+active: '#A9B2C333'
