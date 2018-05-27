@@ -5,7 +5,7 @@ const testTheme = theme => {
     .pass('File loads.')
     .fail('Could not read theme.yaml file.');
 
-  const { name } = theme;
+  const { name, colours } = theme;
 
   test(name)
     .pass('Name present.')
@@ -17,7 +17,11 @@ const testTheme = theme => {
 
   test(name.startsWith('Plastic'))
     .pass('Name begins with "Plastic".')
-    .fail('Theme name must begin with "Plastic"');
+    .fail('Theme name must begin with "Plastic".');
+
+  test(colours.blue && typeof colours.blue === 'string')
+    .pass('Blue colour set.')
+    .fail('Blue colour not set correctly.');
 };
 
 export default testTheme;
