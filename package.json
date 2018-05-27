@@ -7,9 +7,7 @@
   "engines": {
     "vscode": "^1.21.0"
   },
-  "categories": [
-    "Themes"
-  ],
+  "categories": ["Themes"],
   "contributes": {
     "themes": [
       {
@@ -52,7 +50,7 @@
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
     "vspublish": "vsce publish",
-    "build": "node -r esm src/build.js"
+    "build": "node -r esm src/index.js"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
@@ -82,10 +80,7 @@
       "browser": true,
       "node": true
     },
-    "extends": [
-      "eslint:recommended",
-      "prettier"
-    ],
+    "extends": ["eslint:recommended", "prettier"],
     "rules": {
       "no-console": 0
     }
