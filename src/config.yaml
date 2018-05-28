@@ -64,6 +64,54 @@ styles:
 workbench:
   one:
     - 'terminal.ansiBlue'
+  two:
+    - 'terminal.ansiCyan'
+  three:
+    - 'terminal.ansiGreen'
+  four:
+    - 'terminal.ansiMagenta'
+  five:
+    - 'terminal.ansiRed'
+  six:
+    - 'terminal.ansiYellow'
+  bright_one:
+    - 'terminal.ansiBrightBlue'
+  bright_two:
+    - 'terminal.ansiBrightCyan'
+  bright_three:
+    - 'terminal.ansiBrightGreen'
+  bright_four:
+    - 'terminal.ansiBrightMagenta'
+  bright_five:
+    - 'editorError.foreground'
+    - 'editorOverviewRuler.errorForeground'
+    - 'errorForeground'
+    - 'inputValidation.errorBackground'
+    - 'inputValidation.errorBorder'
+    - 'terminal.ansiBrightRed'
+  bright_six:
+    - 'editorOverviewRuler.warningForeground'
+    - 'editorWarning.foreground'
+    - 'inputValidation.warningBackground'
+    - 'inputValidation.warningBorder'
+    - 'terminal.ansiBrightYellow'
+  primary:
+    - 'activityBarBadge.background'
+    - 'button.background'
+  secondary:
+    - 'editor.findMatchBorder'
+    - 'editor.wordHighlightBorder'
+    - 'editor.wordHighlightStrongBorder'
+    - 'editorBracketMatch.border'
+    - 'editorHoverWidget.border'
+    - 'editorInfo.foreground'
+    - 'editorOverviewRuler.infoForeground'
+    - 'editorSuggestWidget.border'
+    - 'focusBorder'
+    - 'inputOption.activeBorder'
+    - 'inputValidation.infoBackground'
+    - 'inputValidation.infoBorder'
+    - 'peekView.border'
   active:
     - 'editor.selectionBackground'
     - 'list.hoverBackground'
@@ -81,48 +129,12 @@ workbench:
   bright_black:
     - 'editorIndentGuide.activeBackground'
     - 'terminal.ansiBrightBlack'
-  bright_one:
-    - 'editor.findMatchBorder'
-    - 'editor.wordHighlightBorder'
-    - 'editor.wordHighlightStrongBorder'
-    - 'editorBracketMatch.border'
-    - 'editorHoverWidget.border'
-    - 'editorInfo.foreground'
-    - 'editorOverviewRuler.infoForeground'
-    - 'editorSuggestWidget.border'
-    - 'focusBorder'
-    - 'inputOption.activeBorder'
-    - 'inputValidation.infoBackground'
-    - 'inputValidation.infoBorder'
-    - 'peekView.border'
-    - 'terminal.ansiBrightBlue'
-  bright_cyan:
-    - 'terminal.ansiBrightCyan'
-  bright_green:
-    - 'terminal.ansiBrightGreen'
-  bright_magenta:
-    - 'terminal.ansiBrightMagenta'
-  bright_red:
-    - 'editorError.foreground'
-    - 'editorOverviewRuler.errorForeground'
-    - 'errorForeground'
-    - 'inputValidation.errorBackground'
-    - 'inputValidation.errorBorder'
-    - 'terminal.ansiBrightRed'
   bright_white:
     - 'editor.findMatchHighlightBorder'
     - 'editorActiveLineNumber.foreground'
     - 'tab.activeForeground'
     - 'terminal.ansiBrightWhite'
     - 'titleBar.activeForeground'
-  bright_yellow:
-    - 'editorOverviewRuler.warningForeground'
-    - 'editorWarning.foreground'
-    - 'inputValidation.warningBackground'
-    - 'inputValidation.warningBorder'
-    - 'terminal.ansiBrightYellow'
-  cyan:
-    - 'terminal.ansiCyan'
   dark:
     - 'activityBar.dropBackground'
     - 'editorWidget.background'
@@ -152,8 +164,6 @@ workbench:
     - 'panel.border'
     - 'tab.border'
     - 'widget.shadow'
-  green:
-    - 'terminal.ansiGreen'
   grey:
     - 'editorIndentGuide.background'
     - 'editorLineNumber.foreground'
@@ -171,12 +181,6 @@ workbench:
     - 'peekViewResult.selectionBackground'
     - 'scrollbarSlider.background'
     - 'tab.hoverBackground'
-  magenta:
-    - 'terminal.ansiMagenta'
-  red:
-    - 'activityBarBadge.background'
-    - 'button.background'
-    - 'terminal.ansiRed'
   transparent:
     - 'editor.findMatchBackground'
     - 'editor.findMatchHighlightBackground'
@@ -196,5 +200,3 @@ workbench:
     - 'terminal.ansiWhite'
     - 'terminal.foreground'
     - 'titleBar.inactiveForeground'
-  yellow:
-    - 'terminal.ansiYellow'

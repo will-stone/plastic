@@ -23,7 +23,7 @@
       {
         "label": "Plastic v2 Beta",
         "uiTheme": "vs-dark",
-        "path": "./out/plastic-theme-v2-beta.json"
+        "path": "./out/theme.json"
       }
     ]
   },
