@@ -3,7 +3,7 @@ name: Plastic
 
 # Your theme must provide hex values for these 6 normal and 6 bright colours.
 # The terminal colours they are associated with is shown next to them. The
-# colour you set does not necessarily need match the terminal name, think of
+# colour you set does not necessarily need to match the terminal name, think of
 # them as your available palette for your syntax colours. Do not remove any or
 # add any new ones. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
