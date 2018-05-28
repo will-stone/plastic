@@ -2,21 +2,23 @@
 name: Plastic
 
 # Your theme must provide hex values for these named colours. They are used for
-# the terminal. You can either use these colours for your syntax theme or append
-# some more of your own.
+# the terminal and hence use terminal colour names. The colour you set does not
+# necessarily need match the name, think of them as your available palette for
+# your syntax colours (6 normal + 6 bright variations). Do not remove any, do
+# not add any new ones.
 colours:
-  blue: '#61AFEF'
-  bright_blue: '#007FFF'
+  one: '#61AFEF' # also used for some ui borders
   cyan: '#56B6C2'
-  bright_cyan: '#08E8DE'
   green: '#98C379'
-  bright_green: '#66FF00'
   magenta: '#B57EDC'
-  bright_magenta: '#8B00FF'
-  red: '#E06C75'
-  bright_red: '#E34234'
+  red: '#E06C75' # also used for activity badges and buttons
   yellow: '#D19A66'
-  bright_yellow: '#E5C07B'
+  bright_one: '#007FFF'
+  bright_red: '#E34234' # also used for errors
+  bright_cyan: '#08E8DE'
+  bright_green: '#66FF00'
+  bright_magenta: '#8B00FF'
+  bright_yellow: '#E5C07B' # also used for warnings
 
 # This is where you define a colour to each group of syntax. If you leave as
 # null, the default Plastic colour will be used.
@@ -24,6 +26,9 @@ syntax:
   functions: yellow # function names, and React props.
   keywords: red # import, export, return etc.
   primitives: cyan # numbers, booleans (not strings)
-  storage: blue # const, var, class etc. and React JSX component tag
+  storage: one # const, var, class etc. and React JSX component tag
   strings: green # anything in quotes
   tags: bright_yellow # html tags
+
+workbench:
+  uiHighlight: bright_one

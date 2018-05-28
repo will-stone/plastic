@@ -19,9 +19,9 @@ const testTheme = theme => {
     .pass('Name begins with "Plastic".')
     .fail('Theme name must begin with "Plastic".');
 
-  test(colours.blue && typeof colours.blue === 'string')
-    .pass('Blue colour set.')
-    .fail('Blue colour not set correctly.');
+  // test(colours.blue && typeof colours.blue === 'string')
+  //   .pass('Blue colour set.')
+  //   .fail('Blue colour not set correctly.');
 };
 
 export default testTheme;
