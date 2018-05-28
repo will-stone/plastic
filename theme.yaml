@@ -21,7 +21,8 @@ colours:
   bright_five: '#E34234' # bright red
   bright_six: '#E5C07B' # bright yellow
 
-# This is where you define a colour to each group of syntax.
+# This is where you define a colour to each group of syntax. Use the palette
+# identifier from above.
 syntax:
   functions: six # function names, and React props.
   keywords: five # import, export, return etc.
@@ -32,7 +33,7 @@ syntax:
 
 # Plastic themes most of the workbench (everything that's not syntax) for you.
 # However, there are a couple of flourishes you can add to finish-off your
-# theme nicely.
+# theme nicely. As with syntax, use the palette identifier used in colours.
 workbench:
   primary: five # buttons, activity-bar badge
   secondary: bright_one # borders, find highlight, bracket match etc.
