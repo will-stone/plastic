@@ -1,7 +1,17 @@
 import fs from 'fs';
 
 const compileTheme = (theme, config) => {
-  const coloursLookup = { ...theme.colours, ...config.colours };
+  const coloursLookup = {
+    ...theme.colours,
+    ...config.colours,
+    ...Object.keys(theme.workbench).reduce((acc, workbenchType) => {
+      const colourName = theme.workbench[workbenchType];
+      return {
+        ...acc,
+        [workbenchType]: theme.colours[colourName],
+      };
+    }, {}),
+  };
 
   // workbench
   const colors = Object.keys(config.workbench).reduce(
@@ -56,7 +66,7 @@ const compileTheme = (theme, config) => {
 
   const json = JSON.stringify(template, null, 2);
 
-  fs.writeFile('out/plastic-theme-v2-beta.json', json, 'utf8', () =>
+  fs.writeFile(`out/theme.json`, json, 'utf8', () =>
     /* eslint-disable no-console, no-undef */
     console.log('done')
   );
