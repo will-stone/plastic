@@ -62,6 +62,8 @@ styles:
     - 'punctuation.definition.italic'
 
 workbench:
+  one:
+    - 'terminal.ansiBlue'
   active:
     - 'editor.selectionBackground'
     - 'list.hoverBackground'
@@ -76,25 +78,23 @@ workbench:
     - 'terminal.ansiBlack'
     - 'titleBar.activeBackground'
     - 'titleBar.inactiveBackground'
-  blue:
+  bright_black:
+    - 'editorIndentGuide.activeBackground'
+    - 'terminal.ansiBrightBlack'
+  bright_one:
     - 'editor.findMatchBorder'
     - 'editor.wordHighlightBorder'
     - 'editor.wordHighlightStrongBorder'
     - 'editorBracketMatch.border'
     - 'editorHoverWidget.border'
+    - 'editorInfo.foreground'
+    - 'editorOverviewRuler.infoForeground'
     - 'editorSuggestWidget.border'
     - 'focusBorder'
     - 'inputOption.activeBorder'
-    - 'peekView.border'
-    - 'terminal.ansiBlue'
-  bright_black:
-    - 'editorIndentGuide.activeBackground'
-    - 'terminal.ansiBrightBlack'
-  bright_blue:
-    - 'editorInfo.foreground'
-    - 'editorOverviewRuler.infoForeground'
     - 'inputValidation.infoBackground'
     - 'inputValidation.infoBorder'
+    - 'peekView.border'
     - 'terminal.ansiBrightBlue'
   bright_cyan:
     - 'terminal.ansiBrightCyan'
