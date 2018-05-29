@@ -2,13 +2,13 @@ import fs from 'fs';
 
 const compileTheme = (theme, config) => {
   const coloursLookup = {
-    ...theme.colours,
-    ...config.colours,
+    ...theme.palette,
+    ...config.palette,
     ...Object.keys(theme.workbench).reduce((acc, workbenchType) => {
       const colourName = theme.workbench[workbenchType];
       return {
         ...acc,
-        [workbenchType]: theme.colours[colourName],
+        [workbenchType]: theme.palette[colourName],
       };
     }, {}),
   };

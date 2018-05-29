@@ -7,7 +7,7 @@ name: Plastic
 # them as your available palette for your syntax colours. Do not remove any or
 # add any new ones. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
-colours:
+palette:
   one: '#61AFEF' # blue
   two: '#56B6C2' # cyan
   three: '#98C379' # green
