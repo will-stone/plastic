@@ -3059,9 +3059,9 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
-vsce@^1.40.0:
-  version "1.40.0"
-  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.40.0.tgz#71b980959e3717599a95f54a059e3700ccd35009"
+vsce@^1.41.0:
+  version "1.41.0"
+  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.41.0.tgz#fa4a5dc5d196abaf69a587b95c8f953561834a6d"
   dependencies:
     cheerio "^1.0.0-rc.1"
     commander "^2.8.1"

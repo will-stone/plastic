@@ -52,7 +52,7 @@
     "prettier": "^1.12.1",
     "react": "^16.3.2",
     "tinycolor2": "^1.4.1",
-    "vsce": "^1.40.0"
+    "vsce": "^1.41.0"
   },
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
