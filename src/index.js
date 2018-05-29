@@ -1,3 +1,4 @@
+import fs from 'fs-extra';
 import compileTheme from './compileTheme';
 import testTheme from './testTheme';
 import readYaml from './utils/readYaml';
@@ -9,4 +10,8 @@ testTheme(theme);
 
 const config = readYaml('src/config.yaml');
 
-compileTheme(theme, config);
+const normalTheme = compileTheme(theme, config);
+fs.outputFile(`out/theme.json`, normalTheme);
+
+const deprioritisedTheme = compileTheme(theme, config, true);
+fs.outputFile(`out/theme-deprioritised-punctuation.json`, deprioritisedTheme);

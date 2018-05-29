@@ -3,9 +3,9 @@ name: Plastic
 
 # Your theme must provide hex values for these 6 normal and 6 bright colours.
 # The terminal colours they are associated with is shown next to them. The
-# colour you set does not necessarily need to match the terminal name, think of
-# them as your available palette for your syntax colours. Do not remove any or
-# add any new ones. I highly recommend the Color Highlight plugin that will
+# colour you set does not necessarily need to match the terminal name, they are
+# your available palette for your syntax colours. Do not add, remove, or rename
+# the palette names. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
 palette:
   one: '#61AFEF' # blue
@@ -32,8 +32,8 @@ syntax:
   tags: bright_six # html tags
 
 # Plastic themes most of the workbench (everything that's not syntax) for you.
-# However, there are a couple of flourishes you can add to finish-off your
-# theme nicely. As with syntax, use the palette identifier used in colours.
+# However, there are a couple of flourishes you can add to top-off your
+# theme nicely. As with syntax, use the palette identifier.
 workbench:
   primary: five # buttons, activity-bar badge
   secondary: bright_one # borders, find highlight, bracket match etc.

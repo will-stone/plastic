@@ -1,6 +1,4 @@
-import fs from 'fs';
-
-const compileTheme = (theme, config) => {
+const compileTheme = (theme, config, deprioritised = false) => {
   const coloursLookup = {
     ...theme.palette,
     ...config.palette,
@@ -31,7 +29,11 @@ const compileTheme = (theme, config) => {
     {}
   );
 
-  const syntax = { ...theme.syntax, ...config.syntax };
+  const syntax = {
+    ...theme.syntax,
+    ...config.syntax,
+    ...(deprioritised ? config.deprioritised_syntax : {}),
+  };
 
   const tokenColors = [
     // Syntax colours
@@ -64,12 +66,7 @@ const compileTheme = (theme, config) => {
     tokenColors,
   };
 
-  const json = JSON.stringify(template, null, 2);
-
-  fs.writeFile(`out/theme.json`, json, 'utf8', () =>
-    /* eslint-disable no-console, no-undef */
-    console.log('done')
-  );
+  return JSON.stringify(template, null, 2);
 };
 
 export default compileTheme;

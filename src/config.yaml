@@ -16,6 +16,9 @@ syntax:
   punctuation: white
   variables: bright_white
 
+deprioritised_syntax:
+  punctuation: bright_black
+
 scopes:
   comments:
     - 'comment'
