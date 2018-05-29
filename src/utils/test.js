@@ -9,7 +9,7 @@ const test = function(condition) {
   const fail = function(errorMsg) {
     if (!condition) {
       console.log(`❌  ${errorMsg}`);
-      process.exit();
+      process.exit(1);
     }
     return this;
   };

@@ -5,7 +5,13 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.11.2] - 2018-05-29
+
+* v2's compiler ready.
+* Deprioritised v2 theme.
+
 ## [1.11.1] - 2018-05-22
+
 v2 beta: use v1 syntax colours (mainly).
 
 ## [1.11.0] - 2018-05-21

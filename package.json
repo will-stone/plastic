@@ -2,7 +2,7 @@
   "name": "plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.21.0"
@@ -24,6 +24,11 @@
         "label": "Plastic v2 Beta",
         "uiTheme": "vs-dark",
         "path": "./out/theme.json"
+      },
+      {
+        "label": "Plastic v2 Beta - deprioritised punctuation",
+        "uiTheme": "vs-dark",
+        "path": "./out/theme-deprioritised-punctuation.json"
       }
     ]
   },
@@ -42,9 +47,11 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "esm": "^3.0.38",
+    "fs-extra": "^6.0.1",
     "lite-server": "^2.3.0",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
+    "tinycolor2": "^1.4.1",
     "vsce": "^1.40.0"
   },
   "scripts": {
