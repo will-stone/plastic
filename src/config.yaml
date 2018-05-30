@@ -21,189 +21,190 @@ deprioritised_syntax:
 
 scopes:
   comments:
-    - 'comment'
-    - 'punctuation.definition.comment' # start and end of comment blocks
-    - 'punctuation.terminator.statement' # semicolons - bleugh
+    - comment
+    - punctuation.definition.comment # start and end of comment blocks
+    - punctuation.terminator.statement # semicolons - bleugh
   functions:
-    - 'entity'
-    - 'entity.name.function'
-    - 'punctuation.definition.entity' # css . and # for classes and IDs
-    - 'support.function'
+    - entity
+    - entity.name.function
+    - punctuation.definition.entity # css . and # for classes and IDs
+    - support.function
   keywords:
-    - 'keyword'
-    - 'punctuation.definition.keyword' # css @ in @media queries
+    - keyword
+    - punctuation.definition.keyword # css @ in @media queries
   primitives:
-    - 'constant'
-    - 'keyword.other'
-    - 'support.type'
+    - constant
+    - keyword.other
+    - support.type
   punctuation:
-    - 'meta.brace'
-    - 'punctuation'
+    - meta.brace
+    - punctuation
   storage:
-    - 'storage'
-    - 'support.class'
-    - 'support.constant'
+    - storage
+    - support.class
+    - support.constant
   strings:
-    - 'string'
-    - 'markup.inline'
+    - string
+    - markup.inline
   tags:
-    - 'entity.name'
-    - 'variable.language' # this
+    - entity.name
+    - variable.language # this
   variables:
-    - 'support.type.property-name'
-    - 'support.variable'
-    - 'variable'
+    - support.type.property-name
+    - support.variable
+    - variable
 
 styles:
   bold:
-    - 'markup.bold'
-    - 'punctuation.definition.bold'
-    - 'entity.other.attribute-name.id' # css ID
+    - markup.bold
+    - punctuation.definition.bold
+    - entity.other.attribute-name.id # css ID
   italic:
-    - 'comment'
-    - 'markup.italic'
-    - 'punctuation.definition.italic'
+    - comment
+    - markup.italic
+    - punctuation.definition.italic
 
 workbench:
   one:
-    - 'terminal.ansiBlue'
+    - terminal.ansiBlue
   two:
-    - 'terminal.ansiCyan'
+    - terminal.ansiCyan
   three:
-    - 'terminal.ansiGreen'
+    - terminal.ansiGreen
   four:
-    - 'terminal.ansiMagenta'
+    - terminal.ansiMagenta
   five:
-    - 'terminal.ansiRed'
+    - terminal.ansiRed
   six:
-    - 'terminal.ansiYellow'
+    - terminal.ansiYellow
   bright_one:
-    - 'terminal.ansiBrightBlue'
+    - terminal.ansiBrightBlue
   bright_two:
-    - 'terminal.ansiBrightCyan'
+    - terminal.ansiBrightCyan
   bright_three:
-    - 'terminal.ansiBrightGreen'
+    - terminal.ansiBrightGreen
   bright_four:
-    - 'terminal.ansiBrightMagenta'
+    - terminal.ansiBrightMagenta
   bright_five:
-    - 'terminal.ansiBrightRed'
+    - terminal.ansiBrightRed
   bright_six:
-    - 'terminal.ansiBrightYellow'
+    - terminal.ansiBrightYellow
   primary:
-    - 'activityBarBadge.background'
-    - 'button.background'
+    - activityBarBadge.background
+    - button.background
   secondary:
-    - 'editor.findMatchBorder'
-    - 'editor.wordHighlightBorder'
-    - 'editor.wordHighlightStrongBorder'
-    - 'editorBracketMatch.border'
-    - 'editorHoverWidget.border'
-    - 'editorInfo.foreground'
-    - 'editorOverviewRuler.infoForeground'
-    - 'editorSuggestWidget.border'
-    - 'focusBorder'
-    - 'inputOption.activeBorder'
-    - 'inputValidation.infoBackground'
-    - 'inputValidation.infoBorder'
-    - 'peekView.border'
+    - editor.findMatchBorder
+    - editor.wordHighlightBorder
+    - editor.wordHighlightStrongBorder
+    - editorBracketMatch.border    
+    - editorHoverWidget.border
+    - editorInfo.foreground
+    - editorOverviewRuler.infoForeground
+    - editorSuggestWidget.border
+    - focusBorder
+    - inputOption.activeBorder
+    - inputValidation.infoBackground
+    - inputValidation.infoBorder
+    - peekView.border
   warning:
-    - 'editorOverviewRuler.warningForeground'
-    - 'editorWarning.foreground'
-    - 'inputValidation.warningBackground'
-    - 'inputValidation.warningBorder'
+    - editorOverviewRuler.warningForeground
+    - editorWarning.foreground
+    - inputValidation.warningBackground
+    - inputValidation.warningBorder
   error:
-    - 'editorError.foreground'
-    - 'editorOverviewRuler.errorForeground'
-    - 'errorForeground'
-    - 'inputValidation.errorBackground'
-    - 'inputValidation.errorBorder'
+    - editorError.foreground
+    - editorOverviewRuler.errorForeground
+    - errorForeground
+    - inputValidation.errorBackground
+    - inputValidation.errorBorder
   active:
-    - 'editor.selectionBackground'
-    - 'list.hoverBackground'
-    - 'scrollbarSlider.activeBackground'
-    - 'scrollbarSlider.hoverBackground'
+    - editor.selectionBackground
+    - list.hoverBackground
+    - scrollbarSlider.activeBackground
+    - scrollbarSlider.hoverBackground
   black:
-    - 'activityBar.background'
-    - 'editor.background'
-    - 'sideBarSectionHeader.background'
-    - 'statusBar.background'
-    - 'tab.activeBackground'
-    - 'terminal.ansiBlack'
-    - 'titleBar.activeBackground'
-    - 'titleBar.inactiveBackground'
+    - activityBar.background
+    - editor.background
+    - sideBarSectionHeader.background
+    - statusBar.background
+    - tab.activeBackground
+    - terminal.ansiBlack
+    - titleBar.activeBackground
+    - titleBar.inactiveBackground
   bright_black:
-    - 'editorIndentGuide.activeBackground'
-    - 'terminal.ansiBrightBlack'
+    - editorIndentGuide.activeBackground
+    - terminal.ansiBrightBlack
   bright_white:
-    - 'editor.findMatchHighlightBorder'
-    - 'editor.rangeHighlightBorder'
-    - 'editor.selectionHighlightBorder'
-    - 'editorActiveLineNumber.foreground'
-    - 'tab.activeForeground'
-    - 'terminal.ansiBrightWhite'
-    - 'titleBar.activeForeground'
+    - editor.findMatchHighlightBorder
+    - editor.rangeHighlightBorder
+    - editor.selectionHighlightBorder
+    - editorActiveLineNumber.foreground
+    - tab.activeForeground
+    - terminal.ansiBrightWhite
+    - titleBar.activeForeground
   dark:
-    - 'activityBar.dropBackground'
-    - 'editorWidget.background'
-    - 'debugToolBar.background'
-    - 'dropdown.background'
-    - 'editorGroup.background'
-    - 'editorGroupHeader.tabsBackground'
-    - 'editorHoverWidget.background'
-    - 'editorSuggestWidget.background'
-    - 'notificationCenterHeader.background'
-    - 'notifications.background'
-    - 'panel.background'
-    - 'peekViewEditor.background'
-    - 'peekViewResult.background'
-    - 'peekViewTitle.background'
-    - 'sideBar.background'
-    - 'statusBar.debuggingBackground'
-    - 'statusBar.noFolderBackground'
-    - 'statusBarItem.hoverBackground'
-    - 'tab.inactiveBackground'
+    - activityBar.dropBackground
+    - editorWidget.background
+    - debugToolBar.background
+    - dropdown.background
+    - editorGroup.background
+    - editorGroupHeader.tabsBackground
+    - editorHoverWidget.background
+    - editorSuggestWidget.background
+    - notificationCenterHeader.background
+    - notifications.background
+    - panel.background
+    - peekViewEditor.background
+    - peekViewResult.background
+    - peekViewTitle.background
+    - sideBar.background
+    - statusBar.debuggingBackground
+    - statusBar.noFolderBackground
+    - statusBarItem.hoverBackground
+    - tab.inactiveBackground
   darkest:
-    - 'contrastBorder'
-    - 'dropdown.border'
-    - 'editorGroup.border'
-    - 'editorOverviewRuler.border'
-    - 'input.background'
-    - 'panel.border'
-    - 'tab.border'
-    - 'widget.shadow'
+    - contrastBorder
+    - dropdown.border
+    - editorGroup.border
+    - editorOverviewRuler.border
+    - input.background
+    - panel.border
+    - tab.border
+    - widget.shadow
   grey:
-    - 'editorIndentGuide.background'
-    - 'editorLineNumber.foreground'
-    - 'editorWhitespace.foreground'
+    - editorIndentGuide.background
+    - editorLineNumber.foreground
+    - editorWhitespace.foreground
   highlight:
-    - 'editor.lineHighlightBackground'
-    - 'editor.selectionHighlightBackground'
-    - 'editorRuler.foreground'
-    - 'editorSuggestWidget.selectedBackground'
-    - 'list.activeSelectionBackground'
-    - 'list.focusBackground'
-    - 'list.inactiveSelectionBackground'
-    - 'peekViewEditor.matchHighlightBackground'
-    - 'peekViewResult.matchHighlightBackground'
-    - 'peekViewResult.selectionBackground'
-    - 'scrollbarSlider.background'
-    - 'tab.hoverBackground'
+    - editor.lineHighlightBackground
+    - editor.selectionHighlightBackground
+    - editorRuler.foreground
+    - editorSuggestWidget.selectedBackground
+    - list.activeSelectionBackground
+    - list.focusBackground
+    - list.inactiveSelectionBackground
+    - peekViewEditor.matchHighlightBackground
+    - peekViewResult.matchHighlightBackground
+    - peekViewResult.selectionBackground
+    - scrollbarSlider.background
+    - tab.hoverBackground
   transparent:
-    - 'editor.findMatchBackground'
-    - 'editor.findMatchHighlightBackground'
-    - 'editor.lineHighlightBorder'
-    - 'editor.wordHighlightBackground'
-    - 'editor.wordHighlightStrongBackground'
+    - editor.findMatchBackground
+    - editor.findMatchHighlightBackground
+    - editor.lineHighlightBorder
+    - editor.wordHighlightBackground
+    - editor.wordHighlightStrongBackground
+    - editorBracketMatch.background
   true_white:
-    - 'activityBar.foreground'
-    - 'activityBarBadge.foreground'
-    - 'list.inactiveSelectionForeground'
+    - activityBar.foreground
+    - activityBarBadge.foreground
+    - list.inactiveSelectionForeground
   white:
-    - 'editor.foreground'
-    - 'editorCursor.foreground'
-    - 'peekViewResult.selectionForeground'
-    - 'statusBar.foreground'
-    - 'tab.inactiveForeground'
-    - 'terminal.ansiWhite'
-    - 'terminal.foreground'
-    - 'titleBar.inactiveForeground'
+    - editor.foreground
+    - editorCursor.foreground
+    - peekViewResult.selectionForeground
+    - statusBar.foreground
+    - tab.inactiveForeground
+    - terminal.ansiWhite
+    - terminal.foreground
+    - titleBar.inactiveForeground

@@ -36,7 +36,7 @@ syntax:
 # theme nicely. As with syntax, use the palette identifier.
 workbench:
   primary: five # buttons, activity-bar badge
-  secondary: bright_one # borders, find highlight, bracket match etc.
+  secondary: one # borders, find highlight, bracket match etc.
   warning: bright_six # squiggly underlines, find match errors etc.
   error: bright_five # squiggly underlines, find match errors etc.
 
