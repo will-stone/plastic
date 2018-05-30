@@ -52,6 +52,8 @@
     "editorIndentGuide.activeBackground": "#5F6672",
     "terminal.ansiBrightBlack": "#5F6672",
     "editor.findMatchHighlightBorder": "#D4D7D9",
+    "editor.rangeHighlightBorder": "#D4D7D9",
+    "editor.selectionHighlightBorder": "#D4D7D9",
     "editorActiveLineNumber.foreground": "#D4D7D9",
     "tab.activeForeground": "#D4D7D9",
     "terminal.ansiBrightWhite": "#D4D7D9",

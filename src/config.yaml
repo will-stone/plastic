@@ -136,6 +136,8 @@ workbench:
     - 'terminal.ansiBrightBlack'
   bright_white:
     - 'editor.findMatchHighlightBorder'
+    - 'editor.rangeHighlightBorder'
+    - 'editor.selectionHighlightBorder'
     - 'editorActiveLineNumber.foreground'
     - 'tab.activeForeground'
     - 'terminal.ansiBrightWhite'
