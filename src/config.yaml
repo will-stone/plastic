@@ -86,17 +86,8 @@ workbench:
   bright_four:
     - 'terminal.ansiBrightMagenta'
   bright_five:
-    - 'editorError.foreground'
-    - 'editorOverviewRuler.errorForeground'
-    - 'errorForeground'
-    - 'inputValidation.errorBackground'
-    - 'inputValidation.errorBorder'
     - 'terminal.ansiBrightRed'
   bright_six:
-    - 'editorOverviewRuler.warningForeground'
-    - 'editorWarning.foreground'
-    - 'inputValidation.warningBackground'
-    - 'inputValidation.warningBorder'
     - 'terminal.ansiBrightYellow'
   primary:
     - 'activityBarBadge.background'
@@ -115,6 +106,17 @@ workbench:
     - 'inputValidation.infoBackground'
     - 'inputValidation.infoBorder'
     - 'peekView.border'
+  warning:
+    - 'editorOverviewRuler.warningForeground'
+    - 'editorWarning.foreground'
+    - 'inputValidation.warningBackground'
+    - 'inputValidation.warningBorder'
+  error:
+    - 'editorError.foreground'
+    - 'editorOverviewRuler.errorForeground'
+    - 'errorForeground'
+    - 'inputValidation.errorBackground'
+    - 'inputValidation.errorBorder'
   active:
     - 'editor.selectionBackground'
     - 'list.hoverBackground'
