@@ -2,27 +2,17 @@ import tinycolor from 'tinycolor2';
 import test from './utils/test';
 
 const testTheme = theme => {
-  test(theme)
-    .pass('File loads')
-    .fail('Could not read theme.yaml file');
+  test('theme.yaml', theme);
 
-  const { name, palette } = theme;
+  const { name, palette, syntax, workbench } = theme;
 
-  test(name)
-    .pass('Name present')
-    .fail('Name missing');
+  test('Name', name && typeof name === 'string');
 
-  test(typeof name === 'string')
-    .pass('Name is a string')
-    .fail('Theme name must be a string');
+  test('Name begins with "Plastic"', name.startsWith('Plastic'));
 
-  test(name.startsWith('Plastic'))
-    .pass('Name begins with "Plastic"')
-    .fail('Theme name must begin with "Plastic"');
+  test('Palette', palette && typeof palette === 'object');
 
-  test(palette && typeof palette === 'object')
-    .pass('Palette')
-    .fail('Palette not available');
+  test('Palette colours', Object.keys(palette).length === 12);
 
   [
     'one',
@@ -39,11 +29,28 @@ const testTheme = theme => {
     'bright_six',
   ].forEach(num => {
     const hex = palette[num];
-    test(hex && typeof hex === 'string' && tinycolor(hex).getFormat() === 'hex')
-      .pass(`${num}`)
-      .fail(
-        `${num}: make sure palette colour uses a hexadecimal string, e.g. "#000000"`
-      );
+    test(
+      `- ${num}`,
+      hex && typeof hex === 'string' && tinycolor(hex).getFormat() === 'hex'
+    );
+  });
+
+  test('Syntax', syntax && typeof syntax === 'object');
+
+  test('Syntax categories', Object.keys(syntax).length === 6);
+
+  ['functions', 'keywords', 'primitives', 'storage', 'strings', 'tags'].forEach(
+    category => {
+      test(`- ${category}`, syntax[category] && palette[syntax[category]]);
+    }
+  );
+
+  test('Workbench', workbench && typeof workbench === 'object');
+
+  test('Workbench categories', Object.keys(workbench).length === 4);
+
+  ['primary', 'secondary', 'warning', 'error'].forEach(category => {
+    test(`- ${category}`, workbench[category] && palette[workbench[category]]);
   });
 };
 

@@ -5,6 +5,16 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2018-05-30
+
+* New v2 config system allows you to make your own variation of Plastic. More
+  info soon.
+* Even less specific scopes means Plastic really is a _simple theme_.
+* Various workbench tweaks to standardise some colours.
+
+v2 has been in the making for quite some time. Please report any issues on
+GitHub.
+
 ## [1.11.2] - 2018-05-29
 
 * v2's compiler ready.

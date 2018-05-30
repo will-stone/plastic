@@ -2,7 +2,7 @@
   "name": "plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.11.2",
+  "version": "2.0.0",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.21.0"
@@ -13,20 +13,10 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./legacy/plastic-theme.json"
-      },
-      {
-        "label": "Plastic - deprioritised punctuation",
-        "uiTheme": "vs-dark",
-        "path": "./legacy/plastic-theme-punctuation.json"
-      },
-      {
-        "label": "Plastic v2 Beta",
-        "uiTheme": "vs-dark",
         "path": "./out/theme.json"
       },
       {
-        "label": "Plastic v2 Beta - deprioritised punctuation",
+        "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./out/theme-deprioritised-punctuation.json"
       }
