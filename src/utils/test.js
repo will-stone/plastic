@@ -1,23 +1,10 @@
-const test = function(condition) {
-  const pass = function(successMsg) {
-    if (condition) {
-      console.log(`✅  ${successMsg}`);
-    }
-    return this;
-  };
-
-  const fail = function(errorMsg) {
-    if (!condition) {
-      console.log(`❌  ${errorMsg}`);
-      process.exit(1);
-    }
-    return this;
-  };
-
-  return {
-    pass,
-    fail,
-  };
+const test = (message, condition) => {
+  if (condition) {
+    console.log(`✅  ${message}`);
+  } else {
+    console.log(`❌  ${message}`);
+    process.exit(1);
+  }
 };
 
 export default test;

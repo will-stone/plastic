@@ -8,7 +8,7 @@ palette:
   bright_white: '#D4D7D9' # Iron
   true_white: '#ffffff'
   transparent: '#00000000'
-  highlight: '#A9B2C322' # Cadet Blue plus transparency
+  highlight: '#A9B2C31A' # Cadet Blue plus transparency
   active: '#A9B2C333' # Cadet Blue plus transparency
 
 syntax:
@@ -117,11 +117,6 @@ workbench:
     - errorForeground
     - inputValidation.errorBackground
     - inputValidation.errorBorder
-  active:
-    - editor.selectionBackground
-    - list.hoverBackground
-    - scrollbarSlider.activeBackground
-    - scrollbarSlider.hoverBackground
   black:
     - activityBar.background
     - editor.background
@@ -188,6 +183,11 @@ workbench:
     - peekViewResult.selectionBackground
     - scrollbarSlider.background
     - tab.hoverBackground
+  active:
+    - editor.selectionBackground
+    - list.hoverBackground
+    - scrollbarSlider.activeBackground
+    - scrollbarSlider.hoverBackground
   transparent:
     - editor.findMatchBackground
     - editor.findMatchHighlightBackground
