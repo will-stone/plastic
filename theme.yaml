@@ -37,6 +37,8 @@ syntax:
 workbench:
   primary: five # buttons, activity-bar badge
   secondary: bright_one # borders, find highlight, bracket match etc.
+  warning: bright_six # squiggly underlines, find match errors etc.
+  error: bright_five # squiggly underlines, find match errors etc.
 
 # And that's all there is to it. Run `yarn` and then `yarn build` and your new
 # theme will be written to `out/theme.json`
