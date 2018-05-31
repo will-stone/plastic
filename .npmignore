@@ -1,0 +1,9 @@
+docs
+node_modules
+samples
+themes
+
+CHANGELOG.md
+ISSUE_TEMPLATE.md
+theme.yaml
+yarn.lock
