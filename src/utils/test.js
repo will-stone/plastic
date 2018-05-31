@@ -7,4 +7,4 @@ const test = (message, condition) => {
   }
 };
 
-export default test;
+module.exports = test;
