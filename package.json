@@ -42,12 +42,12 @@
     "vsce": "^1.41.0"
   },
   "bin": {
-    "plastic-build": "src/index.js"
+    "plastic-build": "bin/index.js"
   },
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
     "vspublish": "vsce publish",
-    "build": "src/index.js"
+    "build": "bin/index.js"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
