@@ -13,12 +13,12 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./out/theme.json"
+        "path": "./themes/theme.json"
       },
       {
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
-        "path": "./out/theme-deprioritised-punctuation.json"
+        "path": "./themes/theme-deprioritised-punctuation.json"
       }
     ]
   },
@@ -36,18 +36,18 @@
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "esm": "^3.0.38",
-    "fs-extra": "^6.0.1",
     "lite-server": "^2.3.0",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
-    "tinycolor2": "^1.4.1",
     "vsce": "^1.41.0"
+  },
+  "bin": {
+    "plastic-build": "src/index.js"
   },
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
     "vspublish": "vsce publish",
-    "build": "node -r esm src/index.js"
+    "build": "src/index.js"
   },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
@@ -81,5 +81,10 @@
     "rules": {
       "no-console": 0
     }
+  },
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "js-yaml": "^3.11.0",
+    "tinycolor2": "^1.4.1"
   }
 }

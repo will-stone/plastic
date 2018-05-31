@@ -6,9 +6,9 @@ const compileTheme = (theme, config, deprioritised = false) => {
       const colourName = theme.workbench[workbenchType];
       return {
         ...acc,
-        [workbenchType]: theme.palette[colourName],
+        [workbenchType]: theme.palette[colourName]
       };
-    }, {}),
+    }, {})
   };
 
   // workbench
@@ -21,9 +21,9 @@ const compileTheme = (theme, config, deprioritised = false) => {
         ...workbenchGroup.reduce((acc, scope) => {
           return {
             ...acc,
-            [scope]: coloursLookup[workbenchColour],
+            [scope]: coloursLookup[workbenchColour]
           };
-        }, {}),
+        }, {})
       };
     },
     {}
@@ -32,7 +32,7 @@ const compileTheme = (theme, config, deprioritised = false) => {
   const syntax = {
     ...theme.syntax,
     ...config.syntax,
-    ...(deprioritised ? config.deprioritised_syntax : {}),
+    ...(deprioritised ? config.deprioritised_syntax : {})
   };
 
   const tokenColors = [
@@ -43,8 +43,8 @@ const compileTheme = (theme, config, deprioritised = false) => {
         name: syntaxCategory,
         scope: scopes,
         settings: {
-          foreground: coloursLookup[syntax[syntaxCategory]],
-        },
+          foreground: coloursLookup[syntax[syntaxCategory]]
+        }
       };
     }, {}),
     // Syntax styles
@@ -54,19 +54,19 @@ const compileTheme = (theme, config, deprioritised = false) => {
         name: style,
         scope: scopes,
         settings: {
-          fontStyle: style,
-        },
+          fontStyle: style
+        }
       };
-    }, {}),
+    }, {})
   ];
 
   const template = {
     name: theme.name,
     colors,
-    tokenColors,
+    tokenColors
   };
 
   return JSON.stringify(template, null, 2);
 };
 
-export default compileTheme;
+module.exports = compileTheme;
