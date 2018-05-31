@@ -2,6 +2,9 @@
 
 _[A simple syntax and UI theme for Visual Studio Code.](http://wstone.io/plastic/)_
 
+> NOTE: Plastic is now an NPM package too and this README is yet to be update
+> with instructions for using that tool.
+
 ---
 
 ## Notable features
