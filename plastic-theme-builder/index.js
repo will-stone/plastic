@@ -1,10 +1,13 @@
 #! /usr/bin/env node
 
-const fs = require('fs-extra');
-const path = require('path');
 const compileTheme = require('./compileTheme');
-const testTheme = require('./testTheme');
+const fs = require('fs-extra');
+const parseArgs = require('minimist');
+const path = require('path');
 const readYaml = require('./utils/readYaml');
+const testTheme = require('./testTheme');
+
+const outDir = parseArgs(process.argv).outDir || '.';
 
 const themeFile = 'theme.yaml';
 const theme = readYaml(themeFile);
@@ -14,10 +17,10 @@ testTheme(theme);
 const config = readYaml(path.resolve(__dirname, 'config.yaml'));
 
 const normalTheme = compileTheme(theme, config);
-fs.outputFile(`themes/theme.json`, normalTheme);
+fs.outputFile(`${outDir}/theme.json`, normalTheme);
 
 const deprioritisedTheme = compileTheme(theme, config, true);
 fs.outputFile(
-  `themes/theme-deprioritised-punctuation.json`,
+  `${outDir}/theme-deprioritised-punctuation.json`,
   deprioritisedTheme
 );
