@@ -5,10 +5,15 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.2] - 2018-06-03
+
+* Looks like the move worked. Forgot the README though, this update adds it
+  back.
+
 ## [2.0.1] - 2018-06-03
 
-* This is a test to see if I can change the package name to include the
-  @will-stone scope. If this breaks the Plastic installation, I'll roll it back.
+* This is a test to see if I can move the Plastic theme into a sub-directory. If
+  it breaks the theme, I'll roll it back.
 
 ## [2.0.0] - 2018-05-30
 
