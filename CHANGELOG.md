@@ -5,6 +5,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.1] - 2018-06-03
+
+* This is a test to see if I can change the package name to include the
+  @will-stone scope. If this breaks the Plastic installation, I'll roll it back.
+
 ## [2.0.0] - 2018-05-30
 
 * New v2 config system allows you to make your own variation of Plastic. More
