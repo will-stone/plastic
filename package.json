@@ -1,8 +1,8 @@
 {
-  "name": "plastic",
+  "name": "@will-stone/plastic",
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "publisher": "will-stone",
   "engines": {
     "vscode": "^1.21.0"
