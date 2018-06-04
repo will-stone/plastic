@@ -1,7 +1,7 @@
 {
   "name": "plastic",
   "private": true,
-  "workspaces": ["plastic", "plastic-theme-builder"],
+  "workspaces": ["vscode", "theme-builder"],
   "description": "A simple theme.",
   "version": "1.0.0",
   "homepage": "https://will-stone.github.io/plastic/",
@@ -32,7 +32,7 @@
   },
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
-    "build-vscode": "plastic-theme-builder/index.js --outDir plastic/themes"
+    "build-vscode": "theme-builder/index.js --outDir vscode/themes"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -67,12 +67,12 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./plastic/themes/theme.json"
+        "path": "./vscode/themes/theme.json"
       },
       {
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
-        "path": "./plastic/themes/theme-deprioritised-punctuation.json"
+        "path": "./vscode/themes/theme-deprioritised-punctuation.json"
       }
     ]
   },
