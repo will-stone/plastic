@@ -2,9 +2,9 @@ palette:
   plastic_transparent: '#00000000'
   plastic_white: '#ffffff'
 
-workbench:
-  misc_transparent: plastic_transparent
-  active_foreground: plastic_white
+ui:
+  plastic_transparent: plastic_transparent
+  plastic_activity_bar_foreground: plastic_white
 
 scopes:
   comments:
@@ -50,7 +50,7 @@ styles:
     - markup.italic
     - punctuation.definition.italic
 
-workbench_scopes:
+workbench:
   primary:
     - activityBarBadge.background
     - button.background
@@ -98,13 +98,13 @@ workbench_scopes:
     - titleBar.inactiveBackground
   panels:
     - activityBar.dropBackground
-    - editorWidget.background
     - debugToolBar.background
     - dropdown.background
     - editorGroup.background
     - editorGroupHeader.tabsBackground
     - editorHoverWidget.background
     - editorSuggestWidget.background
+    - editorWidget.background
     - notificationCenterHeader.background
     - notifications.background
     - panel.background
@@ -116,52 +116,53 @@ workbench_scopes:
     - statusBar.noFolderBackground
     - statusBarItem.hoverBackground
     - tab.inactiveBackground
-  whitespace:
+  text_subtle:
     - editorLineNumber.foreground
-    - editorWhitespace.foreground
-    - editorIndentGuide.activeBackground
-  foreground:
+    - tab.inactiveForeground
+    - titleBar.inactiveForeground
+  text:
     - editor.foreground
     - editorCursor.foreground
-    - peekViewResult.selectionForeground
     - statusBar.foreground
-    - tab.inactiveForeground
     - terminal.foreground
-    - titleBar.inactiveForeground
-  foreground_active:
-    - editor.findMatchHighlightBorder
-    - editor.rangeHighlightBorder
-    - editor.selectionHighlightBorder
+  text_active:
     - editorActiveLineNumber.foreground
     - list.inactiveSelectionForeground
+    - peekViewResult.selectionForeground
     - tab.activeForeground
     - titleBar.activeForeground
   highlight:
-    - editorIndentGuide.background
     - editor.lineHighlightBackground
     - editor.selectionHighlightBackground
+    - editorIndentGuide.background
     - editorRuler.foreground
     - editorSuggestWidget.selectedBackground
+    - editorWhitespace.foreground
+    - list.hoverBackground
+    - peekViewResult.selectionBackground
+    - scrollbarSlider.background
+    - tab.hoverBackground
+  highlight_active:
+    - editor.selectionBackground
+    - editorIndentGuide.activeBackground
     - list.activeSelectionBackground
     - list.focusBackground
     - list.inactiveSelectionBackground
     - peekViewEditor.matchHighlightBackground
     - peekViewResult.matchHighlightBackground
-    - peekViewResult.selectionBackground
-    - scrollbarSlider.background
-    - tab.hoverBackground
-  active_highlight:
-    - editor.selectionBackground
-    - list.hoverBackground
     - scrollbarSlider.activeBackground
     - scrollbarSlider.hoverBackground
-  misc_transparent:
+  highlight_border:
+    - editor.findMatchHighlightBorder
+    - editor.rangeHighlightBorder
+    - editor.selectionHighlightBorder
+  plastic_transparent:
     - editor.findMatchBackground
     - editor.findMatchHighlightBackground
     - editor.lineHighlightBorder
     - editor.wordHighlightBackground
     - editor.wordHighlightStrongBackground
     - editorBracketMatch.background
-  active_foreground:
+  plastic_activity_bar_foreground:
     - activityBar.foreground
     - activityBarBadge.foreground

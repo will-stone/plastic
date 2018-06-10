@@ -4,9 +4,9 @@ const compileTheme = (theme, config, deprioritised = false) => {
     ...config.palette,
   };
 
-  const workbench = {
-    ...theme.workbench,
-    ...config.workbench,
+  const ui = {
+    ...theme.ui,
+    ...config.ui,
   };
 
   // workbench
@@ -30,15 +30,15 @@ const compileTheme = (theme, config, deprioritised = false) => {
       'terminal.ansiBrightYellow': palette[theme.terminal.bright_yellow],
       'terminal.ansiBrightWhite': palette[theme.terminal.bright_white],
     },
-    ...Object.keys(config.workbench_scopes).reduce((acc, workbenchCategory) => {
-      const workbenchGroup = config.workbench_scopes[workbenchCategory];
+    ...Object.keys(config.workbench).reduce((acc, workbenchCategory) => {
+      const workbenchGroup = config.workbench[workbenchCategory];
 
       return {
         ...acc,
         ...workbenchGroup.reduce((acc, scope) => {
           return {
             ...acc,
-            [scope]: palette[workbench[workbenchCategory]],
+            [scope]: palette[ui[workbenchCategory]],
           };
         }, {}),
       };
