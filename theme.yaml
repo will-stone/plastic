@@ -8,28 +8,26 @@ name: Plastic
 # the palette names. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
 palette:
-  cornflower_blue: '#61AFEF'
-  fountain_blue: '#56B6C2'
-  olivine: '#98C379'
-  lavender: '#B57EDC'
-  sunglo: '#E06C75'
-  whiskey: '#D19A66'
   azure_radiance: '#007FFF'
-  bright_turquoise: '#08E8DE'
   bright_green: '#66FF00'
-  electric_violet: '#8B00FF'
+  bright_turquoise: '#08E8DE'
+  bunker: '#0D1117'
+  cadet_blue: '#A9B2C3'
+  cadet_blue_1A: '#A9B2C31A'
+  cadet_blue_33: '#A9B2C333'
   cinnabar: '#E34234'
+  cornflower_blue: '#61AFEF'
+  electric_violet: '#8B00FF'
+  fountain_blue: '#56B6C2'
   harvest_gold: '#E5C07B'
+  iron: '#D4D7D9'
+  lavender: '#B57EDC'
+  olivine: '#98C379'
   shark: '#21252B'
   shuttle_gray: '#5F6672'
-  cadet_blue: '#A9B2C3'
-  cadet_blue1: '#A9B2C31A'
-  cadet_blue2: '#A9B2C333'
-  iron: '#D4D7D9'
-  white: '#ffffff'
-  bright_gray: '#3C4151'
+  sunglo: '#E06C75'
+  whiskey: '#D19A66'
   woodsmoke: '#181A1F'
-  bunker: '#0D1117'
 
 terminal:
   black: shark
@@ -73,15 +71,14 @@ workbench:
   secondary: cornflower_blue # borders, find highlight, bracket match etc.
   warning: harvest_gold # squiggly underlines, find match errors etc.
   error: cinnabar # squiggly underlines, find match errors etc.
-  highlight: cadet_blue1
-  active_highlight: cadet_blue2
+  borders: bunker # borders that separate the panels, sidebars, tabs etc.
+  background: shark # editor, titlebar, and activity bar background
+  panels: woodsmoke # sidebar, terminal, inactive tabs etc.
+  whitespace: shuttle_gray
   foreground: cadet_blue # general ui text, titlebar
-  active: iron # active text
-  active_bright: white
-  background: shark
-  muted: bright_gray
-  panels: woodsmoke
-  borders: bunker
+  foreground_active: iron # active text
+  highlight: cadet_blue_1A # 
+  active_highlight: cadet_blue_33
 
 # And that's all there is to it. Run `yarn` and then `yarn build` and your new
 # theme will be written to `out/theme.json`
