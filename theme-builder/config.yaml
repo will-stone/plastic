@@ -1,8 +1,10 @@
 palette:
-  transparent: '#00000000'
+  plastic_transparent: '#00000000'
+  plastic_white: '#ffffff'
 
 workbench:
-  misc_transparent: transparent
+  misc_transparent: plastic_transparent
+  active_foreground: plastic_white
 
 scopes:
   comments:
@@ -77,6 +79,15 @@ workbench_scopes:
     - errorForeground
     - inputValidation.errorBackground
     - inputValidation.errorBorder
+  borders:
+    - contrastBorder
+    - dropdown.border
+    - editorGroup.border
+    - editorOverviewRuler.border
+    - input.background
+    - panel.border
+    - tab.border
+    - widget.shadow
   background:
     - activityBar.background
     - editor.background
@@ -105,20 +116,28 @@ workbench_scopes:
     - statusBar.noFolderBackground
     - statusBarItem.hoverBackground
     - tab.inactiveBackground
-  borders:
-    - contrastBorder
-    - dropdown.border
-    - editorGroup.border
-    - editorOverviewRuler.border
-    - input.background
-    - panel.border
-    - tab.border
-    - widget.shadow
-  muted:
-    - editorIndentGuide.background
+  whitespace:
     - editorLineNumber.foreground
     - editorWhitespace.foreground
+    - editorIndentGuide.activeBackground
+  foreground:
+    - editor.foreground
+    - editorCursor.foreground
+    - peekViewResult.selectionForeground
+    - statusBar.foreground
+    - tab.inactiveForeground
+    - terminal.foreground
+    - titleBar.inactiveForeground
+  foreground_active:
+    - editor.findMatchHighlightBorder
+    - editor.rangeHighlightBorder
+    - editor.selectionHighlightBorder
+    - editorActiveLineNumber.foreground
+    - list.inactiveSelectionForeground
+    - tab.activeForeground
+    - titleBar.activeForeground
   highlight:
+    - editorIndentGuide.background
     - editor.lineHighlightBackground
     - editor.selectionHighlightBackground
     - editorRuler.foreground
@@ -136,26 +155,6 @@ workbench_scopes:
     - list.hoverBackground
     - scrollbarSlider.activeBackground
     - scrollbarSlider.hoverBackground
-  foreground:
-    - editor.foreground
-    - editorCursor.foreground
-    - peekViewResult.selectionForeground
-    - statusBar.foreground
-    - tab.inactiveForeground
-    - terminal.foreground
-    - titleBar.inactiveForeground
-  active:
-    - editor.findMatchHighlightBorder
-    - editor.rangeHighlightBorder
-    - editor.selectionHighlightBorder
-    - editorActiveLineNumber.foreground
-    - tab.activeForeground
-    - titleBar.activeForeground
-    - editorIndentGuide.activeBackground
-  active_bright:
-    - activityBar.foreground
-    - activityBarBadge.foreground
-    - list.inactiveSelectionForeground
   misc_transparent:
     - editor.findMatchBackground
     - editor.findMatchHighlightBackground
@@ -163,3 +162,6 @@ workbench_scopes:
     - editor.wordHighlightBackground
     - editor.wordHighlightStrongBackground
     - editorBracketMatch.background
+  active_foreground:
+    - activityBar.foreground
+    - activityBarBadge.foreground
