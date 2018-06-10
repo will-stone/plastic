@@ -5,6 +5,20 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2018-06-10
+
+Updates to the upcoming builder/compiler mean slight tweaks to the theme.
+
+* JS terminator (semi-colons) are same as all other punctuation (use the
+  deprioritised theme if you need these to be more subtle). This may change back
+  in the future, depending on public opinion.
+* Inactive tab text is darker.
+* List active highlight swapped with list hover: active is now the lighter
+  colour.
+
+The repo is now a monorepo and I'll be adding in more documentation soon on how
+to build your own Plastic theme.
+
 ## [2.0.2] - 2018-06-03
 
 * Looks like the move worked. Forgot the README though, this update adds it
