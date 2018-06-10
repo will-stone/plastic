@@ -1,29 +1,13 @@
 palette:
-  darkest: '#0D1117' # Bunker
-  dark: '#181A1F' # Woodsmoke
-  grey: '#3C4151' # Bright Gray
-  black: '#21252B' # Shark
-  bright_black: '#5F6672' # Shuttle Gray
-  white: '#A9B2C3' # Cadet Blue
-  bright_white: '#D4D7D9' # Iron
-  true_white: '#ffffff'
   transparent: '#00000000'
-  highlight: '#A9B2C31A' # Cadet Blue plus transparency
-  active: '#A9B2C333' # Cadet Blue plus transparency
 
-syntax:
-  comments: bright_black
-  punctuation: white
-  variables: bright_white
-
-deprioritised_syntax:
-  punctuation: bright_black
+workbench:
+  misc_transparent: transparent
 
 scopes:
   comments:
     - comment
     - punctuation.definition.comment # start and end of comment blocks
-    - punctuation.terminator.statement # semicolons - bleugh
   functions:
     - entity
     - entity.name.function
@@ -64,31 +48,7 @@ styles:
     - markup.italic
     - punctuation.definition.italic
 
-workbench:
-  one:
-    - terminal.ansiBlue
-  two:
-    - terminal.ansiCyan
-  three:
-    - terminal.ansiGreen
-  four:
-    - terminal.ansiMagenta
-  five:
-    - terminal.ansiRed
-  six:
-    - terminal.ansiYellow
-  bright_one:
-    - terminal.ansiBrightBlue
-  bright_two:
-    - terminal.ansiBrightCyan
-  bright_three:
-    - terminal.ansiBrightGreen
-  bright_four:
-    - terminal.ansiBrightMagenta
-  bright_five:
-    - terminal.ansiBrightRed
-  bright_six:
-    - terminal.ansiBrightYellow
+workbench_scopes:
   primary:
     - activityBarBadge.background
     - button.background
@@ -117,27 +77,15 @@ workbench:
     - errorForeground
     - inputValidation.errorBackground
     - inputValidation.errorBorder
-  black:
+  background:
     - activityBar.background
     - editor.background
     - sideBarSectionHeader.background
     - statusBar.background
     - tab.activeBackground
-    - terminal.ansiBlack
     - titleBar.activeBackground
     - titleBar.inactiveBackground
-  bright_black:
-    - editorIndentGuide.activeBackground
-    - terminal.ansiBrightBlack
-  bright_white:
-    - editor.findMatchHighlightBorder
-    - editor.rangeHighlightBorder
-    - editor.selectionHighlightBorder
-    - editorActiveLineNumber.foreground
-    - tab.activeForeground
-    - terminal.ansiBrightWhite
-    - titleBar.activeForeground
-  dark:
+  panels:
     - activityBar.dropBackground
     - editorWidget.background
     - debugToolBar.background
@@ -157,7 +105,7 @@ workbench:
     - statusBar.noFolderBackground
     - statusBarItem.hoverBackground
     - tab.inactiveBackground
-  darkest:
+  borders:
     - contrastBorder
     - dropdown.border
     - editorGroup.border
@@ -166,7 +114,7 @@ workbench:
     - panel.border
     - tab.border
     - widget.shadow
-  grey:
+  muted:
     - editorIndentGuide.background
     - editorLineNumber.foreground
     - editorWhitespace.foreground
@@ -183,28 +131,35 @@ workbench:
     - peekViewResult.selectionBackground
     - scrollbarSlider.background
     - tab.hoverBackground
-  active:
+  active_highlight:
     - editor.selectionBackground
     - list.hoverBackground
     - scrollbarSlider.activeBackground
     - scrollbarSlider.hoverBackground
-  transparent:
+  foreground:
+    - editor.foreground
+    - editorCursor.foreground
+    - peekViewResult.selectionForeground
+    - statusBar.foreground
+    - tab.inactiveForeground
+    - terminal.foreground
+    - titleBar.inactiveForeground
+  active:
+    - editor.findMatchHighlightBorder
+    - editor.rangeHighlightBorder
+    - editor.selectionHighlightBorder
+    - editorActiveLineNumber.foreground
+    - tab.activeForeground
+    - titleBar.activeForeground
+    - editorIndentGuide.activeBackground
+  active_bright:
+    - activityBar.foreground
+    - activityBarBadge.foreground
+    - list.inactiveSelectionForeground
+  misc_transparent:
     - editor.findMatchBackground
     - editor.findMatchHighlightBackground
     - editor.lineHighlightBorder
     - editor.wordHighlightBackground
     - editor.wordHighlightStrongBackground
     - editorBracketMatch.background
-  true_white:
-    - activityBar.foreground
-    - activityBarBadge.foreground
-    - list.inactiveSelectionForeground
-  white:
-    - editor.foreground
-    - editorCursor.foreground
-    - peekViewResult.selectionForeground
-    - statusBar.foreground
-    - tab.inactiveForeground
-    - terminal.ansiWhite
-    - terminal.foreground
-    - titleBar.inactiveForeground
