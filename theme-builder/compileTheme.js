@@ -1,38 +1,53 @@
 const compileTheme = (theme, config, deprioritised = false) => {
-  const coloursLookup = {
+  const palette = {
     ...theme.palette,
     ...config.palette,
-    ...Object.keys(theme.workbench).reduce((acc, workbenchType) => {
-      const colourName = theme.workbench[workbenchType];
-      return {
-        ...acc,
-        [workbenchType]: theme.palette[colourName]
-      };
-    }, {})
+  };
+
+  const workbench = {
+    ...theme.workbench,
+    ...config.workbench,
   };
 
   // workbench
-  const colors = Object.keys(config.workbench).reduce(
-    (acc, workbenchColour) => {
-      const workbenchGroup = config.workbench[workbenchColour];
+  const colors = {
+    // Terminal
+    ...{
+      'terminal.ansiBlack': palette[theme.terminal.black],
+      'terminal.ansiBlue': palette[theme.terminal.blue],
+      'terminal.ansiCyan': palette[theme.terminal.cyan],
+      'terminal.ansiGreen': palette[theme.terminal.green],
+      'terminal.ansiMagenta': palette[theme.terminal.magenta],
+      'terminal.ansiRed': palette[theme.terminal.red],
+      'terminal.ansiYellow': palette[theme.terminal.yellow],
+      'terminal.ansiWhite': palette[theme.terminal.white],
+      'terminal.ansiBrightBlack': palette[theme.terminal.bright_black],
+      'terminal.ansiBrightBlue': palette[theme.terminal.bright_blue],
+      'terminal.ansiBrightCyan': palette[theme.terminal.bright_cyan],
+      'terminal.ansiBrightGreen': palette[theme.terminal.bright_green],
+      'terminal.ansiBrightMagenta': palette[theme.terminal.bright_magenta],
+      'terminal.ansiBrightRed': palette[theme.terminal.bright_red],
+      'terminal.ansiBrightYellow': palette[theme.terminal.bright_yellow],
+      'terminal.ansiBrightWhite': palette[theme.terminal.bright_white],
+    },
+    ...Object.keys(config.workbench_scopes).reduce((acc, workbenchCategory) => {
+      const workbenchGroup = config.workbench_scopes[workbenchCategory];
 
       return {
         ...acc,
         ...workbenchGroup.reduce((acc, scope) => {
           return {
             ...acc,
-            [scope]: coloursLookup[workbenchColour]
+            [scope]: palette[workbench[workbenchCategory]],
           };
-        }, {})
+        }, {}),
       };
-    },
-    {}
-  );
+    }, {}),
+  };
 
   const syntax = {
     ...theme.syntax,
-    ...config.syntax,
-    ...(deprioritised ? config.deprioritised_syntax : {})
+    ...(deprioritised ? theme.deprioritised_syntax : {}),
   };
 
   const tokenColors = [
@@ -43,8 +58,8 @@ const compileTheme = (theme, config, deprioritised = false) => {
         name: syntaxCategory,
         scope: scopes,
         settings: {
-          foreground: coloursLookup[syntax[syntaxCategory]]
-        }
+          foreground: palette[syntax[syntaxCategory]],
+        },
       };
     }, {}),
     // Syntax styles
@@ -54,16 +69,16 @@ const compileTheme = (theme, config, deprioritised = false) => {
         name: style,
         scope: scopes,
         settings: {
-          fontStyle: style
-        }
+          fontStyle: style,
+        },
       };
-    }, {})
+    }, {}),
   ];
 
   const template = {
     name: theme.name,
     colors,
-    tokenColors
+    tokenColors,
   };
 
   return JSON.stringify(template, null, 2);

@@ -12,7 +12,7 @@ const outDir = parseArgs(process.argv).outDir || '.';
 const themeFile = 'theme.yaml';
 const theme = readYaml(themeFile);
 
-testTheme(theme);
+// testTheme(theme);
 
 const config = readYaml(path.resolve(__dirname, 'config.yaml'));
 

@@ -8,37 +8,80 @@ name: Plastic
 # the palette names. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
 palette:
-  one: '#61AFEF' # blue
-  two: '#56B6C2' # cyan
-  three: '#98C379' # green
-  four: '#B57EDC' # magenta
-  five: '#E06C75' # red
-  six: '#D19A66' # yellow
-  bright_one: '#007FFF' # bright blue
-  bright_two: '#08E8DE' # bright cyan
-  bright_three: '#66FF00' # bright green
-  bright_four: '#8B00FF' # bright magenta
-  bright_five: '#E34234' # bright red
-  bright_six: '#E5C07B' # bright yellow
+  cornflower_blue: '#61AFEF'
+  fountain_blue: '#56B6C2'
+  olivine: '#98C379'
+  lavender: '#B57EDC'
+  sunglo: '#E06C75'
+  whiskey: '#D19A66'
+  azure_radiance: '#007FFF'
+  bright_turquoise: '#08E8DE'
+  bright_green: '#66FF00'
+  electric_violet: '#8B00FF'
+  cinnabar: '#E34234'
+  harvest_gold: '#E5C07B'
+  shark: '#21252B'
+  shuttle_gray: '#5F6672'
+  cadet_blue: '#A9B2C3'
+  cadet_blue1: '#A9B2C31A'
+  cadet_blue2: '#A9B2C333'
+  iron: '#D4D7D9'
+  white: '#ffffff'
+  bright_gray: '#3C4151'
+  woodsmoke: '#181A1F'
+  bunker: '#0D1117'
+
+terminal:
+  black: shark
+  blue: cornflower_blue
+  cyan: fountain_blue
+  green: olivine
+  magenta: lavender
+  red: sunglo
+  yellow: whiskey
+  white: cadet_blue
+  bright_black: shuttle_gray
+  bright_blue: azure_radiance
+  bright_cyan: bright_turquoise
+  bright_green: bright_green
+  bright_magenta: electric_violet
+  bright_red: cinnabar
+  bright_yellow: harvest_gold
+  bright_white: iron
 
 # This is where you define a colour to each group of syntax. Use the palette
 # identifier from above.
 syntax:
-  functions: six # function names, and React props.
-  keywords: five # import, export, return etc.
-  primitives: two # numbers, booleans (not strings)
-  storage: one # const, var, class etc. and React JSX component tag
-  strings: three # anything in quotes
-  tags: bright_six # html tags
+  functions: whiskey # function names, and React props.
+  keywords: sunglo # import, export, return etc.
+  primitives: fountain_blue # numbers, booleans (not strings)
+  storage: cornflower_blue # const, var, class etc. and React JSX component tag
+  strings: olivine # anything in quotes
+  tags: harvest_gold # html tags
+  comments: shuttle_gray
+  punctuation: cadet_blue
+  variables: iron
+
+deprioritised_syntax:
+  punctuation: shuttle_gray
 
 # Plastic themes most of the workbench (everything that's not syntax) for you.
 # However, there are a couple of flourishes you can add to top-off your
 # theme nicely. As with syntax, use the palette identifier.
 workbench:
-  primary: five # buttons, activity-bar badge
-  secondary: one # borders, find highlight, bracket match etc.
-  warning: bright_six # squiggly underlines, find match errors etc.
-  error: bright_five # squiggly underlines, find match errors etc.
+  primary: sunglo # buttons, activity-bar badge
+  secondary: cornflower_blue # borders, find highlight, bracket match etc.
+  warning: harvest_gold # squiggly underlines, find match errors etc.
+  error: cinnabar # squiggly underlines, find match errors etc.
+  highlight: cadet_blue1
+  active_highlight: cadet_blue2
+  foreground: cadet_blue # general ui text, titlebar
+  active: iron # active text
+  active_bright: white
+  background: shark
+  muted: bright_gray
+  panels: woodsmoke
+  borders: bunker
 
 # And that's all there is to it. Run `yarn` and then `yarn build` and your new
 # theme will be written to `out/theme.json`
