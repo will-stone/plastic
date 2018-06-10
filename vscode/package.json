@@ -41,6 +41,6 @@
     "publisherDisplayName": "Will Stone"
   },
   "devDependencies": {
-    "vsce": "^1.41.0"
+    "vsce": "^1.42.0"
   }
 }
