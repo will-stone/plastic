@@ -50,14 +50,14 @@ terminal:
 # This is where you define a colour to each group of syntax. Use the palette
 # identifier from above.
 syntax:
+  comments: shuttle_gray
   functions: whiskey # function names, and React props.
   keywords: sunglo # import, export, return etc.
   primitives: fountain_blue # numbers, booleans (not strings)
+  punctuation: cadet_blue # quotes, terminators etc.
   storage: cornflower_blue # const, var, class etc. and React JSX component tag
   strings: olivine # anything in quotes
   tags: harvest_gold # html tags
-  comments: shuttle_gray
-  punctuation: cadet_blue
   variables: iron
 
 deprioritised_syntax:
@@ -66,7 +66,7 @@ deprioritised_syntax:
 # Plastic themes most of the workbench (everything that's not syntax) for you.
 # However, there are a couple of flourishes you can add to top-off your
 # theme nicely. As with syntax, use the palette identifier.
-workbench:
+ui:
   primary: sunglo # buttons, activity-bar badge
   secondary: cornflower_blue # borders, find highlight, bracket match etc.
   warning: harvest_gold # squiggly underlines, find match errors etc.
@@ -74,11 +74,12 @@ workbench:
   borders: bunker # borders that separate the panels, sidebars, tabs etc.
   background: shark # editor, titlebar, and activity bar background
   panels: woodsmoke # sidebar, terminal, inactive tabs etc.
-  whitespace: shuttle_gray
-  foreground: cadet_blue # general ui text, titlebar
-  foreground_active: iron # active text
-  highlight: cadet_blue_1A # 
-  active_highlight: cadet_blue_33
+  text_subtle: shuttle_gray # line numbers
+  text: cadet_blue
+  text_active: iron # active tab, active line number, active list text etc.
+  highlight: cadet_blue_1A # ui flourishes: whitespace, indent guide, ruler, line highlight
+  highlight_active: cadet_blue_33 # active indent guide, selection, search match
+  highlight_border: iron # search match borders
 
 # And that's all there is to it. Run `yarn` and then `yarn build` and your new
 # theme will be written to `out/theme.json`
