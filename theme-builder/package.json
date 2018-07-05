@@ -2,6 +2,8 @@
   "name": "plastic-theme-builder",
   "description": "Compiles the Plastic theme.",
   "version": "1.0.0",
+  "author": "Will Stone <contact@wstone.io>",
+  "license": "MIT",
   "homepage": "https://will-stone.github.io/plastic/",
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
