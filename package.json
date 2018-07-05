@@ -18,14 +18,7 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "lite-server": "^2.3.0",
-    "prettier": "^1.12.1",
-    "react": "^16.3.2"
-  },
-  "dependencies": {
-    "fs-extra": "^6.0.1",
-    "js-yaml": "^3.11.0",
-    "minimist": "^1.2.0",
-    "tinycolor2": "^1.4.1"
+    "prettier": "^1.12.1"
   },
   "bin": {
     "plastic-build": "bin/index.js"
