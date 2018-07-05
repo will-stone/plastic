@@ -20,9 +20,6 @@
     "lite-server": "^2.3.0",
     "prettier": "^1.12.1"
   },
-  "bin": {
-    "plastic-build": "bin/index.js"
-  },
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
     "build-vscode": "plastic-build --outDir vscode/themes",
