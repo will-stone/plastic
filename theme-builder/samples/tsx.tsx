@@ -1,12 +1,13 @@
 import * as React from 'react';
 import * as DOM from 'react-dom';
-import HelloWorld from './helloworld';
 
 const root = document.getElementById('app');
 
 function test(hello) {
   console.log(hello);
 }
+
+test();
 
 const bye = () => console.log('bye');
 
