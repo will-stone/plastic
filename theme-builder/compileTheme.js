@@ -1,7 +1,3 @@
-const pkg = require('package.json');
-
-console.log(pkg);
-
 const compileTheme = (theme, config, deprioritised = false) => {
   const palette = {
     ...theme.palette,
