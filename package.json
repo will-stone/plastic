@@ -32,7 +32,7 @@
   },
   "scripts": {
     "docs": "lite-server --baseDir='./docs'",
-    "build-vscode": "theme-builder/index.js --outDir vscode/themes",
+    "build-vscode": "plastic-build --outDir vscode/themes",
     "vspublish": "cd vscode && vsce publish"
   },
   "prettier": {
