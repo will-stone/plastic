@@ -81,5 +81,5 @@ ui:
   highlight_active: cadet_blue_33 # active indent guide, selection, search match
   highlight_border: iron # search match borders
 
-# And that's all there is to it. Run `yarn` and then `yarn build` and your new
-# theme will be written to `out/theme.json`
+# And that's all there is to it. Run `yarn` and then `yarn build-vscode` and
+# your new theme will be written to `./vscode/themes/`
