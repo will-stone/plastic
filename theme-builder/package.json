@@ -1,6 +1,6 @@
 {
   "name": "plastic-theme-builder",
-  "description": "Compiles the Plastic VSCode theme.",
+  "description": "Compiles the Plastic theme.",
   "version": "1.0.0",
   "homepage": "https://will-stone.github.io/plastic/",
   "bugs": {
