@@ -6,5 +6,5 @@ _[A simple syntax and UI theme for Visual Studio Code.](http://wstone.io/plastic
 > it. Check back here later for more info.
 
 ```
-ln -s path/to/repo/vscode/ ~/.vscode/extensions/plastic
+ln -s ./vscode/ ~/.vscode/extensions/plastic
 ```
