@@ -17,12 +17,12 @@
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "lite-server": "^2.3.0",
+    "http-server": "^0.11.1",
     "prettier": "^1.12.1"
   },
   "scripts": {
-    "docs": "lite-server --baseDir='./docs'",
-    "build-vscode": "plastic-build --outDir vscode/themes",
+    "docs": "http-server ./docs",
+    "build-vscode": "plastic-build",
     "vspublish": "cd vscode && vsce publish"
   },
   "prettier": {
