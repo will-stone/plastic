@@ -58,7 +58,7 @@ workbench:
     - editor.findMatchBorder
     - editor.wordHighlightBorder
     - editor.wordHighlightStrongBorder
-    - editorBracketMatch.border    
+    - editorBracketMatch.border
     - editorHoverWidget.border
     - editorInfo.foreground
     - editorOverviewRuler.infoForeground
@@ -85,6 +85,8 @@ workbench:
     - editorGroup.border
     - editorOverviewRuler.border
     - input.background
+    - inputValidation.infoForeground
+    - inputValidation.warningForeground
     - panel.border
     - tab.border
     - widget.shadow
@@ -117,6 +119,7 @@ workbench:
     - statusBarItem.hoverBackground
     - tab.inactiveBackground
   text_subtle:
+    - activityBar.inactiveForeground
     - editorLineNumber.foreground
     - tab.inactiveForeground
     - titleBar.inactiveForeground
