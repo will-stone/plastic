@@ -1,11 +1,3 @@
-palette:
-  plastic_transparent: '#00000000'
-  plastic_white: '#ffffff'
-
-ui:
-  plastic_transparent: plastic_transparent
-  plastic_activity_bar_foreground: plastic_white
-
 scopes:
   comments:
     - comment
@@ -159,13 +151,13 @@ workbench:
     - editor.findMatchHighlightBorder
     - editor.rangeHighlightBorder
     - editor.selectionHighlightBorder
-  plastic_transparent:
+  transparent:
     - editor.findMatchBackground
     - editor.findMatchHighlightBackground
     - editor.lineHighlightBorder
     - editor.wordHighlightBackground
     - editor.wordHighlightStrongBackground
     - editorBracketMatch.background
-  plastic_activity_bar_foreground:
+  white:
     - activityBar.foreground
     - activityBarBadge.foreground

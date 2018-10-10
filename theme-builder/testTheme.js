@@ -1,33 +1,33 @@
-const tinycolor = require('tinycolor2');
-const test = require('./utils/test');
+const tinycolor = require('tinycolor2')
+const test = require('./utils/test')
 
 const testTheme = theme => {
-  test('theme.yaml', theme);
+  test('theme.yaml', theme)
 
-  const { name, palette, terminal, syntax, ui } = theme;
+  const { name, palette, terminal, syntax, ui } = theme
 
-  test('Name', name && typeof name === 'string');
+  test('Name', name && typeof name === 'string')
 
-  test('Name begins with "Plastic"', name.startsWith('Plastic'));
+  test('Name begins with "Plastic"', name.startsWith('Plastic'))
 
-  test('Palette', palette && typeof palette === 'object');
+  test('Palette', palette && typeof palette === 'object')
 
   Object.keys(palette).forEach(colourName => {
-    const hex = palette[colourName];
-    const isString = typeof hex === 'string';
-    const colourFormat = tinycolor(hex).getFormat();
-    const isHex = colourFormat === 'hex' || colourFormat === 'hex8';
-    test(`- ${colourName}`, hex && isString && isHex);
-  });
+    const hex = palette[colourName]
+    const isString = typeof hex === 'string'
+    const colourFormat = tinycolor(hex).getFormat()
+    const isHex = colourFormat === 'hex' || colourFormat === 'hex8'
+    test(`- ${colourName}`, hex && isString && isHex)
+  })
 
   test(
     'Terminal',
     terminal &&
       typeof terminal === 'object' &&
-      Object.keys(terminal).length === 16
-  );
+      Object.keys(terminal).length === 16,
+  )
 
-  [
+  ;[
     'black',
     'blue',
     'cyan',
@@ -45,15 +45,15 @@ const testTheme = theme => {
     'bright_yellow',
     'bright_white',
   ].forEach(colourName => {
-    test(`- ${colourName}`, palette[terminal[colourName]]);
-  });
+    test(`- ${colourName}`, palette[terminal[colourName]])
+  })
 
   test(
     'Syntax',
-    syntax && typeof syntax === 'object' && Object.keys(syntax).length === 9
-  );
+    syntax && typeof syntax === 'object' && Object.keys(syntax).length === 9,
+  )
 
-  [
+  ;[
     'comments',
     'functions',
     'keywords',
@@ -64,12 +64,12 @@ const testTheme = theme => {
     'tags',
     'variables',
   ].forEach(category => {
-    test(`- ${category}`, syntax[category] && palette[syntax[category]]);
-  });
+    test(`- ${category}`, syntax[category] && palette[syntax[category]])
+  })
 
-  test('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 13);
+  test('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 15)
 
-  [
+  ;[
     'primary',
     'secondary',
     'warning',
@@ -83,9 +83,11 @@ const testTheme = theme => {
     'highlight',
     'highlight_active',
     'highlight_border',
+    'transparent',
+    'white',
   ].forEach(category => {
-    test(`- ${category}`, ui[category] && palette[ui[category]]);
-  });
-};
+    test(`- ${category}`, ui[category] && palette[ui[category]])
+  })
+}
 
-module.exports = testTheme;
+module.exports = testTheme
