@@ -7,9 +7,9 @@ const path = require('path');
 const readYaml = require('./utils/readYaml');
 const testTheme = require('./testTheme');
 
-const outDir = parseArgs(process.argv).outDir || './vscode/themes';
+const outDir = parseArgs(process.argv).outDir || './themes';
 
-const theme = readYaml('theme.yaml');
+const theme = readYaml('./theme-builder/theme.yaml');
 
 testTheme(theme); // This will stop the process here if any tests fail.
 
