@@ -122,7 +122,7 @@ Install the dependencies using [Yarn](https://yarnpkg.com/lang/en/):
 yarn
 ```
 
-Then build the theme files to the `themes` folder using:
+Then compile the theme files to the `themes` folder using:
 
 ```sh
 yarn build-vscode
