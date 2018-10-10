@@ -1,16 +1,47 @@
 {
   "name": "plastic",
   "private": true,
-  "workspaces": ["vscode", "theme-builder"],
+  "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "1.0.0",
+  "version": "2.2.0",
+  "publisher": "will-stone",
+  "author": "Will Stone",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Plastic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/theme.json"
+      },
+      {
+        "label": "Plastic - deprioritised punctuation",
+        "uiTheme": "vs-dark",
+        "path": "./themes/theme-deprioritised-punctuation.json"
+      }
+    ]
+  },
   "homepage": "https://will-stone.github.io/plastic/",
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
   },
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/will-stone/plastic"
+  },
+  "scripts": {
+    "docs": "http-server ./docs",
+    "build-vscode": "./theme-builder/index.js",
+    "vspublish": "vsce publish"
+  },
+  "__metadata": {
+    "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
+    "publisherId": "744e71fe-bf60-4aba-94b1-d6e77d16fa27",
+    "publisherDisplayName": "Will Stone"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -18,12 +49,12 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "http-server": "^0.11.1",
-    "prettier": "^1.12.1"
-  },
-  "scripts": {
-    "docs": "http-server ./docs",
-    "build-vscode": "plastic-build",
-    "vspublish": "cd vscode && vsce publish"
+    "prettier": "^1.12.1",
+    "vsce": "^1.51.1",
+    "fs-extra": "^6.0.1",
+    "js-yaml": "^3.11.0",
+    "minimist": "^1.2.0",
+    "tinycolor2": "^1.4.1"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -52,5 +83,8 @@
     "rules": {
       "no-console": 0
     }
+  },
+  "bin": {
+    "plastic-build": "./theme-builder/index.js"
   }
 }
