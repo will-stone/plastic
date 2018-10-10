@@ -1,13 +1,7 @@
 const compileTheme = (theme, config, deprioritised = false) => {
-  const palette = {
-    ...theme.palette,
-    ...config.palette,
-  };
+  const palette = theme.palette
 
-  const ui = {
-    ...theme.ui,
-    ...config.ui,
-  };
+  const ui = theme.ui
 
   // workbench
   const colors = {
@@ -31,7 +25,7 @@ const compileTheme = (theme, config, deprioritised = false) => {
       'terminal.ansiBrightWhite': palette[theme.terminal.bright_white],
     },
     ...Object.keys(config.workbench).reduce((acc, workbenchCategory) => {
-      const workbenchGroup = config.workbench[workbenchCategory];
+      const workbenchGroup = config.workbench[workbenchCategory]
 
       return {
         ...acc,
@@ -39,49 +33,49 @@ const compileTheme = (theme, config, deprioritised = false) => {
           return {
             ...acc,
             [scope]: palette[ui[workbenchCategory]],
-          };
+          }
         }, {}),
-      };
+      }
     }, {}),
-  };
+  }
 
   const syntax = {
     ...theme.syntax,
     ...(deprioritised ? theme.deprioritised_syntax : {}),
-  };
+  }
 
   const tokenColors = [
     // Syntax colours
     ...Object.keys(config.scopes).map(syntaxCategory => {
-      const scopes = config.scopes[syntaxCategory];
+      const scopes = config.scopes[syntaxCategory]
       return {
         name: syntaxCategory,
         scope: scopes,
         settings: {
           foreground: palette[syntax[syntaxCategory]],
         },
-      };
+      }
     }, {}),
     // Syntax styles
     ...Object.keys(config.styles).map(style => {
-      const scopes = config.styles[style];
+      const scopes = config.styles[style]
       return {
         name: style,
         scope: scopes,
         settings: {
           fontStyle: style,
         },
-      };
+      }
     }, {}),
-  ];
+  ]
 
   const template = {
     name: theme.name,
     colors,
     tokenColors,
-  };
+  }
 
-  return JSON.stringify(template, null, 2);
-};
+  return JSON.stringify(template, null, 2)
+}
 
-module.exports = compileTheme;
+module.exports = compileTheme

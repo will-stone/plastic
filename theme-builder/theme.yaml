@@ -28,6 +28,8 @@ palette:
   sunglo: '#E06C75'
   whiskey: '#D19A66'
   woodsmoke: '#181A1F'
+  transparent: '#00000000'
+  white: '#ffffff'
 
 terminal:
   black: shark
@@ -80,6 +82,8 @@ ui:
   highlight: cadet_blue_1A # ui flourishes: whitespace, indent guide, ruler, line highlight
   highlight_active: cadet_blue_33 # active indent guide, selection, search match
   highlight_border: iron # search match borders
+  transparent: transparent # a few tweaks to some backgrounds and highlights
+  white: white # some active items and text, that just looks better as pure white
 
 # And that's all there is to it. Run `yarn` and then `yarn build-vscode` and
 # your new theme will be written to `./vscode/themes/`
