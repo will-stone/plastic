@@ -61,9 +61,9 @@
     "bracketSpacing": true,
     "printWidth": 80,
     "proseWrap": "always",
-    "semi": true,
+    "semi": false,
     "singleQuote": true,
-    "trailingComma": "es5",
+    "trailingComma": "all",
     "useTabs": false
   },
   "eslintConfig": {
