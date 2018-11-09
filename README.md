@@ -94,27 +94,27 @@ much nicer to maintain.
 
 Happy hacking :)
 
-# License
+## License
 
 MIT
 
-# Development
+## Development
 
 The themes are created using a generator. There are two main files for this:
 
-## `theme-builder/theme.yaml`
+### `theme-builder/theme.yaml`
 
 This contains the colour palette and their associated hex values. From here on,
 you use the colour names for each variable. There are then groups of variables
 for terminal, syntax, and UI.
 
-## `theme-builder/config.yaml`.
+### `theme-builder/config.yaml`.
 
 If you are only changing colours, you shouldn't need to edit this file. This is
 where the theme scopes are associated to the variables in the previous file;
 when VSCode updates bring new themeable items, they are added here.
 
-## Build
+### Build
 
 Install the dependencies using [Yarn](https://yarnpkg.com/lang/en/):
 
