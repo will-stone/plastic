@@ -81,6 +81,7 @@ workbench:
     - inputValidation.warningForeground
     - panel.border
     - tab.border
+    - titleBar.border
     - widget.shadow
   background:
     - activityBar.background
