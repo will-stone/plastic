@@ -157,6 +157,8 @@ workbench:
     - editor.wordHighlightBackground
     - editor.wordHighlightStrongBackground
     - editorBracketMatch.background
+    - scrollbar.shadow
+    - widget.shadow
   white:
     - activityBar.foreground
     - activityBarBadge.foreground

@@ -24,11 +24,6 @@ const compileTheme = (theme, config, deprioritised = false) => {
       'terminal.ansiBrightYellow': palette[theme.terminal.bright_yellow],
       'terminal.ansiBrightWhite': palette[theme.terminal.bright_white],
     },
-    // Remove shadows
-    ...{
-      'scrollbar.shadow': palette.transparent,
-      'widget.shadow': palette.transparent,
-    },
     ...Object.keys(config.workbench).reduce((acc, workbenchCategory) => {
       const workbenchGroup = config.workbench[workbenchCategory]
 

@@ -17,8 +17,6 @@
     "terminal.ansiBrightRed": "#E34234",
     "terminal.ansiBrightYellow": "#E5C07B",
     "terminal.ansiBrightWhite": "#D4D7D9",
-    "scrollbar.shadow": "#00000000",
-    "widget.shadow": "#00000000",
     "activityBarBadge.background": "#E06C75",
     "button.background": "#E06C75",
     "editor.findMatchBorder": "#61AFEF",
@@ -119,6 +117,8 @@
     "editor.wordHighlightBackground": "#00000000",
     "editor.wordHighlightStrongBackground": "#00000000",
     "editorBracketMatch.background": "#00000000",
+    "scrollbar.shadow": "#00000000",
+    "widget.shadow": "#00000000",
     "activityBar.foreground": "#ffffff",
     "activityBarBadge.foreground": "#ffffff"
   },
