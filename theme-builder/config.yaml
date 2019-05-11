@@ -72,6 +72,7 @@ workbench:
     - inputValidation.errorBackground
     - inputValidation.errorBorder
   borders:
+    - activityBar.border
     - contrastBorder
     - dropdown.border
     - editorGroup.border
@@ -80,6 +81,8 @@ workbench:
     - inputValidation.infoForeground
     - inputValidation.warningForeground
     - panel.border
+    - sideBar.border
+    - statusBar.border
     - tab.border
     - titleBar.border
   background:
