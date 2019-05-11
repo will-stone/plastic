@@ -5,6 +5,15 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.3.1] - 2019-05-11
+ 
+* Docs: forgot to update changelog.
+
+## [2.3.0] - 2019-05-11
+
+* Feat: removed drop shadows from scrollbar and widget to make theme more flat. (thanks github.com/lowmess).
+* Feat: add titlebar border. (thanks github.com/lowmess).
+
 ## [2.2.0] - 2018-10-09
 
 * Feat: Darker inactive activity bar icons. Closes #29.

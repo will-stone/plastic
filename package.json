@@ -3,7 +3,7 @@
   "private": true,
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "2.2.0",
+  "version": "2.3.1",
   "publisher": "will-stone",
   "author": "Will Stone",
   "engines": {
@@ -50,7 +50,7 @@
     "eslint-config-prettier": "^2.9.0",
     "http-server": "^0.11.1",
     "prettier": "^1.12.1",
-    "vsce": "^1.51.1",
+    "vsce": "^1.61.0",
     "fs-extra": "^6.0.1",
     "js-yaml": "^3.11.0",
     "minimist": "^1.2.0",
