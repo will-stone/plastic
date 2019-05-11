@@ -50,6 +50,7 @@
     "inputValidation.warningForeground": "#0D1117",
     "panel.border": "#0D1117",
     "tab.border": "#0D1117",
+    "titleBar.border": "#0D1117",
     "activityBar.background": "#21252B",
     "editor.background": "#21252B",
     "sideBarSectionHeader.background": "#21252B",
