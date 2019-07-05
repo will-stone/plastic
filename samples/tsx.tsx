@@ -35,12 +35,14 @@ class Main extends React.Component<Props, State> {
   }
 
   render() {
-    ;<div>
-      <div>VehicleType: {this.props.vehicleType}</div>
-      <div>Color: {this.props.color}</div>
-      <div>Wheels: {this.props.numWheels}</div>
-      <div>Age: {this.props.age}</div>
-    </div>
+    return (
+      <div>
+        <div>VehicleType: {this.props.vehicleType}</div>
+        <div>Color: {this.props.color}</div>
+        <div>Wheels: {this.props.numWheels}</div>
+        <div>Age: {this.props.age}</div>
+      </div>
+    )
   }
 }
 
