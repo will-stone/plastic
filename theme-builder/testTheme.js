@@ -65,7 +65,7 @@ const testTheme = theme => {
     test(`- ${category}`, syntax[category] && palette[syntax[category]])
   })
 
-  test('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 15)
+  test('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 18)
   ;[
     'primary',
     'secondary',
@@ -82,6 +82,9 @@ const testTheme = theme => {
     'highlight_border',
     'transparent',
     'white',
+    'git_untracked',
+    'git_modified',
+    'git_deleted',
   ].forEach(category => {
     test(`- ${category}`, ui[category] && palette[ui[category]])
   })

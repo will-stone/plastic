@@ -65,12 +65,14 @@ workbench:
     - editorWarning.foreground
     - inputValidation.warningBackground
     - inputValidation.warningBorder
+    - list.warningForeground
   error:
     - editorError.foreground
     - editorOverviewRuler.errorForeground
     - errorForeground
     - inputValidation.errorBackground
     - inputValidation.errorBorder
+    - list.errorForeground
   borders:
     - activityBar.border
     - contrastBorder
@@ -166,3 +168,9 @@ workbench:
   white:
     - activityBar.foreground
     - activityBarBadge.foreground
+  git_untracked:
+    - gitDecoration.untrackedResourceForeground
+  git_modified:
+    - gitDecoration.modifiedResourceForeground
+  git_deleted:
+    - gitDecoration.deletedResourceForeground
