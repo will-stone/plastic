@@ -9,7 +9,9 @@
   "engines": {
     "vscode": "^1.28.0"
   },
-  "categories": ["Themes"],
+  "categories": [
+    "Themes"
+  ],
   "contributes": {
     "themes": [
       {
@@ -36,6 +38,7 @@
   "scripts": {
     "docs": "http-server ./docs",
     "build-vscode": "./theme-builder/index.js",
+    "prettier": "prettier --config --ignore-path .gitignore --write '*/**/*.{js,ts,tsx}'",
     "vspublish": "vsce publish"
   },
   "__metadata": {
@@ -44,28 +47,20 @@
     "publisherDisplayName": "Will Stone"
   },
   "devDependencies": {
+    "@will-stone/prettier-config": "^1.0.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "http-server": "^0.11.1",
-    "prettier": "^1.12.1",
-    "vsce": "^1.61.0",
     "fs-extra": "^6.0.1",
+    "http-server": "^0.11.1",
     "js-yaml": "^3.13.1",
     "minimist": "^1.2.0",
-    "tinycolor2": "^1.4.1"
+    "prettier": "^1.18.2",
+    "tinycolor2": "^1.4.1",
+    "vsce": "^1.61.0"
   },
-  "prettier": {
-    "arrowParens": "avoid",
-    "bracketSpacing": true,
-    "printWidth": 80,
-    "proseWrap": "always",
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "useTabs": false
-  },
+  "prettier": "@will-stone/prettier-config",
   "eslintConfig": {
     "parser": "babel-eslint",
     "parserOptions": {
@@ -79,7 +74,10 @@
       "browser": true,
       "node": true
     },
-    "extends": ["eslint:recommended", "prettier"],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "rules": {
       "no-console": 0
     }
