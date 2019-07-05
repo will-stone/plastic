@@ -15,7 +15,6 @@ palette:
   cadet_blue: '#A9B2C3'
   cadet_blue_1A: '#A9B2C31A'
   cadet_blue_33: '#A9B2C333'
-  cinnabar: '#E34234'
   cornflower_blue: '#61AFEF'
   electric_violet: '#8B00FF'
   fountain_blue: '#56B6C2'
@@ -23,12 +22,14 @@ palette:
   iron: '#D4D7D9'
   lavender: '#B57EDC'
   olivine: '#98C379'
+  rob_roy: '#E9D16C'
   shark: '#21252B'
   shuttle_gray: '#5F6672'
   sunglo: '#E06C75'
   whiskey: '#D19A66'
   woodsmoke: '#181A1F'
   transparent: '#00000000'
+  valencia: '#D74E42'
   white: '#ffffff'
 
 terminal:
@@ -45,7 +46,7 @@ terminal:
   bright_cyan: bright_turquoise
   bright_green: bright_green
   bright_magenta: electric_violet
-  bright_red: cinnabar
+  bright_red: valencia
   bright_yellow: harvest_gold
   bright_white: iron
 
@@ -71,8 +72,8 @@ deprioritised_syntax:
 ui:
   primary: sunglo # buttons, activity-bar badge
   secondary: cornflower_blue # find highlight, bracket match etc.
-  warning: harvest_gold # squiggly underlines, find match errors etc.
-  error: cinnabar # squiggly underlines, find match errors etc.
+  warning: rob_roy # squiggly underlines, find match errors etc.
+  error: valencia # squiggly underlines, find match errors etc.
   borders: bunker # borders that separate the panels, sidebars, tabs etc.
   background: shark # editor, titlebar, and activity bar background
   panels: woodsmoke # sidebar, terminal, inactive tabs etc.
@@ -84,6 +85,9 @@ ui:
   highlight_border: iron # search match borders
   transparent: transparent # a few tweaks to some backgrounds and highlights
   white: white # some active items and text, that just looks better as pure white
+  git_untracked: olivine
+  git_modified: whiskey
+  git_deleted: sunglo
 
 # And that's all there is to it. Run `yarn` and then `yarn build-vscode` and
 # your new theme will be written to `./vscode/themes/`

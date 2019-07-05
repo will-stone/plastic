@@ -3,11 +3,11 @@
   "private": true,
   "displayName": "Plastic",
   "description": "A simple theme.",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "publisher": "will-stone",
   "author": "Will Stone",
   "engines": {
-    "vscode": "^1.28.0"
+    "vscode": "^1.36.0"
   },
   "categories": [
     "Themes"
