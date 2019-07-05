@@ -26,7 +26,6 @@ const testTheme = theme => {
       typeof terminal === 'object' &&
       Object.keys(terminal).length === 16,
   )
-
   ;[
     'black',
     'blue',
@@ -52,7 +51,6 @@ const testTheme = theme => {
     'Syntax',
     syntax && typeof syntax === 'object' && Object.keys(syntax).length === 9,
   )
-
   ;[
     'comments',
     'functions',
@@ -68,7 +66,6 @@ const testTheme = theme => {
   })
 
   test('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 15)
-
   ;[
     'primary',
     'secondary',
