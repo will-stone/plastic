@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.4.0] - 2019-07-05
+
+* Feat: use Plastic colours for file explorer warnings, errors, git changes.
+
 ## [2.3.1] - 2019-05-11
  
 * Docs: forgot to update changelog.
