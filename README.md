@@ -46,10 +46,10 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic
   _Primary: buttons, activity-bar badge_
 * ![#61afef](https://placehold.it/15/61afef/000000?text=+) Cornflower Blue
   **#61afef** - _Secondary: find highlight, bracket match etc._
-* ![#e5c07b](https://placehold.it/15/e5c07b/000000?text=+) Harvest Gold
-  **#e5c07b** - _Warning: squiggly underlines, find match errors etc._
-* ![#E34234](https://placehold.it/15/E34234/000000?text=+) Cinnabar
-  **#E34234** - _Error: squiggly underlines, find match errors etc._
+* ![#E9D16C](https://placehold.it/15/E9D16C/000000?text=+) Rob Roy
+  **#E9D16C** - _Warning: squiggly underlines, find match errors etc._
+* ![#D74E42](https://placehold.it/15/D74E42/000000?text=+) Valencia
+  **#D74E42** - _Error: squiggly underlines, find match errors etc._
 * ![#080A0F](https://placehold.it/15/080A0F/000000?text=+) Bunker **#080A0F** -
   _Borders: borders that separate the panels, sidebars, tabs etc._
 * ![#21252b](https://placehold.it/15/21252b/000000?text=+) Shark **#21252b** -
@@ -70,6 +70,12 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic
   search match_
 * ![#D4D7D9](https://placehold.it/15/D4D7D9/000000?text=+) Iron **#D4D7D9** -
   _Highlight Border: search match borders_
+* ![#98C379](https://placehold.it/15/98C379/000000?text=+) Olivine **#98C379** -
+  _Git Untracked_
+* ![#D19A66](https://placehold.it/15/D19A66/000000?text=+) Whiskey **#D19A66** -
+  _Git Modified_
+* ![#E06C75](https://placehold.it/15/E06C75/000000?text=+) Sunglo **#E06C75** -
+  _Git Deleted_
 
 ## Contribute
 
