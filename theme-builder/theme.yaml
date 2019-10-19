@@ -42,9 +42,9 @@ terminal:
   yellow: whiskey
   white: cadet_blue
   bright_black: shuttle_gray
-  bright_blue: azure_radiance
+  bright_blue: cornflower_blue
   bright_cyan: bright_turquoise
-  bright_green: bright_green
+  bright_green: olivine
   bright_magenta: electric_violet
   bright_red: valencia
   bright_yellow: harvest_gold
@@ -88,6 +88,5 @@ ui:
   git_untracked: olivine
   git_modified: whiskey
   git_deleted: sunglo
-
 # And that's all there is to it. Run `yarn` and then `yarn build-vscode` and
 # your new theme will be written to `./vscode/themes/`
