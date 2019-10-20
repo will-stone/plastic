@@ -8,8 +8,8 @@ name: Plastic
 # the palette names. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
 palette:
-  azure_radiance: '#007FFF'
-  bright_green: '#66FF00'
+  bright_blue: '#3396ff'
+  bright_green: '#cbfdaa'
   bright_turquoise: '#08E8DE'
   bunker: '#0D1117'
   cadet_blue: '#A9B2C3'
@@ -42,9 +42,9 @@ terminal:
   yellow: whiskey
   white: cadet_blue
   bright_black: shuttle_gray
-  bright_blue: cornflower_blue
+  bright_blue: bright_blue
   bright_cyan: bright_turquoise
-  bright_green: olivine
+  bright_green: bright_green
   bright_magenta: electric_violet
   bright_red: valencia
   bright_yellow: harvest_gold
