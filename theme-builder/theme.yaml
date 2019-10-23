@@ -9,7 +9,7 @@ name: Plastic
 # make it easier to see which colours your palette is using.
 palette:
   dodger_blue: '#1085FF'
-  reef: '#9FFE61'
+  atlantis: '#69c52e'
   bright_turquoise: '#08E8DE'
   bunker: '#0D1117'
   cadet_blue: '#A9B2C3'
@@ -44,10 +44,10 @@ terminal:
   bright_black: shuttle_gray
   bright_blue: dodger_blue
   bright_cyan: bright_turquoise
-  bright_green: reef
+  bright_green: atlantis
   bright_magenta: electric_violet
   bright_red: valencia
-  bright_yellow: harvest_gold
+  bright_yellow: rob_roy
   bright_white: iron
 
 # This is where you define a colour to each group of syntax. Use the palette
