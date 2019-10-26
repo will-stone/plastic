@@ -8,8 +8,8 @@ name: Plastic
 # the palette names. I highly recommend the Color Highlight plugin that will
 # make it easier to see which colours your palette is using.
 palette:
-  azure_radiance: '#007FFF'
-  bright_green: '#66FF00'
+  dodger_blue: '#1085FF'
+  atlantis: '#69c52e'
   bright_turquoise: '#08E8DE'
   bunker: '#0D1117'
   cadet_blue: '#A9B2C3'
@@ -42,12 +42,12 @@ terminal:
   yellow: whiskey
   white: cadet_blue
   bright_black: shuttle_gray
-  bright_blue: azure_radiance
+  bright_blue: dodger_blue
   bright_cyan: bright_turquoise
-  bright_green: bright_green
+  bright_green: atlantis
   bright_magenta: electric_violet
   bright_red: valencia
-  bright_yellow: harvest_gold
+  bright_yellow: rob_roy
   bright_white: iron
 
 # This is where you define a colour to each group of syntax. Use the palette
@@ -88,6 +88,5 @@ ui:
   git_untracked: olivine
   git_modified: whiskey
   git_deleted: sunglo
-
 # And that's all there is to it. Run `yarn` and then `yarn build-vscode` and
 # your new theme will be written to `./vscode/themes/`
