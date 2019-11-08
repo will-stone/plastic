@@ -34,6 +34,7 @@
     "inputValidation.infoBackground": "#1085FF",
     "inputValidation.infoBorder": "#1085FF",
     "peekView.border": "#1085FF",
+    "tab.activeBorderTop": "#1085FF",
     "editorLightBulb.foreground": "#E9D16C",
     "editorOverviewRuler.warningForeground": "#E9D16C",
     "editorWarning.foreground": "#E9D16C",
