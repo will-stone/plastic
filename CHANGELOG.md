@@ -7,8 +7,10 @@ project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-- Feat: active activity bar item border has secondary colour. 
-- Feat: active activity bar item background has panel colour. 
+- Feat: Use same colour as terminal's Bright Blue as secondary colour.
+- Feat: active activity bar item border has secondary colour.
+- Feat: active activity bar item background has panel colour.
+- Feat: theme lightbulb.
 
 ## [2.5.0] - 2019-10-26
 

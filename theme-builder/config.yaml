@@ -54,6 +54,7 @@ workbench:
     - editorBracketMatch.border
     - editorHoverWidget.border
     - editorInfo.foreground
+    - editorLightBulbAutoFix.foreground
     - editorOverviewRuler.infoForeground
     - editorSuggestWidget.border
     - focusBorder
@@ -62,6 +63,7 @@ workbench:
     - inputValidation.infoBorder
     - peekView.border
   warning:
+    - editorLightBulb.foreground
     - editorOverviewRuler.warningForeground
     - editorWarning.foreground
     - inputValidation.warningBackground
@@ -170,9 +172,9 @@ workbench:
   white:
     - activityBar.foreground
     - activityBarBadge.foreground
-  git_untracked:
+  green:
     - gitDecoration.untrackedResourceForeground
-  git_modified:
+  amber:
     - gitDecoration.modifiedResourceForeground
-  git_deleted:
+  red:
     - gitDecoration.deletedResourceForeground
