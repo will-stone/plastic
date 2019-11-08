@@ -85,6 +85,9 @@ workbench:
     - input.background
     - inputValidation.infoForeground
     - inputValidation.warningForeground
+    - notificationCenter.border
+    - notificationToast.border
+    - notifications.border
     - panel.border
     - sideBar.border
     - statusBar.border
