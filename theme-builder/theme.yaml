@@ -71,7 +71,7 @@ deprioritised_syntax:
 # theme nicely. As with syntax, use the palette identifier.
 ui:
   primary: sunglo # buttons, activity-bar badge
-  secondary: cornflower_blue # find highlight, bracket match etc.
+  secondary: dodger_blue # find highlight, bracket match etc.
   warning: rob_roy # squiggly underlines, find match errors etc.
   error: valencia # squiggly underlines, find match errors etc.
   borders: bunker # borders that separate the panels, sidebars, tabs etc.
@@ -85,8 +85,8 @@ ui:
   highlight_border: iron # search match borders
   transparent: transparent # a few tweaks to some backgrounds and highlights
   white: white # some active items and text, that just looks better as pure white
-  git_untracked: olivine
-  git_modified: whiskey
-  git_deleted: sunglo
+  green: olivine
+  amber: whiskey
+  red: sunglo
 # And that's all there is to it. Run `yarn` and then `yarn build-vscode` and
 # your new theme will be written to `./vscode/themes/`
