@@ -82,9 +82,9 @@ const testTheme = theme => {
     'highlight_border',
     'transparent',
     'white',
-    'git_untracked',
-    'git_modified',
-    'git_deleted',
+    'green',
+    'amber',
+    'red',
   ].forEach(category => {
     test(`- ${category}`, ui[category] && palette[ui[category]])
   })
