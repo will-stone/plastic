@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.7.0] - 2019-11-08
+
+- Feat: add border to notifications.
+
 ## [2.6.0] - 2019-11-08
 
 - Feat: Use same colour as terminal's Bright Blue as secondary colour.
