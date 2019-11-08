@@ -5,6 +5,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+- Feat: active activity bar item border has secondary colour. 
+- Feat: active activity bar item background has panel colour. 
+
 ## [2.5.0] - 2019-10-26
 
 - Feat: changed Bright Green to be less dazzling. Change Bright Yellow to be

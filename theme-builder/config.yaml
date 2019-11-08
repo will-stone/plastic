@@ -47,6 +47,7 @@ workbench:
     - activityBarBadge.background
     - button.background
   secondary:
+    - activityBar.activeBorder
     - editor.findMatchBorder
     - editor.wordHighlightBorder
     - editor.wordHighlightStrongBorder
@@ -96,6 +97,7 @@ workbench:
     - titleBar.activeBackground
     - titleBar.inactiveBackground
   panels:
+    - activityBar.activeBackground
     - activityBar.dropBackground
     - debugToolBar.background
     - dropdown.background
