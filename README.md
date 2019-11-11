@@ -40,43 +40,6 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic
 * ![#D2D6db](https://placehold.it/15/D2D6db/000000?text=+) Iron **#D2D6db** -
   _Variables_
 
-### UI
-
-* ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** -
-  _Primary: buttons, activity-bar badge_
-* ![#61afef](https://placehold.it/15/61afef/000000?text=+) Cornflower Blue
-  **#61afef** - _Secondary: find highlight, bracket match etc._
-* ![#E9D16C](https://placehold.it/15/E9D16C/000000?text=+) Rob Roy
-  **#E9D16C** - _Warning: squiggly underlines, find match errors etc._
-* ![#D74E42](https://placehold.it/15/D74E42/000000?text=+) Valencia
-  **#D74E42** - _Error: squiggly underlines, find match errors etc._
-* ![#080A0F](https://placehold.it/15/080A0F/000000?text=+) Bunker **#080A0F** -
-  _Borders: borders that separate the panels, sidebars, tabs etc._
-* ![#21252b](https://placehold.it/15/21252b/000000?text=+) Shark **#21252b** -
-  _Background: editor, titlebar, and activity bar background_
-* ![#181A1F](https://placehold.it/15/181A1F/000000?text=+) Woodsmoke
-  **#181A1F** - _Panels: sidebar, terminal, inactive tabs etc._
-* ![#5F6672](https://placehold.it/15/5F6672/000000?text=+) Shuttle Gray
-  **#5F6672** - _Text Subtle: line numbers, muted items_
-* ![#A9B2C3](https://placehold.it/15/A9B2C3/000000?text=+) Cadet Blue
-  **#A9B2C3** - _Text_
-* ![#D4D7D9](https://placehold.it/15/D4D7D9/000000?text=+) Iron **#D4D7D9** -
-  _Text Active: active tab, active line number, active list text etc._
-* ![#A9B2C31A](https://placehold.it/15/A9B2C31A/000000?text=+) Cadet Blue (1A
-  opacity) **#A9B2C31A** - _Highlight: ui flourishes: whitespace, indent guide,
-  ruler, line highlight_
-* ![#A9B2C333](https://placehold.it/15/A9B2C333/000000?text=+) Cadet Blue (33
-  opacity) **#A9B2C333** - _Highlight Active: active indent guide, selection,
-  search match_
-* ![#D4D7D9](https://placehold.it/15/D4D7D9/000000?text=+) Iron **#D4D7D9** -
-  _Highlight Border: search match borders_
-* ![#98C379](https://placehold.it/15/98C379/000000?text=+) Olivine **#98C379** -
-  _Git Untracked_
-* ![#D19A66](https://placehold.it/15/D19A66/000000?text=+) Whiskey **#D19A66** -
-  _Git Modified_
-* ![#E06C75](https://placehold.it/15/E06C75/000000?text=+) Sunglo **#E06C75** -
-  _Git Deleted_
-
 ## Contribute
 
 Themes can always be improved and tweaked so please feel free to log issues and
