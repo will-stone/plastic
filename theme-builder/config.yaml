@@ -103,7 +103,6 @@ workbench:
     - titleBar.activeBackground
     - titleBar.inactiveBackground
   panels:
-    - activityBar.activeBackground
     - activityBar.dropBackground
     - debugToolBar.background
     - dropdown.background
