@@ -1,7 +1,7 @@
 const compileTheme = (theme, config, deprioritised = false) => {
-  const palette = theme.palette
+  const { palette } = theme
 
-  const ui = theme.ui
+  const { ui } = theme
 
   // workbench
   const colors = {
@@ -29,9 +29,9 @@ const compileTheme = (theme, config, deprioritised = false) => {
 
       return {
         ...acc,
-        ...workbenchGroup.reduce((acc, scope) => {
+        ...workbenchGroup.reduce((workbenchGroupAcc, scope) => {
           return {
-            ...acc,
+            ...workbenchGroupAcc,
             [scope]: palette[ui[workbenchCategory]],
           }
         }, {}),

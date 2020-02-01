@@ -1,26 +1,26 @@
 const tinycolor = require('tinycolor2')
-const test = require('./utils/test')
+const myTest = require('./utils/test')
 
 const testTheme = theme => {
-  test('theme.yaml', theme)
+  myTest('theme.yaml', theme)
 
   const { name, palette, terminal, syntax, ui } = theme
 
-  test('Name', name && typeof name === 'string')
+  myTest('Name', name && typeof name === 'string')
 
-  test('Name begins with "Plastic"', name.startsWith('Plastic'))
+  myTest('Name begins with "Plastic"', name.startsWith('Plastic'))
 
-  test('Palette', palette && typeof palette === 'object')
+  myTest('Palette', palette && typeof palette === 'object')
 
   Object.keys(palette).forEach(colourName => {
     const hex = palette[colourName]
     const isString = typeof hex === 'string'
     const colourFormat = tinycolor(hex).getFormat()
     const isHex = colourFormat === 'hex' || colourFormat === 'hex8'
-    test(`- ${colourName}`, hex && isString && isHex)
+    myTest(`- ${colourName}`, hex && isString && isHex)
   })
 
-  test(
+  myTest(
     'Terminal',
     terminal &&
       typeof terminal === 'object' &&
@@ -44,10 +44,10 @@ const testTheme = theme => {
     'bright_yellow',
     'bright_white',
   ].forEach(colourName => {
-    test(`- ${colourName}`, palette[terminal[colourName]])
+    myTest(`- ${colourName}`, palette[terminal[colourName]])
   })
 
-  test(
+  myTest(
     'Syntax',
     syntax && typeof syntax === 'object' && Object.keys(syntax).length === 9,
   )
@@ -62,10 +62,10 @@ const testTheme = theme => {
     'tags',
     'variables',
   ].forEach(category => {
-    test(`- ${category}`, syntax[category] && palette[syntax[category]])
+    myTest(`- ${category}`, syntax[category] && palette[syntax[category]])
   })
 
-  test('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 18)
+  myTest('UI', ui && typeof ui === 'object' && Object.keys(ui).length === 18)
   ;[
     'primary',
     'secondary',
@@ -86,7 +86,7 @@ const testTheme = theme => {
     'amber',
     'red',
   ].forEach(category => {
-    test(`- ${category}`, ui[category] && palette[ui[category]])
+    myTest(`- ${category}`, ui[category] && palette[ui[category]])
   })
 }
 
