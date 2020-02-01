@@ -11,7 +11,8 @@ const outDir = parseArgs(process.argv).outDir || './themes'
 
 const theme = readYaml('./theme-builder/theme.yaml')
 
-testTheme(theme) // This will stop the process here if any tests fail.
+// This will stop the process here if any tests fail.
+testTheme(theme)
 
 const config = readYaml(path.resolve(__dirname, 'config.yaml'))
 
