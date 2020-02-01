@@ -1681,7 +1681,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lint-staged@^10.0.4:
+lint-staged@^10.0.7:
   version "10.0.7"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.7.tgz#d205f92d9359419a23bc6aa3b6f8546b1998da64"
   integrity sha512-Byj0F4l7GYUpYYHEqyFH69NiI6ICTg0CeCKbhRorL+ickbzILKUlZLiyCkljZV02wnoh7yH7PmFyYm9PRNwk9g==
@@ -3131,10 +3131,10 @@ write@1.0.3:
   dependencies:
     mkdirp "^0.5.1"
 
-ws-scripts@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ws-scripts/-/ws-scripts-1.6.0.tgz#a18f68501038977574c3d0a3f1b2baaa6f4a6229"
-  integrity sha512-JUxd7xAEZ2bqB8KYUmhdY3OMTw+cj35f27JmvrKTn+udc+163N0zLU7rJHijHbqEwolU1Pk6VlsyqQ7ySNsJCA==
+ws-scripts@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/ws-scripts/-/ws-scripts-1.6.1.tgz#3fdc2b72413e5afb7856a44a33e7036a05e70efc"
+  integrity sha512-SywOeoVR497TYcJsa1FgO+AHqS5af/GKMlrSO6gNvvNE5oR7JCRunIQnt67TBOaFXKx5DfOrg7UJVy54hg+sRQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.18.0"
     "@typescript-eslint/parser" "^2.18.0"
@@ -3151,7 +3151,7 @@ ws-scripts@^1.6.0:
     eslint-plugin-switch-case "^1.1.2"
     eslint-plugin-unicorn "^15.0.1"
     husky "^4.2.1"
-    lint-staged "^10.0.4"
+    lint-staged "^10.0.7"
     lodash "^4.17.15"
     prettier "^1.19.1"
     prettier-plugin-packagejson "^2.0.10"
