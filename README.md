@@ -6,9 +6,9 @@ _[A simple syntax and UI theme for Visual Studio Code.](https://will-stone.githu
 
 ## Notable features
 
-* Dark UI elements for all-day coding.
-* Small colour palette to avoid visual overload.
-* Additional deprioritised-punctuation theme; concentrate on the content.
+- Dark UI elements for all-day coding.
+- Small colour palette to avoid visual overload.
+- Additional deprioritised-punctuation theme; concentrate on the content.
 
 <a href="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot.png" width="500" alt="Screenshot"></a>
 
@@ -21,23 +21,23 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic
 
 ### Syntax
 
-* ![#5f6672](https://placehold.it/15/5c6370/000000?text=+) Shuttle Gray
+- ![#5f6672](https://placehold.it/15/5c6370/000000?text=+) Shuttle Gray
   **#5f6672** - _Comments_
-* ![#d19a66](https://placehold.it/15/d19a66/000000?text=+) Whiskey **#d19a66** -
+- ![#d19a66](https://placehold.it/15/d19a66/000000?text=+) Whiskey **#d19a66** -
   _Functions_
-* ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** -
+- ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** -
   _Keywords_
-* ![#56b6c2](https://placehold.it/15/56b6c2/000000?text=+) Fountain Blue
+- ![#56b6c2](https://placehold.it/15/56b6c2/000000?text=+) Fountain Blue
   **#56b6c2** - _Primitives_
-* ![#a9b2c3](https://placehold.it/15/abb2bf/000000?text=+) Cadet Blue
+- ![#a9b2c3](https://placehold.it/15/abb2bf/000000?text=+) Cadet Blue
   **#a9b2c3** - _Punctuation_
-* ![#61afef](https://placehold.it/15/61afef/000000?text=+) Cornflower Blue
+- ![#61afef](https://placehold.it/15/61afef/000000?text=+) Cornflower Blue
   **#61afef** - _Storage_
-* ![#98c379](https://placehold.it/15/98c379/000000?text=+) Olivine **#98c379** -
+- ![#98c379](https://placehold.it/15/98c379/000000?text=+) Olivine **#98c379** -
   _Strings_
-* ![#e5c07b](https://placehold.it/15/e5c07b/000000?text=+) Harvest Gold
+- ![#e5c07b](https://placehold.it/15/e5c07b/000000?text=+) Harvest Gold
   **#e5c07b** - _Tags_
-* ![#d4d7d9](https://placehold.it/15/D2D6db/000000?text=+) Iron **#d4d7d9** -
+- ![#d4d7d9](https://placehold.it/15/D2D6db/000000?text=+) Iron **#d4d7d9** -
   _Variables_
 
 ## Contribute
@@ -85,7 +85,7 @@ when VSCode updates bring new themeable items, they are added here.
 
 ### Build
 
-Install the dependencies using [Yarn](https://yarnpkg.com/lang/en/):
+Install the dependencies using [Yarn](https://yarnpkg.com/lang/en/) v1:
 
 ```sh
 yarn
