@@ -58,7 +58,7 @@
     "minimist": "^1.2.0",
     "tinycolor2": "^1.4.1",
     "vsce": "^1.72.0",
-    "ws-scripts": "^1.6.1"
+    "ws-scripts": "^1.9.0"
   },
   "engines": {
     "vscode": "^1.36.0"
