@@ -24,7 +24,6 @@
     "build-vscode": "./theme-builder/index.js",
     "docs": "http-server ./docs",
     "lint": "ws-scripts lint",
-    "prettier": "prettier --config --ignore-path .gitignore --write '*/**/*.{js,ts,tsx}'",
     "vspublish": "vsce publish"
   },
   "contributes": {
