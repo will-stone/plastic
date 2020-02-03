@@ -21,7 +21,7 @@
     "plastic-build": "./theme-builder/index.js"
   },
   "scripts": {
-    "build-vscode": "./theme-builder/index.js",
+    "build": "./theme-builder/index.js",
     "docs": "http-server ./docs",
     "lint": "ws-scripts lint",
     "vspublish": "vsce publish"
