@@ -94,5 +94,5 @@ yarn
 Then compile the theme files to the `themes` folder using:
 
 ```sh
-yarn build-vscode
+yarn build
 ```
