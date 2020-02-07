@@ -1,7 +1,7 @@
 {
   "name": "plastic",
   "displayName": "Plastic",
-  "version": "2.9.1",
+  "version": "3.0.0",
   "private": true,
   "description": "A simple theme.",
   "categories": [
@@ -37,6 +37,11 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/theme-deprioritised-punctuation.json"
+      },
+      {
+        "label": "Plastic - v3",
+        "uiTheme": "vs-dark",
+        "path": "./themes/v3.json"
       }
     ]
   },
