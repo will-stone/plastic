@@ -53,7 +53,6 @@ default_syntax:
   lavender:
     - entity
     - entity.name.function
-    - punctuation.definition.entity # css . and # for classes and IDs
     - support.function
   # import, export, return etc.
   sunglo:
@@ -77,10 +76,14 @@ default_syntax:
   harvest_gold:
     - entity.name
     - variable.language # this
+  # variables
   iron:
     - support.type.property-name
     - support.variable
     - variable
+  whiskey:
+    - punctuation.definition.entity # css . and # for classes and IDs
+    - entity.other.attribute-name
 
 normal_syntax:
   # quotes, terminators etc.

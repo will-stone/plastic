@@ -146,12 +146,7 @@
       }
     },
     {
-      "scope": [
-        "entity",
-        "entity.name.function",
-        "punctuation.definition.entity",
-        "support.function"
-      ],
+      "scope": ["entity", "entity.name.function", "support.function"],
       "settings": {
         "foreground": "#B57EDC"
       }
@@ -190,6 +185,12 @@
       "scope": ["support.type.property-name", "support.variable", "variable"],
       "settings": {
         "foreground": "#D4D7D9"
+      }
+    },
+    {
+      "scope": ["punctuation.definition.entity", "entity.other.attribute-name"],
+      "settings": {
+        "foreground": "#D19A66"
       }
     },
     {
