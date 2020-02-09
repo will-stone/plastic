@@ -1,7 +1,7 @@
 {
   "name": "plastic",
   "displayName": "Plastic",
-  "version": "2.9.1",
+  "version": "3.0.0",
   "private": true,
   "description": "A simple theme.",
   "categories": [
@@ -17,11 +17,8 @@
   },
   "author": "Will Stone",
   "publisher": "will-stone",
-  "bin": {
-    "plastic-build": "./theme-builder/index.js"
-  },
   "scripts": {
-    "build": "./theme-builder/index.js",
+    "build": "./src/build.js",
     "docs": "http-server ./docs",
     "lint": "ws-scripts lint",
     "vspublish": "vsce publish"
@@ -31,12 +28,22 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./themes/theme.json"
+        "path": "./themes/v3.json"
       },
       {
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
-        "path": "./themes/theme-deprioritised-punctuation.json"
+        "path": "./themes/v3-deprioritised-punctuation.json"
+      },
+      {
+        "label": "Plastic Legacy v2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/v2.json"
+      },
+      {
+        "label": "Plastic Legacy v2 - deprioritised punctuation",
+        "uiTheme": "vs-dark",
+        "path": "./themes/v2-deprioritised-punctuation.json"
       }
     ]
   },
@@ -55,9 +62,7 @@
     "fs-extra": "^6.0.1",
     "http-server": "^0.11.1",
     "js-yaml": "^3.13.1",
-    "minimist": "^1.2.0",
-    "tinycolor2": "^1.4.1",
-    "vsce": "^1.72.0",
+    "vsce": "^1.73.0",
     "ws-scripts": "^1.10.0"
   },
   "engines": {
