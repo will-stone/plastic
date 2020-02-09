@@ -77,6 +77,7 @@ default_syntax:
     - support.type
   # variables
   iron:
+    - support.type.property-name # css property names
     - support.variable
     - variable
   whiskey:
