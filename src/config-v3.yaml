@@ -65,10 +65,10 @@ default_syntax:
   # const, var, class etc. and React JSX component tag
   cornflower_blue:
     - storage
-    - support.class
+    - support.class # console and JSX custom components
   # anything in quotes
   olivine:
-    - markup.inline.raw.string
+    - markup.inline.raw.string # inline code in markdown
     - string
   # html tags and types
   harvest_gold:
@@ -81,8 +81,8 @@ default_syntax:
     - variable
   whiskey:
     - entity.other
-    - punctuation.definition.entity # css . and # for classes and IDs
-    - support.other 
+    - punctuation.definition.entity # css . and # for CSS classes and IDs
+    - support.other
 
 normal_syntax:
   # quotes, terminators etc.
