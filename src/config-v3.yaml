@@ -51,39 +51,38 @@ default_syntax:
     - punctuation.definition.comment # start and end of comment blocks
   # functions
   lavender:
-    - entity
     - entity.name.function
     - support.function
   # import, export, return etc.
   sunglo:
     - keyword
     - punctuation.definition.keyword # css @ in @media queries
+    - variable.language # this
   # primitives
   fountain_blue:
     - constant
-    - keyword.other
-    - support.type
+    - support.constant
   # const, var, class etc. and React JSX component tag
   cornflower_blue:
     - storage
     - support.class
-    - support.constant
   # anything in quotes
   olivine:
+    - markup.inline.raw.string
     - string
-    - markup.inline
-  # html tags
+  # html tags and types
   harvest_gold:
-    - entity.name
-    - variable.language # this
+    - entity.name.tag
+    - entity.name.type
+    - support.type
   # variables
   iron:
-    - support.type.property-name
     - support.variable
     - variable
   whiskey:
+    - entity.other
     - punctuation.definition.entity # css . and # for classes and IDs
-    - entity.other.attribute-name
+    - support.other 
 
 normal_syntax:
   # quotes, terminators etc.
