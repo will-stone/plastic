@@ -23,14 +23,14 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic
 
 - ![#5f6672](https://placehold.it/15/5c6370/000000?text=+) Shuttle Gray
   **#5f6672** - _Comments_
-- ![#d19a66](https://placehold.it/15/d19a66/000000?text=+) Whiskey **#d19a66** -
-  _Functions_
+- ![#a9b2c3](https://placehold.it/15/abb2bf/000000?text=+) Cadet Blue
+  **#a9b2c3** - _Punctuation_
+- ![#b57edc](https://placehold.it/15/b57edc/000000?text=+) Lavender
+  **#b57edc** - _Functions_
 - ![#e06c75](https://placehold.it/15/e06c75/000000?text=+) Sunglo **#e06c75** -
   _Keywords_
 - ![#56b6c2](https://placehold.it/15/56b6c2/000000?text=+) Fountain Blue
   **#56b6c2** - _Primitives_
-- ![#a9b2c3](https://placehold.it/15/abb2bf/000000?text=+) Cadet Blue
-  **#a9b2c3** - _Punctuation_
 - ![#61afef](https://placehold.it/15/61afef/000000?text=+) Cornflower Blue
   **#61afef** - _Storage_
 - ![#98c379](https://placehold.it/15/98c379/000000?text=+) Olivine **#98c379** -
@@ -39,6 +39,8 @@ Colour names provided by [Chirag Mehta's](http://chir.ag/about) fantastic
   **#e5c07b** - _Tags_
 - ![#d4d7d9](https://placehold.it/15/D2D6db/000000?text=+) Iron **#d4d7d9** -
   _Variables_
+- ![#d19a66](https://placehold.it/15/d19a66/000000?text=+) Whiskey **#d19a66** -
+  _JSX props_
 
 ## Contribute
 
@@ -69,23 +71,12 @@ MIT
 
 ## Development
 
-The themes are created using a generator. There are two main files for this:
-
-### `theme-builder/theme.yaml`
-
-This contains the colour palette and their associated hex values. From here on,
-you use the colour names for each variable. There are then groups of variables
-for terminal, syntax, and UI.
-
-### `theme-builder/config.yaml`.
-
-If you are only changing colours, you shouldn't need to edit this file. This is
-where the theme scopes are associated to the variables in the previous file;
-when VSCode updates bring new themeable items, they are added here.
+The themes are created using a generator: `src/build.js`. The configuration can
+be found in the `src/config-v*.yaml` files.
 
 ### Build
 
-Install the dependencies using [Yarn](https://yarnpkg.com/lang/en/) v1:
+Install the dependencies using [Yarn](https://classic.yarnpkg.com/en/) v1:
 
 ```sh
 yarn
