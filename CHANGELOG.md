@@ -5,6 +5,17 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.0] - 2020-02-09
+
+v3 introduces a new syntax colour: lavender for functions. This helps tone-down
+the amount of whiskey colour, which is now mainly used for JSX props. The scopes
+have also been simplified further, separating them into clear types. However,
+worry not if you preferred v2, this can still be found in the theme-picker under
+"Plastic Legacy v2".
+
+- Feat: Use new Lavender colour for functions, leaving Whiskey for JSX props.
+- Simplified config and build script.
+
 ## [2.9.0] - 2019-11-11
 
 - Fix: remove active bar item background (didn't go with theme).

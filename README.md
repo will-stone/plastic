@@ -4,6 +4,14 @@ _[A simple syntax and UI theme for Visual Studio Code.](https://will-stone.githu
 
 ---
 
+v3 introduces a new syntax colour: lavender for functions. This helps tone-down
+the amount of whiskey colour, which is now mainly used for JSX props. The scopes
+have also been simplified further, separating them into clear types. However,
+worry not if you preferred v2, this can still be found in the theme-picker under
+"Plastic Legacy v2".
+
+---
+
 ## Notable features
 
 - Dark UI elements for all-day coding.
