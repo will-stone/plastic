@@ -4,9 +4,9 @@ Paragraphs are separated by a blank line.
 
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists look like:
 
-* this one
-* that one
-* the other one
+- this one
+- that one
+- the other one
 
 Note that --- not considering the asterisk --- the actual text content starts at
 4-columns in.
@@ -54,15 +54,24 @@ for i in range(10):
     print i
 ```
 
+```ts
+import blah from 'blah'
+
+const funcName = (arg: ArgType): ReturnType => {
+  blah()
+  return 'hello'
+}
+```
+
 ### An h3 header
 
 Now a nested list:
 
 1.  First, get these ingredients:
 
-    * carrots
-    * celery
-    * lentils
+    - carrots
+    - celery
+    - lentils
 
 2.  Boil some water.
 
