@@ -28,12 +28,22 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./themes/theme.json"
+        "path": "./themes/v3.json"
       },
       {
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
-        "path": "./themes/theme-deprioritised-punctuation.json"
+        "path": "./themes/v3-deprioritised-punctuation.json"
+      },
+      {
+        "label": "Plastic Legacy v2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/v2.json"
+      },
+      {
+        "label": "Plastic Legacy v2 - deprioritised punctuation",
+        "uiTheme": "vs-dark",
+        "path": "./themes/v2-deprioritised-punctuation.json"
       }
     ]
   },

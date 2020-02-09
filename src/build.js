@@ -3,13 +3,11 @@
 const fs = require('fs-extra')
 const yaml = require('js-yaml')
 
-function readYaml(fileName) {
-  return yaml.safeLoad(fs.readFileSync(fileName, 'utf8'))
-}
+function compile({ version, deprioritised = false }) {
+  const config = yaml.safeLoad(
+    fs.readFileSync(`./src/config-${version}.yaml`, 'utf8'),
+  )
 
-const config = readYaml('./src/config.yaml')
-
-function compileTheme(deprioritised = false) {
   const theme = {
     name: '',
     colors: {},
@@ -80,22 +78,21 @@ function compileTheme(deprioritised = false) {
     theme.colors,
   )
 
-  return theme
+  return JSON.stringify(theme, null, 2)
 }
 
-const outDir = './themes'
+function build({ version }) {
+  // Normal
+  fs.outputFile(`./themes/${version}.json`, compile({ version }))
+  // Deprioritised
+  fs.outputFile(
+    `./themes/${version}-deprioritised-punctuation.json`,
+    compile({ version, deprioritised: true }),
+  )
+}
 
 /**
- * Normal theme
+ * Build versions
  */
-
-fs.outputFile(`${outDir}/theme.json`, JSON.stringify(compileTheme(), null, 2))
-
-/**
- * Deprioritised theme
- */
-
-fs.outputFile(
-  `${outDir}/theme-deprioritised-punctuation.json`,
-  JSON.stringify(compileTheme(true), null, 2),
-)
+build({ version: 'v2' })
+build({ version: 'v3' })
