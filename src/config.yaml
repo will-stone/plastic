@@ -1,36 +1,98 @@
-scopes:
-  comments:
+# Your theme's name must begin with Plastic, e.g. Plastic Horses
+name: Plastic
+
+palette:
+  dodger_blue: '#1085FF'
+  atlantis: '#69c52e'
+  bright_turquoise: '#08E8DE'
+  bunker: '#0D1117'
+  cadet_blue: '#A9B2C3'
+  cadet_blue_1A: '#A9B2C31A'
+  cadet_blue_33: '#A9B2C333'
+  cornflower_blue: '#61AFEF'
+  electric_violet: '#8B00FF'
+  fountain_blue: '#56B6C2'
+  harvest_gold: '#E5C07B'
+  iron: '#D4D7D9'
+  lavender: '#B57EDC'
+  olivine: '#98C379'
+  rob_roy: '#E9D16C'
+  shark: '#21252B'
+  shuttle_gray: '#5F6672'
+  sunglo: '#E06C75'
+  whiskey: '#D19A66'
+  woodsmoke: '#181A1F'
+  transparent: '#00000000'
+  valencia: '#D74E42'
+  white: '#ffffff'
+
+terminal:
+  shark: terminal.ansiBlack
+  cornflower_blue: terminal.ansiBlue
+  fountain_blue: terminal.ansiCyan
+  olivine: terminal.ansiGreen
+  lavender: terminal.ansiMagenta
+  sunglo: terminal.ansiRed
+  whiskey: terminal.ansiYellow
+  cadet_blue: terminal.ansiWhite
+  shuttle_gray: terminal.ansiBrightBlack
+  dodger_blue: terminal.ansiBrightBlue
+  bright_turquoise: terminal.ansiBrightCyan
+  atlantis: terminal.ansiBrightGreen
+  electric_violet: terminal.ansiBrightMagenta
+  valencia: terminal.ansiBrightRed
+  rob_roy: terminal.ansiBrightYellow
+  iron: terminal.ansiBrightWhite
+
+default_syntax:
+  # comments
+  shuttle_gray:
     - comment
     - punctuation.definition.comment # start and end of comment blocks
-  functions:
+  # functions
+  lavender:
     - entity
     - entity.name.function
     - punctuation.definition.entity # css . and # for classes and IDs
     - support.function
-  keywords:
+  # import, export, return etc.
+  sunglo:
     - keyword
     - punctuation.definition.keyword # css @ in @media queries
-  primitives:
+  # primitives
+  fountain_blue:
     - constant
     - keyword.other
     - support.type
-  punctuation:
-    - meta.brace
-    - punctuation
-  storage:
+  # const, var, class etc. and React JSX component tag
+  cornflower_blue:
     - storage
     - support.class
     - support.constant
-  strings:
+  # anything in quotes
+  olivine:
     - string
     - markup.inline
-  tags:
+  # html tags
+  harvest_gold:
     - entity.name
     - variable.language # this
-  variables:
+  iron:
     - support.type.property-name
     - support.variable
     - variable
+
+normal_syntax:
+  # quotes, terminators etc.
+  cadet_blue:
+    - meta.brace
+    - punctuation
+
+deprioritised_syntax:
+  # quotes, terminators etc.
+  shuttle_gray:
+    - meta.brace
+    - punctuation
 
 styles:
   bold:
@@ -43,10 +105,19 @@ styles:
     - punctuation.definition.italic
 
 workbench:
-  primary:
+  # green
+  olivine:
+    - gitDecoration.untrackedResourceForeground
+  # amber
+  whiskey:
+    - gitDecoration.modifiedResourceForeground
+  # red. buttons, activity-bar badge
+  sunglo:
     - activityBarBadge.background
     - button.background
-  secondary:
+    - gitDecoration.deletedResourceForeground
+  # find highlight, bracket match etc.
+  dodger_blue:
     - activityBar.activeBorder
     - editor.findMatchBorder
     - editor.wordHighlightBorder
@@ -63,21 +134,24 @@ workbench:
     - inputValidation.infoBorder
     - peekView.border
     - tab.activeBorderTop
-  warning:
+  # warning. squiggly underlines, find match errors etc.
+  rob_roy:
     - editorLightBulb.foreground
     - editorOverviewRuler.warningForeground
     - editorWarning.foreground
     - inputValidation.warningBackground
     - inputValidation.warningBorder
     - list.warningForeground
-  error:
+  # error. squiggly underlines, find match errors etc.
+  valencia:
     - editorError.foreground
     - editorOverviewRuler.errorForeground
     - errorForeground
     - inputValidation.errorBackground
     - inputValidation.errorBorder
     - list.errorForeground
-  borders:
+  # borders that separate the panels, sidebars, tabs etc.
+  bunker:
     - activityBar.border
     - contrastBorder
     - dropdown.border
@@ -94,7 +168,8 @@ workbench:
     - statusBar.border
     - tab.border
     - titleBar.border
-  background:
+  # editor, titlebar, and activity bar background
+  shark:
     - activityBar.background
     - editor.background
     - sideBarSectionHeader.background
@@ -102,7 +177,8 @@ workbench:
     - tab.activeBackground
     - titleBar.activeBackground
     - titleBar.inactiveBackground
-  panels:
+  # sidebar, terminal, inactive tabs etc.
+  woodsmoke:
     - activityBar.dropBackground
     - debugToolBar.background
     - dropdown.background
@@ -122,23 +198,30 @@ workbench:
     - statusBar.noFolderBackground
     - statusBarItem.hoverBackground
     - tab.inactiveBackground
-  text_subtle:
+  # line numbers, muted items
+  shuttle_gray:
     - activityBar.inactiveForeground
     - editorLineNumber.foreground
     - tab.inactiveForeground
     - titleBar.inactiveForeground
-  text:
+  # text
+  cadet_blue:
     - editor.foreground
     - editorCursor.foreground
     - statusBar.foreground
     - terminal.foreground
-  text_active:
+  # active tab, active line number, active list text etc. Search match borders
+  iron:
+    - editor.findMatchHighlightBorder
+    - editor.rangeHighlightBorder
+    - editor.selectionHighlightBorder
     - editorActiveLineNumber.foreground
     - list.inactiveSelectionForeground
     - peekViewResult.selectionForeground
     - tab.activeForeground
     - titleBar.activeForeground
-  highlight:
+  # ui flourishes: whitespace, indent guide, ruler, line highlight
+  cadet_blue_1A:
     - editor.lineHighlightBackground
     - editor.selectionHighlightBackground
     - editorIndentGuide.background
@@ -149,7 +232,8 @@ workbench:
     - peekViewResult.selectionBackground
     - scrollbarSlider.background
     - tab.hoverBackground
-  highlight_active:
+  # active indent guide, selection, search match
+  cadet_blue_33:
     - editor.selectionBackground
     - editorIndentGuide.activeBackground
     - list.activeSelectionBackground
@@ -159,10 +243,7 @@ workbench:
     - peekViewResult.matchHighlightBackground
     - scrollbarSlider.activeBackground
     - scrollbarSlider.hoverBackground
-  highlight_border:
-    - editor.findMatchHighlightBorder
-    - editor.rangeHighlightBorder
-    - editor.selectionHighlightBorder
+  # a few tweaks to some backgrounds and highlights
   transparent:
     - editor.findMatchBackground
     - editor.findMatchHighlightBackground
@@ -172,12 +253,7 @@ workbench:
     - editorBracketMatch.background
     - scrollbar.shadow
     - widget.shadow
+  # some active items and text, that just looks better as pure white
   white:
     - activityBar.foreground
     - activityBarBadge.foreground
-  green:
-    - gitDecoration.untrackedResourceForeground
-  amber:
-    - gitDecoration.modifiedResourceForeground
-  red:
-    - gitDecoration.deletedResourceForeground
