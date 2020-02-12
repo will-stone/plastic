@@ -19,6 +19,7 @@
   "publisher": "will-stone",
   "scripts": {
     "build": "./src/build.js",
+    "dev": "nodemon ./src/build.js",
     "docs": "http-server ./docs",
     "lint": "ws-scripts lint",
     "vspublish": "vsce publish"
@@ -52,6 +53,12 @@
       "pre-commit": "ws-scripts pre-commit"
     }
   },
+  "nodemonConfig": {
+    "ext": "js,yaml",
+    "ignore": [
+      "themes/*"
+    ]
+  },
   "prettier": "./node_modules/ws-scripts/dist/config/prettierrc",
   "eslintConfig": {
     "extends": [
@@ -62,6 +69,7 @@
     "fs-extra": "^6.0.1",
     "http-server": "^0.11.1",
     "js-yaml": "^3.13.1",
+    "nodemon": "^2.0.2",
     "vsce": "^1.73.0",
     "ws-scripts": "^1.10.0"
   },
