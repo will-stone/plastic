@@ -72,6 +72,7 @@ default_syntax:
     - string
   # html tags and types
   harvest_gold:
+    - entity.name.section
     - entity.name.tag
     - entity.name.type
     - support.type
