@@ -180,7 +180,12 @@
       }
     },
     {
-      "scope": ["entity.name.tag", "entity.name.type", "support.type"],
+      "scope": [
+        "entity.name.section",
+        "entity.name.tag",
+        "entity.name.type",
+        "support.type"
+      ],
       "settings": {
         "foreground": "#E5C07B"
       }
