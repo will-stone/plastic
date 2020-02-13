@@ -25,6 +25,7 @@
 # expression to identify poorly written expressions.
 
 from typing import Dict, Sequence, List, Optional, Pattern, Match
+from abc import ABCMeta, abstractmethod
 import re
 import sys
 import time
@@ -44,12 +45,36 @@ _ = re.compile(
 )
 
 
-class RegExpResult:
+class RegExpResultBase(metaclass=ABCMeta):
+    """Class inheritance (to test syntax highlighting)."""
+
+    # Some more special syntax to test syntax highlighting.
+    # A non-builtin decorator @abstractmethod.
+    @abstractmethod
+    def greeting(self, other: str) -> str:
+        """Return a greeting."""
+        pass
+
+    # Use a decorator (to test syntax highlighting)
+    @classmethod
+    def get_classname(cla) -> str:
+        return cla.__name__
+
+
+class RegExpResult(RegExpResultBase):
     """RegExpResult holds the results for a regular expression."""
 
     def __init__(self) -> None:
         self.cumulative_time: float = 0.0
         self.successful_matches: Dict[int, Sequence[str]] = {}
+
+    # Use of default parameter value
+    def greeting(self, other: str = "world") -> str:
+        # Classname of self
+        us: str = type(self).__name__
+
+        # (use f"" style string formatting to test syntax highlighting)
+        return f"Hello {other} from {us}!"
 
 
 if len(sys.argv) < 2:
@@ -97,5 +122,5 @@ for pattern in patterns:
     )
 
     line_number_keys: List[int] = list(result.successful_matches.keys())
-    line_number_keys.sort()
+    line_number_keys.sort(key=lambda x: x)
     print(line_number_keys)
