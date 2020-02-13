@@ -48,7 +48,7 @@ class RegExpResult(object):
         self.successful_matches = {}
 
 if len(sys.argv) < 2:
-    print 'Usage:', sys.argv[0], 'regexp1 [regexp2 regexp3 ...]'
+    print('Usage:', sys.argv[0], 'regexp1 [regexp2 regexp3 ...]')
     sys.exit(1)
 
 # Compile all the regular expressions
@@ -74,20 +74,20 @@ for line in sys.stdin:
         if match:
             result.successful_matches[line_count] = match.groups()
 
-print 'Pattern   calls   cumulative   avgpercall  matches [line numbers]'  
+print('Pattern   calls   cumulative   avgpercall  matches [line numbers]')
 pattern_count = 0
 for pattern in patterns:
     pattern_count += 1
     result = results[pattern]
 
-    print '%7d %7d   %10.6f   %10.6f  %7d' % ( \
+    print('%7d %7d   %10.6f   %10.6f  %7d' % (
         pattern_count,
         line_count,
         result.cumulative_time,
         result.cumulative_time / line_count,
         len(result.successful_matches)
-        ),
-        
-    line_number_keys = result.successful_matches.keys()
+        ))
+
+    line_number_keys = list(result.successful_matches.keys())
     line_number_keys.sort()
-    print line_number_keys
+    print(line_number_keys)
