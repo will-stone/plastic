@@ -24,12 +24,13 @@
 # Quick script to benchmark the speed of various versions of the same regular
 # expression to identify poorly written expressions.
 
+from typing import Dict, Sequence, List, Optional, Pattern, Match
 import re
 import sys
 import time
 
 # The following regex is here to test syntax highlighting
-unused = re.compile(  # type: ignore
+_ = re.compile(
     r"""\A
         word
         (?:                     # a comment
@@ -43,12 +44,12 @@ unused = re.compile(  # type: ignore
 )
 
 
-class RegExpResult(object):
+class RegExpResult:
     """RegExpResult holds the results for a regular expression."""
 
-    def __init__(self):
-        self.cumulative_time = 0
-        self.successful_matches = {}
+    def __init__(self) -> None:
+        self.cumulative_time: float = 0.0
+        self.successful_matches: Dict[int, Sequence[str]] = {}
 
 
 if len(sys.argv) < 2:
@@ -56,30 +57,30 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 # Compile all the regular expressions
-patterns = [re.compile(x) for x in sys.argv[1:]]
+patterns: List[Pattern[str]] = [re.compile(x) for x in sys.argv[1:]]
 
 # Create the result map for each pattern
-results = {}
+results: Dict[Pattern[str], RegExpResult] = {}
 for pattern in patterns:
     results[pattern] = RegExpResult()
 
 # Test each regular expression against every line of input
-line_count = 0
+line_count: int = 0
 for line in sys.stdin:
     line_count += 1
 
     for pattern in patterns:
-        before = time.time()
-        match = pattern.search(line)
-        after = time.time()
+        before: float = time.time()
+        match: Optional[Match[str]] = pattern.search(line)
+        after: float = time.time()
 
-        result = results[pattern]
+        result: RegExpResult = results[pattern]
         result.cumulative_time += after - before
         if match:
             result.successful_matches[line_count] = match.groups()
 
 print("Pattern   calls   cumulative   avgpercall  matches [line numbers]")
-pattern_count = 0
+pattern_count: int = 0
 for pattern in patterns:
     pattern_count += 1
     result = results[pattern]
@@ -95,6 +96,6 @@ for pattern in patterns:
         )
     )
 
-    line_number_keys = list(result.successful_matches.keys())
+    line_number_keys: List[int] = list(result.successful_matches.keys())
     line_number_keys.sort()
     print(line_number_keys)
