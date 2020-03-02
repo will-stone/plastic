@@ -2,29 +2,31 @@
 name: Plastic
 
 palette:
-  dodger_blue: '#1085FF'
   atlantis: '#69c52e'
   bright_turquoise: '#08E8DE'
   bunker: '#0D1117'
-  cadet_blue: '#A9B2C3'
   cadet_blue_1A: '#A9B2C31A'
   cadet_blue_33: '#A9B2C333'
+  cadet_blue: '#A9B2C3'
   cornflower_blue: '#61AFEF'
+  dodger_blue: '#1085FF'
   electric_violet: '#8B00FF'
   fountain_blue: '#56B6C2'
+  ghost: '#C6CCD7'
   harvest_gold: '#E5C07B'
-  iron: '#D4D7D9'
   lavender: '#B57EDC'
   olivine: '#98C379'
   rob_roy: '#E9D16C'
   shark: '#21252B'
   shuttle_gray: '#5F6672'
   sunglo: '#E06C75'
-  whiskey: '#D19A66'
-  woodsmoke: '#181A1F'
   transparent: '#00000000'
+  trout: '#4A505A'
+  tuna: '#363B43'
   valencia: '#D74E42'
+  whiskey: '#D19A66'
   white: '#ffffff'
+  woodsmoke: '#181A1F'
 
 terminal:
   shark: terminal.ansiBlack
@@ -42,7 +44,7 @@ terminal:
   electric_violet: terminal.ansiBrightMagenta
   valencia: terminal.ansiBrightRed
   rob_roy: terminal.ansiBrightYellow
-  iron: terminal.ansiBrightWhite
+  ghost: terminal.ansiBrightWhite
 
 default_syntax:
   # comments
@@ -77,7 +79,7 @@ default_syntax:
     - entity.name.type
     - support.type
   # variables
-  iron:
+  ghost:
     - support.type.property-name # css property names
     - support.variable
     - variable
@@ -160,13 +162,15 @@ workbench:
     - contrastBorder
     - dropdown.border
     - editorGroup.border
+    - editorIndentGuide.background
     - editorOverviewRuler.border
+    - editorRuler.foreground
     - input.background
     - inputValidation.infoForeground
     - inputValidation.warningForeground
     - notificationCenter.border
-    - notificationToast.border
     - notifications.border
+    - notificationToast.border
     - panel.border
     - sideBar.border
     - statusBar.border
@@ -179,6 +183,7 @@ workbench:
     - sideBarSectionHeader.background
     - statusBar.background
     - tab.activeBackground
+    - tab.hoverBackground
     - titleBar.activeBackground
     - titleBar.inactiveBackground
   # sidebar, terminal, inactive tabs etc.
@@ -205,6 +210,7 @@ workbench:
   # line numbers, muted items
   shuttle_gray:
     - activityBar.inactiveForeground
+    - breadcrumb.foreground
     - editorLineNumber.foreground
     - tab.inactiveForeground
     - titleBar.inactiveForeground
@@ -215,7 +221,9 @@ workbench:
     - statusBar.foreground
     - terminal.foreground
   # active tab, active line number, active list text etc. Search match borders
-  iron:
+  ghost:
+    - activityBar.foreground
+    - breadcrumb.focusForeground
     - editor.findMatchHighlightBorder
     - editor.rangeHighlightBorder
     - editor.selectionHighlightBorder
@@ -228,14 +236,11 @@ workbench:
   cadet_blue_1A:
     - editor.lineHighlightBackground
     - editor.selectionHighlightBackground
-    - editorIndentGuide.background
-    - editorRuler.foreground
     - editorSuggestWidget.selectedBackground
     - editorWhitespace.foreground
     - list.hoverBackground
     - peekViewResult.selectionBackground
     - scrollbarSlider.background
-    - tab.hoverBackground
   # active indent guide, selection, search match
   cadet_blue_33:
     - editor.selectionBackground
@@ -259,5 +264,5 @@ workbench:
     - widget.shadow
   # some active items and text, that just looks better as pure white
   white:
-    - activityBar.foreground
     - activityBarBadge.foreground
+    

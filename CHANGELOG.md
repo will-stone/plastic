@@ -5,6 +5,15 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.0] - 2020-03-02
+
+- feat: change the bright grey colour to be one in the same spectrum as the rest
+  of the theme's grey colours.
+- feat: theme breadcrumbs.
+- feat: dark indent guides and rulers.
+- feat: tab hover colour is same as current.
+- fix: empty workbench groups breaks build.
+
 ## [3.0.1] - 2020-02-12
 
 - fix: markdown headers not styled (thanks @plul). `entity.name.section` now
