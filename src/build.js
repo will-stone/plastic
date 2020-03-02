@@ -70,9 +70,12 @@ function compile({ version, deprioritised = false }) {
   // Workbench
   theme.colors = Object.entries(config.workbench).reduce(
     (acc, [color, scopes]) => {
-      scopes.forEach(scope => {
-        acc[scope] = config.palette[color]
-      })
+      if (scopes) {
+        scopes.forEach(scope => {
+          acc[scope] = config.palette[color]
+        })
+      }
+
       return acc
     },
     theme.colors,
