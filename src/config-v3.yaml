@@ -231,6 +231,7 @@ workbench:
     - editorActiveLineNumber.foreground
     - list.inactiveSelectionForeground
     - peekViewResult.selectionForeground
+    - sideBar.foreground
     - tab.activeForeground
     - titleBar.activeForeground
   # ui flourishes: whitespace, indent guide, ruler, line highlight
@@ -266,4 +267,5 @@ workbench:
   # some active items and text, that just looks better as pure white
   white:
     - activityBarBadge.foreground
+    - list.activeSelectionForeground
     
