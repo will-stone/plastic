@@ -98,6 +98,7 @@
     "activityBar.inactiveForeground": "#5F6672",
     "breadcrumb.foreground": "#5F6672",
     "editorLineNumber.foreground": "#5F6672",
+    "gitDecoration.ignoredResourceForeground": "#5F6672",
     "tab.inactiveForeground": "#5F6672",
     "titleBar.inactiveForeground": "#5F6672",
     "editor.foreground": "#A9B2C3",
