@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.3.0] - 2020-03-03
+
+- feat: theme sidebar foreground and list active selection foreground.
+
 ## [3.2.0] - 2020-03-03
 
 - feat: theme git ignored items.
