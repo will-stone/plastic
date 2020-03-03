@@ -212,6 +212,7 @@ workbench:
     - activityBar.inactiveForeground
     - breadcrumb.foreground
     - editorLineNumber.foreground
+    - gitDecoration.ignoredResourceForeground
     - tab.inactiveForeground
     - titleBar.inactiveForeground
   # text
