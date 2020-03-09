@@ -183,7 +183,6 @@ workbench:
     - sideBarSectionHeader.background
     - statusBar.background
     - tab.activeBackground
-    - tab.hoverBackground
     - titleBar.activeBackground
     - titleBar.inactiveBackground
   # sidebar, terminal, inactive tabs etc.
