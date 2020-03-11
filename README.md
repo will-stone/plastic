@@ -10,6 +10,8 @@ have also been simplified further, separating them into clear types. However,
 worry not if you preferred v2, this can still be found in the theme-picker under
 "Plastic Legacy v2".
 
+**PLEASE BE AWARE** this theme does **not** currently support Semantic Highlighting and it is suggested you disable Semantic Highlighting in VSCode's settings.
+
 ---
 
 ## Notable features
