@@ -71,7 +71,7 @@
     "js-yaml": "^3.13.1",
     "nodemon": "^2.0.2",
     "vsce": "^1.74.0",
-    "ws-scripts": "^1.10.0"
+    "ws-scripts": "^1.13.1"
   },
   "engines": {
     "vscode": "^1.36.0"
