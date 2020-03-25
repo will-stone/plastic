@@ -5,6 +5,12 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.5.1] - 2020-03-25
+
+## [3.5.0] - 2020-03-25
+
+- feat: theme inactive panel titles.
+
 ## [3.4.0] - 2020-03-09
 
 - feat: remove tab hover colour (I've found most themes do not use a hover
