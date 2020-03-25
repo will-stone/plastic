@@ -71,7 +71,7 @@ function compile({ version, deprioritised = false }) {
   theme.colors = Object.entries(config.workbench).reduce(
     (acc, [color, scopes]) => {
       if (scopes) {
-        scopes.forEach(scope => {
+        scopes.forEach((scope) => {
           acc[scope] = config.palette[color]
         })
       }
