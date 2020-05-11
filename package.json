@@ -21,7 +21,7 @@
     "build": "./src/build.js",
     "dev": "nodemon ./src/build.js",
     "docs": "http-server ./docs",
-    "lint": "ws-scripts lint",
+    "lint": "eslint . --ignore-path .gitignore",
     "vspublish": "vsce publish"
   },
   "contributes": {
@@ -50,8 +50,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "ws-scripts pre-commit"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{css,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "nodemonConfig": {
     "ext": "js,yaml",
@@ -59,19 +67,25 @@
       "themes/*"
     ]
   },
-  "prettier": "./node_modules/ws-scripts/dist/config/prettierrc",
+  "prettier": "@will-stone/prettier-config",
   "eslintConfig": {
     "extends": [
-      "./node_modules/ws-scripts/dist/config/eslintrc"
+      "@will-stone/eslint-config",
+      "@will-stone/eslint-config/node"
     ]
   },
   "devDependencies": {
+    "@will-stone/eslint-config": "^1.2.2",
+    "@will-stone/prettier-config": "^3.0.1",
+    "eslint": "^7.0.0",
     "fs-extra": "^6.0.1",
     "http-server": "^0.11.1",
+    "husky": "^4.2.5",
     "js-yaml": "^3.13.1",
+    "lint-staged": "^10.2.2",
     "nodemon": "^2.0.2",
-    "vsce": "^1.74.0",
-    "ws-scripts": "^1.13.1"
+    "prettier": "^2.0.5",
+    "vsce": "^1.74.0"
   },
   "engines": {
     "vscode": "^1.36.0"

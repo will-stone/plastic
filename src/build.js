@@ -18,14 +18,14 @@ function compile({ version, deprioritised = false }) {
 
   // Syntax
   theme.tokenColors = Object.entries(config.default_syntax).reduce(
-    (acc, [color, scope]) => {
-      acc.push({
+    (accumulator, [color, scope]) => {
+      accumulator.push({
         scope,
         settings: {
           foreground: config.palette[color],
         },
       })
-      return acc
+      return accumulator
     },
     theme.tokenColors,
   )
@@ -33,50 +33,50 @@ function compile({ version, deprioritised = false }) {
   // Normal / Deprioritised
   theme.tokenColors = Object.entries(
     deprioritised ? config.deprioritised_syntax : config.normal_syntax,
-  ).reduce((acc, [color, scope]) => {
-    acc.push({
+  ).reduce((accumulator, [color, scope]) => {
+    accumulator.push({
       scope,
       settings: {
         foreground: config.palette[color],
       },
     })
-    return acc
+    return accumulator
   }, theme.tokenColors)
 
   // Styles
   theme.tokenColors = Object.entries(config.styles).reduce(
-    (acc, [style, scope]) => {
-      acc.push({
+    (accumulator, [style, scope]) => {
+      accumulator.push({
         name: style,
         scope,
         settings: {
           fontStyle: style,
         },
       })
-      return acc
+      return accumulator
     },
     theme.tokenColors,
   )
 
   // Terminal
   theme.colors = Object.entries(config.terminal).reduce(
-    (acc, [color, scope]) => {
-      acc[scope] = config.palette[color]
-      return acc
+    (accumulator, [color, scope]) => {
+      accumulator[scope] = config.palette[color]
+      return accumulator
     },
     theme.colors,
   )
 
   // Workbench
   theme.colors = Object.entries(config.workbench).reduce(
-    (acc, [color, scopes]) => {
+    (accumulator, [color, scopes]) => {
       if (scopes) {
         scopes.forEach((scope) => {
-          acc[scope] = config.palette[color]
+          accumulator[scope] = config.palette[color]
         })
       }
 
-      return acc
+      return accumulator
     },
     theme.colors,
   )
