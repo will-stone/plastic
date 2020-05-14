@@ -85,10 +85,10 @@
     "lint-staged": "^10.2.2",
     "nodemon": "^2.0.2",
     "prettier": "^2.0.5",
-    "vsce": "^1.74.0"
+    "vsce": "^1.75.0"
   },
   "engines": {
-    "vscode": "^1.36.0"
+    "vscode": "^1.45.0"
   },
   "icon": "icon.png",
   "__metadata": {
