@@ -2,6 +2,7 @@
 
 const fs = require('fs-extra')
 const yaml = require('js-yaml')
+const prettier = require('prettier')
 
 function compile({ version, deprioritised = false }) {
   const config = yaml.safeLoad(
@@ -63,7 +64,9 @@ function compile({ version, deprioritised = false }) {
     }
   }
 
-  return JSON.stringify(theme, undefined, 2)
+  return prettier.format(JSON.stringify(theme, undefined, 2), {
+    parser: 'json',
+  })
 }
 
 function build({ version }) {
