@@ -80,4 +80,4 @@ function build({ version }) {
  * Build versions
  */
 build({ version: 'v2' })
-build({ version: 'v3' })
+build({ version: 'master' })
