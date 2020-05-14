@@ -21,7 +21,7 @@
     "prebuild": "rimraf themes",
     "build": "./src/build.js",
     "dev": "nodemon ./src/build.js",
-    "docs": "http-server ./docs",
+    "docs": "serve ./docs",
     "lint": "eslint . --ignore-path .gitignore",
     "prerelease": "yarn build",
     "release": "vsce publish"
@@ -81,13 +81,13 @@
     "@will-stone/prettier-config": "^3.0.1",
     "eslint": "^7.0.0",
     "fs-extra": "^9.0.0",
-    "http-server": "^0.12.3",
     "husky": "^4.2.5",
     "js-yaml": "^3.13.1",
     "lint-staged": "^10.2.2",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "serve": "^11.3.0",
     "vsce": "^1.75.0"
   },
   "engines": {
