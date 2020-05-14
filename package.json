@@ -22,7 +22,8 @@
     "dev": "nodemon ./src/build.js",
     "docs": "http-server ./docs",
     "lint": "eslint . --ignore-path .gitignore",
-    "vspublish": "vsce publish"
+    "prerelease": "yarn build",
+    "release": "vsce publish"
   },
   "contributes": {
     "themes": [
