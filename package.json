@@ -21,7 +21,6 @@
     "prebuild": "rimraf themes",
     "build": "./src/build.js",
     "dev": "nodemon ./src/build.js",
-    "docs": "serve ./docs",
     "lint": "eslint . --ignore-path .gitignore",
     "prerelease": "yarn build",
     "release": "vsce publish"
@@ -87,7 +86,6 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
-    "serve": "^11.3.0",
     "vsce": "^1.75.0"
   },
   "engines": {
