@@ -1,0 +1,9 @@
+.vscode/
+docs/
+node_modules/
+samples/
+src/
+
+.eslintignore
+ISSUE_TEMPLATE.md
+yarn.lock
