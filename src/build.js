@@ -9,12 +9,10 @@ function compile({ version, deprioritised = false }) {
   )
 
   const theme = {
-    name: '',
+    name: config.name,
     colors: {},
     tokenColors: [],
   }
-
-  theme.name = config.name
 
   // Syntax
   for (const [color, scope] of Object.entries(config.default_syntax)) {
