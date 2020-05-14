@@ -12,6 +12,8 @@ function compile({ version, deprioritised = false }) {
     name: config.name,
     colors: {},
     tokenColors: [],
+    semanticTokenColors: {},
+    semanticHighlighting: true,
   }
 
   // Syntax
