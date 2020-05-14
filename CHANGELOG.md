@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.0] - 2020-05-14
+
+- feat: turn on semantic highlighting.
+
 ## [3.5.1] - 2020-03-25
 
 ## [3.5.0] - 2020-03-25
