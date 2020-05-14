@@ -29,12 +29,12 @@
       {
         "label": "Plastic",
         "uiTheme": "vs-dark",
-        "path": "./themes/v3.json"
+        "path": "./themes/master.json"
       },
       {
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
-        "path": "./themes/v3-deprioritised-punctuation.json"
+        "path": "./themes/master-deprioritised-punctuation.json"
       },
       {
         "label": "Plastic Legacy v2",
