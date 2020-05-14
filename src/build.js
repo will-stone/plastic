@@ -17,71 +17,53 @@ function compile({ version, deprioritised = false }) {
   theme.name = config.name
 
   // Syntax
-  theme.tokenColors = Object.entries(config.default_syntax).reduce(
-    (accumulator, [color, scope]) => {
-      accumulator.push({
-        scope,
-        settings: {
-          foreground: config.palette[color],
-        },
-      })
-      return accumulator
-    },
-    theme.tokenColors,
-  )
-
-  // Normal / Deprioritised
-  theme.tokenColors = Object.entries(
-    deprioritised ? config.deprioritised_syntax : config.normal_syntax,
-  ).reduce((accumulator, [color, scope]) => {
-    accumulator.push({
+  for (const [color, scope] of Object.entries(config.default_syntax)) {
+    theme.tokenColors.push({
       scope,
       settings: {
         foreground: config.palette[color],
       },
     })
-    return accumulator
-  }, theme.tokenColors)
+  }
+
+  // Normal / Deprioritised
+  for (const [color, scope] of Object.entries(
+    deprioritised ? config.deprioritised_syntax : config.normal_syntax,
+  )) {
+    theme.tokenColors.push({
+      scope,
+      settings: {
+        foreground: config.palette[color],
+      },
+    })
+  }
 
   // Styles
-  theme.tokenColors = Object.entries(config.styles).reduce(
-    (accumulator, [style, scope]) => {
-      accumulator.push({
-        name: style,
-        scope,
-        settings: {
-          fontStyle: style,
-        },
-      })
-      return accumulator
-    },
-    theme.tokenColors,
-  )
+  for (const [style, scope] of Object.entries(config.styles)) {
+    theme.tokenColors.push({
+      name: style,
+      scope,
+      settings: {
+        fontStyle: style,
+      },
+    })
+  }
 
   // Terminal
-  theme.colors = Object.entries(config.terminal).reduce(
-    (accumulator, [color, scope]) => {
-      accumulator[scope] = config.palette[color]
-      return accumulator
-    },
-    theme.colors,
-  )
+  for (const [color, scope] of Object.entries(config.terminal)) {
+    theme.colors[scope] = config.palette[color]
+  }
 
   // Workbench
-  theme.colors = Object.entries(config.workbench).reduce(
-    (accumulator, [color, scopes]) => {
-      if (scopes) {
-        scopes.forEach((scope) => {
-          accumulator[scope] = config.palette[color]
-        })
-      }
+  for (const [color, scopes] of Object.entries(config.workbench)) {
+    if (scopes) {
+      scopes.forEach((scope) => {
+        theme.colors[scope] = config.palette[color]
+      })
+    }
+  }
 
-      return accumulator
-    },
-    theme.colors,
-  )
-
-  return JSON.stringify(theme, null, 2)
+  return JSON.stringify(theme, undefined, 2)
 }
 
 function build({ version }) {
