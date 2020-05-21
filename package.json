@@ -79,7 +79,7 @@
     "minimist": "^1.2.3"
   },
   "devDependencies": {
-    "@will-stone/eslint-config": "^1.7.1",
+    "@will-stone/eslint-config": "^1.8.0",
     "@will-stone/prettier-config": "^3.0.1",
     "eslint": "^7.0.0",
     "fs-extra": "^9.0.0",
