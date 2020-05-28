@@ -80,7 +80,7 @@
   },
   "devDependencies": {
     "@will-stone/eslint-config": "^1.10.0",
-    "@will-stone/prettier-config": "^3.0.1",
+    "@will-stone/prettier-config": "^3.0.2",
     "eslint": "^7.0.0",
     "fs-extra": "^9.0.0",
     "husky": "^4.2.5",
