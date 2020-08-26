@@ -27,22 +27,22 @@ palette:
   white: '#ffffff'
 
 terminal:
-  shark: terminal.ansiBlack
-  cornflower_blue: terminal.ansiBlue
-  fountain_blue: terminal.ansiCyan
-  olivine: terminal.ansiGreen
-  lavender: terminal.ansiMagenta
-  sunglo: terminal.ansiRed
-  whiskey: terminal.ansiYellow
-  cadet_blue: terminal.ansiWhite
-  shuttle_gray: terminal.ansiBrightBlack
-  dodger_blue: terminal.ansiBrightBlue
-  bright_turquoise: terminal.ansiBrightCyan
-  atlantis: terminal.ansiBrightGreen
-  electric_violet: terminal.ansiBrightMagenta
-  valencia: terminal.ansiBrightRed
-  rob_roy: terminal.ansiBrightYellow
-  iron: terminal.ansiBrightWhite
+  terminal.ansiBlack: shark
+  terminal.ansiBlue: cornflower_blue
+  terminal.ansiCyan: fountain_blue
+  terminal.ansiGreen: olivine
+  terminal.ansiMagenta: lavender
+  terminal.ansiRed: sunglo
+  terminal.ansiYellow: whiskey
+  terminal.ansiWhite: cadet_blue
+  terminal.ansiBrightBlack: shuttle_gray
+  terminal.ansiBrightBlue: dodger_blue
+  terminal.ansiBrightCyan: bright_turquoise
+  terminal.ansiBrightGreen: atlantis
+  terminal.ansiBrightMagenta: electric_violet
+  terminal.ansiBrightRed: valencia
+  terminal.ansiBrightYellow: rob_roy
+  terminal.ansiBrightWhite: iron
 
 default_syntax:
   # comments
