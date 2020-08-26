@@ -5,6 +5,12 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED]
+
+- Use non-bright colours for bright terminal colours. As most terminals make
+  bright colors bold, I've found these look better without changing their
+  colour.
+
 ## [4.0.3] - 2020-05-19
 
 ## [4.0.2] - 2020-05-19

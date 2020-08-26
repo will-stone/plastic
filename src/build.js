@@ -51,7 +51,7 @@ function compile({ version, deprioritised = false }) {
   }
 
   // Terminal
-  for (const [color, scope] of Object.entries(config.terminal)) {
+  for (const [scope, color] of Object.entries(config.terminal)) {
     theme.colors[scope] = config.palette[color]
   }
 
