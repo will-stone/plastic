@@ -83,7 +83,7 @@
     "@will-stone/prettier-config": "^3.0.1",
     "eslint": "^7.0.0",
     "fs-extra": "^9.0.0",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "js-yaml": "^3.13.1",
     "lint-staged": "^10.2.6",
     "nodemon": "^2.0.4",
