@@ -3179,10 +3179,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vsce@^1.79.3:
-  version "1.79.3"
-  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.79.3.tgz#1211479af2d690d707862c28fb02e64bb3e1e36b"
-  integrity sha512-TZb0XrLPDAm/Ns8McayGS2S8XCCMuQPwdUOluKC/0LopyEH7/NnTkM09hF4kOzfvIITuFWy4PT2R1apeLQw3kQ==
+vsce@^1.81.0:
+  version "1.81.0"
+  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.81.0.tgz#e63ecd4352553a69563ea1a7b7f9863c7cad1301"
+  integrity sha512-ZK8YBGww8FCYTgHAzPZ/iIEJrm12vJWkKNRL25MRxfUlqRIjpQ0S3HejcMpSfYp0/Ghm/QpWnP/ld2KvGvneRA==
   dependencies:
     azure-devops-node-api "^7.2.0"
     chalk "^2.4.2"
