@@ -80,16 +80,16 @@
   },
   "devDependencies": {
     "@will-stone/eslint-config": "^1.10.0",
-    "@will-stone/prettier-config": "^3.0.1",
-    "eslint": "^7.0.0",
-    "fs-extra": "^9.0.0",
-    "husky": "^4.2.5",
-    "js-yaml": "^3.13.1",
-    "lint-staged": "^10.2.6",
+    "@will-stone/prettier-config": "^3.1.1",
+    "eslint": "^7.10.0",
+    "fs-extra": "^9.0.1",
+    "husky": "^4.3.0",
+    "js-yaml": "^3.14.0",
+    "lint-staged": "^10.4.0",
     "nodemon": "^2.0.4",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
-    "vsce": "^1.79.3"
+    "vsce": "^1.81.0"
   },
   "engines": {
     "vscode": "^1.45.0"
