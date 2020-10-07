@@ -190,7 +190,7 @@ workbench:
     - activityBar.dropBackground
     - debugToolBar.background
     - dropdown.background
-    - editorGroup.background
+    - editorGroup.emptyBackground
     - editorGroupHeader.tabsBackground
     - editorHoverWidget.background
     - editorSuggestWidget.background
@@ -228,7 +228,7 @@ workbench:
     - editor.findMatchHighlightBorder
     - editor.rangeHighlightBorder
     - editor.selectionHighlightBorder
-    - editorActiveLineNumber.foreground
+    - editorLineNumber.activeForeground
     - list.inactiveSelectionForeground
     - peekViewResult.selectionForeground
     - sideBar.foreground
