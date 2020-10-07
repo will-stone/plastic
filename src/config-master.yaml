@@ -114,11 +114,13 @@ workbench:
   # green
   olivine:
     - editorGutter.addedBackground
+    - editorOverviewRuler.addedForeground
     - gitDecoration.untrackedResourceForeground
     - minimapGutter.addedBackground
   # amber
   whiskey:
     - editorGutter.modifiedBackground
+    - editorOverviewRuler.modifiedForeground
     - gitDecoration.modifiedResourceForeground
     - minimapGutter.modifiedBackground
   # red. buttons, activity-bar badge
@@ -126,6 +128,7 @@ workbench:
     - activityBarBadge.background
     - button.background
     - editorGutter.deletedBackground
+    - editorOverviewRuler.deletedForeground
     - gitDecoration.deletedResourceForeground
     - minimapGutter.deletedBackground
   # find highlight, bracket match etc.
