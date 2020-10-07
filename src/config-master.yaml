@@ -113,15 +113,21 @@ styles:
 workbench:
   # green
   olivine:
+    - editorGutter.addedBackground
     - gitDecoration.untrackedResourceForeground
+    - minimapGutter.addedBackground
   # amber
   whiskey:
+    - editorGutter.modifiedBackground
     - gitDecoration.modifiedResourceForeground
+    - minimapGutter.modifiedBackground
   # red. buttons, activity-bar badge
   sunglo:
     - activityBarBadge.background
     - button.background
+    - editorGutter.deletedBackground
     - gitDecoration.deletedResourceForeground
+    - minimapGutter.deletedBackground
   # find highlight, bracket match etc.
   dodger_blue:
     - activityBar.activeBorder
@@ -133,11 +139,13 @@ workbench:
     - editorInfo.foreground
     - editorLightBulbAutoFix.foreground
     - editorOverviewRuler.infoForeground
+    - editorOverviewRuler.findMatchForeground
     - editorSuggestWidget.border
     - focusBorder
     - inputOption.activeBorder
     - inputValidation.infoBackground
     - inputValidation.infoBorder
+    - minimap.findMatchHighlight
     - peekView.border
     - tab.activeBorderTop
   # warning. squiggly underlines, find match errors etc.
@@ -230,6 +238,7 @@ workbench:
     - editor.selectionHighlightBorder
     - editorLineNumber.activeForeground
     - list.inactiveSelectionForeground
+    - minimap.selectionHighlight
     - peekViewResult.selectionForeground
     - sideBar.foreground
     - tab.activeForeground
@@ -268,4 +277,3 @@ workbench:
   white:
     - activityBarBadge.foreground
     - list.activeSelectionForeground
-    
