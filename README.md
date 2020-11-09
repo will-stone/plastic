@@ -71,8 +71,6 @@ for UI theming help.
 You'll notice that the syntax is grouped by colour instead of scope. I find this
 much nicer to maintain.
 
-Happy hacking :)
-
 ## License
 
 MIT
