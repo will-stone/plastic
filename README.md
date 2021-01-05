@@ -1,6 +1,6 @@
 # Plastic
 
-_[A simple syntax and UI theme for Visual Studio Code.](https://will-stone.github.io/plastic/)_
+_[A simple syntax and UI theme for Visual Studio Code.](https://wstone.io/plastic)_
 
 ---
 
