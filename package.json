@@ -22,7 +22,7 @@
     "build": "./src/build.js",
     "dev": "nodemon ./src/build.js",
     "lint": "eslint . --ignore-path .gitignore",
-    "prerelease": "yarn build",
+    "prerelease": "npm run build",
     "release": "vsce publish"
   },
   "contributes": {

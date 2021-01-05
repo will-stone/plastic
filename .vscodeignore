@@ -6,4 +6,4 @@ src/
 
 .eslintignore
 ISSUE_TEMPLATE.md
-yarn.lock
+package-lock.json

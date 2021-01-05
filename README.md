@@ -61,8 +61,7 @@ colours for the JavaScript language will receive much more scrutiny before being
 merged in.
 
 Clone the repository to `.vscode/extenstions/`(remember to remove any other
-installed versions of Plastic), run `yarn` to install dependencies, and
-`yarn docs` to serve the documentation page.
+installed versions of Plastic), run `npm i` to install dependencies.
 
 Use Microsoft's
 [theme color reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference)
@@ -82,14 +81,14 @@ be found in the `src/config-v*.yaml` files.
 
 ### Build
 
-Install the dependencies using [Yarn](https://classic.yarnpkg.com/en/) v1:
+Install the dependencies using [npm](https://docs.npmjs.com/cli/v7) v7+:
 
 ```sh
-yarn
+npm i
 ```
 
 Then compile the theme files to the `themes` folder using:
 
 ```sh
-yarn build
+npm run build
 ```
