@@ -81,7 +81,7 @@ be found in the `src/config-v*.yaml` files.
 
 ### Build
 
-Install the dependencies using [npm](https://docs.npmjs.com/cli/v7) v7+:
+Install the dependencies using [npm v7+](https://docs.npmjs.com/cli/v7):
 
 ```sh
 npm i
