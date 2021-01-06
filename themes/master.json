@@ -144,6 +144,7 @@
     "peekViewResult.matchHighlightBackground": "#A9B2C333",
     "scrollbarSlider.activeBackground": "#A9B2C333",
     "scrollbarSlider.hoverBackground": "#A9B2C333",
+    "sash.hoverBorder": "#A9B2C333",
     "editor.findMatchBackground": "#00000000",
     "editor.findMatchHighlightBackground": "#00000000",
     "editor.lineHighlightBorder": "#00000000",

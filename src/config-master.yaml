@@ -266,6 +266,7 @@ workbench:
     - peekViewResult.matchHighlightBackground
     - scrollbarSlider.activeBackground
     - scrollbarSlider.hoverBackground
+    - sash.hoverBorder
   # a few tweaks to some backgrounds and highlights
   transparent:
     - editor.findMatchBackground

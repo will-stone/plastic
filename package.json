@@ -18,12 +18,10 @@
   "author": "Will Stone",
   "publisher": "will-stone",
   "scripts": {
-    "prebuild": "rimraf themes",
-    "build": "./src/build.js",
+    "build": "rimraf themes && ./src/build.js",
     "dev": "nodemon ./src/build.js",
     "lint": "eslint . --ignore-path .gitignore",
-    "prerelease": "npm run build",
-    "release": "vsce publish"
+    "release": "npm run build && vsce publish"
   },
   "contributes": {
     "themes": [
