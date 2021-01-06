@@ -87,7 +87,7 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
-    "vsce": "^1.81.0"
+    "vsce": "^1.83.0"
   },
   "engines": {
     "vscode": "^1.45.0"
