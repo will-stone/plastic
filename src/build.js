@@ -5,7 +5,7 @@ const yaml = require('js-yaml')
 const prettier = require('prettier')
 
 function compile({ version, deprioritised = false }) {
-  const config = yaml.safeLoad(
+  const config = yaml.load(
     fs.readFileSync(`./src/config-${version}.yaml`, 'utf8'),
   )
 
