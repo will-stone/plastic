@@ -18,7 +18,7 @@ worry not if you preferred v2, this can still be found in the theme-picker under
 - Small colour palette to avoid visual overload.
 - Additional deprioritised-punctuation theme; concentrate on the content.
 
-<a href="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/plastic/master/docs/screenshot.png" width="500" alt="Screenshot"></a>
+<a href="https://raw.githubusercontent.com/will-stone/plastic/master/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/plastic/master/screenshot.png" width="500" alt="Screenshot"></a>
 
 ## Colours
 
