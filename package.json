@@ -86,7 +86,7 @@
     "@babel/plugin-syntax-top-level-await": "^7.12.1",
     "@will-stone/eslint-config": "^1.32.0",
     "@will-stone/prettier-config": "^3.1.1",
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "fs-extra": "^9.0.1",
     "husky": "^4.3.6",
     "js-yaml": "^4.0.0",
