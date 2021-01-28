@@ -58,9 +58,9 @@ function compile({ version, deprioritised = false }) {
   // Workbench
   for (const [color, scopes] of Object.entries(config.workbench)) {
     if (scopes) {
-      scopes.forEach((scope) => {
+      for (const scope of scopes) {
         theme.colors[scope] = config.palette[color]
-      })
+      }
     }
   }
 
