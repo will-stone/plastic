@@ -5,6 +5,12 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.0.0] - 2021-01-28
+
+- Internal build theme rewritten from yaml to js.
+- v2 is included but will no longer be maintained; any workbench updates will
+  now only be applied to the main Plastic themes.
+
 ## [4.3.0] - 2021-01-06
 
 - Add sash hover border colour.
