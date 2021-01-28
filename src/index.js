@@ -15,9 +15,9 @@ await fs.mkdir('./themes', { recursive: true })
 
 try {
   await Promise.all([
-    fs.writeFile('./themes/master.json', prettify(getTheme())),
+    fs.writeFile('./themes/main.json', prettify(getTheme())),
     fs.writeFile(
-      './themes/master-deprioritised-punctuation.json',
+      './themes/deprioritised-punctuation.json',
       prettify(getTheme(true)),
     ),
   ])
