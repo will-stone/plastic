@@ -17,9 +17,10 @@
   },
   "author": "Will Stone",
   "publisher": "will-stone",
+  "type": "module",
   "scripts": {
-    "build": "rimraf themes && ./src/build.js",
-    "dev": "nodemon ./src/build.js",
+    "build": "node src/index.js",
+    "dev": "nodemon --watch src src/index.js",
     "lint": "eslint . --ignore-path .gitignore",
     "release": "npm run build && vsce publish"
   },
@@ -66,15 +67,24 @@
       "themes/*"
     ]
   },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-syntax-top-level-await"
+    ]
+  },
   "prettier": "@will-stone/prettier-config",
   "eslintConfig": {
+    "parser": "@babel/eslint-parser",
     "extends": [
       "@will-stone/eslint-config",
       "@will-stone/eslint-config/node"
     ]
   },
   "devDependencies": {
-    "@will-stone/eslint-config": "^1.30.0",
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-syntax-top-level-await": "^7.12.1",
+    "@will-stone/eslint-config": "^1.32.0",
     "@will-stone/prettier-config": "^3.1.1",
     "eslint": "^7.17.0",
     "fs-extra": "^9.0.1",
@@ -87,6 +97,7 @@
     "vsce": "^1.83.0"
   },
   "engines": {
+    "node": ">=15.0.0",
     "vscode": "^1.45.0"
   },
   "icon": "icon.png",
