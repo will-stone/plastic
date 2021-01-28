@@ -23,7 +23,7 @@ const {
   woodsmoke,
 } = colours
 
-export function getTheme() {
+export function getTheme(deprioritised = false) {
   return {
     name: 'Plastic',
     colors: {
@@ -299,8 +299,10 @@ export function getTheme() {
           whiskey,
         ],
 
-        // Normal syntax
-        [['meta.brace', 'punctuation'], cadetBlue],
+        [
+          ['meta.brace', 'punctuation'],
+          deprioritised ? shuttleGray : cadetBlue,
+        ],
       ].map(([scope, foreground]) => ({
         scope,
         settings: { foreground },
