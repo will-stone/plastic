@@ -214,12 +214,7 @@ export function getTheme() {
       // some active items and text, that just looks better as pure white
       'activityBarBadge.foreground': white,
       'list.activeSelectionForeground': white,
-
-      // Normal syntax
-      'meta.brace': cadetBlue,
-      punctuation: cadetBlue,
     },
-    semanticHighlighting: true,
     tokenColors: [
       // Syntax
       ...[
@@ -229,7 +224,6 @@ export function getTheme() {
             'comment',
             // start and end of comment blocks
             'punctuation.definition.comment',
-            'string.comment',
           ],
           shuttleGray,
         ],
@@ -244,7 +238,7 @@ export function getTheme() {
             // css @ in @media queries
             'punctuation.definition.keyword',
             // this
-            'variable.language ',
+            'variable.language',
           ],
           sunglo,
         ],
@@ -257,7 +251,7 @@ export function getTheme() {
           [
             'storage',
             // console and JSX custom components
-            'support.class ',
+            'support.class',
           ],
           cornflowerBlue,
         ],
@@ -304,6 +298,9 @@ export function getTheme() {
           ],
           whiskey,
         ],
+
+        // Normal syntax
+        [['meta.brace', 'punctuation'], cadetBlue],
       ].map(([scope, foreground]) => ({
         scope,
         settings: { foreground },
@@ -333,5 +330,7 @@ export function getTheme() {
         settings: { fontStyle: style },
       })),
     ],
+    semanticTokenColors: {},
+    semanticHighlighting: true,
   }
 }
