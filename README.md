@@ -76,8 +76,8 @@ MIT
 
 ## Development
 
-The themes are created using a generator: `src/build.js`. The configuration can
-be found in the `src/config-v*.yaml` files.
+The themes are created using a generator: `src/index.js`. The configuration can
+be found in the `src/theme.js` files.
 
 ### Build
 
