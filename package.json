@@ -91,7 +91,7 @@
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "vsce": "^1.84.0"
+    "vsce": "^1.85.0"
   },
   "engines": {
     "node": ">=15.0.0",
