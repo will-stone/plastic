@@ -69,9 +69,6 @@ Use Microsoft's
 [theme color reference](https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 for UI theming help.
 
-You'll notice that the syntax is grouped by colour instead of scope. I find this
-much nicer to maintain.
-
 ## License
 
 MIT

@@ -27,193 +27,215 @@ export function getTheme(deprioritised = false) {
   return {
     name: 'Plastic',
     colors: {
-      // Terminal
+      'activityBar.activeBorder': dodgerBlue,
+      'activityBar.background': shark,
+      'activityBar.border': bunker,
+      'activityBar.dropBackground': woodsmoke,
+      'activityBar.foreground': ghost,
+      'activityBar.inactiveForeground': shuttleGray,
+
+      'activityBarBadge.background': sunglo,
+      'activityBarBadge.foreground': white,
+
+      'breadcrumb.focusForeground': ghost,
+      'breadcrumb.foreground': shuttleGray,
+
+      'button.background': sunglo,
+
+      contrastBorder: bunker,
+
+      'debugToolBar.background': woodsmoke,
+
+      'dropdown.background': woodsmoke,
+      'dropdown.border': bunker,
+
+      'editor.background': shark,
+      'editor.findMatchBackground': transparent,
+      'editor.findMatchBorder': dodgerBlue,
+      'editor.findMatchHighlightBackground': transparent,
+      'editor.findMatchHighlightBorder': ghost,
+      'editor.foreground': cadetBlue,
+      'editor.lineHighlightBackground': cadetBlue1A,
+      'editor.lineHighlightBorder': transparent,
+      'editor.rangeHighlightBorder': ghost,
+      'editor.selectionBackground': cadetBlue33,
+      'editor.selectionHighlightBackground': cadetBlue1A,
+      'editor.selectionHighlightBorder': ghost,
+      'editor.wordHighlightBackground': transparent,
+      'editor.wordHighlightBorder': dodgerBlue,
+      'editor.wordHighlightStrongBackground': transparent,
+      'editor.wordHighlightStrongBorder': dodgerBlue,
+
+      'editorBracketMatch.background': transparent,
+      'editorBracketMatch.border': dodgerBlue,
+
+      'editorCursor.foreground': cadetBlue,
+
+      'editorError.foreground': valencia,
+
+      'editorGroup.border': bunker,
+      'editorGroup.emptyBackground': woodsmoke,
+
+      'editorGroupHeader.tabsBackground': woodsmoke,
+
+      'editorGutter.addedBackground': olivine,
+      'editorGutter.deletedBackground': sunglo,
+      'editorGutter.modifiedBackground': whiskey,
+
+      'editorHoverWidget.background': woodsmoke,
+      'editorHoverWidget.border': dodgerBlue,
+
+      'editorIndentGuide.activeBackground': cadetBlue33,
+      'editorIndentGuide.background': bunker,
+
+      'editorInfo.foreground': dodgerBlue,
+
+      'editorLightBulb.foreground': robRoy,
+
+      'editorLightBulbAutoFix.foreground': dodgerBlue,
+
+      'editorLineNumber.activeForeground': ghost,
+      'editorLineNumber.foreground': shuttleGray,
+
+      'editorOverviewRuler.addedForeground': olivine,
+      'editorOverviewRuler.border': bunker,
+      'editorOverviewRuler.deletedForeground': sunglo,
+      'editorOverviewRuler.errorForeground': valencia,
+      'editorOverviewRuler.findMatchForeground': dodgerBlue,
+      'editorOverviewRuler.infoForeground': dodgerBlue,
+      'editorOverviewRuler.modifiedForeground': whiskey,
+      'editorOverviewRuler.warningForeground': robRoy,
+
+      'editorRuler.foreground': bunker,
+
+      'editorSuggestWidget.background': woodsmoke,
+      'editorSuggestWidget.border': dodgerBlue,
+      'editorSuggestWidget.selectedBackground': cadetBlue1A,
+
+      'editorWarning.foreground': robRoy,
+
+      'editorWhitespace.foreground': cadetBlue1A,
+
+      'editorWidget.background': woodsmoke,
+
+      errorForeground: valencia,
+
+      focusBorder: dodgerBlue,
+
+      'gitDecoration.deletedResourceForeground': sunglo,
+      'gitDecoration.ignoredResourceForeground': shuttleGray,
+      'gitDecoration.modifiedResourceForeground': whiskey,
+      'gitDecoration.untrackedResourceForeground': olivine,
+
+      'input.background': bunker,
+
+      'inputOption.activeBorder': dodgerBlue,
+
+      'inputValidation.errorBackground': valencia,
+      'inputValidation.errorBorder': valencia,
+      'inputValidation.infoBackground': dodgerBlue,
+      'inputValidation.infoBorder': dodgerBlue,
+      'inputValidation.infoForeground': bunker,
+      'inputValidation.warningBackground': robRoy,
+      'inputValidation.warningBorder': robRoy,
+      'inputValidation.warningForeground': bunker,
+
+      'list.activeSelectionBackground': cadetBlue33,
+      'list.activeSelectionForeground': white,
+      'list.errorForeground': valencia,
+      'list.focusBackground': cadetBlue33,
+      'list.hoverBackground': cadetBlue1A,
+      'list.inactiveSelectionBackground': cadetBlue33,
+      'list.inactiveSelectionForeground': ghost,
+      'list.warningForeground': robRoy,
+
+      'minimap.findMatchHighlight': dodgerBlue,
+      'minimap.selectionHighlight': ghost,
+
+      'minimapGutter.addedBackground': olivine,
+      'minimapGutter.deletedBackground': sunglo,
+      'minimapGutter.modifiedBackground': whiskey,
+
+      'notificationCenter.border': bunker,
+
+      'notificationCenterHeader.background': woodsmoke,
+
+      'notifications.background': woodsmoke,
+      'notifications.border': bunker,
+
+      'notificationToast.border': bunker,
+
+      'panel.background': woodsmoke,
+      'panel.border': bunker,
+
+      'panelTitle.inactiveForeground': shuttleGray,
+
+      'peekView.border': dodgerBlue,
+
+      'peekViewEditor.background': woodsmoke,
+      'peekViewEditor.matchHighlightBackground': cadetBlue33,
+
+      'peekViewResult.background': woodsmoke,
+      'peekViewResult.matchHighlightBackground': cadetBlue33,
+      'peekViewResult.selectionBackground': cadetBlue1A,
+      'peekViewResult.selectionForeground': ghost,
+
+      'peekViewTitle.background': woodsmoke,
+
+      'sash.hoverBorder': cadetBlue33,
+
+      'scrollbar.shadow': transparent,
+
+      'scrollbarSlider.activeBackground': cadetBlue33,
+      'scrollbarSlider.background': cadetBlue1A,
+      'scrollbarSlider.hoverBackground': cadetBlue33,
+
+      'sideBar.background': woodsmoke,
+      'sideBar.border': bunker,
+      'sideBar.foreground': ghost,
+
+      'sideBarSectionHeader.background': shark,
+
+      'statusBar.background': shark,
+      'statusBar.border': bunker,
+      'statusBar.debuggingBackground': woodsmoke,
+      'statusBar.foreground': cadetBlue,
+      'statusBar.noFolderBackground': woodsmoke,
+
+      'statusBarItem.hoverBackground': woodsmoke,
+
+      'tab.activeBackground': shark,
+      'tab.activeBorderTop': dodgerBlue,
+      'tab.activeForeground': ghost,
+      'tab.border': bunker,
+      'tab.inactiveBackground': woodsmoke,
+      'tab.inactiveForeground': shuttleGray,
+
       'terminal.ansiBlack': shark,
       'terminal.ansiBlue': cornflowerBlue,
-      'terminal.ansiCyan': fountainBlue,
-      'terminal.ansiGreen': olivine,
-      'terminal.ansiMagenta': lavender,
-      'terminal.ansiRed': sunglo,
-      'terminal.ansiYellow': robRoy,
-      'terminal.ansiWhite': cadetBlue,
       'terminal.ansiBrightBlack': shuttleGray,
       'terminal.ansiBrightBlue': cornflowerBlue,
       'terminal.ansiBrightCyan': fountainBlue,
       'terminal.ansiBrightGreen': olivine,
       'terminal.ansiBrightMagenta': lavender,
       'terminal.ansiBrightRed': sunglo,
-      'terminal.ansiBrightYellow': robRoy,
       'terminal.ansiBrightWhite': cadetBlue,
-
-      // green
-      'editorGutter.addedBackground': olivine,
-      'editorOverviewRuler.addedForeground': olivine,
-      'gitDecoration.untrackedResourceForeground': olivine,
-      'minimapGutter.addedBackground': olivine,
-
-      // amber
-      'editorGutter.modifiedBackground': whiskey,
-      'editorOverviewRuler.modifiedForeground': whiskey,
-      'gitDecoration.modifiedResourceForeground': whiskey,
-      'minimapGutter.modifiedBackground': whiskey,
-
-      // red. buttons, activity-bar badge
-      'activityBarBadge.background': sunglo,
-      'button.background': sunglo,
-      'editorGutter.deletedBackground': sunglo,
-      'editorOverviewRuler.deletedForeground': sunglo,
-      'gitDecoration.deletedResourceForeground': sunglo,
-      'minimapGutter.deletedBackground': sunglo,
-
-      // find highlight, bracket match etc.
-      'activityBar.activeBorder': dodgerBlue,
-      'editor.findMatchBorder': dodgerBlue,
-      'editor.wordHighlightBorder': dodgerBlue,
-      'editor.wordHighlightStrongBorder': dodgerBlue,
-      'editorBracketMatch.border': dodgerBlue,
-      'editorHoverWidget.border': dodgerBlue,
-      'editorInfo.foreground': dodgerBlue,
-      'editorLightBulbAutoFix.foreground': dodgerBlue,
-      'editorOverviewRuler.infoForeground': dodgerBlue,
-      'editorOverviewRuler.findMatchForeground': dodgerBlue,
-      'editorSuggestWidget.border': dodgerBlue,
-      focusBorder: dodgerBlue,
-      'inputOption.activeBorder': dodgerBlue,
-      'inputValidation.infoBackground': dodgerBlue,
-      'inputValidation.infoBorder': dodgerBlue,
-      'minimap.findMatchHighlight': dodgerBlue,
-      'peekView.border': dodgerBlue,
-      'tab.activeBorderTop': dodgerBlue,
-
-      // warning. squiggly underlines, find match errors etc.
-      'editorLightBulb.foreground': robRoy,
-      'editorOverviewRuler.warningForeground': robRoy,
-      'editorWarning.foreground': robRoy,
-      'inputValidation.warningBackground': robRoy,
-      'inputValidation.warningBorder': robRoy,
-      'list.warningForeground': robRoy,
-
-      // error. squiggly underlines, find match errors etc.
-      'editorError.foreground': valencia,
-      'editorOverviewRuler.errorForeground': valencia,
-      errorForeground: valencia,
-      'inputValidation.errorBackground': valencia,
-      'inputValidation.errorBorder': valencia,
-      'list.errorForeground': valencia,
-
-      // borders that separate the panels, sidebars, tabs etc.
-      'activityBar.border': bunker,
-      contrastBorder: bunker,
-      'dropdown.border': bunker,
-      'editorGroup.border': bunker,
-      'editorIndentGuide.background': bunker,
-      'editorOverviewRuler.border': bunker,
-      'editorRuler.foreground': bunker,
-      'input.background': bunker,
-      'inputValidation.infoForeground': bunker,
-      'inputValidation.warningForeground': bunker,
-      'notificationCenter.border': bunker,
-      'notifications.border': bunker,
-      'notificationToast.border': bunker,
-      'panel.border': bunker,
-      'sideBar.border': bunker,
-      'statusBar.border': bunker,
-      'tab.border': bunker,
-      'titleBar.border': bunker,
-
-      // editor, titlebar, and activity bar background
-      'activityBar.background': shark,
-      'editor.background': shark,
-      'sideBarSectionHeader.background': shark,
-      'statusBar.background': shark,
-      'tab.activeBackground': shark,
-      'titleBar.activeBackground': shark,
-      'titleBar.inactiveBackground': shark,
-
-      // sidebar, terminal, inactive tabs etc.
-      'activityBar.dropBackground': woodsmoke,
-      'debugToolBar.background': woodsmoke,
-      'dropdown.background': woodsmoke,
-      'editorGroup.emptyBackground': woodsmoke,
-      'editorGroupHeader.tabsBackground': woodsmoke,
-      'editorHoverWidget.background': woodsmoke,
-      'editorSuggestWidget.background': woodsmoke,
-      'editorWidget.background': woodsmoke,
-      'notificationCenterHeader.background': woodsmoke,
-      'notifications.background': woodsmoke,
-      'panel.background': woodsmoke,
-      'peekViewEditor.background': woodsmoke,
-      'peekViewResult.background': woodsmoke,
-      'peekViewTitle.background': woodsmoke,
-      'sideBar.background': woodsmoke,
-      'statusBar.debuggingBackground': woodsmoke,
-      'statusBar.noFolderBackground': woodsmoke,
-      'statusBarItem.hoverBackground': woodsmoke,
-      'tab.inactiveBackground': woodsmoke,
-
-      // line numbers, muted items
-      'activityBar.inactiveForeground': shuttleGray,
-      'breadcrumb.foreground': shuttleGray,
-      'editorLineNumber.foreground': shuttleGray,
-      'gitDecoration.ignoredResourceForeground': shuttleGray,
-      'panelTitle.inactiveForeground': shuttleGray,
-      'tab.inactiveForeground': shuttleGray,
-      'titleBar.inactiveForeground': shuttleGray,
-
-      // text
-      'editor.foreground': cadetBlue,
-      'editorCursor.foreground': cadetBlue,
-      'statusBar.foreground': cadetBlue,
+      'terminal.ansiBrightYellow': robRoy,
+      'terminal.ansiCyan': fountainBlue,
+      'terminal.ansiGreen': olivine,
+      'terminal.ansiMagenta': lavender,
+      'terminal.ansiRed': sunglo,
+      'terminal.ansiWhite': cadetBlue,
+      'terminal.ansiYellow': robRoy,
       'terminal.foreground': cadetBlue,
 
-      // active tab, active line number, active list text etc. Search match borders
-      'activityBar.foreground': ghost,
-      'breadcrumb.focusForeground': ghost,
-      'editor.findMatchHighlightBorder': ghost,
-      'editor.rangeHighlightBorder': ghost,
-      'editor.selectionHighlightBorder': ghost,
-      'editorLineNumber.activeForeground': ghost,
-      'list.inactiveSelectionForeground': ghost,
-      'minimap.selectionHighlight': ghost,
-      'peekViewResult.selectionForeground': ghost,
-      'sideBar.foreground': ghost,
-      'tab.activeForeground': ghost,
+      'titleBar.activeBackground': shark,
       'titleBar.activeForeground': ghost,
+      'titleBar.border': bunker,
+      'titleBar.inactiveBackground': shark,
+      'titleBar.inactiveForeground': shuttleGray,
 
-      // ui flourishes: whitespace, indent guide, ruler, line highlight
-      'editor.lineHighlightBackground': cadetBlue1A,
-      'editor.selectionHighlightBackground': cadetBlue1A,
-      'editorSuggestWidget.selectedBackground': cadetBlue1A,
-      'editorWhitespace.foreground': cadetBlue1A,
-      'list.hoverBackground': cadetBlue1A,
-      'peekViewResult.selectionBackground': cadetBlue1A,
-      'scrollbarSlider.background': cadetBlue1A,
-
-      // active indent guide, selection, search match
-      'editor.selectionBackground': cadetBlue33,
-      'editorIndentGuide.activeBackground': cadetBlue33,
-      'list.activeSelectionBackground': cadetBlue33,
-      'list.focusBackground': cadetBlue33,
-      'list.inactiveSelectionBackground': cadetBlue33,
-      'peekViewEditor.matchHighlightBackground': cadetBlue33,
-      'peekViewResult.matchHighlightBackground': cadetBlue33,
-      'scrollbarSlider.activeBackground': cadetBlue33,
-      'scrollbarSlider.hoverBackground': cadetBlue33,
-      'sash.hoverBorder': cadetBlue33,
-
-      // a few tweaks to some backgrounds and highlights
-      'editor.findMatchBackground': transparent,
-      'editor.findMatchHighlightBackground': transparent,
-      'editor.lineHighlightBorder': transparent,
-      'editor.wordHighlightBackground': transparent,
-      'editor.wordHighlightStrongBackground': transparent,
-      'editorBracketMatch.background': transparent,
-      'scrollbar.shadow': transparent,
       'widget.shadow': transparent,
-
-      // some active items and text, that just looks better as pure white
-      'activityBarBadge.foreground': white,
-      'list.activeSelectionForeground': white,
     },
     tokenColors: [
       // Syntax
