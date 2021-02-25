@@ -198,7 +198,8 @@ export function getTheme(deprioritised = false) {
 
       'statusBar.background': shark,
       'statusBar.border': bunker,
-      'statusBar.debuggingBackground': woodsmoke,
+      'statusBar.debuggingBackground': harvestGold,
+      'statusBar.debuggingForeground': bunker,
       'statusBar.foreground': cadetBlue,
       'statusBar.noFolderBackground': woodsmoke,
 
