@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.1.0] - 2021-02-25
+
+- Add harvest gold background colour to the debug statusbar.
+
 ## [5.0.0] - 2021-01-28
 
 - Internal build theme rewritten from yaml to js.
