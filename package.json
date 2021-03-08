@@ -83,7 +83,7 @@
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
     "@babel/plugin-syntax-top-level-await": "^7.12.1",
-    "@will-stone/eslint-config": "^1.32.0",
+    "@will-stone/eslint-config": "^2.0.1",
     "@will-stone/prettier-config": "^3.1.1",
     "eslint": "^7.18.0",
     "husky": "^4.3.8",
