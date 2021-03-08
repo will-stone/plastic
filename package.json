@@ -75,7 +75,7 @@
   "eslintConfig": {
     "parser": "@babel/eslint-parser",
     "extends": [
-      "@will-stone/eslint-config",
+      "@will-stone/eslint-config/javascript",
       "@will-stone/eslint-config/node"
     ]
   },
@@ -83,9 +83,9 @@
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
     "@babel/plugin-syntax-top-level-await": "^7.12.1",
-    "@will-stone/eslint-config": "^1.32.0",
+    "@will-stone/eslint-config": "^2.0.1",
     "@will-stone/prettier-config": "^3.1.1",
-    "eslint": "^7.18.0",
+    "eslint": "^7.21.0",
     "husky": "^4.3.8",
     "js-yaml": "^4.0.0",
     "lint-staged": "^10.5.3",
