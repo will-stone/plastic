@@ -1,7 +1,7 @@
 {
   "name": "plastic",
   "displayName": "Plastic",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "private": true,
   "description": "A simple theme.",
   "categories": [
@@ -96,7 +96,7 @@
     "node": ">=15.0.0",
     "vscode": "^1.45.0"
   },
-  "icon": "icon.png",
+  "icon": "images/icon.png",
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
     "publisherId": "744e71fe-bf60-4aba-94b1-d6e77d16fa27",
