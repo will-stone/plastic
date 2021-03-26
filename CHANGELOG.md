@@ -5,7 +5,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
-## [5.1.4] - 2021-03-22
+## [5.2.0] - 2021-03-26
+
+- Style the diff editor.
+
+## [5.1.4] - 2021-03-26
 
 - Fix icon's text shadow direction incorrect.
 
