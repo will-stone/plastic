@@ -1,7 +1,5 @@
 export const colours = {
   bunker: '#0D1117',
-  cadetBlue1A: '#A9B2C31A',
-  cadetBlue33: '#A9B2C333',
   cadetBlue: '#A9B2C3',
   cornflowerBlue: '#61AFEF',
   dodgerBlue: '#1085FF',

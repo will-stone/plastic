@@ -2,8 +2,6 @@ import { colours } from './colours.js'
 
 const {
   bunker,
-  cadetBlue1A,
-  cadetBlue33,
   cadetBlue,
   cornflowerBlue,
   dodgerBlue,
@@ -60,11 +58,11 @@ export function getTheme(deprioritised = false) {
       'editor.findMatchHighlightBackground': transparent,
       'editor.findMatchHighlightBorder': ghost,
       'editor.foreground': cadetBlue,
-      'editor.lineHighlightBackground': cadetBlue1A,
+      'editor.lineHighlightBackground': `${cadetBlue}1A`,
       'editor.lineHighlightBorder': transparent,
       'editor.rangeHighlightBorder': ghost,
-      'editor.selectionBackground': cadetBlue33,
-      'editor.selectionHighlightBackground': cadetBlue1A,
+      'editor.selectionBackground': `${cadetBlue}33`,
+      'editor.selectionHighlightBackground': `${cadetBlue}1A`,
       'editor.selectionHighlightBorder': ghost,
       'editor.wordHighlightBackground': transparent,
       'editor.wordHighlightBorder': dodgerBlue,
@@ -90,7 +88,7 @@ export function getTheme(deprioritised = false) {
       'editorHoverWidget.background': woodsmoke,
       'editorHoverWidget.border': dodgerBlue,
 
-      'editorIndentGuide.activeBackground': cadetBlue33,
+      'editorIndentGuide.activeBackground': `${cadetBlue}33`,
       'editorIndentGuide.background': bunker,
 
       'editorInfo.foreground': dodgerBlue,
@@ -115,11 +113,11 @@ export function getTheme(deprioritised = false) {
 
       'editorSuggestWidget.background': woodsmoke,
       'editorSuggestWidget.border': dodgerBlue,
-      'editorSuggestWidget.selectedBackground': cadetBlue1A,
+      'editorSuggestWidget.selectedBackground': `${cadetBlue}1A`,
 
       'editorWarning.foreground': robRoy,
 
-      'editorWhitespace.foreground': cadetBlue1A,
+      'editorWhitespace.foreground': `${cadetBlue}1A`,
 
       'editorWidget.background': woodsmoke,
 
@@ -145,12 +143,12 @@ export function getTheme(deprioritised = false) {
       'inputValidation.warningBorder': robRoy,
       'inputValidation.warningForeground': bunker,
 
-      'list.activeSelectionBackground': cadetBlue33,
+      'list.activeSelectionBackground': `${cadetBlue}33`,
       'list.activeSelectionForeground': white,
       'list.errorForeground': valencia,
-      'list.focusBackground': cadetBlue33,
-      'list.hoverBackground': cadetBlue1A,
-      'list.inactiveSelectionBackground': cadetBlue33,
+      'list.focusBackground': `${cadetBlue}33`,
+      'list.hoverBackground': `${cadetBlue}1A`,
+      'list.inactiveSelectionBackground': `${cadetBlue}33`,
       'list.inactiveSelectionForeground': ghost,
       'list.warningForeground': robRoy,
 
@@ -178,22 +176,22 @@ export function getTheme(deprioritised = false) {
       'peekView.border': dodgerBlue,
 
       'peekViewEditor.background': woodsmoke,
-      'peekViewEditor.matchHighlightBackground': cadetBlue33,
+      'peekViewEditor.matchHighlightBackground': `${cadetBlue}33`,
 
       'peekViewResult.background': woodsmoke,
-      'peekViewResult.matchHighlightBackground': cadetBlue33,
-      'peekViewResult.selectionBackground': cadetBlue1A,
+      'peekViewResult.matchHighlightBackground': `${cadetBlue}33`,
+      'peekViewResult.selectionBackground': `${cadetBlue}1A`,
       'peekViewResult.selectionForeground': ghost,
 
       'peekViewTitle.background': woodsmoke,
 
-      'sash.hoverBorder': cadetBlue33,
+      'sash.hoverBorder': `${cadetBlue}33`,
 
       'scrollbar.shadow': transparent,
 
-      'scrollbarSlider.activeBackground': cadetBlue33,
-      'scrollbarSlider.background': cadetBlue1A,
-      'scrollbarSlider.hoverBackground': cadetBlue33,
+      'scrollbarSlider.activeBackground': `${cadetBlue}33`,
+      'scrollbarSlider.background': `${cadetBlue}1A`,
+      'scrollbarSlider.hoverBackground': `${cadetBlue}33`,
 
       'sideBar.background': woodsmoke,
       'sideBar.border': bunker,
