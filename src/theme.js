@@ -46,6 +46,11 @@ export function getTheme(deprioritised = false) {
 
       'debugToolBar.background': woodsmoke,
 
+      'diffEditor.border': bunker,
+      'diffEditor.insertedTextBackground': `${olivine}1A`,
+      'diffEditor.removedTextBackground': `${sunglo}26`,
+      'diffEditor.diagonalFill': bunker,
+
       'dropdown.background': woodsmoke,
       'dropdown.border': bunker,
 
