@@ -82,7 +82,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
-    "@babel/eslint-parser": "^7.12.1",
+    "@babel/eslint-parser": "^7.13.10",
     "@babel/plugin-syntax-top-level-await": "^7.12.1",
     "@will-stone/eslint-config": "^2.0.1",
     "@will-stone/prettier-config": "^3.1.2",
