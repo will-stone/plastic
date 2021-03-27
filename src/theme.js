@@ -1,4 +1,4 @@
-import { colours } from './colours.js'
+import palette from 'plastic-palette'
 
 const {
   bunker,
@@ -19,7 +19,7 @@ const {
   whiskey,
   white,
   woodsmoke,
-} = colours
+} = palette
 
 export function getTheme(deprioritised = false) {
   return {
