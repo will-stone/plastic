@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.3.0] - 2021-03-28
+
+- Use standard Plastic colours for terminal.
+
 ## [5.2.0] - 2021-03-26
 
 - Style the diff editor.
