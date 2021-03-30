@@ -14,6 +14,10 @@ var variable = 'string'
 var variable2 = variable
 var myRe = /d(b+)d/g
 
+let undef = undefined
+
+let bigN = BigInt(4)
+
 const json = JSON.stringify(variable, null, 2)
 
 let localVar = 'string'
@@ -98,5 +102,9 @@ ComponentName2.propTypes = {
 }
 
 const arr = new Array()
+
+class Moo {}
+
+const t = new Moo()
 
 export default ComponentName2
