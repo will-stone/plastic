@@ -78,7 +78,8 @@
     ]
   },
   "dependencies": {
-    "plastic-palette": "^1.0.1"
+    "plastic-palette": "^1.0.1",
+    "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

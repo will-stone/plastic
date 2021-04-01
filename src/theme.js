@@ -1,4 +1,5 @@
 import palette from 'plastic-palette'
+import tinycolor from 'tinycolor2'
 
 const {
   bunker,
@@ -20,6 +21,14 @@ const {
   white,
   woodsmoke,
 } = palette
+
+const setAlpha = (hex, alpha) =>
+  tinycolor(hex).setAlpha(alpha).toHex8String().toUpperCase()
+
+const cadetBlue10 = setAlpha(cadetBlue, 0.1)
+const cadetBlue20 = setAlpha(cadetBlue, 0.2)
+const olivine10 = setAlpha(olivine, 0.1)
+const sunglo15 = setAlpha(sunglo, 0.15)
 
 export function getTheme(deprioritised = false) {
   return {
@@ -45,8 +54,8 @@ export function getTheme(deprioritised = false) {
       'debugToolBar.background': woodsmoke,
 
       'diffEditor.border': bunker,
-      'diffEditor.insertedTextBackground': `${olivine}1A`,
-      'diffEditor.removedTextBackground': `${sunglo}26`,
+      'diffEditor.insertedTextBackground': olivine10,
+      'diffEditor.removedTextBackground': sunglo15,
       'diffEditor.diagonalFill': bunker,
 
       'dropdown.background': woodsmoke,
@@ -58,11 +67,11 @@ export function getTheme(deprioritised = false) {
       'editor.findMatchHighlightBackground': transparent,
       'editor.findMatchHighlightBorder': ghost,
       'editor.foreground': cadetBlue,
-      'editor.lineHighlightBackground': `${cadetBlue}1A`,
+      'editor.lineHighlightBackground': cadetBlue10,
       'editor.lineHighlightBorder': transparent,
       'editor.rangeHighlightBorder': ghost,
-      'editor.selectionBackground': `${cadetBlue}33`,
-      'editor.selectionHighlightBackground': `${cadetBlue}1A`,
+      'editor.selectionBackground': cadetBlue20,
+      'editor.selectionHighlightBackground': cadetBlue10,
       'editor.selectionHighlightBorder': ghost,
       'editor.wordHighlightBackground': transparent,
       'editor.wordHighlightBorder': dodgerBlue,
@@ -88,7 +97,7 @@ export function getTheme(deprioritised = false) {
       'editorHoverWidget.background': woodsmoke,
       'editorHoverWidget.border': dodgerBlue,
 
-      'editorIndentGuide.activeBackground': `${cadetBlue}33`,
+      'editorIndentGuide.activeBackground': cadetBlue20,
       'editorIndentGuide.background': bunker,
 
       'editorInfo.foreground': dodgerBlue,
@@ -113,11 +122,11 @@ export function getTheme(deprioritised = false) {
 
       'editorSuggestWidget.background': woodsmoke,
       'editorSuggestWidget.border': dodgerBlue,
-      'editorSuggestWidget.selectedBackground': `${cadetBlue}1A`,
+      'editorSuggestWidget.selectedBackground': cadetBlue10,
 
       'editorWarning.foreground': robRoy,
 
-      'editorWhitespace.foreground': `${cadetBlue}1A`,
+      'editorWhitespace.foreground': cadetBlue10,
 
       'editorWidget.background': woodsmoke,
 
@@ -143,12 +152,12 @@ export function getTheme(deprioritised = false) {
       'inputValidation.warningBorder': robRoy,
       'inputValidation.warningForeground': bunker,
 
-      'list.activeSelectionBackground': `${cadetBlue}33`,
+      'list.activeSelectionBackground': cadetBlue20,
       'list.activeSelectionForeground': white,
       'list.errorForeground': valencia,
-      'list.focusBackground': `${cadetBlue}33`,
-      'list.hoverBackground': `${cadetBlue}1A`,
-      'list.inactiveSelectionBackground': `${cadetBlue}33`,
+      'list.focusBackground': cadetBlue20,
+      'list.hoverBackground': cadetBlue10,
+      'list.inactiveSelectionBackground': cadetBlue20,
       'list.inactiveSelectionForeground': ghost,
       'list.warningForeground': robRoy,
 
@@ -176,22 +185,22 @@ export function getTheme(deprioritised = false) {
       'peekView.border': dodgerBlue,
 
       'peekViewEditor.background': woodsmoke,
-      'peekViewEditor.matchHighlightBackground': `${cadetBlue}33`,
+      'peekViewEditor.matchHighlightBackground': cadetBlue20,
 
       'peekViewResult.background': woodsmoke,
-      'peekViewResult.matchHighlightBackground': `${cadetBlue}33`,
-      'peekViewResult.selectionBackground': `${cadetBlue}1A`,
+      'peekViewResult.matchHighlightBackground': cadetBlue20,
+      'peekViewResult.selectionBackground': cadetBlue10,
       'peekViewResult.selectionForeground': ghost,
 
       'peekViewTitle.background': woodsmoke,
 
-      'sash.hoverBorder': `${cadetBlue}33`,
+      'sash.hoverBorder': cadetBlue20,
 
       'scrollbar.shadow': transparent,
 
-      'scrollbarSlider.activeBackground': `${cadetBlue}33`,
-      'scrollbarSlider.background': `${cadetBlue}1A`,
-      'scrollbarSlider.hoverBackground': `${cadetBlue}33`,
+      'scrollbarSlider.activeBackground': cadetBlue20,
+      'scrollbarSlider.background': cadetBlue10,
+      'scrollbarSlider.hoverBackground': cadetBlue20,
 
       'sideBar.background': woodsmoke,
       'sideBar.border': bunker,
