@@ -223,6 +223,7 @@ export function getTheme(deprioritised = false) {
       'tab.border': bunker,
       'tab.inactiveBackground': woodsmoke,
       'tab.inactiveForeground': shuttleGray,
+      'tab.lastPinnedBorder': cadetBlue20,
 
       'terminal.ansiBlack': shuttleGray,
       'terminal.ansiBlue': cornflowerBlue,

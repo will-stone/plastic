@@ -137,6 +137,7 @@
     "tab.border": "#0D1117",
     "tab.inactiveBackground": "#181A1F",
     "tab.inactiveForeground": "#5F6672",
+    "tab.lastPinnedBorder": "#A9B2C333",
     "terminal.ansiBlack": "#5F6672",
     "terminal.ansiBlue": "#61AFEF",
     "terminal.ansiBrightBlack": "#5F6672",
