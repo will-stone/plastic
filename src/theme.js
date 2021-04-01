@@ -40,7 +40,7 @@ export function getTheme(deprioritised = false) {
 
       'button.background': sunglo,
 
-      contrastBorder: bunker,
+      'contrastBorder': bunker,
 
       'debugToolBar.background': woodsmoke,
 
@@ -121,9 +121,9 @@ export function getTheme(deprioritised = false) {
 
       'editorWidget.background': woodsmoke,
 
-      errorForeground: valencia,
+      'errorForeground': valencia,
 
-      focusBorder: dodgerBlue,
+      'focusBorder': dodgerBlue,
 
       'gitDecoration.deletedResourceForeground': sunglo,
       'gitDecoration.ignoredResourceForeground': shuttleGray,

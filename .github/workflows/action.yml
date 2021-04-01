@@ -1,21 +1,21 @@
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      
-    - name: Install Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 15.x
+      - uses: actions/checkout@v2
 
-    - run: npm i
-    - run: npm run lint
-    - run: npm run build
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+
+      - run: npm i
+      - run: npm run lint
+      - run: npm run build

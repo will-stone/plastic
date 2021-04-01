@@ -48,7 +48,7 @@ function name(param) {
   return output
 }
 
-const funcName = param => {
+const funcName = (param) => {
   return false
 }
 

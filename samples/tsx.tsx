@@ -50,7 +50,7 @@ interface WelcomeProps {
   name?: string // Change the required prop to an optional prop.
 }
 
-const Welcome: React.SFC<WelcomeProps> = props => {
+const Welcome: React.SFC<WelcomeProps> = (props) => {
   return <h1>Hello, {props.name}</h1>
 }
 
