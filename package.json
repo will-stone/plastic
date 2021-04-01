@@ -82,7 +82,7 @@
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.13.14",
     "@babel/eslint-parser": "^7.12.1",
     "@babel/plugin-syntax-top-level-await": "^7.12.1",
     "@will-stone/eslint-config": "^2.0.1",
