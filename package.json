@@ -82,19 +82,19 @@
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/eslint-parser": "^7.12.1",
-    "@babel/plugin-syntax-top-level-await": "^7.12.1",
-    "@will-stone/eslint-config": "^2.0.1",
+    "@babel/core": "^7.13.14",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/plugin-syntax-top-level-await": "^7.12.13",
+    "@will-stone/eslint-config": "^2.1.0",
     "@will-stone/prettier-config": "^4.0.0",
-    "eslint": "^7.21.0",
-    "husky": "^5.1.3",
+    "eslint": "^7.23.0",
+    "husky": "^6.0.0",
     "js-yaml": "^4.0.0",
     "lint-staged": "^10.5.4",
     "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "vsce": "^1.85.0"
+    "vsce": "^1.87.1"
   },
   "engines": {
     "node": ">=15.0.0",
