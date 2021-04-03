@@ -7,13 +7,13 @@
   "categories": [
     "Themes"
   ],
-  "homepage": "https://wstone.io/plastic",
+  "homepage": "https://plastictheme.com/",
   "bugs": {
-    "url": "https://github.com/will-stone/plastic/issues"
+    "url": "https://github.com/PlasticTheme/Visual-Studio-Code/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/will-stone/plastic"
+    "url": "https://github.com/PlasticTheme/Visual-Studio-Code"
   },
   "author": "Will Stone",
   "publisher": "will-stone",

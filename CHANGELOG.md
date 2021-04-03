@@ -5,6 +5,15 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+- Update to new PlasticTheme.com icon.
+- Update URLs.
+
+## [5.4.0] - 2021-04-02
+
+- Add caretBlue to tab last pinned border.
+
 ## [5.3.0] - 2021-03-28
 
 - Use standard Plastic colours for terminal.
