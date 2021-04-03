@@ -51,7 +51,7 @@ const IndexPage: NextPage = () => (
 
       <a
         className="border border-bunker rounded overflow-hidden divide-y divide-bunker flex flex-col"
-        href="https://github.com/PlasticTheme/Terminal-app/blob/main/INSTALL.md"
+        href="https://github.com/will-stone/Plastic-Theme/blob/main/themes/Terminal-app/INSTALL.md"
       >
         <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
           macOS Terminal
@@ -67,7 +67,7 @@ const IndexPage: NextPage = () => (
 
       <a
         className="border border-bunker rounded overflow-hidden divide-y divide-bunker flex flex-col"
-        href="https://github.com/PlasticTheme/iTerm/blob/main/INSTALL.md"
+        href="https://github.com/will-stone/Plastic-Theme/blob/main/themes/iTerm/INSTALL.md"
       >
         <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
           iTerm2
