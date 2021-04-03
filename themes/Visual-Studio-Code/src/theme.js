@@ -32,6 +32,7 @@ const sunglo15 = setAlpha(sunglo, 0.15)
 
 export function getTheme(deprioritised = false) {
   return {
+    $schema: 'vscode://schemas/color-theme',
     name: 'Plastic',
     colors: {
       'activityBar.activeBorder': dodgerBlue,
