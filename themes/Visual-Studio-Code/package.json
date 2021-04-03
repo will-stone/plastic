@@ -58,12 +58,6 @@
       "eslint --fix"
     ]
   },
-  "nodemonConfig": {
-    "ext": "js,yaml",
-    "ignore": [
-      "themes/*"
-    ]
-  },
   "babel": {
     "plugins": [
       "@babel/plugin-syntax-top-level-await"
