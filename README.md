@@ -6,6 +6,12 @@ Use `npm>=7` to install dependencies:
 npm i
 ```
 
+Lint all workspaces:
+
+```sh
+npm run lint
+```
+
 ## Palette
 
 Test types:
