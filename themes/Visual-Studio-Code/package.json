@@ -45,22 +45,12 @@
       }
     ]
   },
-  "babel": {
-    "plugins": [
-      "@babel/plugin-syntax-top-level-await"
-    ]
-  },
   "dependencies": {
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/eslint-parser": "^7.13.14",
-    "@babel/plugin-syntax-top-level-await": "^7.12.13",
     "@types/prettier": "^2.2.3",
     "@types/tinycolor2": "^1.4.2",
-    "js-yaml": "^4.0.0",
-    "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "vsce": "^1.87.1"
   },
