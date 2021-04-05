@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.5.1] - 2021-04-05
+
+- Just a test of the new repo architecture.
+
 ## [5.5.0] - 2021-04-05
 
 - Update to new PlasticTheme.com icon.

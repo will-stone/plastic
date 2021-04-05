@@ -27,13 +27,13 @@ npm run test --workspace=palette
 Build:
 
 ```sh
-npm run build --workspace=vscode
+npm run build --workspace=plastic
 ```
 
 Release:
 
 ```sh
-npm run release --workspace=vscode
+npm run release --workspace=plastic
 ```
 
 ## Website
