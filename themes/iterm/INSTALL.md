@@ -2,13 +2,15 @@
 
 #### Install using Git
 
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
+If you are a git user, you can install the theme and keep up to date by cloning
+the repo:
 
     $ git clone git@github.com:PlasticTheme/iTerm.git
 
 #### Install manually
 
-Download the [GitHub .zip file](https://github.com/PlasticTheme/iTerm/archive/refs/heads/main.zip).
+Download the
+[GitHub .zip file](https://github.com/PlasticTheme/iTerm/archive/refs/heads/main.zip).
 
 #### Activating theme
 
