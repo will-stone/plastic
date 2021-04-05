@@ -20,7 +20,7 @@ Please note that v2 is no longer maintained.
 - Small colour palette to avoid visual overload.
 - Additional deprioritised-punctuation theme; concentrate on the content.
 
-<a href="https://raw.githubusercontent.com/will-stone/Plastic-Theme/master/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/Plastic-Theme/master/screenshot.png" width="500" alt="Screenshot"></a>
+<a href="https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/Visual-Studio-Code/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/Visual-Studio-Code/screenshot.png" width="500" alt="Screenshot"></a>
 
 ## License
 
