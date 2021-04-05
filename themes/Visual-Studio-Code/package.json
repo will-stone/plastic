@@ -18,8 +18,9 @@
   "author": "Will Stone",
   "publisher": "will-stone",
   "scripts": {
-    "build": "ts-node-script src/index.ts",
-    "release": "npm run build && vsce publish"
+    "build": "ts-node-script ./src/index.ts",
+    "prerelease": "npm run build",
+    "release": "vsce publish"
   },
   "contributes": {
     "themes": [
@@ -45,12 +46,10 @@
       }
     ]
   },
-  "dependencies": {
-    "tinycolor2": "^1.4.2"
-  },
   "devDependencies": {
     "@types/prettier": "^2.2.3",
     "@types/tinycolor2": "^1.4.2",
+    "tinycolor2": "^1.4.2",
     "ts-node": "^9.1.1",
     "vsce": "^1.87.1"
   },
