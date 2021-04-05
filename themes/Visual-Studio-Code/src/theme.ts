@@ -1,7 +1,6 @@
-import palette from 'plastic-palette'
 import tinycolor from 'tinycolor2'
 
-const {
+import {
   bunker,
   cadetBlue,
   cornflowerBlue,
@@ -20,9 +19,9 @@ const {
   whiskey,
   white,
   woodsmoke,
-} = palette
+} from '../../../palette'
 
-const setAlpha = (hex, alpha) =>
+const setAlpha = (hex: string, alpha: number) =>
   tinycolor(hex).setAlpha(alpha).toHex8String().toUpperCase()
 
 const cadetBlue10 = setAlpha(cadetBlue, 0.1)
@@ -30,10 +29,12 @@ const cadetBlue20 = setAlpha(cadetBlue, 0.2)
 const olivine10 = setAlpha(olivine, 0.1)
 const sunglo15 = setAlpha(sunglo, 0.15)
 
-export function getTheme(deprioritised = false) {
+// TODO is there an official theme type that can be used for the return type?
+export function getTheme(deprioritised = false): unknown {
   return {
     $schema: 'vscode://schemas/color-theme',
     name: 'Plastic',
+    type: 'dark',
     colors: {
       'activityBar.activeBorder': dodgerBlue,
       'activityBar.background': shark,

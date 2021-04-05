@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "ESNext"
+  }
+}

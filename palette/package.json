@@ -1,54 +1,9 @@
 {
-  "name": "plastic-palette",
-  "version": "1.0.1",
-  "description": "The colours used by Plastic themes.",
-  "homepage": "https://plastictheme.com/palette",
-  "bugs": {
-    "url": "https://github.com/will-stone/Plastic-Theme/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/will-stone/Plastic-Theme.git"
-  },
-  "license": "MIT",
-  "author": "Will Stone",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
+  "name": "palette",
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "release": "np",
     "test": "tsd"
   },
-  "lint-staged": {
-    "*.{js}": [
-      "eslint --fix"
-    ],
-    "*.{css,json,md}": [
-      "prettier --write"
-    ]
-  },
-  "prettier": "@will-stone/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "@will-stone/eslint-config/javascript",
-      "@will-stone/eslint-config/node"
-    ]
-  },
   "devDependencies": {
-    "@will-stone/eslint-config": "^2.1.0",
-    "@will-stone/prettier-config": "^3.1.2",
-    "eslint": "^7.23.0",
-    "husky": "^5.2.0",
-    "lint-staged": "^10.5.4",
-    "np": "^7.4.0",
-    "pinst": "^2.1.6",
-    "prettier": "^2.2.1",
     "tsd": "^0.14.0"
   }
 }

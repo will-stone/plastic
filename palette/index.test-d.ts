@@ -1,5 +1,6 @@
 import { expectType } from 'tsd'
-import * as palette from '.'
+
+import palette from '.'
 
 expectType<{
   bunker: string

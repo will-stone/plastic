@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-const palette = require('plastic-palette')
 const plugin = require('tailwindcss/plugin')
+
+const palette = require('../palette')
 
 module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],

@@ -1,7 +1,8 @@
 import clsx from 'clsx'
 import startCase from 'lodash/startCase'
-import palette from 'plastic-palette'
 import { FC } from 'react'
+
+import palette from '../../palette'
 
 function isLightColour(colour: string): boolean {
   // Remove prefixed # if present
