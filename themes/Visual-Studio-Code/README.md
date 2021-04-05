@@ -28,19 +28,5 @@ MIT
 
 ## Development
 
-The themes are created using a generator: `src/index.js`. The configuration can
-be found in the `src/theme.js` files.
-
-### Build
-
-Install the dependencies using [npm v7+](https://docs.npmjs.com/cli/v7):
-
-```sh
-npm i
-```
-
-Then compile the theme files to the `themes` folder using:
-
-```sh
-npm run build
-```
+The themes are created using a generator: `src/index.ts`. The configuration can
+be found in the `src/theme.ts` files.
