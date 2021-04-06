@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
+const typography = require('@tailwindcss/typography')
 
 const palette = require('../palette')
 
@@ -22,9 +23,29 @@ module.exports = {
     },
     extend: {
       colors: { ...palette },
+      typography: () => ({
+        DEFAULT: {
+          css: {
+            color: palette.cadetBlue,
+            h1: {
+              color: palette.sunglo,
+            },
+            h2: {
+              color: palette.ghost,
+            },
+            a: {
+              color: palette.cornflowerBlue,
+            },
+            code: {
+              color: palette.ghost,
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [
+    typography,
     plugin(({ addBase, theme }) => {
       addBase({
         body: {
@@ -33,9 +54,14 @@ module.exports = {
         },
         h1: {
           fontFamily: theme('fontFamily.comfortaa'),
+          fontSize: theme('fontSize.5xl'),
+          color: palette.sunglo,
+          letterSpacing: theme('letterSpacing.widest'),
         },
         h2: {
           fontFamily: theme('fontFamily.comfortaa'),
+          fontSize: theme('fontSize.3xl'),
+          color: palette.ghost,
         },
         h3: { fontFamily: theme('fontFamily.comfortaa') },
         hr: {

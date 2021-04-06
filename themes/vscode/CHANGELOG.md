@@ -177,9 +177,6 @@ Updates to the upcoming builder/compiler mean slight tweaks to the theme.
 - List active highlight swapped with list hover: active is now the lighter
   colour.
 
-The repo is now a monorepo and I'll be adding in more documentation soon on how
-to build your own Plastic theme.
-
 ## [2.0.2] - 2018-06-03
 
 - Looks like the move worked. Forgot the README though, this update adds it

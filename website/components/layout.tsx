@@ -15,7 +15,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
   return (
     <div className="flex flex-col h-screen space-y-16 pt-8">
       <Head>
-        <title>{title && `${title} | `}Plastic Theme</title>
+        <title>{title && `${title} | `}Plastic - A simple theme</title>
         <meta charSet="utf-8" />
         <meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
@@ -43,8 +43,8 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
           rel="mask-icon"
         />
         <link href="/favicon/favicon.ico?v=WGNOBL3XeM" rel="shortcut icon" />
-        <meta content="Plastic Theme" name="apple-mobile-web-app-title" />
-        <meta content="Plastic Theme" name="application-name" />
+        <meta content="Plastic" name="apple-mobile-web-app-title" />
+        <meta content="Plastic" name="application-name" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta
           content="/favicon/browserconfig.xml?v=WGNOBL3XeM"
