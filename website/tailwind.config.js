@@ -57,6 +57,7 @@ module.exports = {
           fontSize: theme('fontSize.5xl'),
           color: palette.sunglo,
           letterSpacing: theme('letterSpacing.widest'),
+          textAlign: 'center',
         },
         h2: {
           fontFamily: theme('fontFamily.comfortaa'),
