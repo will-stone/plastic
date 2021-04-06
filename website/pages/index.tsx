@@ -59,7 +59,7 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {apps.map(({ slug, title }) => (
         <Link key={slug} href={`/themes/${slug}`}>
-          <a className="border border-bunker rounded overflow-hidden divide-y divide-bunker flex flex-col">
+          <a className="border border-bunker bg-woodsmoke rounded overflow-hidden divide-y divide-bunker flex flex-col hover:text-ghost">
             <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
               {title}
             </h3>

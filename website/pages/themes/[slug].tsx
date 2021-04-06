@@ -38,6 +38,7 @@ const ThemePage: NextPage<{ md: string; title: string; slug: string }> = ({
   <Layout title={title}>
     <section className="prose sm:prose-lg mx-auto">
       <img alt="" className="h-24 mx-auto" src={`/images/logos/${slug}.svg`} />
+      <img alt="screenshot" src={`/images/screenshots/${slug}.png`} />
       <ReactMarkdown>{md}</ReactMarkdown>
     </section>
   </Layout>
