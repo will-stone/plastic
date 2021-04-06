@@ -1,0 +1,2 @@
+[build]
+  ignore = "git diff —quiet HEAD^ HEAD website/"
