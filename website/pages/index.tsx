@@ -70,7 +70,7 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
               <img
                 alt="Visual Studio Code"
                 className="h-24 mx-auto"
-                src={`/images/themes/${slug}.svg`}
+                src={`/images/logos/${slug}.svg`}
               />
             </div>
           </a>
