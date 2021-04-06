@@ -1,4 +1,4 @@
-# Monorepo for the Plastic Theme apps
+# Monorepo for the Plastic themed apps
 
 Use `npm>=7` to install dependencies:
 

@@ -30,11 +30,9 @@ const UICard: FC<{ bg: string }> = ({ bg, children }) => {
 
 const PalettePage: NextPage = () => (
   <Layout className="space-y-8 sm:space-y-16">
-    <h1 className="text-center tracking-widest text-sunglo text-5xl">
-      Palette
-    </h1>
+    <h1>Palette</h1>
 
-    <h2 className="text-3xl">Syntax</h2>
+    <h2>Syntax</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <SyntaxCard bg="bg-sunglo" heading="Keywords">
@@ -117,7 +115,7 @@ const PalettePage: NextPage = () => (
       </SyntaxCard>
     </div>
 
-    <h2 className="text-3xl">UI</h2>
+    <h2>UI</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <UICard bg="bg-bunker">Borders</UICard>
