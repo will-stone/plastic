@@ -68,7 +68,7 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
             </h3>
             <div className="flex-grow px-4 py-8 flex justify-center items-center">
               <img
-                alt="Visual Studio Code"
+                alt=""
                 className="h-24 mx-auto"
                 src={`/images/logos/${slug}.svg`}
               />
