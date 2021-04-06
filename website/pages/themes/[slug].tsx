@@ -27,12 +27,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const markdownIt = new MarkdownIt()
   const [, { content: title }] = markdownIt.parse(md, {})
 
-  return { props: { md, title } }
+  return { props: { md, title, slug: params?.slug } }
 }
 
-const ThemePage: NextPage<{ md: string; title: string }> = ({ md, title }) => (
+const ThemePage: NextPage<{ md: string; title: string; slug: string }> = ({
+  md,
+  title,
+  slug,
+}) => (
   <Layout title={title}>
     <section className="prose sm:prose-lg mx-auto">
+      <img alt="" className="h-24 mx-auto" src={`/images/logos/${slug}.svg`} />
       <ReactMarkdown>{md}</ReactMarkdown>
     </section>
   </Layout>
