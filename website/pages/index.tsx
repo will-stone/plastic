@@ -19,11 +19,8 @@ export const getStaticProps: GetStaticProps = async () => {
       'utf8',
     )
     const markdownIt = new MarkdownIt()
-    const tokens = markdownIt.parse(md, {})
-    apps.push({
-      slug,
-      title: tokens[1].content,
-    })
+    const [, { content: title }] = markdownIt.parse(md, {})
+    apps.push({ slug, title })
   }
 
   return { props: { apps } }

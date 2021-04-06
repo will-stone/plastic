@@ -1,5 +1,6 @@
 import appRoot from 'app-root-path'
 import fs from 'fs-extra'
+import MarkdownIt from 'markdown-it'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
@@ -23,11 +24,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     )
   }
 
-  return { props: { md } }
+  const markdownIt = new MarkdownIt()
+  const [, { content: title }] = markdownIt.parse(md, {})
+
+  return { props: { md, title } }
 }
 
-const ThemePage: NextPage<{ md: string }> = ({ md }) => (
-  <Layout>
+const ThemePage: NextPage<{ md: string; title: string }> = ({ md, title }) => (
+  <Layout title={title}>
     <section className="prose sm:prose-lg mx-auto">
       <ReactMarkdown>{md}</ReactMarkdown>
     </section>
