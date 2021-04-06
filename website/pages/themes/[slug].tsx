@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const ThemePage: NextPage<{ md: string }> = ({ md }) => (
   <Layout>
-    <section className="prose prose-lg mx-auto">
+    <section className="prose sm:prose-lg mx-auto">
       <ReactMarkdown>{md}</ReactMarkdown>
     </section>
   </Layout>
