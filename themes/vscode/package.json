@@ -9,11 +9,11 @@
   ],
   "homepage": "https://plastictheme.com/",
   "bugs": {
-    "url": "https://github.com/will-stone/Plastic-Theme/issues"
+    "url": "https://github.com/will-stone/plastic/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/will-stone/Plastic-Theme"
+    "url": "https://github.com/will-stone/plastic"
   },
   "author": "Will Stone",
   "publisher": "will-stone",

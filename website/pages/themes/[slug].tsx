@@ -54,7 +54,7 @@ const ThemePage: NextPage<{
       <img
         alt=""
         className="h-24"
-        src={`https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/${slug}/logo.svg`}
+        src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/logo.svg`}
       />
     </section>
 
@@ -73,7 +73,7 @@ const ThemePage: NextPage<{
     <section className="prose sm:prose-lg mx-auto">
       <img
         alt="screenshot"
-        src={`https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/${slug}/screenshot.png`}
+        src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/screenshot.png`}
       />
       <ReactMarkdown>{md}</ReactMarkdown>
     </section>

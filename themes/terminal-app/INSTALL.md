@@ -1,5 +1,5 @@
 Download the
-[Plastic.terminal](https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/terminal-app/Plastic.terminal)
+[Plastic.terminal](https://raw.githubusercontent.com/will-stone/plastic/main/themes/terminal-app/Plastic.terminal)
 file by right-clicking the link and selecting "Save Link As".
 
 #### Activating theme

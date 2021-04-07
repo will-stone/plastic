@@ -63,7 +63,7 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
               <img
                 alt=""
                 className="h-24 mx-auto"
-                src={`https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/${slug}/logo.svg`}
+                src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/logo.svg`}
               />
             </div>
           </a>

@@ -1,5 +1,5 @@
 Download the
-[Plastic.itermcolors](https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/iterm/Plastic.itermcolors)
+[Plastic.itermcolors](https://raw.githubusercontent.com/will-stone/plastic/main/themes/iterm/Plastic.itermcolors)
 file by right-clicking the link and selecting "Save Link As".
 
 #### Activating theme
