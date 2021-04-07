@@ -1,3 +1,3 @@
 # Plastic Website
 
-Built using NextJS.
+Built using NextJS
