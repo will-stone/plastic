@@ -1,8 +1,8 @@
 Download the
 [Plastic.terminal](https://raw.githubusercontent.com/will-stone/plastic/main/themes/terminal-app/Plastic.terminal)
-file by right-clicking the link and selecting "Save Link As".
+file by right-clicking the link and selecting _"Save Link As"_.
 
-#### Activating theme
+### Activating theme
 
 1.  _Terminal > Settings Tab_
 2.  Click _"Gear" icon_

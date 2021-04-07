@@ -1,8 +1,8 @@
 Download the
 [Plastic.itermcolors](https://raw.githubusercontent.com/will-stone/plastic/main/themes/iterm/Plastic.itermcolors)
-file by right-clicking the link and selecting "Save Link As".
+file by right-clicking the link and selecting _"Save Link As"_.
 
-#### Activating theme
+### Activating theme
 
 1.  _iTerm2 > Preferences > Profiles > Colors Tab_
 2.  Open the _Color Presets..._ drop-down in the bottom right corner
