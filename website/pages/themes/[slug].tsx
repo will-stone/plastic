@@ -69,6 +69,7 @@ const ThemePage: NextPage<{
       <Link href="/">
         <a className="text-cornflowerBlue underline">other apps</a>
       </Link>
+      .
     </h2>
 
     <section className="prose sm:prose-lg mx-auto">
@@ -77,6 +78,15 @@ const ThemePage: NextPage<{
         src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/screenshot.png`}
       />
       <ReactMarkdown>{md}</ReactMarkdown>
+    </section>
+
+    <section className="flex justify-center">
+      <a
+        className="bg-sunglo py-2 px-4 text-white rounded font-comfortaa"
+        href={`https://github.com/will-stone/plastic/tree/main/themes/${slug}`}
+      >
+        Source Code
+      </a>
     </section>
   </Layout>
 )
