@@ -17,6 +17,7 @@ project adheres to [Semantic Versioning](http://semver.org/).
 
 - Update to new PlasticTheme.com icon.
 - Update URLs.
+- Added `$schema` to themes so that colour swatches are shown (thanks @awkj).
 
 ## [5.4.0] - 2021-04-02
 
