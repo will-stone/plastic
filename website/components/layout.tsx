@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
+import GitHubButton from 'react-github-btn'
 
 type Props = {
   title?: string
@@ -99,10 +100,44 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
         </nav>
       </header>
 
-      <main className={clsx('container flex-grow', className)}>{children}</main>
+      <main className={clsx('container', className)}>{children}</main>
 
-      <footer className="bg-woodsmoke border-t border-bunker py-12 text-center">
-        <div className="container">
+      <footer className="flex-grow bg-woodsmoke border-t border-bunker py-12 text-center space-y-8">
+        <div className="space-x-4">
+          <GitHubButton
+            aria-label="Star will-stone/plastic on GitHub"
+            data-color-scheme="no-preference: dark; light: light; dark: dark;"
+            data-icon="octicon-star"
+            data-show-count="true"
+            data-size="large"
+            href="https://github.com/will-stone/plastic"
+          >
+            Star
+          </GitHubButton>
+
+          <GitHubButton
+            aria-label="Fork will-stone/plastic on GitHub"
+            data-color-scheme="no-preference: dark; light: light; dark: dark;"
+            data-icon="octicon-repo-forked"
+            data-show-count="true"
+            data-size="large"
+            href="https://github.com/will-stone/plastic/fork"
+          >
+            Fork
+          </GitHubButton>
+
+          <GitHubButton
+            aria-label="Sponsor @will-stone on GitHub"
+            data-color-scheme="no-preference: dark; light: light; dark: dark;"
+            data-icon="octicon-heart"
+            data-size="large"
+            href="https://github.com/sponsors/will-stone"
+          >
+            Sponsor
+          </GitHubButton>
+        </div>
+
+        <div className="container font-comfortaa">
           Made with{' '}
           <a
             href="https://www.buymeacoffee.com/wstone"

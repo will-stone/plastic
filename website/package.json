@@ -15,6 +15,7 @@
     "next": "^10.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-github-btn": "^1.2.0",
     "react-markdown": "^5.0.3"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "@types/react-dom": "^17.0.3",
     "autoprefixer": "^10.2.5",
     "fs-extra": "^9.1.0",
+    "next-transpile-modules": "^6.4.0",
     "postcss": "^8.2.8",
     "tailwindcss": "^2.0.4",
     "typescript": "^4.0"
