@@ -34,11 +34,23 @@ module.exports = {
             h2: {
               color: palette.ghost,
             },
+            h3: {
+              color: palette.ghost,
+            },
+            h4: {
+              color: palette.ghost,
+            },
+            h5: {
+              color: palette.ghost,
+            },
             a: {
               color: palette.cornflowerBlue,
             },
             code: {
               color: palette.ghost,
+            },
+            blockquote: {
+              color: palette.shuttleGray,
             },
           },
         },

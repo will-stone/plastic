@@ -58,6 +58,10 @@
     "vscode": "^1.45.0"
   },
   "icon": "images/icon.png",
+  "plastic": {
+    "title": "VSCode",
+    "appLink": "https://code.visualstudio.com/"
+  },
   "__metadata": {
     "id": "0615a8d1-878b-482f-b36c-773d1ed16adb",
     "publisherId": "744e71fe-bf60-4aba-94b1-d6e77d16fa27",

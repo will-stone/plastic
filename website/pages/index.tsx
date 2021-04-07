@@ -1,6 +1,5 @@
 import appRoot from 'app-root-path'
 import fs from 'fs-extra'
-import MarkdownIt from 'markdown-it'
 import type { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import path from 'path'
@@ -14,13 +13,10 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const apps = []
   for await (const slug of slugs) {
-    const md = await fs.readFile(
-      path.join(appPath, 'themes', slug, 'INSTALL.md'),
-      'utf8',
+    const packageJson = await fs.readJson(
+      path.join(appPath, 'themes', slug, 'package.json'),
     )
-    const markdownIt = new MarkdownIt()
-    const [, { content: title }] = markdownIt.parse(md, {})
-    apps.push({ slug, title })
+    apps.push({ slug, title: packageJson.plastic.title })
   }
 
   return { props: { apps } }
@@ -67,7 +63,7 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
               <img
                 alt=""
                 className="h-24 mx-auto"
-                src={`/images/logos/${slug}.svg`}
+                src={`https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/${slug}/logo.svg`}
               />
             </div>
           </a>

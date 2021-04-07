@@ -1,7 +1,8 @@
 import appRoot from 'app-root-path'
 import fs from 'fs-extra'
-import MarkdownIt from 'markdown-it'
+import get from 'lodash/get'
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import Link from 'next/link'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
 
@@ -17,28 +18,63 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   let md = ''
+  let packageJson = {}
   if (typeof params?.slug === 'string') {
+    packageJson = await fs.readJson(
+      path.join(appPath, 'themes', params.slug, 'package.json'),
+    )
     md = await fs.readFile(
       path.join(appPath, 'themes', params.slug, 'INSTALL.md'),
       'utf8',
     )
   }
 
-  const markdownIt = new MarkdownIt()
-  const [, { content: title }] = markdownIt.parse(md, {})
-
-  return { props: { md, title, slug: params?.slug } }
+  return {
+    props: {
+      md,
+      title: get(packageJson, 'plastic.title'),
+      appLink: get(packageJson, 'plastic.appLink'),
+      slug: params?.slug,
+    },
+  }
 }
 
-const ThemePage: NextPage<{ md: string; title: string; slug: string }> = ({
-  md,
-  title,
-  slug,
-}) => (
-  <Layout title={title}>
+const ThemePage: NextPage<{
+  md: string
+  title: string
+  appLink: string
+  slug: string
+}> = ({ md, title, slug, appLink }) => (
+  <Layout className="space-y-8" title={title}>
+    <section className="flex justify-center items-center space-x-6 sm:space-x-8">
+      <img alt="" className="h-24" src="/images/logo.svg" />
+      <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
+        +
+      </span>
+      <img
+        alt=""
+        className="h-24"
+        src={`https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/${slug}/logo.svg`}
+      />
+    </section>
+
+    <h1>Plastic</h1>
+    <h2 className="text-center">
+      A simple theme for{' '}
+      <a className="text-lavender underline" href={appLink}>
+        {title}
+      </a>{' '}
+      and{' '}
+      <Link href="/">
+        <a className="text-cornflowerBlue underline">other apps</a>
+      </Link>
+    </h2>
+
     <section className="prose sm:prose-lg mx-auto">
-      <img alt="" className="h-24 mx-auto" src={`/images/logos/${slug}.svg`} />
-      <img alt="screenshot" src={`/images/screenshots/${slug}.png`} />
+      <img
+        alt="screenshot"
+        src={`https://raw.githubusercontent.com/will-stone/Plastic-Theme/main/themes/${slug}/screenshot.png`}
+      />
       <ReactMarkdown>{md}</ReactMarkdown>
     </section>
   </Layout>

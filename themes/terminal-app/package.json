@@ -1,0 +1,8 @@
+{
+  "name": "@will-stone/plastic-terminal-app",
+  "private": true,
+  "plastic": {
+    "title": "Terminal.app",
+    "appLink": "https://en.wikipedia.org/wiki/Terminal_(macOS)"
+  }
+}
