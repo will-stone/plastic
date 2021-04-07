@@ -1,0 +1,8 @@
+{
+  "name": "@will-stone/plastic-theme-template",
+  "private": true,
+  "plastic": {
+    "title": "Theme Template",
+    "appLink": "https://plastictheme.com/"
+  }
+}
