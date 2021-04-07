@@ -59,6 +59,7 @@ const ThemePage: NextPage<{
     </section>
 
     <h1>Plastic</h1>
+
     <h2 className="text-center">
       A simple theme for{' '}
       <a className="text-lavender underline" href={appLink}>
