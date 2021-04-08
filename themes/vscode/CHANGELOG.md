@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.5.3] - 2021-04-08
+
+- Fix readme screenshot not showing.
+
 ## [5.5.2] - 2021-04-07
 
 - Rename repo back to "plastic".
