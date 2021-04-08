@@ -1,0 +1,8 @@
+{
+  "name": "@will-stone/plastic-slack",
+  "private": true,
+  "plastic": {
+    "title": "Slack",
+    "appLink": "https://slack.com"
+  }
+}

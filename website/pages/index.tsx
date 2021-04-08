@@ -9,7 +9,10 @@ import Layout from '../components/layout'
 const { path: appPath } = appRoot
 
 export const getStaticProps: GetStaticProps = async () => {
-  const slugs = await fs.readdir(path.join(appPath, 'themes'))
+  const slugs = fs
+    .readdirSync(path.join(appPath, 'themes'), { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => d.name)
 
   const apps = []
   for await (const slug of slugs) {

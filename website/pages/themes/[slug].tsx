@@ -1,7 +1,7 @@
 import appRoot from 'app-root-path'
 import fs from 'fs-extra'
 import get from 'lodash/get'
-import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import type { GetStaticPathsResult, GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
@@ -10,8 +10,11 @@ import Layout from '../../components/layout'
 
 const { path: appPath } = appRoot
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const themes = await fs.readdir(path.join(appPath, 'themes'))
+export const getStaticPaths = (): GetStaticPathsResult => {
+  const themes = fs
+    .readdirSync(path.join(appPath, 'themes'), { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => d.name)
   const paths = themes.map((themeName) => ({ params: { slug: themeName } }))
   return { paths, fallback: false }
 }
