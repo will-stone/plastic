@@ -67,7 +67,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
                 'hover:text-ghost',
               )}
             >
-              Home
+              Apps
             </a>
           </Link>
           <Link href="/palette">
