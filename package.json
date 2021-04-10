@@ -31,7 +31,7 @@
     }
   },
   "devDependencies": {
-    "@will-stone/eslint-config": "^2.1.0",
+    "@will-stone/eslint-config": "^2.2.0",
     "@will-stone/prettier-config": "^4.0.0",
     "eslint": "^7.23.0",
     "husky": "^5.2.0",

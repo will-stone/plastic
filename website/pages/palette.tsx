@@ -1,13 +1,11 @@
+import clsx from 'clsx'
 import type { NextPage } from 'next'
+import type { ReactNode } from 'react'
 
 import Layout from '../components/layout'
 import { Swatch } from '../components/swatch'
 
-function Card({
-  children,
-}: {
-  children: JSX.Element | JSX.Element[]
-}): JSX.Element {
+function Card({ children }: { children: ReactNode }): JSX.Element {
   return (
     <div className="border border-bunker rounded overflow-hidden divide-y divide-bunker">
       {children}
@@ -15,16 +13,29 @@ function Card({
   )
 }
 
-function CardHeader({ children }: { children: string }): JSX.Element {
+function CardHeader({ children }: { children: ReactNode }): JSX.Element {
   return <h3 className="text-lg bg-woodsmoke p-4">{children}</h3>
 }
 
 function CardBody({
   children,
+  className,
 }: {
-  children: JSX.Element | JSX.Element[]
+  className?: string
+  children: ReactNode
 }): JSX.Element {
-  return <p className="p-4">{children}</p>
+  return <p className={clsx('p-4', className)}>{children}</p>
+}
+
+function NormalBoldText(): JSX.Element {
+  return (
+    <>
+      <pre>Normal text</pre>
+      <pre>
+        <strong>Bold text</strong>
+      </pre>
+    </>
+  )
 }
 
 const PalettePage: NextPage = () => (
@@ -54,121 +65,118 @@ const PalettePage: NextPage = () => (
 
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
       <Card>
-        <Swatch bg="bg-sunglo" />
         <CardHeader>Keywords</CardHeader>
+        <Swatch bg="bg-sunglo" />
         <CardBody>
-          <code className="block text-sunglo">if</code>
-          <code className="block text-sunglo">import</code>
-          <code className="block text-sunglo">return</code>
+          <pre className="text-sunglo">if</pre>
+          <pre className="text-sunglo">import</pre>
+          <pre className="text-sunglo">return</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-fountainBlue" />
         <CardHeader>Constants</CardHeader>
+        <Swatch bg="bg-fountainBlue" />
         <CardBody>
-          <code className="block text-fountainBlue">1234</code>
-          <code className="block text-fountainBlue">undefined</code>
-          <code className="block text-fountainBlue">true</code>
+          <pre className="text-fountainBlue">1234</pre>
+          <pre className="text-fountainBlue">undefined</pre>
+          <pre className="text-fountainBlue">true</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-cornflowerBlue" />
         <CardHeader>Storage</CardHeader>
+        <Swatch bg="bg-cornflowerBlue" />
         <CardBody>
-          <code className="block text-cornflowerBlue">const</code>
-          <code className="block text-cornflowerBlue">let</code>
-          <code className="block text-cornflowerBlue">class</code>
+          <pre className="text-cornflowerBlue">const</pre>
+          <pre className="text-cornflowerBlue">let</pre>
+          <pre className="text-cornflowerBlue">class</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-olivine" />
         <CardHeader>String Literals</CardHeader>
+        <Swatch bg="bg-olivine" />
         <CardBody>
-          <span className="block">
+          <pre>
             &quot;<code className="text-olivine">lorem</code>&quot;
-          </span>
-          <span className="block">
+          </pre>
+          <pre>
             &apos;<code className="text-olivine">ipsum</code>&apos;
-          </span>
-          <span className="block">
+          </pre>
+          <pre>
             &#96;<code className="text-olivine">dolor</code>&#96;
-          </span>
+          </pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-whiskey" />
         <CardHeader>Attributes & Props</CardHeader>
+        <Swatch bg="bg-whiskey" />
         <CardBody>
-          <code className="block text-whiskey">href</code>
-          <code className="block text-whiskey">className</code>
-          <code className="block text-whiskey">src</code>
+          <pre className="text-whiskey">href</pre>
+          <pre className="text-whiskey">className</pre>
+          <pre className="text-whiskey">src</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-harvestGold" />
         <CardHeader>Tags &amp; Types</CardHeader>
+        <Swatch bg="bg-harvestGold" />
         <CardBody>
-          <code className="block text-harvestGold">div</code>
-          <code className="block text-harvestGold">span</code>
-          <code className="block text-harvestGold">boolean</code>
+          <pre className="text-harvestGold">div</pre>
+          <pre className="text-harvestGold">span</pre>
+          <pre className="text-harvestGold">boolean</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-lavender" />
         <CardHeader>Function Names</CardHeader>
+        <Swatch bg="bg-lavender" />
         <CardBody>
-          <code className="block">
+          <pre>
             <span className="text-cornflowerBlue">function</span>{' '}
             <span className="text-lavender">add</span>() &#123;&#125;
-          </code>
-          <code className="block">
+          </pre>
+          <pre>
             <span className="text-lavender">doThing</span>()
-          </code>
-          <code className="block">
+          </pre>
+          <pre>
             console.<span className="text-lavender">log</span>()
-          </code>
+          </pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-shuttleGray" />
         <CardHeader>Comments</CardHeader>
+        <Swatch bg="bg-shuttleGray" />
         <CardBody>
-          <code className="text-shuttleGray block">&#47;&#47; Comment</code>
-          <code className="text-shuttleGray block">
-            &#47;* TODO comment *&#47;
-          </code>
-          <code className="text-shuttleGray block">#!/bin/bash</code>
+          <pre className="text-shuttleGray">&#47;&#47; Comment</pre>
+          <pre className="text-shuttleGray">&#47;* TODO comment *&#47;</pre>
+          <pre className="text-shuttleGray">#!/bin/bash</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-cadetBlue" />
         <CardHeader>Text &amp; Punctuation</CardHeader>
+        <Swatch bg="bg-cadetBlue" />
         <CardBody>
-          <code className="block">
-            &#123;&#125;()[]&quot;&apos;&#96;!&lt;&gt;
-          </code>
-          <code className="block">Lorem ipsum dolor sit amet.</code>
+          <pre>&#123;&#125;()[]&quot;&apos;&#96;!&lt;&gt;</pre>
+          <pre>Lorem ipsum dolor.</pre>
+          <pre>Consectetur adipiscing.</pre>
         </CardBody>
       </Card>
 
       <Card>
-        <Swatch bg="bg-ghost" />
         <CardHeader>Variables</CardHeader>
+        <Swatch bg="bg-ghost" />
         <CardBody>
-          <code className="block">
+          <pre>
             <span className="text-cornflowerBlue">const</span>{' '}
             <span className="text-ghost">aVariable</span>{' '}
             <span className="text-sunglo">=</span>{' '}
             <span className="text-fountainBlue">true</span>
-          </code>
+          </pre>
         </CardBody>
       </Card>
     </section>
@@ -177,28 +185,94 @@ const PalettePage: NextPage = () => (
 
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
       <Card>
-        <Swatch bg="bg-bunker" />
         <CardHeader>Borders</CardHeader>
+        <Swatch bg="bg-bunker" />
       </Card>
       <Card>
-        <Swatch bg="bg-woodsmoke" />
         <CardHeader>Background</CardHeader>
+        <Swatch bg="bg-woodsmoke" />
       </Card>
       <Card>
-        <Swatch bg="bg-shark" />
         <CardHeader>Workspace</CardHeader>
+        <Swatch bg="bg-shark" />
       </Card>
       <Card>
-        <Swatch bg="bg-dodgerBlue" />
         <CardHeader>Information</CardHeader>
+        <Swatch bg="bg-dodgerBlue" />
       </Card>
       <Card>
-        <Swatch bg="bg-robRoy" />
         <CardHeader>Warning</CardHeader>
+        <Swatch bg="bg-robRoy" />
       </Card>
       <Card>
-        <Swatch bg="bg-valencia" />
         <CardHeader>Error</CardHeader>
+        <Swatch bg="bg-valencia" />
+      </Card>
+    </section>
+
+    <h2>ANSI</h2>
+
+    <p>
+      Plastic, being a simple theme, does not provide bright ANSI colours. It is
+      recommended to use <strong>bold text</strong> for emphasis.
+    </p>
+
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+      <Card>
+        <CardHeader>ANSI Black</CardHeader>
+        <Swatch bg="bg-shuttleGray" />
+        <CardBody className="text-shuttleGray">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI Red</CardHeader>
+        <Swatch bg="bg-sunglo" />
+        <CardBody className="text-sunglo">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI Green</CardHeader>
+        <Swatch bg="bg-olivine" />
+        <CardBody className="text-olivine">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI Yellow</CardHeader>
+        <Swatch bg="bg-harvestGold" />
+        <CardBody className="text-harvestGold">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI Blue</CardHeader>
+        <Swatch bg="bg-cornflowerBlue" />
+        <CardBody className="text-cornflowerBlue">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI Magenta</CardHeader>
+        <Swatch bg="bg-lavender" />
+        <CardBody className="text-lavender">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI Cyan</CardHeader>
+        <Swatch bg="bg-fountainBlue" />
+        <CardBody className="text-fountainBlue">
+          <NormalBoldText />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardHeader>ANSI White</CardHeader>
+        <Swatch bg="bg-cadetBlue" />
+        <CardBody className="text-cadetBlue">
+          <NormalBoldText />
+        </CardBody>
       </Card>
     </section>
   </Layout>
