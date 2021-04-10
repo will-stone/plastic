@@ -42,6 +42,9 @@ const PalettePage: NextPage = () => (
   <Layout className="space-y-8">
     <section className="flex justify-center items-center space-x-6 sm:space-x-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
+      <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
+        +
+      </span>
       <span aria-label="" className="text-7xl" role="img">
         🎨
       </span>
@@ -213,8 +216,8 @@ const PalettePage: NextPage = () => (
     <h2>ANSI</h2>
 
     <p>
-      Plastic, being a simple theme, does not provide bright ANSI colours. It is
-      recommended to use <strong>bold text</strong> for emphasis.
+      Being a simple theme, Plastic does not prescribe bright ANSI colours. It
+      is recommended to use <strong>bold text</strong> for emphasis.
     </p>
 
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
