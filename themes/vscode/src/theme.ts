@@ -159,6 +159,7 @@ export function getTheme(deprioritised = false): unknown {
       'list.errorForeground': valencia,
       'list.focusBackground': cadetBlue20,
       'list.hoverBackground': cadetBlue10,
+      'list.inactiveFocusOutline': shuttleGray,
       'list.inactiveSelectionBackground': cadetBlue20,
       'list.inactiveSelectionForeground': ghost,
       'list.warningForeground': robRoy,

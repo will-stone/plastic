@@ -93,6 +93,7 @@
     "list.errorForeground": "#D74E42",
     "list.focusBackground": "#A9B2C333",
     "list.hoverBackground": "#A9B2C31A",
+    "list.inactiveFocusOutline": "#5F6672",
     "list.inactiveSelectionBackground": "#A9B2C333",
     "list.inactiveSelectionForeground": "#C6CCD7",
     "list.warningForeground": "#E9D16C",
