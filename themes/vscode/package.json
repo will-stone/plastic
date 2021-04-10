@@ -35,12 +35,12 @@
         "path": "./themes/deprioritised-punctuation.json"
       },
       {
-        "label": "Plastic Legacy v2",
+        "label": "DEPRECATED Plastic Legacy v2",
         "uiTheme": "vs-dark",
         "path": "./themes/v2.json"
       },
       {
-        "label": "Plastic Legacy v2 - deprioritised punctuation",
+        "label": "DEPRECATED Plastic Legacy v2 - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/v2-deprioritised-punctuation.json"
       }

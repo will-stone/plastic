@@ -5,6 +5,17 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [6.0.0] - 2021-04-10
+
+If you were you using the _Plastic Legacy v2_ theme, this has now been
+officially deprecated. The theme is still available, under the name _DEPRECATED
+Plastic Legacy v2_, but will be removed in the next major release. If you are
+using this, I urge you to volunteer to be its maintainer. See here for more
+details: https://github.com/will-stone/plastic/issues/168
+
+- Added outline to list.inactiveFocusOutline for an increased contrast on active
+  sidebar item.
+
 ## [5.5.3] - 2021-04-08
 
 - Fix readme screenshot not showing.

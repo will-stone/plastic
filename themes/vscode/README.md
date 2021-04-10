@@ -4,13 +4,11 @@ _[A simple syntax and UI theme for Visual Studio Code.](https://plastictheme.com
 
 ---
 
-v3 introduced a new syntax colour: lavender for functions. This helps tone-down
-the amount of whiskey colour, which is now mainly used for JSX props. The scopes
-have also been simplified further, separating them into clear types. However,
-worry not if you preferred v2, this can still be found in the theme-picker under
-"Plastic Legacy v2".
-
-Please note that v2 is no longer maintained.
+If you were you using the _Plastic Legacy v2_ theme, this has now been
+officially deprecated. The theme is still available, under the name _DEPRECATED
+Plastic Legacy v2_, but will be removed in the next major release. If you are
+using this, I urge you to volunteer to be its maintainer. See here for more
+details: https://github.com/will-stone/plastic/issues/168
 
 ---
 
