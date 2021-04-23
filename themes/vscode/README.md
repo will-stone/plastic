@@ -4,11 +4,9 @@ _[A simple syntax and UI theme for Visual Studio Code.](https://plastictheme.com
 
 ---
 
-If you were you using the _Plastic Legacy v2_ theme, this has now been
-officially deprecated. The theme is still available, under the name _DEPRECATED
-Plastic Legacy v2_, but will be removed in the next major release. If you are
-using this, I urge you to volunteer to be its maintainer. See here for more
-details: https://github.com/will-stone/plastic/issues/168
+If you were you using the _Plastic Legacy v2_ theme, this has now been removed
+from the main Plastic project and kindly adopted by Hadi Alqattan:
+https://marketplace.visualstudio.com/items?itemName=HadiAlqattan.plastic-legacy
 
 ---
 

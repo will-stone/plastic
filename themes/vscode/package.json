@@ -33,16 +33,6 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/deprioritised-punctuation.json"
-      },
-      {
-        "label": "DEPRECATED Plastic Legacy v2",
-        "uiTheme": "vs-dark",
-        "path": "./themes/v2.json"
-      },
-      {
-        "label": "DEPRECATED Plastic Legacy v2 - deprioritised punctuation",
-        "uiTheme": "vs-dark",
-        "path": "./themes/v2-deprioritised-punctuation.json"
       }
     ]
   },
