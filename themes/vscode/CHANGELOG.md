@@ -5,7 +5,11 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
-## UNRELEASED
+## [7.0.1] - 2021-04-23
+
+- Fix changelog.
+
+## [7.0.0] - 2021-04-23
 
 - If you were you using the _Plastic Legacy v2_ theme, this has now been removed
   from the main Plastic project and kindly adopted by Hadi Alqattan:
