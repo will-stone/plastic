@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [7.1.0] - 2021-04-28
+
+- Add support for ReScript component tags.
+
 ## [7.0.1] - 2021-04-23
 
 - Fix changelog.
