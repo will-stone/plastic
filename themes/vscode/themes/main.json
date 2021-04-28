@@ -195,7 +195,7 @@
       }
     },
     {
-      "scope": ["storage", "support.class"],
+      "scope": ["storage", "support.class", "entity.name.namespace"],
       "settings": {
         "foreground": "#61AFEF"
       }

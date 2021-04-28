@@ -291,6 +291,8 @@ export function getTheme(deprioritised = false): unknown {
             'storage',
             // console and JSX custom components
             'support.class',
+            // ReScript components
+            'entity.name.namespace',
           ],
           cornflowerBlue,
         ],
