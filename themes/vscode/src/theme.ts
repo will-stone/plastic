@@ -39,7 +39,6 @@ export function getTheme(deprioritised = false): unknown {
       'activityBar.activeBorder': dodgerBlue,
       'activityBar.background': shark,
       'activityBar.border': bunker,
-      'activityBar.dropBackground': woodsmoke,
       'activityBar.foreground': ghost,
       'activityBar.inactiveForeground': shuttleGray,
 
