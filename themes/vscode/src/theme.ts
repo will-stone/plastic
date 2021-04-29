@@ -50,7 +50,7 @@ export function getTheme(deprioritised = false): unknown {
 
       'button.background': sunglo,
       'button.foreground': white,
-      'button.secondaryBackground': cornflowerBlue,
+      'button.secondaryBackground': bunker,
       'button.secondaryForeground': white,
 
       'checkbox.background': cornflowerBlue,
