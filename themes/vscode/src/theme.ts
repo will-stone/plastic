@@ -50,6 +50,10 @@ export function getTheme(deprioritised = false): unknown {
 
       'button.background': sunglo,
       'button.foreground': white,
+      'button.hoverBackground': tinycolor(sunglo)
+        .lighten(5)
+        .toHexString()
+        .toUpperCase(),
       'button.secondaryBackground': bunker,
       'button.secondaryForeground': white,
 
