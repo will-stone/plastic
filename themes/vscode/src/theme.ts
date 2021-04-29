@@ -49,6 +49,12 @@ export function getTheme(deprioritised = false): unknown {
       'breadcrumb.foreground': shuttleGray,
 
       'button.background': sunglo,
+      'button.foreground': white,
+      'button.secondaryBackground': cornflowerBlue,
+      'button.secondaryForeground': white,
+
+      'checkbox.background': cornflowerBlue,
+      'checkbox.foreground': white,
 
       'contrastBorder': bunker,
 
