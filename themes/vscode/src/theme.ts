@@ -261,6 +261,8 @@ export function getTheme(deprioritised = false): unknown {
       'titleBar.inactiveBackground': shark,
       'titleBar.inactiveForeground': shuttleGray,
 
+      'toolbar.hoverBackground': cadetBlue20,
+
       'widget.shadow': transparent,
     },
     tokenColors: [

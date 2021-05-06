@@ -168,6 +168,7 @@
     "titleBar.border": "#0D1117",
     "titleBar.inactiveBackground": "#21252B",
     "titleBar.inactiveForeground": "#5F6672",
+    "toolbar.hoverBackground": "#A9B2C333",
     "widget.shadow": "#00000000"
   },
   "tokenColors": [
