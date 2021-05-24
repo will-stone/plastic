@@ -24,7 +24,7 @@ function CardBody({
   className?: string
   children: ReactNode
 }): JSX.Element {
-  return <p className={clsx('p-4', className)}>{children}</p>
+  return <div className={clsx('p-4', className)}>{children}</div>
 }
 
 function NormalBoldText(): JSX.Element {
@@ -39,8 +39,8 @@ function NormalBoldText(): JSX.Element {
 }
 
 const PalettePage: NextPage = () => (
-  <Layout className="space-y-8">
-    <section className="flex justify-center items-center space-x-6 sm:space-x-8">
+  <Layout>
+    <section className="flex justify-center items-center space-x-6 sm:space-x-8 mb-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
       <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
         +
@@ -50,7 +50,7 @@ const PalettePage: NextPage = () => (
       </span>
     </section>
 
-    <h1>Palette</h1>
+    <h1 className="mb-16">Palette</h1>
 
     {/* TODO Add a description of the "spec" */}
     {/* <p>
@@ -64,9 +64,9 @@ const PalettePage: NextPage = () => (
       metus fermentum posuere.
     </p> */}
 
-    <h2>Syntax</h2>
+    <h2 className="mb-8">Syntax</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
       <Card>
         <CardHeader>Keywords</CardHeader>
         <Swatch bg="bg-sunglo" />
@@ -184,9 +184,9 @@ const PalettePage: NextPage = () => (
       </Card>
     </section>
 
-    <h2>UI</h2>
+    <h2 className="mb-4">UI</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
       <Card>
         <CardHeader>Borders</CardHeader>
         <Swatch bg="bg-bunker" />
@@ -213,14 +213,14 @@ const PalettePage: NextPage = () => (
       </Card>
     </section>
 
-    <h2>ANSI</h2>
+    <h2 className="mb-4">ANSI</h2>
 
-    <p>
+    <p className="mb-8">
       Being a simple theme, Plastic does not prescribe bright ANSI colours. It
       is recommended to use <strong>bold text</strong> for emphasis.
     </p>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
       <Card>
         <CardHeader>ANSI Black</CardHeader>
         <Swatch bg="bg-shuttleGray" />
