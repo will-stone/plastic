@@ -5,6 +5,8 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import GitHubButton from 'react-github-btn'
 
+import { Icon } from './icon'
+
 type Props = {
   title?: string
   className?: string
@@ -83,19 +85,16 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             </a>
           </Link>
           <a
-            className="text-shuttleGray hover:text-ghost group"
+            className="text-shuttleGray hover:text-ghost group inline-flex items-center"
             href="https://www.buymeacoffee.com/wstone"
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              aria-label="carrot"
-              className="opacity-50 group-hover:opacity-100"
-              role="img"
-            >
-              🥕
-            </span>{' '}
-            <span>Support</span>
+            <Icon
+              className="w-5 h-5 opacity-50 group-hover:opacity-100 mr-1 text-yellow-400"
+              icon="coffee"
+            />{' '}
+            <span>Buy Me a Coffee</span>
           </a>
         </nav>
       </header>
@@ -138,17 +137,16 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
         </div>
 
         <div className="container font-comfortaa">
-          Made with{' '}
           <a
             href="https://www.buymeacoffee.com/wstone"
             rel="noreferrer"
             target="_blank"
           >
-            <span aria-label="carrots" role="img">
-              🥕🥕🥕
+            <span aria-label="recycle" role="img">
+              ♻️
             </span>
           </a>{' '}
-          by{' '}
+          By{' '}
           <a className="underline" href="https://wstone.io">
             Will Stone
           </a>
