@@ -17,8 +17,9 @@
   },
   "author": "Will Stone",
   "publisher": "will-stone",
+  "type": "module",
   "scripts": {
-    "build": "ts-node-script ./src/index.ts",
+    "build": "node --loader ts-node/esm ./src/index.ts",
     "prerelease": "npm run build",
     "release": "vsce publish"
   },
@@ -37,11 +38,11 @@
     ]
   },
   "devDependencies": {
-    "@types/prettier": "^2.2.3",
-    "@types/tinycolor2": "^1.4.2",
+    "@types/prettier": "^2.3.2",
+    "@types/tinycolor2": "^1.4.3",
     "tinycolor2": "^1.4.2",
-    "ts-node": "^9.1.1",
-    "vsce": "^1.87.1"
+    "ts-node": "^10.2.1",
+    "vsce": "^1.96.3"
   },
   "engines": {
     "node": ">=15.0.0",

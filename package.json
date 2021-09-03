@@ -22,18 +22,19 @@
     "extends": [
       "@will-stone/eslint-config/typescript",
       "@will-stone/eslint-config/node",
-      "@will-stone/eslint-config/react"
+      "@will-stone/eslint-config/react",
+      "@will-stone/eslint-config/prettier"
     ],
     "rules": {
       "jsx-a11y/anchor-is-valid": "off"
     }
   },
   "devDependencies": {
-    "@will-stone/eslint-config": "^2.7.0",
+    "@will-stone/eslint-config": "^3.0.5",
     "@will-stone/prettier-config": "^4.0.0",
-    "eslint": "^7.24.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
   }
 }

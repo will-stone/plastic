@@ -1,4 +1,4 @@
-declare const plasticPalette: {
+declare const palette: {
   bunker: string
   cadetBlue: string
   cornflowerBlue: string
@@ -19,4 +19,4 @@ declare const plasticPalette: {
   woodsmoke: string
 }
 
-export = plasticPalette
+export { palette }

@@ -1,9 +1,17 @@
 {
   "name": "palette",
+  "type": "module",
+  "exports": {
+    "require": "./cjs.cjs",
+    "import": "./index.js"
+  },
+  "main": "./cjs.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "tsd"
   },
   "devDependencies": {
-    "tsd": "^0.14.0"
+    "tsd": "^0.17.0"
   }
 }

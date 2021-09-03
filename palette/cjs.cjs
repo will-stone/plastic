@@ -1,4 +1,4 @@
-export const palette = {
+const palette = {
   bunker: '#0D1117',
   cadetBlue: '#A9B2C3',
   cornflowerBlue: '#61AFEF',
@@ -18,3 +18,5 @@ export const palette = {
   white: '#ffffff',
   woodsmoke: '#181A1F',
 }
+
+module.exports = { palette }

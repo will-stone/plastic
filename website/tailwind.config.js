@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 const typography = require('@tailwindcss/typography')
 
-const palette = require('../palette')
+const { palette } = require('../palette')
 
 module.exports = {
   mode: 'jit',

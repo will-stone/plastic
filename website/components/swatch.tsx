@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import startCase from 'lodash/startCase'
 import { FC } from 'react'
 
-import palette from '../../palette'
+import { palette } from '../../palette'
 
 function isLightColour(colour: string): boolean {
   // Remove prefixed # if present
@@ -18,7 +18,7 @@ export const Swatch: FC<{ bg: string; className?: string }> = ({
   bg,
   className,
 }) => {
-  const colourName = (bg.replace('bg-', '') as unknown) as keyof typeof palette
+  const colourName = bg.replace('bg-', '') as unknown as keyof typeof palette
   const hex = palette[colourName]
   const name = startCase(colourName)
   const textColour = isLightColour(hex) ? 'text-bunker' : 'text-white'

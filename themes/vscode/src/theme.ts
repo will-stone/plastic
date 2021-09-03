@@ -1,6 +1,8 @@
 import tinycolor from 'tinycolor2'
 
-import {
+import { palette } from '../../../palette/index.js'
+
+const {
   bunker,
   cadetBlue,
   cornflowerBlue,
@@ -19,7 +21,7 @@ import {
   whiskey,
   white,
   woodsmoke,
-} from '../../../palette'
+} = palette
 
 const setAlpha = (hex: string, alpha: number) =>
   tinycolor(hex).setAlpha(alpha).toHex8String().toUpperCase()

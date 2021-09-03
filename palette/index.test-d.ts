@@ -1,6 +1,6 @@
 import { expectType } from 'tsd'
 
-import palette from '.'
+import { palette } from './index.js'
 
 expectType<{
   bunker: string
