@@ -113,6 +113,9 @@ export function getTheme(deprioritised = false): unknown {
 
       'editorInfo.foreground': dodgerBlue,
 
+      'editorInlayHint.background': bunker,
+      'editorInlayHint.foreground': shuttleGray,
+
       'editorLightBulb.foreground': robRoy,
 
       'editorLightBulbAutoFix.foreground': dodgerBlue,
