@@ -5,6 +5,14 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [7.4.1] - 2021-09-03
+
+- Update changelog.
+
+## [7.4.0] - 2021-09-03
+
+- Add support for inlay hints.
+
 ## [7.3.0] - 2021-05-06
 
 - Add toolbar hover background.
