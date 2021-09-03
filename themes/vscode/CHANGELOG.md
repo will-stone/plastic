@@ -5,6 +5,12 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [7.5.0] - 2021-09-03
+
+- Use transparent inlay hint background. I've found having the hints display the
+  same as comments (as this is, in essence, all they are) makes them less
+  distracting.
+
 ## [7.4.1] - 2021-09-03
 
 - Update changelog.
