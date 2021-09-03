@@ -115,7 +115,7 @@ export function getTheme(deprioritised = false): unknown {
 
       'editorInfo.foreground': dodgerBlue,
 
-      'editorInlayHint.background': bunker,
+      'editorInlayHint.background': transparent,
       'editorInlayHint.foreground': shuttleGray,
 
       'editorLightBulb.foreground': robRoy,
