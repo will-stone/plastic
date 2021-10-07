@@ -91,10 +91,10 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             target="_blank"
           >
             <Icon
-              className="w-5 h-5 opacity-50 group-hover:opacity-100 mr-1 text-yellow-400"
+              className="flex-shrink-0 w-5 h-5 opacity-50 group-hover:opacity-100 mr-1 text-yellow-400"
               icon="coffee"
             />{' '}
-            <span>Buy Me a Coffee</span>
+            <span className="hidden sm:inline-block">Buy Me a Coffee</span>
           </a>
         </nav>
       </header>
