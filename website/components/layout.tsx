@@ -7,7 +7,7 @@ import GitHubButton from 'react-github-btn'
 
 import { Icon } from './icon'
 
-type Props = {
+interface Props {
   title?: string
   className?: string
 }
@@ -67,8 +67,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
               className={clsx(
                 router.asPath === '/' ? 'text-ghost' : 'text-shuttleGray',
                 'hover:text-ghost',
-              )}
-            >
+              )}>
               Apps
             </a>
           </Link>
@@ -79,8 +78,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
                   ? 'text-ghost'
                   : 'text-shuttleGray',
                 'hover:text-ghost',
-              )}
-            >
+              )}>
               Palette
             </a>
           </Link>
@@ -88,8 +86,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             className="text-shuttleGray hover:text-ghost group inline-flex items-center"
             href="https://www.buymeacoffee.com/wstone"
             rel="noreferrer"
-            target="_blank"
-          >
+            target="_blank">
             <Icon
               className="flex-shrink-0 w-5 h-5 opacity-50 group-hover:opacity-100 mr-1 text-yellow-400"
               icon="coffee"
@@ -109,8 +106,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             data-icon="octicon-star"
             data-show-count="true"
             data-size="large"
-            href="https://github.com/will-stone/plastic"
-          >
+            href="https://github.com/will-stone/plastic">
             Star
           </GitHubButton>
 
@@ -120,8 +116,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             data-icon="octicon-repo-forked"
             data-show-count="true"
             data-size="large"
-            href="https://github.com/will-stone/plastic/fork"
-          >
+            href="https://github.com/will-stone/plastic/fork">
             Fork
           </GitHubButton>
 
@@ -130,8 +125,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             data-color-scheme="no-preference: dark; light: light; dark: dark;"
             data-icon="octicon-heart"
             data-size="large"
-            href="https://github.com/sponsors/will-stone"
-          >
+            href="https://github.com/sponsors/will-stone">
             Sponsor
           </GitHubButton>
         </div>
@@ -140,8 +134,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
           <a
             href="https://www.buymeacoffee.com/wstone"
             rel="noreferrer"
-            target="_blank"
-          >
+            target="_blank">
             <span aria-label="recycle" role="img">
               ♻️
             </span>

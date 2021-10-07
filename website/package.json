@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next",
     "build": "next build && next export",
+    "dev": "next",
     "serve": "npm exec serve out",
     "type-check": "tsc"
   },
@@ -21,16 +21,16 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "@types/app-root-path": "^1.2.4",
-    "@types/fs-extra": "^9.0.12",
-    "@types/lodash": "^4.14.172",
-    "@types/node": "^16.7.10",
-    "@types/react": "^17.0.19",
+    "@types/fs-extra": "^9.0.13",
+    "@types/lodash": "^4.14.175",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
     "@types/react-dom": "^17.0.9",
-    "autoprefixer": "^10.3.4",
+    "autoprefixer": "^10.3.7",
     "fs-extra": "^10.0.0",
     "next-transpile-modules": "^8.0.0",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.9",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16",
     "typescript": "^4.4"
   }
 }

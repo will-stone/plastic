@@ -86,8 +86,7 @@ const ThemePage: NextPage<{
     <section className="flex justify-center">
       <a
         className="bg-sunglo py-2 px-4 text-white rounded font-comfortaa"
-        href={`https://github.com/will-stone/plastic/tree/main/themes/${slug}`}
-      >
+        href={`https://github.com/will-stone/plastic/tree/main/themes/${slug}`}>
         Source Code
       </a>
     </section>
