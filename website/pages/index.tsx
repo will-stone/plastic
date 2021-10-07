@@ -29,7 +29,7 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
   apps = [],
 }) => (
   <Layout className="space-y-16 md:space-y-24">
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
       <div className="space-y-6 flex flex-col items-center">
         <img
           alt=""
