@@ -140,7 +140,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             </span>
           </a>{' '}
           By{' '}
-          <a className="underline" href="https://wstone.io">
+          <a className="underline" href="https://wstone.uk">
             Will Stone
           </a>
         </div>
