@@ -1,7 +1,7 @@
 {
   "name": "plastic",
   "displayName": "Plastic",
-  "version": "7.5.0",
+  "version": "7.6.0",
   "private": true,
   "description": "A simple theme.",
   "categories": [
@@ -19,7 +19,7 @@
   "publisher": "will-stone",
   "type": "module",
   "scripts": {
-    "build": "node --loader ts-node/esm ./src/index.ts",
+    "build": "npx ts-node --esm ./src/index.ts",
     "prerelease": "npm run build",
     "release": "vsce publish"
   },
@@ -41,7 +41,7 @@
     "@types/prettier": "^2.4.1",
     "@types/tinycolor2": "^1.4.3",
     "tinycolor2": "^1.4.2",
-    "ts-node": "^10.2.1",
+    "ts-node": "^10.9.1",
     "vsce": "^1.100.1"
   },
   "engines": {

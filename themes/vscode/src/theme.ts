@@ -307,6 +307,7 @@ export function getTheme(deprioritised = false): unknown {
             'storage',
             // console and JSX custom components
             'support.class',
+            'entity.name.type.class',
             // ReScript components
             'entity.name.namespace',
           ],

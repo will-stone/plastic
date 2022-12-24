@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [7.6.0] - 2022-12-24
+
+- Svelte components blue, same as React components.
+
 ## [7.5.0] - 2021-09-03
 
 - Use transparent inlay hint background. I've found having the hints display the
