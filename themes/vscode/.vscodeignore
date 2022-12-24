@@ -1,9 +1,8 @@
-.vscode/
-docs/
-node_modules/
-samples/
-src/
+.vscode
+docs
+node_modules
+samples
+src
 
-.eslintignore
-ISSUE_TEMPLATE.md
-package-lock.json
+../../**
+../**
