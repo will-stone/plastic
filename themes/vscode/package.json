@@ -40,9 +40,9 @@
   "devDependencies": {
     "@types/prettier": "^2.4.1",
     "@types/tinycolor2": "^1.4.3",
+    "@vscode/vsce": "^2.16.0",
     "tinycolor2": "^1.4.2",
-    "ts-node": "^10.9.1",
-    "vsce": "^1.100.1"
+    "ts-node": "^10.9.1"
   },
   "engines": {
     "node": ">=15.0.0",
