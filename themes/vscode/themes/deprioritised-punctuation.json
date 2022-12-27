@@ -203,12 +203,7 @@
       }
     },
     {
-      "scope": [
-        "storage",
-        "support.class",
-        "entity.name.type.class",
-        "entity.name.namespace"
-      ],
+      "scope": ["storage", "support.class", "entity.name.namespace"],
       "settings": {
         "foreground": "#61AFEF"
       }
