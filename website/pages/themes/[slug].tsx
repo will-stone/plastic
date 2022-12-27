@@ -69,7 +69,7 @@ const ThemePage: NextPage<{
         {title}
       </a>{' '}
       and{' '}
-      <Link href="/">
+      <Link href="/" legacyBehavior>
         <a className="text-cornflowerBlue underline">other apps</a>
       </Link>
       .

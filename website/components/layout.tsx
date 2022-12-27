@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import type { ReactNode } from 'react'
 import React from 'react'
 import GitHubButton from 'react-github-btn'
 
@@ -10,6 +11,7 @@ import { Icon } from './icon'
 interface Props {
   title?: string
   className?: string
+  children: ReactNode
 }
 
 const Layout: React.FC<Props> = ({ children, title, className }) => {
@@ -62,7 +64,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
 
       <header>
         <nav className="container flex flex-row justify-center items-center space-x-8 font-comfortaa">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a
               className={clsx(
                 router.asPath === '/' ? 'text-ghost' : 'text-shuttleGray',
@@ -71,7 +73,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
               Apps
             </a>
           </Link>
-          <Link href="/palette">
+          <Link href="/palette" legacyBehavior>
             <a
               className={clsx(
                 router.asPath === '/palette'

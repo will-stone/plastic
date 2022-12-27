@@ -5,6 +5,28 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [8.0.0] - 2022-12-27
+
+The first major change to Plastic in over a year and a half, and… 🥁 …we have a
+new colour! Please welcome [Persian Pink](https://plastictheme.com/palette) to
+the party 🥳
+
+I've recently started using Svelte and the component tags were the same colour
+as the html elements, making them quite hard to see. I tried updating them to
+blue, as per the 7.6.0 release below. However, as Svelte component tags are
+classified as class names, this meant I
+[inadvertently made class names the same colour as the "class" storage keyword](https://github.com/will-stone/plastic/issues/186).
+
+After some experimentation, I found that it was best to split class names
+(including component tag names) and storage key words (`class`, `const`, `let`
+etc.), which meant a new colour was required, and Persian Pink is now the colour
+of class names and component tags.
+
+## [7.6.1] - 2022-12-27
+
+- Rollback below change as the class storage and class names were now same
+  colour.
+
 ## [7.6.0] - 2022-12-24
 
 - Svelte components blue, same as React components.

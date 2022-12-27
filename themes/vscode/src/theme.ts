@@ -12,6 +12,7 @@ const {
   harvestGold,
   lavender,
   olivine,
+  persianPink,
   robRoy,
   shark,
   shuttleGray,
@@ -301,16 +302,19 @@ export function getTheme(deprioritised = false): unknown {
         // primitives
         [['constant', 'support.constant'], fountainBlue],
 
-        // const, var, class etc. and React JSX component tag
+        // const, var, class etc.
+        [['storage'], cornflowerBlue],
+
+        // classes and ComponentTags
         [
           [
-            'storage',
             // console and JSX custom components
             'support.class',
+            'entity.name.type.class',
             // ReScript components
             'entity.name.namespace',
           ],
-          cornflowerBlue,
+          persianPink,
         ],
 
         // anything in quotes

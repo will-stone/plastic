@@ -2,12 +2,14 @@ declare const palette: {
   bunker: string
   cadetBlue: string
   cornflowerBlue: string
+  crail: string
   dodgerBlue: string
   fountainBlue: string
   ghost: string
   harvestGold: string
   lavender: string
   olivine: string
+  persianPink: string
   robRoy: string
   shark: string
   shuttleGray: string

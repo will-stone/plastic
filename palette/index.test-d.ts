@@ -6,6 +6,7 @@ expectType<{
   bunker: string
   cadetBlue: string
   cornflowerBlue: string
+  crail: string
   dodgerBlue: string
   fountainBlue: string
   ghost: string

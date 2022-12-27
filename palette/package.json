@@ -1,5 +1,7 @@
 {
   "name": "palette",
+  "version": "8.0.0",
+  "private": true,
   "type": "module",
   "exports": {
     "require": "./cjs.cjs",

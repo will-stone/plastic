@@ -203,9 +203,19 @@
       }
     },
     {
-      "scope": ["storage", "support.class", "entity.name.namespace"],
+      "scope": ["storage"],
       "settings": {
         "foreground": "#61AFEF"
+      }
+    },
+    {
+      "scope": [
+        "support.class",
+        "entity.name.type.class",
+        "entity.name.namespace"
+      ],
+      "settings": {
+        "foreground": "#f472b6"
       }
     },
     {
