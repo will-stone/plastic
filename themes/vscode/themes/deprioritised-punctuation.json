@@ -2,6 +2,8 @@
   "$schema": "vscode://schemas/color-theme",
   "name": "Plastic",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {},
   "colors": {
     "activityBar.activeBorder": "#1085FF",
     "activityBar.background": "#21252B",
@@ -22,9 +24,9 @@
     "contrastBorder": "#0D1117",
     "debugToolBar.background": "#181A1F",
     "diffEditor.border": "#0D1117",
+    "diffEditor.diagonalFill": "#0D1117",
     "diffEditor.insertedTextBackground": "#98C3791A",
     "diffEditor.removedTextBackground": "#E06C7526",
-    "diffEditor.diagonalFill": "#0D1117",
     "dropdown.background": "#181A1F",
     "dropdown.border": "#0D1117",
     "editor.background": "#21252B",
@@ -275,7 +277,5 @@
         "fontStyle": "italic"
       }
     }
-  ],
-  "semanticTokenColors": {},
-  "semanticHighlighting": true
+  ]
 }

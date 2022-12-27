@@ -38,10 +38,10 @@
     ]
   },
   "devDependencies": {
-    "@types/prettier": "^2.4.1",
+    "@types/prettier": "^2.7.2",
     "@types/tinycolor2": "^1.4.3",
     "@vscode/vsce": "^2.16.0",
-    "tinycolor2": "^1.4.2",
+    "tinycolor2": "^1.5.1",
     "ts-node": "^10.9.1"
   },
   "engines": {

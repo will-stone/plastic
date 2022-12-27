@@ -15,10 +15,12 @@ export const getStaticProps: GetStaticProps = async () => {
     .map((d) => d.name)
 
   const apps = []
+
   for await (const slug of slugs) {
     const packageJson = await fs.readJson(
       path.join(appPath, 'themes', slug, 'package.json'),
     )
+
     apps.push({ slug, title: packageJson.plastic.title })
   }
 

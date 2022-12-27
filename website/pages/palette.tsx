@@ -39,7 +39,7 @@ function NormalBoldText(): JSX.Element {
 }
 
 const PalettePage: NextPage = () => (
-  <Layout>
+  <Layout title="Palette">
     <section className="flex justify-center items-center space-x-6 sm:space-x-8 mb-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
       <span className="text-shuttleGray font-bold text-7xl font-comfortaa">

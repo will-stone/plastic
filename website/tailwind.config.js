@@ -5,28 +5,56 @@ const typography = require('@tailwindcss/typography')
 const { palette } = require('../palette')
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+  ],
+  plugins: [
+    typography,
+    plugin(({ addBase, theme }) => {
+      addBase({
+        body: {
+          backgroundColor: palette.shark,
+          color: palette.cadetBlue,
+        },
+        h1: {
+          color: palette.sunglo,
+          fontFamily: theme('fontFamily.comfortaa'),
+          fontSize: theme('fontSize.5xl'),
+          letterSpacing: theme('letterSpacing.widest'),
+          textAlign: 'center',
+        },
+        h2: {
+          color: palette.ghost,
+          fontFamily: theme('fontFamily.comfortaa'),
+          fontSize: theme('fontSize.3xl'),
+        },
+        h3: { fontFamily: theme('fontFamily.comfortaa') },
+        hr: {
+          borderColor: palette.bunker,
+        },
+      })
+    }),
+  ],
   theme: {
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-    },
     container: {
       center: true,
       padding: '1.5rem',
-    },
-    fontFamily: {
-      ...defaultTheme.fontFamily,
-      sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      comfortaa: ['Comfortaa', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: { ...palette },
       typography: () => ({
         DEFAULT: {
           css: {
+            a: {
+              color: palette.cornflowerBlue,
+            },
+            blockquote: {
+              color: palette.shuttleGray,
+            },
+            code: {
+              color: palette.ghost,
+            },
             color: palette.cadetBlue,
             h1: {
               color: palette.sunglo,
@@ -43,45 +71,19 @@ module.exports = {
             h5: {
               color: palette.ghost,
             },
-            a: {
-              color: palette.cornflowerBlue,
-            },
-            code: {
-              color: palette.ghost,
-            },
-            blockquote: {
-              color: palette.shuttleGray,
-            },
           },
         },
       }),
     },
+    fontFamily: {
+      ...defaultTheme.fontFamily,
+      comfortaa: ['Comfortaa', ...defaultTheme.fontFamily.sans],
+      sans: ['Inter', ...defaultTheme.fontFamily.sans],
+    },
+    screens: {
+      lg: '1024px',
+      md: '768px',
+      sm: '640px',
+    },
   },
-  plugins: [
-    typography,
-    plugin(({ addBase, theme }) => {
-      addBase({
-        body: {
-          backgroundColor: palette.shark,
-          color: palette.cadetBlue,
-        },
-        h1: {
-          fontFamily: theme('fontFamily.comfortaa'),
-          fontSize: theme('fontSize.5xl'),
-          color: palette.sunglo,
-          letterSpacing: theme('letterSpacing.widest'),
-          textAlign: 'center',
-        },
-        h2: {
-          fontFamily: theme('fontFamily.comfortaa'),
-          fontSize: theme('fontSize.3xl'),
-          color: palette.ghost,
-        },
-        h3: { fontFamily: theme('fontFamily.comfortaa') },
-        hr: {
-          borderColor: palette.bunker,
-        },
-      })
-    }),
-  ],
 }

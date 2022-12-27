@@ -30,7 +30,8 @@ export const Swatch: FC<{ bg: string; className?: string }> = ({
         'p-4',
         'flex flex-col justify-between',
         className,
-      )}>
+      )}
+    >
       <div className="text-lg font-comfortaa">{name}</div>
       <div className="opacity-75 font-mono">{hex}</div>
     </div>

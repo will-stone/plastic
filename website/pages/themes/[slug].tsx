@@ -15,13 +15,15 @@ export const getStaticPaths = (): GetStaticPathsResult => {
     .readdirSync(path.join(appPath, 'themes'), { withFileTypes: true })
     .filter((d) => d.isDirectory())
     .map((d) => d.name)
+
   const paths = themes.map((themeName) => ({ params: { slug: themeName } }))
-  return { paths, fallback: false }
+  return { fallback: false, paths }
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   let md = ''
   let packageJson = {}
+
   if (typeof params?.slug === 'string') {
     packageJson = await fs.readJson(
       path.join(appPath, 'themes', params.slug, 'package.json'),
@@ -34,10 +36,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: {
-      md,
-      title: get(packageJson, 'plastic.title'),
       appLink: get(packageJson, 'plastic.appLink'),
+      md,
       slug: params?.slug,
+      title: get(packageJson, 'plastic.title'),
     },
   }
 }
@@ -86,7 +88,8 @@ const ThemePage: NextPage<{
     <section className="flex justify-center">
       <a
         className="bg-sunglo py-2 px-4 text-white rounded font-comfortaa"
-        href={`https://github.com/will-stone/plastic/tree/main/themes/${slug}`}>
+        href={`https://github.com/will-stone/plastic/tree/main/themes/${slug}`}
+      >
         Source Code
       </a>
     </section>

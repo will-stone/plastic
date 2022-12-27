@@ -38,6 +38,10 @@ export function getTheme(deprioritised = false): unknown {
     $schema: 'vscode://schemas/color-theme',
     name: 'Plastic',
     type: 'dark',
+
+    semanticHighlighting: true,
+    semanticTokenColors: {},
+
     colors: {
       'activityBar.activeBorder': dodgerBlue,
       'activityBar.background': shark,
@@ -68,9 +72,9 @@ export function getTheme(deprioritised = false): unknown {
       'debugToolBar.background': woodsmoke,
 
       'diffEditor.border': bunker,
+      'diffEditor.diagonalFill': bunker,
       'diffEditor.insertedTextBackground': olivine10,
       'diffEditor.removedTextBackground': sunglo15,
-      'diffEditor.diagonalFill': bunker,
 
       'dropdown.background': woodsmoke,
       'dropdown.border': bunker,
@@ -393,7 +397,5 @@ export function getTheme(deprioritised = false): unknown {
         settings: { fontStyle: style },
       })),
     ],
-    semanticTokenColors: {},
-    semanticHighlighting: true,
   }
 }
