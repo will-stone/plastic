@@ -5,6 +5,15 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [9.0.0] - 2023-01-04
+
+Reverting the Persian Pink change from 8.0.0. It seems it didn't play nicely
+with a few languages. I'm going to leave Plastic main theme as is for now. I
+have another idea to solve the problem I was having with Svelte components'
+colour. Not sure if it's going to work but for now let's call it _Plastic+_ (no,
+it's not a subscription service! 😆). _Plastic+_ will be an additional theme,
+along with the main and _deprioritised punctuation_ themes.
+
 ## [8.0.0] - 2022-12-27
 
 The first major change to Plastic in over a year and a half, and… 🥁 …we have a

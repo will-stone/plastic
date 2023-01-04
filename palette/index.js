@@ -9,7 +9,6 @@ export const palette = {
   harvestGold: '#E5C07B',
   lavender: '#B57EDC',
   olivine: '#98C379',
-  persianPink: '#f472b6',
   robRoy: '#E9D16C',
   shark: '#21252B',
   shuttleGray: '#5F6672',

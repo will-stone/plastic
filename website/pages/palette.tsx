@@ -98,25 +98,6 @@ const PalettePage: NextPage = () => (
       </Card>
 
       <Card>
-        <CardHeader>Classes and Components</CardHeader>
-        <Swatch bg="bg-persianPink" />
-        <CardBody>
-          <pre>
-            <code className="text-persianPink">Array</code>.
-            <code className="text-lavender">isArray</code>
-            ()
-          </pre>
-          <pre>
-            &lt;<code className="text-persianPink">Accordion</code> /&gt;
-          </pre>
-          <pre>
-            <code className="text-persianPink">Object</code>.
-            <code className="text-lavender">keys()</code>
-          </pre>
-        </CardBody>
-      </Card>
-
-      <Card>
         <CardHeader>String Literals</CardHeader>
         <Swatch bg="bg-olivine" />
         <CardBody>

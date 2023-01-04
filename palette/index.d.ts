@@ -9,7 +9,6 @@ declare const palette: {
   harvestGold: string
   lavender: string
   olivine: string
-  persianPink: string
   robRoy: string
   shark: string
   shuttleGray: string
