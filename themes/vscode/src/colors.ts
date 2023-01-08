@@ -133,6 +133,9 @@ export const colors = {
 
   'editorRuler.foreground': bunker,
 
+  'editorStickyScroll.background': woodsmoke,
+  'editorStickyScrollHover.background': shark,
+
   'editorSuggestWidget.background': woodsmoke,
   'editorSuggestWidget.border': dodgerBlue,
   'editorSuggestWidget.selectedBackground': cadetBlue10,
