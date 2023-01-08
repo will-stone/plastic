@@ -51,21 +51,17 @@ const ThemePage: NextPage<{
   slug: string
 }> = ({ md, title, slug, appLink }) => (
   <Layout className="space-y-8" title={title}>
-    <section className="flex justify-center items-center space-x-6 sm:space-x-8">
+    <h1>Plastic</h1>
+
+    <section className="flex flex-col sm:flex-row justify-center items-center sm:gap-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
       <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
         +
       </span>
-      <img
-        alt=""
-        className="h-24"
-        src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/logo.svg`}
-      />
+      <span className="text-4xl font-comfortaa text-harvestGold">{title}</span>
     </section>
 
-    <h1>Plastic</h1>
-
-    <h2 className="text-center">
+    <h2 className="text-center !mt-16">
       A simple theme for{' '}
       <a className="text-lavender underline" href={appLink}>
         {title}

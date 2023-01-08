@@ -5,7 +5,6 @@
 Required items:
 
 - INSTALL.md
-- logo.svg
 - screenshot.png
 - package.json with `plastic` object:
   - `title` - display name for app.

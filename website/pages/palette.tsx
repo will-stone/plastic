@@ -39,8 +39,10 @@ function NormalBoldText(): JSX.Element {
 }
 
 const PalettePage: NextPage = () => (
-  <Layout title="Palette">
-    <section className="flex justify-center items-center space-x-6 sm:space-x-8 mb-8">
+  <Layout className="space-y-8" title="Palette">
+    <h1>Plastic</h1>
+
+    <section className="flex flex-col sm:flex-row justify-center items-center sm:gap-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
       <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
         +
@@ -49,8 +51,6 @@ const PalettePage: NextPage = () => (
         🎨
       </span>
     </section>
-
-    <h1 className="mb-16">Palette</h1>
 
     {/* TODO Add a description of the "spec" */}
     {/* <p>
@@ -64,9 +64,9 @@ const PalettePage: NextPage = () => (
       metus fermentum posuere.
     </p> */}
 
-    <h2 className="mb-8">Syntax</h2>
+    <h2>Syntax</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <Card>
         <CardHeader>Keywords</CardHeader>
         <Swatch bg="bg-sunglo" />
@@ -184,9 +184,9 @@ const PalettePage: NextPage = () => (
       </Card>
     </section>
 
-    <h2 className="mb-4">UI</h2>
+    <h2>UI</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <Card>
         <CardHeader>Borders</CardHeader>
         <Swatch bg="bg-bunker" />
@@ -213,14 +213,14 @@ const PalettePage: NextPage = () => (
       </Card>
     </section>
 
-    <h2 className="mb-4">ANSI</h2>
+    <h2>ANSI</h2>
 
-    <p className="mb-8">
+    <p>
       Being a simple theme, Plastic does not prescribe bright ANSI colours. It
       is recommended to use <strong>bold text</strong> for emphasis.
     </p>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <Card>
         <CardHeader>ANSI Black</CardHeader>
         <Swatch bg="bg-shuttleGray" />

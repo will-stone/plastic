@@ -57,18 +57,18 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
       </div>
     </section>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {apps.map(({ slug, title }) => (
         <Link key={slug} href={`/themes/${slug}`} legacyBehavior>
           <a className="border border-bunker bg-woodsmoke rounded overflow-hidden divide-y divide-bunker flex flex-col hover:text-ghost">
             <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
               {title}
             </h3>
-            <div className="flex-grow px-4 py-8 flex justify-center items-center">
+            <div className="flex-grow p-4 flex justify-center items-center">
               <img
                 alt=""
-                className="h-24 mx-auto"
-                src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/logo.svg`}
+                className="mx-auto"
+                src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/screenshot.png`}
               />
             </div>
           </a>
