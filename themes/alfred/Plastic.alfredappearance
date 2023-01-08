@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#C6CCD7FF",
+        "font" : "System Light",
+        "color" : "#5F6671FF"
+      },
+      "shortcut" : {
+        "size" : 14,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#1085FFFF"
+      },
+      "backgroundSelected" : "#20242BFF",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#C6CCD7FF",
+        "font" : "System Light",
+        "color" : "#5F6671FF"
+      },
+      "iconPaddingHorizontal" : 8,
+      "roundness" : 0,
+      "paddingVertical" : 8,
+      "iconSize" : 32
+    },
+    "search" : {
+      "backgroundSelected" : "#480069E4",
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
+      "text" : {
+        "size" : 28,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#FFFFFFFF"
+      },
+      "background" : "#0D1117FF",
+      "roundness" : 0,
+      "paddingVertical" : 8
+    },
+    "window" : {
+      "color" : "#181A1FFF",
+      "paddingHorizontal" : 8,
+      "width" : 680,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : -15,
+      "paddingVertical" : 8
+    },
+    "credit" : "Sebastian Barfurth via Plastic Theme",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#A9B2C319",
+      "thickness" : 2
+    },
+    "name" : "Plastic"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@will-stone/plastic-alfred",
+  "private": true,
+  "plastic": {
+    "title": "Alfred",
+    "appLink": "https://www.alfredapp.com/"
+  }
+}
