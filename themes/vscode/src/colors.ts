@@ -29,6 +29,12 @@ const setAlpha = (hex: string, alpha: number) =>
 const brighten = (hex: string, percent: number) =>
   tinycolor(hex).brighten(percent).toHex8String().toUpperCase()
 
+// const darken = (hex: string, percent: number) =>
+//   tinycolor(hex).darken(percent).toHex8String().toUpperCase()
+
+// const desaturate = (hex: string, percent: number) =>
+//   tinycolor(hex).desaturate(percent).toHex8String().toUpperCase()
+
 const cadetBlue10 = setAlpha(cadetBlue, 0.1)
 const cadetBlue20 = setAlpha(cadetBlue, 0.2)
 
@@ -87,6 +93,14 @@ export const colors = {
   'editor.wordHighlightBorder': dodgerBlue,
   'editor.wordHighlightStrongBackground': transparent,
   'editor.wordHighlightStrongBorder': dodgerBlue,
+
+  'editorBracketHighlight.foreground1': cadetBlue,
+  'editorBracketHighlight.foreground2': cornflowerBlue,
+  'editorBracketHighlight.foreground3': harvestGold,
+  'editorBracketHighlight.foreground4': sunglo,
+  'editorBracketHighlight.foreground5': olivine,
+  'editorBracketHighlight.foreground6': lavender,
+  'editorBracketHighlight.unexpectedBracket.foreground': valencia,
 
   'editorBracketMatch.background': transparent,
   'editorBracketMatch.border': dodgerBlue,
