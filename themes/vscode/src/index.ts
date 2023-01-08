@@ -6,6 +6,7 @@ import { promises as fs } from 'fs'
 import prettier from 'prettier'
 
 import { getMainTheme } from './theme-main.js'
+import { getPlusTheme } from './theme-plus.js'
 
 function prettify(object: unknown) {
   return prettier.format(JSON.stringify(object, undefined, 2), {
@@ -22,6 +23,7 @@ try {
       './themes/deprioritised-punctuation.json',
       prettify(getMainTheme(true)),
     ),
+    fs.writeFile('./themes/plus.json', prettify(getPlusTheme())),
   ])
 } catch {
   process.exit(1)

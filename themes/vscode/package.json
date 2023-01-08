@@ -34,6 +34,11 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/deprioritised-punctuation.json"
+      },
+      {
+        "label": "Plastic+",
+        "uiTheme": "vs-dark",
+        "path": "./themes/plus.json"
       }
     ]
   },
