@@ -5,6 +5,18 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [9.1.0] - 2023-01-08
+
+- Git diffs are now brighter and more transparent which means the syntax should
+  be easier to read through them, especially comments.
+
+On a side-note, my "plus" experiment didn't work. My plan was to take the
+in-built VSCode Dark+ theme and simply swap the colours with Plastic colours.
+This would take all syntax maintenance away from Plastic. However, that theme
+makes some colour combination choices that I'm not comfortable with. I'm still
+looking into a more semantic-compatible Plastic theme, but not sure on the
+approach yet.
+
 ## [9.0.0] - 2023-01-04
 
 Reverting the Persian Pink change from 8.0.0. It seems it didn't play nicely
