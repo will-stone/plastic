@@ -3,6 +3,7 @@ import fs from 'fs-extra'
 import type { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import path from 'path'
+import YAML from 'yaml'
 
 import Layout from '../components/layout'
 
@@ -24,12 +25,26 @@ export const getStaticProps: GetStaticProps = async () => {
     apps.push({ slug, title: packageJson.plastic.title })
   }
 
-  return { props: { apps } }
+  const communityThemes = Object.entries(
+    YAML.parse(
+      fs.readFileSync(
+        path.join(appPath, 'themes', 'community-themes.yml'),
+        'utf8',
+      ),
+      // TODO parse this through Zod to avoid errors
+    ) as Record<string, { screenshot: string; url: string }>,
+  ).map(([name, props]) => ({
+    name,
+    ...props,
+  }))
+
+  return { props: { apps, communityThemes } }
 }
 
-const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
-  apps = [],
-}) => (
+const IndexPage: NextPage<{
+  apps: { slug: string; title: string }[]
+  communityThemes: { name: string; url: string; screenshot: string }[]
+}> = ({ apps = [], communityThemes = [] }) => (
   <Layout className="space-y-16 md:space-y-24">
     <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
       <div className="space-y-6 flex flex-col items-center">
@@ -70,6 +85,26 @@ const IndexPage: NextPage<{ apps: { slug: string; title: string }[] }> = ({
                 className="mx-auto"
                 src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/screenshot.png`}
               />
+            </div>
+          </a>
+        </Link>
+      ))}
+    </section>
+
+    <h2>Community Themes</h2>
+
+    <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      {communityThemes.map(({ screenshot, name, url }) => (
+        <Link key={name} href={url} legacyBehavior>
+          <a
+            className="border border-bunker bg-bunker rounded overflow-hidden divide-y divide-bunker flex flex-col hover:text-ghost"
+            target="_blank"
+          >
+            <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
+              {name}
+            </h3>
+            <div className="flex-grow p-4 flex justify-center items-center">
+              <img alt="" className="mx-auto" src={screenshot} />
             </div>
           </a>
         </Link>
