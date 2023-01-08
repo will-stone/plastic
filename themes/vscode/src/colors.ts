@@ -26,10 +26,11 @@ const {
 const setAlpha = (hex: string, alpha: number) =>
   tinycolor(hex).setAlpha(alpha).toHex8String().toUpperCase()
 
+const brighten = (hex: string, percent: number) =>
+  tinycolor(hex).brighten(percent).toHex8String().toUpperCase()
+
 const cadetBlue10 = setAlpha(cadetBlue, 0.1)
 const cadetBlue20 = setAlpha(cadetBlue, 0.2)
-const olivine10 = setAlpha(olivine, 0.1)
-const sunglo15 = setAlpha(sunglo, 0.15)
 
 export const colors = {
   'activityBar.activeBorder': dodgerBlue,
@@ -62,8 +63,10 @@ export const colors = {
 
   'diffEditor.border': bunker,
   'diffEditor.diagonalFill': bunker,
-  'diffEditor.insertedTextBackground': olivine10,
-  'diffEditor.removedTextBackground': sunglo15,
+  'diffEditor.insertedLineBackground': setAlpha(brighten(olivine, 20), 0.05),
+  'diffEditor.insertedTextBackground': setAlpha(brighten(olivine, 20), 0.1),
+  'diffEditor.removedLineBackground': setAlpha(brighten(sunglo, 20), 0.05),
+  'diffEditor.removedTextBackground': setAlpha(brighten(sunglo, 20), 0.1),
 
   'dropdown.background': woodsmoke,
   'dropdown.border': bunker,
