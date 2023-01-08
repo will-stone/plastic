@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [9.2.0] - 2023-01-08
+
+- Add support for sticky scroll.
+
 ## [9.1.0] - 2023-01-08
 
 - Git diffs are now brighter and more transparent which means the syntax should
