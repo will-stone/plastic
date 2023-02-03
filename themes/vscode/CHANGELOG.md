@@ -5,9 +5,14 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
-## UNRELEASED
+## [9.3.1] - 2023-02-03
+
+- Update changelogs.
+
+## [9.3.0] - 2023-02-03
 
 - Support bracket pair colorization.
+- Add support for more statusbar items.
 
 ## [9.2.0] - 2023-01-08
 
