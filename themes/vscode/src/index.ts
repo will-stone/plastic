@@ -6,6 +6,12 @@ import { promises as fs } from 'fs'
 import prettier from 'prettier'
 
 import { getMainTheme } from './theme-main.js'
+import {
+  getDarkPlusExperimentalTheme,
+  getDarkPlusTheme,
+  getDarkVSTheme,
+  getVSTheme,
+} from './theme-vs.js'
 
 function prettify(object: unknown) {
   return prettier.format(JSON.stringify(object, undefined, 2), {
@@ -22,6 +28,13 @@ try {
       './themes/deprioritised-punctuation.json',
       prettify(getMainTheme(true)),
     ),
+    fs.writeFile('./themes/dark_vs.json', prettify(getDarkVSTheme())),
+    fs.writeFile('./themes/dark_plus.json', prettify(getDarkPlusTheme())),
+    fs.writeFile(
+      './themes/dark_plus_experimental.json',
+      prettify(getDarkPlusExperimentalTheme()),
+    ),
+    fs.writeFile('./themes/vs.json', prettify(getVSTheme())),
   ])
 } catch {
   process.exit(1)

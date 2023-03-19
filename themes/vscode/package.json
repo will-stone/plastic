@@ -34,6 +34,11 @@
         "label": "Plastic - deprioritised punctuation",
         "uiTheme": "vs-dark",
         "path": "./themes/deprioritised-punctuation.json"
+      },
+      {
+        "label": "Plastic - VS",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vs.json"
       }
     ]
   },
@@ -41,6 +46,7 @@
     "@types/prettier": "^2.7.2",
     "@types/tinycolor2": "^1.4.3",
     "@vscode/vsce": "^2.16.0",
+    "immer": "^9.0.19",
     "tinycolor2": "^1.5.1",
     "ts-node": "^10.9.1"
   },
