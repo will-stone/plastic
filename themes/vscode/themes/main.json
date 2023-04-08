@@ -199,13 +199,18 @@
   },
   "tokenColors": [
     {
-      "scope": ["comment", "punctuation.definition.comment"],
+      "scope": ["comment", "punctuation.definition.comment", "source.diff"],
       "settings": {
         "foreground": "#5F6672"
       }
     },
     {
-      "scope": ["entity.name.function", "support.function"],
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "meta.diff.range",
+        "punctuation.definition.range.diff"
+      ],
       "settings": {
         "foreground": "#B57EDC"
       }
@@ -214,7 +219,11 @@
       "scope": [
         "keyword",
         "punctuation.definition.keyword",
-        "variable.language"
+        "variable.language",
+        "markup.deleted",
+        "meta.diff.header.from-file",
+        "punctuation.definition.deleted",
+        "punctuation.definition.from-file.diff"
       ],
       "settings": {
         "foreground": "#E06C75"
@@ -227,13 +236,25 @@
       }
     },
     {
-      "scope": ["storage", "support.class", "entity.name.namespace"],
+      "scope": [
+        "storage",
+        "support.class",
+        "entity.name.namespace",
+        "meta.diff.header"
+      ],
       "settings": {
         "foreground": "#61AFEF"
       }
     },
     {
-      "scope": ["markup.inline.raw.string", "string"],
+      "scope": [
+        "markup.inline.raw.string",
+        "string",
+        "markup.inserted",
+        "punctuation.definition.inserted",
+        "meta.diff.header.to-file",
+        "punctuation.definition.to-file.diff"
+      ],
       "settings": {
         "foreground": "#98C379"
       }

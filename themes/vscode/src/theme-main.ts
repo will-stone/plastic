@@ -34,12 +34,23 @@ export function getMainTheme(deprioritised = false): unknown {
             'comment',
             // start and end of comment blocks
             'punctuation.definition.comment',
+            // Diff files
+            'source.diff',
           ],
           shuttleGray,
         ],
 
         // functions
-        [['entity.name.function', 'support.function'], lavender],
+        [
+          [
+            'entity.name.function',
+            'support.function',
+            // Diff files
+            'meta.diff.range',
+            'punctuation.definition.range.diff',
+          ],
+          lavender,
+        ],
 
         // import, export, return etc.
         [
@@ -49,6 +60,11 @@ export function getMainTheme(deprioritised = false): unknown {
             'punctuation.definition.keyword',
             // this
             'variable.language',
+            // Diff files
+            'markup.deleted',
+            'meta.diff.header.from-file',
+            'punctuation.definition.deleted',
+            'punctuation.definition.from-file.diff',
           ],
           sunglo,
         ],
@@ -64,6 +80,8 @@ export function getMainTheme(deprioritised = false): unknown {
             'support.class',
             // ReScript components
             'entity.name.namespace',
+            // Diff files
+            'meta.diff.header',
           ],
           cornflowerBlue,
         ],
@@ -74,6 +92,11 @@ export function getMainTheme(deprioritised = false): unknown {
             // inline code in markdown
             'markup.inline.raw.string',
             'string',
+            // Diff files
+            'markup.inserted',
+            'punctuation.definition.inserted',
+            'meta.diff.header.to-file',
+            'punctuation.definition.to-file.diff',
           ],
           olivine,
         ],
