@@ -3,5 +3,9 @@
     "titleBar.activeForeground": "#e06c75",
     "titleBar.inactiveForeground": "#e06c7599"
   },
-  "cSpell.words": ["deprioritised", "sunglo", "tinycolor"]
+  "cSpell.words": ["deprioritised", "sunglo", "tinycolor"],
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.options": {
+    "overrideConfigFile": "eslint.config.mjs"
+  }
 }

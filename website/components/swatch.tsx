@@ -14,10 +14,10 @@ function isLightColour(colour: string): boolean {
   return r * 0.299 + g * 0.587 + b * 0.114 > 170
 }
 
-export const Swatch: FC<{ bg: string; className?: string }> = ({
-  bg,
-  className,
-}) => {
+export const Swatch: FC<{
+  readonly bg: string
+  readonly className?: string
+}> = ({ bg, className }) => {
   const colourName = bg.replace('bg-', '') as unknown as keyof typeof palette
   const hex = palette[colourName]
   const name = startCase(colourName)
@@ -32,8 +32,8 @@ export const Swatch: FC<{ bg: string; className?: string }> = ({
         className,
       )}
     >
-      <div className="text-lg font-comfortaa">{name}</div>
-      <div className="opacity-75 font-mono">{hex}</div>
+      <div className="font-comfortaa text-lg">{name}</div>
+      <div className="font-mono opacity-75">{hex}</div>
     </div>
   )
 }

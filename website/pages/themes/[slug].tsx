@@ -53,15 +53,15 @@ const ThemePage: NextPage<{
   <Layout className="space-y-8" title={title}>
     <h1>Plastic</h1>
 
-    <section className="flex flex-col sm:flex-row justify-center items-center sm:gap-8">
+    <section className="flex flex-col items-center justify-center sm:flex-row sm:gap-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
-      <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
+      <span className="font-comfortaa text-7xl font-bold text-shuttleGray">
         +
       </span>
-      <span className="text-4xl font-comfortaa text-harvestGold">{title}</span>
+      <span className="font-comfortaa text-4xl text-harvestGold">{title}</span>
     </section>
 
-    <h2 className="text-center !mt-16">
+    <h2 className="!mt-16 text-center">
       A simple theme for{' '}
       <a className="text-lavender underline" href={appLink}>
         {title}
@@ -73,7 +73,7 @@ const ThemePage: NextPage<{
       .
     </h2>
 
-    <section className="prose sm:prose-lg mx-auto">
+    <section className="prose mx-auto sm:prose-lg">
       <img
         alt="screenshot"
         src={`https://raw.githubusercontent.com/will-stone/plastic/main/themes/${slug}/screenshot.png`}
@@ -83,7 +83,7 @@ const ThemePage: NextPage<{
 
     <section className="flex justify-center">
       <a
-        className="bg-sunglo py-2 px-4 text-white rounded font-comfortaa"
+        className="rounded bg-sunglo px-4 py-2 font-comfortaa text-white"
         href={`https://github.com/will-stone/plastic/tree/main/themes/${slug}`}
       >
         Source Code

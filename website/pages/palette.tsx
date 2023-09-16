@@ -5,24 +5,28 @@ import type { ReactNode } from 'react'
 import Layout from '../components/layout'
 import { Swatch } from '../components/swatch'
 
-function Card({ children }: { children: ReactNode }): JSX.Element {
+function Card({ children }: { readonly children: ReactNode }): JSX.Element {
   return (
-    <div className="border border-bunker rounded overflow-hidden divide-y divide-bunker">
+    <div className="divide-y divide-bunker overflow-hidden rounded border border-bunker">
       {children}
     </div>
   )
 }
 
-function CardHeader({ children }: { children: ReactNode }): JSX.Element {
-  return <h3 className="text-lg bg-woodsmoke p-4">{children}</h3>
+function CardHeader({
+  children,
+}: {
+  readonly children: ReactNode
+}): JSX.Element {
+  return <h3 className="bg-woodsmoke p-4 text-lg">{children}</h3>
 }
 
 function CardBody({
   children,
   className,
 }: {
-  className?: string
-  children: ReactNode
+  readonly className?: string
+  readonly children: ReactNode
 }): JSX.Element {
   return <div className={clsx('p-4', className)}>{children}</div>
 }
@@ -42,14 +46,12 @@ const PalettePage: NextPage = () => (
   <Layout className="space-y-8" title="Palette">
     <h1>Plastic</h1>
 
-    <section className="flex flex-col sm:flex-row justify-center items-center sm:gap-8">
+    <section className="flex flex-col items-center justify-center sm:flex-row sm:gap-8">
       <img alt="" className="h-24" src="/images/logo.svg" />
-      <span className="text-shuttleGray font-bold text-7xl font-comfortaa">
+      <span className="font-comfortaa text-7xl font-bold text-shuttleGray">
         +
       </span>
-      <span aria-label="" className="text-7xl" role="img">
-        🎨
-      </span>
+      <span className="text-7xl">🎨</span>
     </section>
 
     {/* TODO Add a description of the "spec" */}
@@ -66,7 +68,7 @@ const PalettePage: NextPage = () => (
 
     <h2>Syntax</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <Card>
         <CardHeader>Keywords</CardHeader>
         <Swatch bg="bg-sunglo" />
@@ -186,7 +188,7 @@ const PalettePage: NextPage = () => (
 
     <h2>UI</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <Card>
         <CardHeader>Borders</CardHeader>
         <Swatch bg="bg-bunker" />
@@ -220,7 +222,7 @@ const PalettePage: NextPage = () => (
       is recommended to use <strong>bold text</strong> for emphasis.
     </p>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <Card>
         <CardHeader>ANSI Black</CardHeader>
         <Swatch bg="bg-shuttleGray" />

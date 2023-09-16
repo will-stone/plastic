@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 
-interface Props {
-  className?: string
-  icon: 'coffee'
+type Props = {
+  readonly className?: string
+  readonly icon: 'coffee'
 }
 
 export const Icon = ({ className, icon }: Props): JSX.Element | null => {

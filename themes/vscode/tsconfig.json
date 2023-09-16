@@ -8,5 +8,6 @@
     "noEmit": true,
     "strict": true,
     "target": "ESNext"
-  }
+  },
+  "exclude": ["samples"]
 }

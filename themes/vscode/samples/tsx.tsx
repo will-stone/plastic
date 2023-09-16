@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as DOM from 'react-dom'
 
-const root = document.getElementById('app')
+const root = document.querySelector('#app')
 
 function test(hello) {
   console.log(hello)
@@ -12,10 +12,10 @@ test()
 const bye = () => console.log('bye')
 
 type Props = {
-  vehicleType: 'Car' | 'Truck' | 'Motorcycle'
-  color: string
-  numWheels: 2 | 4
-  age: number
+  readonly vehicleType: 'Car' | 'Motorcycle' | 'Truck'
+  readonly color: string
+  readonly numWheels: 2 | 4
+  readonly age: number
 }
 type State = {}
 
@@ -46,8 +46,8 @@ class Main extends React.Component<Props, State> {
   }
 }
 
-interface WelcomeProps {
-  name?: string // Change the required prop to an optional prop.
+type WelcomeProps = {
+  readonly name?: string // Change the required prop to an optional prop.
 }
 
 const Welcome: React.SFC<WelcomeProps> = (props) => {

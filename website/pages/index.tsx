@@ -41,16 +41,27 @@ export const getStaticProps: GetStaticProps = async () => {
   return { props: { apps, communityThemes } }
 }
 
+const emptyAppsArray: { slug: string; title: string }[] = []
+
+const emptyCommunityThemesArray: {
+  name: string
+  url: string
+  screenshot: string
+}[] = []
+
 const IndexPage: NextPage<{
   apps: { slug: string; title: string }[]
   communityThemes: { name: string; url: string; screenshot: string }[]
-}> = ({ apps = [], communityThemes = [] }) => (
+}> = ({
+  apps = emptyAppsArray,
+  communityThemes = emptyCommunityThemesArray,
+}) => (
   <Layout className="space-y-16 md:space-y-24">
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
-      <div className="space-y-6 flex flex-col items-center">
+    <section className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-16">
+      <div className="flex flex-col items-center space-y-6">
         <img
           alt=""
-          className="block mx-auto"
+          className="mx-auto block"
           height="130"
           src="/images/logo.svg"
           width="130"
@@ -66,20 +77,20 @@ const IndexPage: NextPage<{
       <div>
         <img
           alt="Screenshot"
-          className="border border-bunker rounded shadow-lg"
+          className="rounded border border-bunker shadow-lg"
           src="/images/code.png"
         />
       </div>
     </section>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <section className="grid grid-cols-1 gap-8 sm:grid-cols-2">
       {apps.map(({ slug, title }) => (
         <Link key={slug} href={`/themes/${slug}`} legacyBehavior>
-          <a className="border border-bunker bg-bunker rounded overflow-hidden divide-y divide-bunker flex flex-col hover:text-ghost">
-            <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
+          <a className="flex flex-col divide-y divide-bunker overflow-hidden rounded border border-bunker bg-bunker hover:text-ghost">
+            <h3 className="bg-woodsmoke p-4 text-center font-comfortaa text-xl">
               {title}
             </h3>
-            <div className="flex-grow p-4 flex justify-center items-center">
+            <div className="flex flex-grow items-center justify-center p-4">
               <img
                 alt=""
                 className="mx-auto"
@@ -93,17 +104,17 @@ const IndexPage: NextPage<{
 
     <h2>Community Themes</h2>
 
-    <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <section className="grid grid-cols-1 gap-8 sm:grid-cols-2">
       {communityThemes.map(({ screenshot, name, url }) => (
         <Link key={name} href={url} legacyBehavior>
           <a
-            className="border border-bunker bg-bunker rounded overflow-hidden divide-y divide-bunker flex flex-col hover:text-ghost"
+            className="flex flex-col divide-y divide-bunker overflow-hidden rounded border border-bunker bg-bunker hover:text-ghost"
             target="_blank"
           >
-            <h3 className="bg-woodsmoke font-comfortaa text-xl p-4 text-center">
+            <h3 className="bg-woodsmoke p-4 text-center font-comfortaa text-xl">
               {name}
             </h3>
-            <div className="flex-grow p-4 flex justify-center items-center">
+            <div className="flex flex-grow items-center justify-center p-4">
               <img alt="" className="mx-auto" src={screenshot} />
             </div>
           </a>

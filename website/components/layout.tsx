@@ -8,17 +8,17 @@ import GitHubButton from 'react-github-btn'
 
 import { Icon } from './icon'
 
-interface Props {
-  title?: string
-  className?: string
-  children: ReactNode
+type Props = {
+  readonly title?: string
+  readonly className?: string
+  readonly children: ReactNode
 }
 
 const Layout: React.FC<Props> = ({ children, title, className }) => {
   const router = useRouter()
 
   return (
-    <div className="flex flex-col h-screen space-y-16 pt-8">
+    <div className="flex h-screen flex-col space-y-16 pt-8">
       <Head>
         <title>{`${title ? `${title} | ` : ''}Plastic Theme`}</title>
         <meta
@@ -63,7 +63,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
       </Head>
 
       <header>
-        <nav className="container flex flex-row justify-center items-center space-x-8 font-comfortaa">
+        <nav className="container flex flex-row items-center justify-center space-x-8 font-comfortaa">
           <Link href="/" legacyBehavior>
             <a
               className={clsx(
@@ -87,13 +87,13 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             </a>
           </Link>
           <a
-            className="text-shuttleGray hover:text-ghost group inline-flex items-center"
+            className="group inline-flex items-center text-shuttleGray hover:text-ghost"
             href="https://www.buymeacoffee.com/wstone"
             rel="noreferrer"
             target="_blank"
           >
             <Icon
-              className="flex-shrink-0 w-5 h-5 opacity-50 group-hover:opacity-100 mr-1 text-yellow-400"
+              className="mr-1 h-5 w-5 flex-shrink-0 text-yellow-400 opacity-50 group-hover:opacity-100"
               icon="coffee"
             />{' '}
             <span className="hidden sm:inline-block">Buy Me a Coffee</span>
@@ -103,7 +103,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
 
       <main className={clsx('container', className)}>{children}</main>
 
-      <footer className="flex-grow bg-woodsmoke border-t border-bunker py-12 text-center space-y-8">
+      <footer className="flex-grow space-y-8 border-t border-bunker bg-woodsmoke py-12 text-center">
         <div className="space-x-4">
           <GitHubButton
             aria-label="Star will-stone/plastic on GitHub"
@@ -144,9 +144,7 @@ const Layout: React.FC<Props> = ({ children, title, className }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <span aria-label="recycle" role="img">
-              ♻️
-            </span>
+            <span>♻️</span>
           </a>{' '}
           By{' '}
           <a className="underline" href="https://wstone.uk">
