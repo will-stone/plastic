@@ -1,7 +1,5 @@
 #!/usr/bin/env ts-node-script
 
-/* eslint-disable unicorn/no-process-exit -- required to exit from error */
-
 import { promises as fs } from 'fs'
 import prettier from 'prettier'
 
@@ -17,10 +15,10 @@ await fs.mkdir('./themes', { recursive: true })
 
 try {
   await Promise.all([
-    fs.writeFile('./themes/main.json', prettify(getMainTheme())),
+    fs.writeFile('./themes/main.json', await prettify(getMainTheme())),
     fs.writeFile(
       './themes/deprioritised-punctuation.json',
-      prettify(getMainTheme(true)),
+      await prettify(getMainTheme(true)),
     ),
   ])
 } catch {
