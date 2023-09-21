@@ -1,8 +1,0 @@
-{
-  "name": "@will-stone/plastic-iterm",
-  "private": true,
-  "plastic": {
-    "title": "iTerm",
-    "appLink": "https://iterm2.com/"
-  }
-}

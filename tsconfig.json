@@ -1,0 +1,9 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext"],
+    "types": ["bun-types"]
+  },
+  "exclude": ["samples"]
+}

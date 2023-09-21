@@ -1,11 +1,15 @@
 {
+  "cSpell.words": ["deprioritised", "sunglo", "tinycolor"],
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#e06c75",
     "titleBar.inactiveForeground": "#e06c7599"
-  },
-  "cSpell.words": ["deprioritised", "sunglo", "tinycolor"],
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.options": {
-    "overrideConfigFile": "eslint.config.mjs"
   }
 }
