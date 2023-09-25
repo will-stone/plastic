@@ -19,13 +19,13 @@
   "publisher": "will-stone",
   "type": "module",
   "scripts": {
-    "build": "bun ./src/index.ts",
+    "build": "bun --bun astro build",
+    "dev": "bun --bun astro dev",
+    "generate-theme": "bun ./src/index.ts",
     "lint": "eslint .",
     "prepare": "husky install",
-    "prerelease": "bun run build",
-    "release": "vsce publish",
-    "website-build": "bun --bun astro build",
-    "website-dev": "bun --bun astro dev"
+    "prerelease": "bun run generate-theme",
+    "release": "vsce publish"
   },
   "contributes": {
     "themes": [

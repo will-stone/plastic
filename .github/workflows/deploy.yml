@@ -23,7 +23,6 @@ jobs:
       - name: Install, build, and upload your site output
         uses: withastro/action@v0
         with:
-          node-version: 18 
           package-manager: bun
 
   deploy:
