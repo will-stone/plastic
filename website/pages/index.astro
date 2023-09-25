@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Plastic Theme</title>
+    <meta
+      content="A simple syntax and UI theme by Will Stone."
+      name="description"
+    />
+    <meta charset="utf-8" />
+    <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+    <link
+      href="/favicon/apple-touch-icon.png?v=WGNOBL3XeM"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="/favicon/favicon-32x32.png?v=WGNOBL3XeM"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="/favicon/favicon-16x16.png?v=WGNOBL3XeM"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link href="/favicon/site.webmanifest?v=WGNOBL3XeM" rel="manifest" />
+    <link
+      color="#e06c75"
+      href="/favicon/safari-pinned-tab.svg?v=WGNOBL3XeM"
+      rel="mask-icon"
+    />
+    <link href="/favicon/favicon.ico?v=WGNOBL3XeM" rel="shortcut icon" />
+    <meta content="Plastic" name="apple-mobile-web-app-title" />
+    <meta content="Plastic" name="application-name" />
+    <meta content="#21252B" name="msapplication-TileColor" />
+    <meta
+      content="/favicon/browserconfig.xml?v=WGNOBL3XeM"
+      name="msapplication-config"
+    />
+    <meta content="#21252B" name="theme-color" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex h-screen flex-col pt-24">
+    <main class="container">
+      <section
+        class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-16"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            alt=""
+            class="mx-auto block"
+            height="130"
+            src="/images/logo.svg"
+            width="130"
+          />
+          <h1 class="mt-6">Plastic</h1>
+          <h2 class="mt-6 text-center">
+            <div>A simple theme</div>
+            <div>for VSCode</div>
+          </h2>
+        </div>
+        <div>
+          <img
+            alt="Screenshot"
+            class="rounded border border-bunker shadow-lg"
+            src="/images/code.png"
+          />
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="mt-24 flex flex-col justify-center gap-8 font-comfortaa md:flex-row"
+        >
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=will-stone.plastic"
+            class="rounded border border-cornflowerBlue bg-bunker px-6 py-4 text-center text-xl font-bold hover:text-ghost"
+            >Install from Marketplace</a
+          >
+          <a
+            href="https://github.com/will-stone/plastic"
+            class="rounded border border-shuttleGray bg-bunker px-6 py-4 text-center text-xl font-bold hover:text-ghost"
+            >Source Code</a
+          >
+        </div>
+        <div class="mt-8 text-center">
+          <script
+            type="text/javascript"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button"
+            data-slug="wstone"
+            data-color="#21252b"
+            data-emoji="☕"
+            data-font="Inter"
+            data-text="Buy me a coffee"
+            data-outline-color="#ffffff"
+            data-font-color="#ffffff"
+            data-coffee-color="#FFDD00"></script>
+        </div>
+      </section>
+
+      <hr class="mt-24" />
+
+      <div class="mt-24">
+        <h2 class="text-center">Palette</h2>
+        <h3 class="mt-8">Syntax</h3>
+        <section
+          class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Keywords</h3>
+            <div class="flex flex-col justify-between bg-sunglo p-4 text-white">
+              <div class="font-comfortaa text-lg">Sunglo</div>
+              <div class="font-mono opacity-75">#E06C75</div>
+            </div>
+            <div class="p-4">
+              <pre class="text-sunglo">if</pre>
+              <pre class="text-sunglo">import</pre>
+              <pre class="text-sunglo">return</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Constants</h3>
+            <div
+              class="flex flex-col justify-between bg-fountainBlue p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Fountain Blue</div>
+              <div class="font-mono opacity-75">#56B6C2</div>
+            </div>
+            <div class="p-4">
+              <pre class="text-fountainBlue">1234</pre>
+              <pre class="text-fountainBlue">undefined</pre>
+              <pre class="text-fountainBlue">true</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Storage</h3>
+            <div
+              class="flex flex-col justify-between bg-cornflowerBlue p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Cornflower Blue</div>
+              <div class="font-mono opacity-75">#61AFEF</div>
+            </div>
+            <div class="p-4">
+              <pre class="text-cornflowerBlue">const</pre>
+              <pre class="text-cornflowerBlue">let</pre>
+              <pre class="text-cornflowerBlue">class</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">String Literals</h3>
+            <div
+              class="flex flex-col justify-between bg-olivine p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Olivine</div>
+              <div class="font-mono opacity-75">#98C379</div>
+            </div>
+            <div class="p-4">
+              <pre>&quot;<code class="text-olivine">lorem</code>&quot;</pre>
+              <pre>&#x27;<code class="text-olivine">ipsum</code>&#x27;</pre>
+              <pre>`<code class="text-olivine">dolor</code>`</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Attributes &amp; Props</h3>
+            <div
+              class="flex flex-col justify-between bg-whiskey p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Whiskey</div>
+              <div class="font-mono opacity-75">#D19A66</div>
+            </div>
+            <div class="p-4">
+              <pre class="text-whiskey">href</pre>
+              <pre class="text-whiskey">className</pre>
+              <pre class="text-whiskey">src</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Tags &amp; Types</h3>
+            <div
+              class="flex flex-col justify-between bg-harvestGold p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Harvest Gold</div>
+              <div class="font-mono opacity-75">#E5C07B</div>
+            </div>
+            <div class="p-4">
+              <pre class="text-harvestGold">div</pre>
+              <pre class="text-harvestGold">span</pre>
+              <pre class="text-harvestGold">boolean</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Function Names</h3>
+            <div
+              class="flex flex-col justify-between bg-lavender p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Lavender</div>
+              <div class="font-mono opacity-75">#B57EDC</div>
+            </div>
+            <div class="p-4">
+              <pre><span class="text-cornflowerBlue">function</span> <span class="text-lavender">add</span>() &lcub;&rcub;</pre>
+              <pre><span class="text-lavender">doThing</span>()</pre>
+              <pre>console.<span class="text-lavender">log</span>()</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Comments</h3>
+            <div
+              class="flex flex-col justify-between bg-shuttleGray p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Shuttle Gray</div>
+              <div class="font-mono opacity-75">#5F6672</div>
+            </div>
+            <div class="p-4">
+              <pre class="text-shuttleGray">// Comment</pre>
+              <pre class="text-shuttleGray">/* TODO comment */</pre>
+              <pre class="text-shuttleGray">#!/bin/bash</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Text &amp; Punctuation</h3>
+            <div
+              class="flex flex-col justify-between bg-cadetBlue p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Cadet Blue</div>
+              <div class="font-mono opacity-75">#A9B2C3</div>
+            </div>
+            <div class="p-4">
+              <pre>&lcub;&rcub;()[]&quot;&#x27;`!&lt;&gt;</pre>
+              <pre>Lorem ipsum dolor.</pre>
+              <pre>Consectetur adipiscing.</pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Variables</h3>
+            <div class="flex flex-col justify-between bg-ghost p-4 text-bunker">
+              <div class="font-comfortaa text-lg">Ghost</div>
+              <div class="font-mono opacity-75">#C6CCD7</div>
+            </div>
+            <div class="p-4">
+              <pre><span class="text-cornflowerBlue">const</span> <span class="text-ghost">aVariable</span> <span class="text-sunglo">=</span> <span class="text-fountainBlue">true</span></pre>
+            </div>
+          </div>
+        </section>
+        <h3 class="mt-8">UI</h3>
+        <section
+          class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Borders</h3>
+            <div class="flex flex-col justify-between bg-bunker p-4 text-white">
+              <div class="font-comfortaa text-lg">Bunker</div>
+              <div class="font-mono opacity-75">#0D1117</div>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Background</h3>
+            <div
+              class="flex flex-col justify-between bg-woodsmoke p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Woodsmoke</div>
+              <div class="font-mono opacity-75">#181A1F</div>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Workspace</h3>
+            <div class="flex flex-col justify-between bg-shark p-4 text-white">
+              <div class="font-comfortaa text-lg">Shark</div>
+              <div class="font-mono opacity-75">#21252B</div>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Information</h3>
+            <div
+              class="flex flex-col justify-between bg-dodgerBlue p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Dodger Blue</div>
+              <div class="font-mono opacity-75">#1085FF</div>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Warning</h3>
+            <div
+              class="flex flex-col justify-between bg-robRoy p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Rob Roy</div>
+              <div class="font-mono opacity-75">#E9D16C</div>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">Error</h3>
+            <div
+              class="flex flex-col justify-between bg-valencia p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Valencia</div>
+              <div class="font-mono opacity-75">#D74E42</div>
+            </div>
+          </div>
+        </section>
+        <h3 class="mt-8">ANSI</h3>
+        <p class="mx-auto mt-4 max-w-md text-justify">
+          Being a simple theme, Plastic does not prescribe bright ANSI colours.
+          It is recommended to use <strong>bold text</strong> for emphasis.
+        </p>
+        <section
+          class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Black</h3>
+            <div
+              class="flex flex-col justify-between bg-shuttleGray p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Shuttle Gray</div>
+              <div class="font-mono opacity-75">#5F6672</div>
+            </div>
+            <div class="p-4 text-shuttleGray">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Red</h3>
+            <div class="flex flex-col justify-between bg-sunglo p-4 text-white">
+              <div class="font-comfortaa text-lg">Sunglo</div>
+              <div class="font-mono opacity-75">#E06C75</div>
+            </div>
+            <div class="p-4 text-sunglo">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Green</h3>
+            <div
+              class="flex flex-col justify-between bg-olivine p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Olivine</div>
+              <div class="font-mono opacity-75">#98C379</div>
+            </div>
+            <div class="p-4 text-olivine">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Yellow</h3>
+            <div
+              class="flex flex-col justify-between bg-harvestGold p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Harvest Gold</div>
+              <div class="font-mono opacity-75">#E5C07B</div>
+            </div>
+            <div class="p-4 text-harvestGold">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Blue</h3>
+            <div
+              class="flex flex-col justify-between bg-cornflowerBlue p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Cornflower Blue</div>
+              <div class="font-mono opacity-75">#61AFEF</div>
+            </div>
+            <div class="p-4 text-cornflowerBlue">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Magenta</h3>
+            <div
+              class="flex flex-col justify-between bg-lavender p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Lavender</div>
+              <div class="font-mono opacity-75">#B57EDC</div>
+            </div>
+            <div class="p-4 text-lavender">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI Cyan</h3>
+            <div
+              class="flex flex-col justify-between bg-fountainBlue p-4 text-white"
+            >
+              <div class="font-comfortaa text-lg">Fountain Blue</div>
+              <div class="font-mono opacity-75">#56B6C2</div>
+            </div>
+            <div class="p-4 text-fountainBlue">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-bunker overflow-hidden rounded border border-bunker"
+          >
+            <h3 class="bg-woodsmoke p-4 text-lg">ANSI White</h3>
+            <div
+              class="flex flex-col justify-between bg-cadetBlue p-4 text-bunker"
+            >
+              <div class="font-comfortaa text-lg">Cadet Blue</div>
+              <div class="font-mono opacity-75">#A9B2C3</div>
+            </div>
+            <div class="p-4 text-cadetBlue">
+              <pre>Normal text</pre>
+              <pre><strong>Bold text</strong></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="mt-24" />
+
+      <section class="mt-24">
+        <h2 class="text-center">Other Apps</h2>
+        <p class="mx-auto mt-4 max-w-md text-justify">
+          These are community maintained themes. Please <a
+            href="https://github.com/will-stone/plastic/pulls"
+            class="underline hover:text-ghost">submit a PR</a
+          > for any apps that support the Plastic theme.
+        </p>
+        <ul class="mx-auto mt-6 max-w-md list-outside list-disc text-xl">
+          {
+            [
+              {
+                name: 'Warp',
+                url: 'https://github.com/warpdotdev/themes/blob/main/standard/plastic.yaml',
+              },
+            ].map(({ name, url }) => (
+              <li>
+                <a href={url} class="underline hover:text-ghost">
+                  {name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <footer
+      class="mt-24 flex-grow border-t border-bunker bg-woodsmoke py-12 text-center"
+    >
+      <div class="container font-comfortaa">
+        <a
+          href="https://www.buymeacoffee.com/wstone"
+          rel="noreferrer"
+          target="_blank"><span>♻️</span></a
+        >
+         By <a class="underline hover:text-ghost" href="https://wstone.uk"
+          >Will Stone</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
