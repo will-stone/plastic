@@ -1,13 +1,13 @@
 {
   "name": "plastic",
   "displayName": "Plastic",
-  "version": "9.4.0",
+  "version": "9.4.1",
   "private": true,
   "description": "A simple theme.",
   "categories": [
     "Themes"
   ],
-  "homepage": "https://plastictheme.com/",
+  "homepage": "https://plastic.wstone.uk/",
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
   },
@@ -47,7 +47,7 @@
     "@vscode/vsce": "^2.21.0",
     "@will-stone/eslint-config": "^0.3.0",
     "@will-stone/prettier-config": "^7.0.1",
-    "astro": "^3.1.2",
+    "astro": "^3.1.4",
     "bun-types": "^1.0.3",
     "eslint": "^8.50.0",
     "husky": "^8.0.3",
