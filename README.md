@@ -16,7 +16,7 @@ https://marketplace.visualstudio.com/items?itemName=HadiAlqattan.plastic-legacy
 - Small colour palette to avoid visual overload.
 - Additional deprioritised-punctuation theme; concentrate on the content.
 
-<a href="https://raw.githubusercontent.com/will-stone/plastic/main/themes/Visual-Studio-Code/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/plastic/main/themes/vscode/screenshot.png" width="500" alt="Screenshot"></a>
+<a href="https://raw.githubusercontent.com/will-stone/plastic/main/screenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/will-stone/plastic/main/screenshot.png" width="500" alt="Screenshot"></a>
 
 ## License
 
