@@ -1,7 +1,6 @@
+import palette from 'plastic-palette'
 import defaultTheme from 'tailwindcss/defaultTheme'
 import plugin from 'tailwindcss/plugin'
-
-import { palette } from './src/palette'
 
 export default {
   content: ['./website/**/*.astro'],

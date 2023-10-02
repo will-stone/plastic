@@ -1,5 +1,6 @@
+import palette from 'plastic-palette'
+
 import { colors } from './colors.js'
-import { palette } from './palette.js'
 
 const {
   cadetBlue,

@@ -1,6 +1,5 @@
+import palette from 'plastic-palette'
 import tinycolor from 'tinycolor2'
-
-import { palette } from './palette.js'
 
 const {
   bunker,
