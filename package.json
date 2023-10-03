@@ -42,7 +42,7 @@
     ]
   },
   "dependencies": {
-    "plastic-palette": "^1.0.3"
+    "plastic-palette": "^1.0.4"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.0.0",
