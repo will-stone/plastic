@@ -49,7 +49,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/tinycolor2": "^1.4.4",
     "@vscode/vsce": "^2.21.0",
-    "@will-stone/eslint-config": "^0.3.0",
+    "@will-stone/eslint-config": "^0.5.0",
     "@will-stone/prettier-config": "^7.0.1",
     "astro": "^3.1.4",
     "bun-types": "^1.0.3",

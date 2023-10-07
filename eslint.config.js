@@ -4,5 +4,5 @@ export default [
   {
     ignores: ['samples'],
   },
-  ...config,
+  ...config(),
 ]
