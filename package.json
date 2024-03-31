@@ -19,12 +19,12 @@
   "publisher": "will-stone",
   "type": "module",
   "scripts": {
-    "build": "bun --bun astro build",
-    "dev": "bun --bun astro dev",
-    "generate-theme": "bun ./src/index.ts",
+    "build": "astro build",
+    "dev": "astro dev",
+    "generate-theme": "node ./src/index.ts",
     "lint": "eslint .",
     "prepare": "husky install",
-    "prerelease": "bun run generate-theme",
+    "prerelease": "node run generate-theme",
     "release": "vsce publish"
   },
   "contributes": {
@@ -47,12 +47,12 @@
   "devDependencies": {
     "@astrojs/tailwind": "^5.0.0",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.12.2",
     "@types/tinycolor2": "^1.4.4",
     "@vscode/vsce": "^2.21.0",
     "@will-stone/eslint-config": "^0.5.0",
     "@will-stone/prettier-config": "^7.0.1",
     "astro": "^3.1.4",
-    "bun-types": "^1.0.3",
     "eslint": "^8.50.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
