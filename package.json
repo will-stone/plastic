@@ -24,7 +24,7 @@
     "generate-theme": "tsx ./src/index.ts",
     "lint": "eslint .",
     "prepare": "husky",
-    "prerelease": "node run generate-theme",
+    "prerelease": "npm run generate-theme",
     "release": "vsce publish"
   },
   "contributes": {
