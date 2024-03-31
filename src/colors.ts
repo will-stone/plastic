@@ -84,6 +84,7 @@ export const colors = {
   'editor.foreground': cadetBlue,
   'editor.lineHighlightBackground': cadetBlue10,
   'editor.lineHighlightBorder': transparent,
+  'editor.linkedEditingBackground': bunker,
   'editor.rangeHighlightBorder': ghost,
   'editor.selectionBackground': cadetBlue20,
   'editor.selectionHighlightBackground': cadetBlue10,
