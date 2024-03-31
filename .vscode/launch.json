@@ -9,7 +9,7 @@
       "name": "Extension",
       "type": "extensionHost",
       "request": "launch",
-      "args": ["--extensionDevelopmentPath=${workspaceFolder}/themes/vscode"]
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}"]
     }
   ]
 }
