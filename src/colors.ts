@@ -62,7 +62,7 @@ export const colors = {
   'checkbox.background': cornflowerBlue,
   'checkbox.foreground': white,
 
-  'contrastBorder': bunker,
+  contrastBorder: bunker,
 
   'debugToolBar.background': woodsmoke,
 
@@ -160,9 +160,9 @@ export const colors = {
 
   'editorWidget.background': woodsmoke,
 
-  'errorForeground': valencia,
+  errorForeground: valencia,
 
-  'focusBorder': dodgerBlue,
+  focusBorder: dodgerBlue,
 
   'gitDecoration.deletedResourceForeground': sunglo,
   'gitDecoration.ignoredResourceForeground': shuttleGray,
