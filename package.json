@@ -7,6 +7,9 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    ""
+  ],
   "homepage": "https://plastic.wstone.uk/",
   "bugs": {
     "url": "https://github.com/will-stone/plastic/issues"
@@ -18,6 +21,9 @@
   "author": "Will Stone",
   "publisher": "will-stone",
   "type": "module",
+  "files": [
+    ""
+  ],
   "scripts": {
     "build": "astro build",
     "dev": "astro dev",
@@ -50,10 +56,10 @@
     "@types/node": "^20.12.12",
     "@types/tinycolor2": "^1.4.6",
     "@vscode/vsce": "^2.26.1",
-    "@will-stone/eslint-config": "^9.0.0",
+    "@will-stone/eslint-config": "^18.1.0",
     "@will-stone/prettier-config": "^11.0.1",
     "astro": "^4.9.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.28.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
     "prettier": "^3.2.5",
@@ -64,7 +70,7 @@
     "typescript": "^5.4.5"
   },
   "engines": {
-    "node": ">=18.0.0",
+    "node": ">=22.0.0",
     "vscode": "^1.80.0"
   },
   "icon": "images/icon.png",

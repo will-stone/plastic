@@ -41,17 +41,17 @@
     />
     <meta content="#21252B" name="theme-color" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter&display=swap"
       rel="stylesheet"
     />
     <script
-      defer
-      src="https://celadon-seriema.pikapod.net/script.js"
+      data-domains="plastic.wstone.uk"
       data-website-id="6dc2f3b7-b1bc-4849-ac76-a2d2b78fc6af"
-      data-domains="plastic.wstone.uk"></script>
+      defer
+      src="https://celadon-seriema.pikapod.net/script.js"></script>
   </head>
   <body class="flex h-screen flex-col pt-24">
     <main class="container">
@@ -86,29 +86,28 @@
           class="mt-24 flex flex-col justify-center gap-8 font-comfortaa md:flex-row"
         >
           <a
-            href="https://marketplace.visualstudio.com/items?itemName=will-stone.plastic"
             class="rounded border border-cornflowerBlue bg-bunker px-6 py-4 text-center text-xl font-bold hover:text-ghost"
+            href="https://marketplace.visualstudio.com/items?itemName=will-stone.plastic"
             >Install from Marketplace</a
           >
           <a
-            href="https://github.com/will-stone/plastic"
             class="rounded border border-shuttleGray bg-bunker px-6 py-4 text-center text-xl font-bold hover:text-ghost"
-            >Source Code</a
+            href="https://github.com/will-stone/plastic">Source Code</a
           >
         </div>
         <div class="mt-8 text-center">
           <script
-            type="text/javascript"
-            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-            data-name="bmc-button"
-            data-slug="wstone"
+            data-coffee-color="#FFDD00"
             data-color="#21252b"
             data-emoji="☕"
             data-font="Inter"
-            data-text="Buy me a coffee"
-            data-outline-color="#ffffff"
             data-font-color="#ffffff"
-            data-coffee-color="#FFDD00"></script>
+            data-name="bmc-button"
+            data-outline-color="#ffffff"
+            data-slug="wstone"
+            data-text="Buy me a coffee"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            type="text/javascript"></script>
         </div>
       </section>
 
@@ -477,8 +476,8 @@
         <h2 class="text-center">Other Apps</h2>
         <p class="mx-auto mt-4 max-w-md text-justify">
           These are community maintained themes. Please <a
-            href="https://github.com/will-stone/plastic/pulls"
-            class="underline hover:text-ghost">submit a PR</a
+            class="underline hover:text-ghost"
+            href="https://github.com/will-stone/plastic/pulls">submit a PR</a
           > for any apps that support the Plastic theme.
         </p>
         <ul class="mx-auto mt-6 max-w-md list-outside list-disc text-xl">
@@ -490,7 +489,7 @@
               },
             ].map(({ name, url }) => (
               <li>
-                <a href={url} class="underline hover:text-ghost">
+                <a class="underline hover:text-ghost" href={url}>
                   {name}
                 </a>
               </li>

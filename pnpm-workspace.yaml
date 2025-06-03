@@ -3,3 +3,4 @@ onlyBuiltDependencies:
   - esbuild
   - keytar
   - sharp
+  - unrs-resolver
