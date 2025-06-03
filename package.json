@@ -51,7 +51,7 @@
     "@types/tinycolor2": "^1.4.6",
     "@vscode/vsce": "^2.26.1",
     "@will-stone/eslint-config": "^9.0.0",
-    "@will-stone/prettier-config": "^8.0.1",
+    "@will-stone/prettier-config": "^11.0.1",
     "astro": "^4.9.1",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
