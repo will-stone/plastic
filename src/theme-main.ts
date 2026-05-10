@@ -13,19 +13,20 @@ const {
   shuttleGray,
   sunglo,
   whiskey,
+  bunker,
 } = palette
 
 // TODO is there an official theme type that can be used for the return type?
-export function getMainTheme(deprioritised = false): unknown {
+export function getMainTheme(deprioritised = false, light = false): unknown {
   return {
     $schema: 'vscode://schemas/color-theme',
     name: 'Plastic',
-    type: 'dark',
+    type: light ? 'light' : 'dark',
 
     semanticHighlighting: true,
     semanticTokenColors: {},
 
-    colors,
+    colors: colors(light),
     tokenColors: [
       // Syntax
       ...[
@@ -121,7 +122,7 @@ export function getMainTheme(deprioritised = false): unknown {
             'support.variable',
             'variable',
           ],
-          ghost,
+          light ? bunker : ghost,
         ],
 
         // Other

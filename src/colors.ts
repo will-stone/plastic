@@ -1,6 +1,8 @@
 import palette from 'plastic-palette'
 import tinycolor from 'tinycolor2'
 
+const athensGray = '#F8F9FA'
+
 const {
   bunker,
   cadetBlue,
@@ -37,7 +39,7 @@ const brighten = (hex: string, percent: number) =>
 const cadetBlue10 = setAlpha(cadetBlue, 0.1)
 const cadetBlue20 = setAlpha(cadetBlue, 0.2)
 
-export const colors = {
+export const colors = (light = false): Record<string, string> => ({
   'activityBar.activeBorder': dodgerBlue,
   'activityBar.background': shark,
   'activityBar.border': bunker,
@@ -76,12 +78,12 @@ export const colors = {
   'dropdown.background': woodsmoke,
   'dropdown.border': bunker,
 
-  'editor.background': shark,
+  'editor.background': light ? athensGray : shark,
   'editor.findMatchBackground': transparent,
   'editor.findMatchBorder': dodgerBlue,
   'editor.findMatchHighlightBackground': transparent,
   'editor.findMatchHighlightBorder': ghost,
-  'editor.foreground': cadetBlue,
+  'editor.foreground': light ? bunker : cadetBlue,
   'editor.lineHighlightBackground': cadetBlue10,
   'editor.lineHighlightBorder': transparent,
   'editor.linkedEditingBackground': bunker,
@@ -208,7 +210,7 @@ export const colors = {
 
   'notificationToast.border': bunker,
 
-  'panel.background': woodsmoke,
+  'panel.background': light ? white : woodsmoke,
   'panel.border': bunker,
 
   'panelTitle.inactiveForeground': shuttleGray,
@@ -233,7 +235,7 @@ export const colors = {
   'scrollbarSlider.background': cadetBlue10,
   'scrollbarSlider.hoverBackground': cadetBlue20,
 
-  'sideBar.background': woodsmoke,
+  'sideBar.background': light ? white : woodsmoke,
   'sideBar.border': bunker,
   'sideBar.foreground': ghost,
 
@@ -294,4 +296,4 @@ export const colors = {
   'toolbar.hoverBackground': cadetBlue20,
 
   'widget.shadow': transparent,
-}
+})

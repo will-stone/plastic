@@ -21,6 +21,10 @@ try {
       './themes/deprioritised-punctuation.json',
       await prettify(getMainTheme(true)),
     ),
+    fs.writeFile(
+      './themes/light.json',
+      await prettify(getMainTheme(false, true)),
+    ),
   ])
 } catch {
   process.exit(1)
