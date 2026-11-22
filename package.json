@@ -1,7 +1,7 @@
 {
   "name": "plastic",
   "displayName": "Plastic",
-  "version": "9.5.0",
+  "version": "10.0.0",
   "private": true,
   "description": "A simple theme.",
   "categories": [
@@ -22,7 +22,9 @@
   "publisher": "will-stone",
   "type": "module",
   "files": [
-    ""
+    "themes/*",
+    "LICENSE.md",
+    "images/*"
   ],
   "scripts": {
     "build": "astro build",
