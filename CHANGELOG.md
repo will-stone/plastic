@@ -5,6 +5,10 @@ All notable changes to the _Plastic_ theme will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this
 project adheres to [Semantic Versioning](http://semver.org/).
 
+## [10.0.0] - 2026-11-22
+
+- Change tab bar background to bunker so that the active tabs stand out more.
+
 ## [9.5.0] - 2024-03-31
 
 - Theme the linked tag background. Previously this was the built-in orangey-red,

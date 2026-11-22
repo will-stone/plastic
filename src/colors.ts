@@ -112,7 +112,7 @@ export const colors = {
   'editorGroup.border': bunker,
   'editorGroup.emptyBackground': woodsmoke,
 
-  'editorGroupHeader.tabsBackground': woodsmoke,
+  'editorGroupHeader.tabsBackground': bunker,
 
   'editorGutter.addedBackground': olivine,
   'editorGutter.deletedBackground': sunglo,
