@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v7
+      - uses: actions/checkout@v7
       - uses: voidzero-dev/setup-vp@v1.22.0
         with:
           cache: true
