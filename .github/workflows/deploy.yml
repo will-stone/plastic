@@ -18,13 +18,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
         uses: actions/checkout@v7
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v6
+      - uses: voidzero-dev/setup-vp@v1.22.0
         with:
-          node-version: 26
-          package-manager: npm@12.2.2
+          cache: true
+        env:
+          NPM_CONFIG_FUND: false
+          NPM_CONFIG_AUDIT: false
+      - run: npm run build
 
   deploy:
     needs: build
